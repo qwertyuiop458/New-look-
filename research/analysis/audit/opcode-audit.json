@@ -1,0 +1,46 @@
+{
+    "audit": "opcode-audit",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "primary_source": "research/decompiled/g.java, g.a(byte[]) - парсер скриптовых таблиц (строки 1682-1870) и c(int,boolean) - исполнитель (строки 1872-1900)",
+    "bible_compared_with": "GAME_BIBLE.md §14, game-mechanics-analysis.md, all-levels-summary.md ('10 опкодов', 'known_opcodes: 10')",
+    "date": "2026-08-14",
+    "claim_under_test": "'10 полностью расшифрованных opcode'",
+    "verdict": "ОПРОВЕРГНУТО. В switch парсера присутствуют минимум 19 значений опкодов (11-44) с размерами операндов 1-8 байт, плюс типы заголовков записей 2 (переход/ссылка) и 3 (спавн сущности). '10 опкодов' - неверно.",
+    "opcode_table": [
+        {"opcode": 11, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта (семантика не расшифрована)", "evidence": "g.java:1748-1752", "confidence": "LOW"},
+        {"opcode": 12, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1753-1757", "confidence": "LOW"},
+        {"opcode": 13, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 5, "known_behavior": "команда скрипта", "evidence": "g.java:1758-1762", "confidence": "LOW"},
+        {"opcode": 21, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1763-1767", "confidence": "LOW"},
+        {"opcode": 22, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 2, "known_behavior": "команда скрипта", "evidence": "g.java:1768-1772", "confidence": "LOW"},
+        {"opcode": 23, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1773-1777", "confidence": "LOW"},
+        {"opcode": 24, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1778-1782", "confidence": "LOW"},
+        {"opcode": 31, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1783-1787", "confidence": "LOW"},
+        {"opcode": 32, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 2, "known_behavior": "команда скрипта", "evidence": "g.java:1788-1792", "confidence": "LOW"},
+        {"opcode": 34, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1793-1797", "confidence": "LOW"},
+        {"opcode": 35, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 6, "known_behavior": "команда скрипта", "evidence": "g.java:1798-1802", "confidence": "LOW"},
+        {"opcode": 36, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 8, "known_behavior": "команда скрипта", "evidence": "g.java:1803-1807", "confidence": "LOW"},
+        {"opcode": 37, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 2, "known_behavior": "ПАЛИТРА-РЕМАППИНГ: чтение u16, подстановка g.b[g.m(2,0,0)], запись обратно", "evidence": "g.java:1808-1816", "confidence": "MEDIUM"},
+        {"opcode": 38, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1817-1821", "confidence": "LOW"},
+        {"opcode": 39, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 6, "known_behavior": "команда скрипта", "evidence": "g.java:1822-1826", "confidence": "LOW"},
+        {"opcode": 41, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1827-1831", "confidence": "LOW"},
+        {"opcode": 42, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 1, "known_behavior": "команда скрипта", "evidence": "g.java:1832-1836", "confidence": "LOW"},
+        {"opcode": 43, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1837-1841", "confidence": "LOW"},
+        {"opcode": 44, "handler_location": "g.java (g.a(byte[]))", "operand_bytes": 4, "known_behavior": "команда скрипта", "evidence": "g.java:1842-1846", "confidence": "LOW"}
+    ],
+    "trigger_header_types": [
+        {"type": 2, "behavior": "переход/ссылка: чтение u16, g.d[n] = g.o(s), вызов g.c(...) - активация другого триггера", "evidence": "g.java:1877-1883 (c(int,boolean) case 2)"},
+        {"type": 3, "behavior": "СПАВН СУЩНОСТИ: new f(new c(g.a(s),0,0,null)) + g.o(f2)", "evidence": "g.java:1884-1890 (c(int,boolean) case 3)"}
+    ],
+    "executor": {
+        "name": "g.c(int n, boolean bl)",
+        "location": "g.java:1872",
+        "behavior": "читает 2-байтовый заголовок c[n]; case 2 = ссылка, case 3 = спавн; флаг bl управляет битом 1 (повтор/одноразовость); g.e[n] = позиция после операндов",
+        "confidence": "MEDIUM"
+    },
+    "bible_entries_checked": [
+        {"file": "levels-master.json", "field": "known_opcodes", "value": 10, "status": "CONTRADICTED"},
+        {"file": "GAME_BIBLE.md §14", "field": "спецификация байт-кодов триггеров", "value": "UNKNOWN на поздних уровнях", "status": "PARTIALLY_CORRECT"},
+        {"file": "mechanics-master.json", "field": "triggers.opcodes_count", "value": 10, "status": "CONTRADICTED"}
+    ],
+    "recommendation": "Заменить '10 опкодов' на таблицу 19 опкодов (11-44) с размерами операндов; расшифровать семантику каждого через трассировку исполнения (требует рантайма); отметить opcode 37 как палитра-ремаппинг."
+}

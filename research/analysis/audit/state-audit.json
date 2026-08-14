@@ -1,0 +1,41 @@
+{
+    "audit": "state-audit",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "primary_source": "research/decompiled/g.java (switch(a) на строках 714-793 и 799+)",
+    "bible_compared_with": "research/analysis/game-state-machine.md, GAME_BIBLE.md §5",
+    "date": "2026-08-14",
+    "claim_under_test": "'17 игровых состояний' и семантическая карта состояний (3 = геймплей, 6 = IGP)",
+    "state_ids_found": [0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 16, 17, 18, 19, 99],
+    "count": 18,
+    "states": [
+        {"id": 0, "handler": "g.v()", "bible_claim": "Заставка/логотипы", "code_evidence": "g.java:714-716 (case 0: g.v())", "status": "CONFIRMED", "note": "g.v() = splash-последовательность"},
+        {"id": 1, "handler": "g.x()", "bible_claim": "Главное меню", "code_evidence": "g.java:717-719", "status": "CONFIRMED"},
+        {"id": 2, "handler": "g.F()", "bible_claim": "Загрузка уровня", "code_evidence": "g.java:720-722; F() = switch(b) case 0: g.g()", "status": "CONFIRMED", "note": "подсостояния b: 0 = загрузка, 1 = прогресс"},
+        {"id": 3, "handler": "g.V()", "bible_claim": "Активный геймплей", "code_evidence": "g.java:3094-3130 (V(): скриптовые шаги c[w][6], g.dq(), g.x(1))", "status": "CONTRADICTED", "note": "V() исполняет КИНЕМАТИЧЕСКИЙ СКРИПТ (шаги c[w][6]) - это intro/cutscene-состояние, а не геймплей"},
+        {"id": 4, "handler": "g.z()", "bible_claim": "Пауза", "code_evidence": "g.java:728-730", "status": "CONFIRMED"},
+        {"id": 5, "handler": "g.bK()", "bible_claim": "Настройки", "code_evidence": "g.java:731-733", "status": "CONFIRMED"},
+        {"id": 6, "handler": "g.B()", "bible_claim": "IGP портал (Gameloft Live)", "code_evidence": "g.java:1107-1140 (B(): g.bM(), g.bE(), f.b() - обновление ИИ; f.java:2658/2840 (g.a == 6 && g.b == 4 - условия геймплея))", "status": "CONTRADICTED", "note": "B() - АКТИВНЫЙ ГЕЙМПЛЕЙ: вызывает f.b() (ИИ), обрабатывает подсостояния b (0/4); 'IGP' здесь не найден (IGP - класс b, RecordStore igp19, вызывается иначе)"},
+        {"id": 7, "handler": "g.cd()", "bible_claim": "Завершение уровня", "code_evidence": "g.java:756-758", "status": "CONFIRMED"},
+        {"id": 8, "handler": "switch(u) case 1: g.cj()", "bible_claim": "Вложенные настройки", "code_evidence": "g.java:735-741", "status": "CONFIRMED"},
+        {"id": 10, "handler": "g.dH()", "bible_claim": "Game Over", "code_evidence": "g.java:742-744", "status": "CONFIRMED"},
+        {"id": 11, "handler": "g.dA()", "bible_claim": "Диалоги/сцены", "code_evidence": "g.java:745-747", "status": "CONFIRMED"},
+        {"id": 12, "handler": "g.eh()", "bible_claim": "Помощь", "code_evidence": "g.java:748-750", "status": "CONFIRMED"},
+        {"id": 13, "handler": "g.fE()", "bible_claim": "Магазин", "code_evidence": "g.java:751-753; fE() использует таблицы g.i/g.k/g.l/g.m/g.n (слоты магазина)", "status": "CONFIRMED"},
+        {"id": 16, "handler": "g.C()", "bible_claim": "Профили сохранений", "code_evidence": "g.java:754-756", "status": "CONFIRMED"},
+        {"id": 17, "handler": "g.aO()", "bible_claim": "Выбор персонажа/режима", "code_evidence": "g.java:757-759", "status": "CONFIRMED"},
+        {"id": 18, "handler": "g.E()", "bible_claim": "Титры", "code_evidence": "g.java:760-762", "status": "CONFIRMED"},
+        {"id": 19, "handler": "g.G()", "bible_claim": "Подтверждение выхода", "code_evidence": "g.java:763-766", "status": "CONFIRMED"},
+        {"id": 99, "handler": "break (выход)", "bible_claim": "Завершение", "code_evidence": "g.java:767-769; run(): while (a != 99)", "status": "CONFIRMED"}
+    ],
+    "missing_from_bible": ["нет состояния 9, 14, 15 в switch - но значения 14/15 встречаются в других контекстах (g[12] сущностей, не глобальные состояния)"],
+    "summary": {
+        "count_bible": 17,
+        "count_code": 18,
+        "semantic_errors": [
+            "state 3: Bible='активный геймплей' -> фактически кинематика/cutscene (V())",
+            "state 6: Bible='IGP портал' -> фактически активный геймплей (B(): ИИ, подсостояния)",
+            "вторично: 'IGP' реализован классом b (RecordStore igp19), а не состоянием 6"
+        ],
+        "verdict": "НАБОР ID подтверждён с поправкой (18, а не 17); СЕМАНТИЧЕСКАЯ КАРТА состояний 3 и 6 ОШИБОЧНА и требует исправления в game-state-machine.md"
+    }
+}

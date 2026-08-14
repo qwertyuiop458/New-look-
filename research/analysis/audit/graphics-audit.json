@@ -1,0 +1,79 @@
+{
+    "audit": "graphics-audit",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "primary_sources": ["research/decompiled/a.java", "research/decompiled/c.java", "research/decompiled/g.java"],
+    "date": "2026-08-14",
+    "claims_under_test": [
+        "8-битный indexed color (256 цветов) - VISUAL_DNA.md §2",
+        "спрайты player 32x48 / zombie 32x48 (segment_04/05) - visual-style-guide.md",
+        "чёрная обводка 1px из segment_19.bin",
+        "тень-эллипс под ногами (segment_08)",
+        "7 анимаций с длительностями кадров 80-150ms - game-bible-audit.md"
+    ],
+    "pixel_format": {
+        "evidence": "a.java:219-222: n3 = 16-битное значение; расширение (n3 & 0xF000) << 16 | (n3 & 0xF000) << 12 | ... - каждый 4-битный канал расширяется до 8 бит (4444 ARGB); a.java:240 (магия 25840 = 0x64F0); a.java:355-360 (Image.createRGBImage)",
+        "actual": "16-битные пиксели 4444 ARGB (4 бита на канал), расширяются в 32-битные и передаются в Image.createRGBImage",
+        "bible_value": "8-битный цвет с индексацией (Indexed Color, 256 цветов)",
+        "status": "CONTRADICTED",
+        "confidence": "HIGH",
+        "note": "Формат хранения - 16-битный direct color, а не 8-битный indexed. Палитры-ремаппинг существуют отдельно (palettesAmount.bin, opcode 37, цветовая маска сущности g[21] 4 байта) - это tint/remap, а не формат хранения."
+    },
+    "sprite_sources": {
+        "evidence": [
+            "g.java:24596-24599 (dr(): T = типы, U = 35 свойств/тип, W = 13 полей/анимация, V = 15 полей/кадр)",
+            "g.java статический инициализатор: b = new int[10][13] - 10 анимаций по 13 полей (жёстко заданные анимационные записи)",
+            "g.java:24693-24699 (h(n,prop) = U[T[n]+prop]; i(n,n2) = V[n4*15+n2])",
+            "c.java:130-160 (a(Graphics): отрисовка кадра через атлас a.a(d, e, x, y, palette))"
+        ],
+        "actual": "Спрайты/анимации/кадры - ТАБЛИЧНЫЕ ДАННЫЕ (T/U/W/V) из m9 + жёсткие записи в g.java; размеры кадров - в данных V (15 полей), а не в константах",
+        "bible_value": "спрайты 32x48 из t0 segment_04/05",
+        "status": "CONTRADICTED",
+        "confidence": "HIGH",
+        "note": "32x48 нигде в коде не найдено; t0-сегменты - текст (см. resource-audit); реальные размеры кадров лежат в V-таблице m9"
+    },
+    "outline_1px": {
+        "evidence": "не найдено статически; визуальный признак (обводка) мог бы быть частью спрайтового арта",
+        "actual": "не подтверждено кодом",
+        "bible_value": "чёрная обводка 1px вокруг актёров (segment_19.bin)",
+        "status": "UNVERIFIED",
+        "confidence": "LOW",
+        "note": "Требует рендера спрайтов из m9/m-файлов или рантайм-скриншотов"
+    },
+    "shadow_ellipse": {
+        "evidence": "не найдено статически (поиск 'shadow'/'ellipse' в коде безрезультатен; тень могла бы быть отдельным спрайтом)",
+        "actual": "не подтверждено кодом",
+        "bible_value": "полупрозрачные тёмные эллипсы под ногами (segment_08)",
+        "status": "UNVERIFIED",
+        "confidence": "LOW",
+        "note": "segment_08 (старая нумерация) - на деле текст t0"
+    },
+    "animations": {
+        "evidence": ["g.java стат. init: 10 записей x 13 полей (анимации)", "g.java:24697 (W = anims*13)", "c.java:44-58 (62-тиковый аккумулятор)", "g.java:21399 (k(f3.g[0],6)*16 - ширина сущности из данных)"],
+        "actual": "10 жёстких анимаций в g.java + таблица W из m9 (количество - из данных); контроллер тиковый",
+        "bible_value": "7 анимаций (player_idle/walk/shoot/reload; zombie_walk/attack/die) с длительностями 80/120/150ms",
+        "status": "PARTIAL",
+        "confidence": "MEDIUM",
+        "note": "Тиковый контроллер подтверждён; конкретные длительности кадров в коде отсутствуют (в данных); '7 анимаций' не воспроизводится (>= 10 записей)"
+    },
+    "palette_remap": {
+        "evidence": ["g.java:1787-1790 (opcode 37: чтение u16, подстановка через g.b[g.m(2,0,0)], запись обратно)", "palettesAmount.bin (311 Б, счётчик 0x1F)", "f.java:2790-2793 (g[21] - 4-байтовая цветовая маска сущности)", "c.java (this.c - палитра актёра)"],
+        "actual": "Система ремаппинга палитр ПОДТВЕРЖДЕНА: opcode 37 + палитры + пер-актёрная палитра",
+        "bible_value": "ремаппинг-палитры (1-байтовый счётчик, блоки)",
+        "status": "CONFIRMED",
+        "confidence": "MEDIUM",
+        "note": "Существует, но как ОТДЕЛЬНЫЙ механизм поверх 16-битного формата, а не как '8-битный indexed формат'"
+    },
+    "screen_composition": {
+        "evidence": ["g.java:7254 (T = g.r() - 240 << 14 - кламп по ширине экрана)", "g.java:7262 (U = g.s() - 320 << 14)", "g.java:1830 (HUD: g.a(graphics, 0, 46, 240, ...))", "g.java:1492-1495 (буфер изображения)", "g.java:35155-35175 (repaint/serviceRepaints)"],
+        "actual": "240x320 подтверждено клампами камеры и HUD; двойная буферизация через Image",
+        "bible_value": "240x320 portrait",
+        "status": "CONFIRMED",
+        "confidence": "HIGH"
+    },
+    "summary": {
+        "confirmed": ["240x320", "тиковый анимационный контроллер", "система палитр-ремаппинга", "табличная модель кадров (V: 15 полей)"],
+        "contradicted": ["8-bit indexed 256 цветов", "спрайты 32x48 из t0", "ассоциации segment_04/05/08/19"],
+        "unverified": ["обводка 1px", "тень-эллипс", "длительности кадров", "4 направления"],
+        "requires_runtime": ["рендер спрайтов для проверки обводок/теней", "размеры кадров из V-таблиц"]
+    }
+}

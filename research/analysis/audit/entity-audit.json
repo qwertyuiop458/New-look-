@@ -1,0 +1,172 @@
+{
+    "audit": "entity-audit",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "principle": "Первичные источники (bytecode/decompiled code) имеют приоритет над прежними отчётами",
+    "primary_sources": ["research/decompiled/f.java", "research/decompiled/g.java", "research/decompiled/c.java"],
+    "bible_compared_with": ["research/analysis/entities-master.json", "research/analysis/game-bible-data.json"],
+    "date": "2026-08-14",
+    "summary": "entities-master.json содержит 2 записи (player, common_zombie). Первичный код показывает параметризованную систему типов сущностей (поле f.L) со значениями 0,1,2,3,9,10,11,14,15,16,20,21,22,23,25,26 и таблицами свойств U[T[type]+prop] (35 свойств на тип), анимаций W (13 полей) и кадров V (15 полей), загружаемыми из m9. Утверждение 'только Player + Common Zombie' опровергнуто.",
+    "entities": [
+        {
+            "id": "entity_type_0",
+            "source_evidence": ["f.java:17010 (f2.L == 0 && f2 != c && f2.g[24] == 1)", "g.java:7111-7113 (aB(): L==0||L==1||L==2 - main character/MC)", "g.java:18472 (f2.L == 0 && n2 == 11)"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "L==0 используется как главный персонаж (MC); в entities-master.json отдельного типа нет (там только 'player')"
+        },
+        {
+            "id": "entity_type_1",
+            "source_evidence": ["f.java:17010 (f2.L == 1 && f2.g[9] == 1)", "f.java:6865 (A(): f2.L == 1 && f.b(f2) == g.c)", "g.java:18472 (f2.L == 1 && f2.g[21] == 1 && n2 == 17)"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "L==1 - отдельный тип (вероятно второй игровой персонаж/напарник); в Bible отсутствует"
+        },
+        {
+            "id": "entity_type_2",
+            "source_evidence": ["g.java (L == 2 в aB(): выбор позиции камеры для L 0/1/2)"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "L==2 - третий MC-подобный тип (режим выбора персонажа, состояние 17)"
+        },
+        {
+            "id": "entity_type_3",
+            "source_evidence": ["f.java:681 (g.e[i].L != 3 - фильтр врагов)", "f.java:700 (g.e[i].L != 3)", "g.java (m(): switch(f2.L) case 3: f2.g[12] == 101)"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "L==3 - общий тип ВРАГА (enemy), в т.ч. 'common_zombie'; Bible записала его как единственного зомби без параметризации"
+        },
+        {
+            "id": "entity_type_9",
+            "source_evidence": ["f.java:17010 (f2.L == 14 && b[f2.g[0]][9] == 0)", "g.java:21399 (f3.L == 9 - отдельная ветка расчёта)", "g.java:18411-18414 (SetNPCTarget: 'Target is not a MC or NPC')", "g.java:31810 (m(): case 9: f2.g[4] == 103)"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "L==9 - NPC (неигровой персонаж) с собственными ветками поведения"
+        },
+        {
+            "id": "entity_type_10",
+            "source_evidence": ["f.java:17010 (f2.L == 10 && f2.g.length >= 9 && f.c(f2))", "g.java:8996 (if (f2.L == 10))"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "L==10 - отдельный тип (вероятно предмет/объект с условием f.c(f2))"
+        },
+        {
+            "id": "entity_type_11",
+            "source_evidence": ["f.java:17010 (f2.L == 11 || f2.L == 1 && f2.g[9] == 1)", "g.java:8249 (b[af][0] == 11 - предмет типа 11 в данных уровня)", "g.java:17669 (g.d.L == 11)", "g.java:18168 (g.d.L == 11)"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "L==11 - предмет/интерактивный объект; тип предмета 11 существует в данных уровня"
+        },
+        {
+            "id": "entity_type_14",
+            "source_evidence": ["f.java:17010 (f2.L == 14 && b[f2.g[0]][9] == 0)", "f.java:3155 (g[12] != 14)", "f.java:3775 (var0.g[12] != 14)"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "L==14 - тип с собственными правилами (дверь/объект сценария)"
+        },
+        {
+            "id": "entity_type_16",
+            "source_evidence": ["f.java:17010 (f2.L == 16 && (f2.g[20] == 1 || g.k(f2)))"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "L==16 - отдельный тип (снаряд/эффект?)"
+        },
+        {
+            "id": "entity_type_21_24_grid",
+            "source_evidence": ["g.java:16622 (g.g[i][j][k].L != 21 && g.g[i][j][k].L != 24)", "g.java:14948 (switch (g.g[g.by][g.bz][n].L))"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "Тайловая сетка g.g[layer][x][y] содержит ОБЪЕКТЫ-сущности с типами 21, 24 и др. (стены/декор/двери) - модель 'tile as entity'"
+        },
+        {
+            "id": "entity_type_ids_20_22_23_25_26",
+            "source_evidence": ["f.java/g.java: L == 20, L == 22, L == 23, L != 25, L == 26 (см. сводку по L)"],
+            "bible_present": false,
+            "bible_value": "",
+            "correct": false,
+            "status": "MISSING",
+            "note": "Дополнительные ID типов в ветвлениях кода: 20, 22, 23, 25, 26"
+        },
+        {
+            "id": "player",
+            "source_evidence": ["f.java (класс f, статические поля; g.c = текущий игрок)", "g.java:7111 (aB(): g.a.L == 0||1||2)"],
+            "bible_present": true,
+            "bible_value": "{\"states\": [IDLE, WALK, SHOOT, RELOAD, DIE], \"hitbox\": 24x40, \"health\": 100, \"speed\": 16384}",
+            "correct": false,
+            "status": "CONTRADICTED",
+            "note": "Существование игрока подтверждено, НО: 1) хитбокс 24x40 не найден в коде (коллизия - 5-точечный зонд +/-5/+4 px); 2) 'speed 16384' - это единица fixed-point (1.0), а не скорость (фактические скорости 36/48 px/s в aC()); 3) перечень состояний - упрощение"
+        },
+        {
+            "id": "common_zombie",
+            "source_evidence": ["f.java:681 (g.e[i].L != 3)", "f.java:700", "f.java:17010 (L-ветки)"],
+            "bible_present": true,
+            "bible_value": "{\"states\": [WALK, ATTACK, DIE], \"health\": 40, \"damage\": 10, \"speed\": 8192}",
+            "correct": false,
+            "status": "CONTRADICTED",
+            "note": "Враги - тип L==3, параметризованный таблицей U (35 свойств на тип из m9). Числа 40/10/8192 не подтверждаются статически: статы берутся из данных (g.h(type, prop)), а не из констант. Состояния g[12] принимают 16+ значений, а не 3"
+        }
+    ],
+    "actor_states_observed": {
+        "evidence": "f.java: поле g[12] - состояние сущности; g[10] - подсостояние; g[16] - флаги",
+        "state_ids": ["0", "1", "4", "7", "8", "9", "14", "17", "18", "19", "23", "100", "101", "103", "104", "106", "107"],
+        "bible_value": "5 состояний (IDLE, CHASE, ATTACK, HURT, DIE)",
+        "status": "CONTRADICTED",
+        "note": "В коде минимум 17 значений поля состояния; 100+ = терминальные состояния (смерть); 23/4 - значения по умолчанию при спавне"
+    },
+    "spawn_types": {
+        "evidence": ["g.java:c(n,bl) case 3: new f(new c(g.a(s),0,0,null)) - спавн сущности из триггера", "g.java:20190 'SpawnArea: Cannot find a free position for enemy'", "f.java:a(f2,n,n2,n3) - инициализация g[0]=type, g[3]=-120, g[4]=-120, g[5]=240, g[6]=240"],
+        "bible_value": "спавн из segment_02.bin",
+        "status": "PARTIAL",
+        "note": "Спавн подтверждён (триггер-опкод 3 + SpawnArea), но привязка 'segment_02 = спавны' основана на смещённой нумерации сегментов (см. resource-audit)"
+    },
+    "animation_associations": {
+        "evidence": ["c.java (контроллер: id анимации d, кадр e, loop h, повторы g, палитра c)", "g.java статический инициализатор: b = 10 записей x 13 полей (анимации)", "g.java:24698 (W: n2*13 - таблица анимаций), V: n*15 - кадры"],
+        "bible_value": "7 анимаций (player_idle/walk/shoot/reload, zombie_walk/attack/die) с длительностями 80-150ms",
+        "status": "PARTIAL",
+        "note": "Тиковая анимация и контроллер подтверждены; конкретные длительности кадров в коде не найдены (лежат в данных W/V); '4 направления' статически не подтверждено"
+    },
+    "damage_branches": {
+        "evidence": ["f.java:3403 (f.a(f2, n8, n9, g.l(n), true, ...) - нанесение урона оружием)", "g.java:21382 (l(n) = l(n,5) + rand(l(n,6)) - урон)", "f.java:2894 (g.h(f2.g[0], 22) - свойство 22 типа = урон атаки?)"],
+        "bible_value": "damage: Weapon-dependent (player), 10 (zombie)",
+        "status": "PARTIAL",
+        "note": "Урон оружия = prop5+rand(prop6) из таблицы m9; урон врагов - из таблицы свойств типа (g.h(type,22)); константа 10 не найдена"
+    },
+    "collision_branches": {
+        "evidence": ["f.java:4979 (5-точечный зонд: центр +/- (5,4) px)", "f.java:2388 (g.d(x/16, y/16))", "g.java:5804 (b(n) = n >> 4)", "g.java:7881-7884 (x/16, y/16, (x+w)/16)"],
+        "bible_value": "hitbox 24x40, AABB",
+        "status": "CONTRADICTED",
+        "note": "AABB-проверки подтверждены, но размер 24x40 не найден; зонд коллизий ~10x9 px"
+    },
+    "item_types": {
+        "evidence": ["g.java:8249 (b[af][0] == 11 - тип предмета 11)", "g.java:8296 (g.b[g.af][0] == 11)", "g.java:17010 (L==11)"],
+        "bible_value": "2 предмета: Medkit(id 10), Ammo Clip(id 11)",
+        "status": "PARTIAL",
+        "note": "Тип 11 подтверждён в данных уровня; тип 10 в статическом коде не найден; предметы задаются данными уровня, а не константами"
+    },
+    "weapon_types": {
+        "evidence": ["g.java:31911 (l(n,n2) = an[n*28+n2] + y(n,n2))", "g.java:31859 (eZ(): таблица оружия из m9 seg5: 17 записей, ID {0,1,9,11,50})"],
+        "bible_value": "2 оружия (Pistol, Shotgun) / GAME_BIBLE: 3 (Пистолет, Дробовик, Автомат)",
+        "status": "CONTRADICTED",
+        "note": "см. weapon-audit.json: 17 записей, 5 различных ID"
+    },
+    "verdict": "entities-master.json неполон и частично неверен: система типов параметризована данными (m9), типов значительно больше 2, состояния - 17+ значений. Требуется пересборка entities-master из данных m9 (таблицы U/W/V/T) и ветвлений f.java."
+}

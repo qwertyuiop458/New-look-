@@ -1,0 +1,99 @@
+{
+    "audit": "weapon-audit",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "primary_sources": ["research/decompiled/g.java (eZ(), l(n,n2), E(), af(int), f.java стрельба)"],
+    "data_source": "research/extracted/jar/m9 segment 5 (парсинг по формату из байткода: [tag:1B][id:2B LE][28 x u16 LE])",
+    "reproducible": "python3 research/scripts/forensic_parse.py + скрипт-дамп в этом аудите",
+    "date": "2026-08-14",
+    "claim_under_test": "'2 weapons' (research/analysis/combat/weapons.json) и '3 оружия: Пистолет, Дробовик, Автомат' (GAME_BIBLE.md §9)",
+    "verdict": "ОБА УТВЕРЖДЕНИЯ ОПРОВЕРГНУТЫ первичным источником: таблица оружия m9 seg5 содержит 17 записей с 5 различными ID {0, 1, 9, 11, 50}. g.E() = an.length/28 = 17 - движок оперирует 17 слотами оружия.",
+    "weapon_table": {
+        "loader": "g.eZ() (g.java:31831): g.a(5) - сегмент 5 открытого контейнера (в g.Z() открыт '/m9')",
+        "record_format": "tag 0: [0x00][id:u16 LE][28 x u16 LE]; tag 1: [0x01][id:u16 LE][6 x u16 LE]",
+        "accessor": "g.l(n, prop) = an[n*28+prop] + g.y(n,prop) (g.y - апгрейды из магазина)",
+        "count": "g.E() = an.length / 28 = 17",
+        "records_parsed": [
+            {"index": 0, "tag": 0, "id": 1, "prop0": 65535, "note": "особая запись (пустой слот?)"},
+            {"index": 2, "tag": 0, "id": 0, "prop0": 512, "note": "ID 0 - 'Pistol' по старому weapons.json"},
+            {"index": 3, "tag": 0, "id": 11, "prop0": 768},
+            {"index": 4, "tag": 0, "id": 9, "prop0": 1024},
+            {"index": 5, "tag": 0, "id": 11, "prop0": 1536, "note": "повтор ID 11 = апгрейд/тир"},
+            {"index": 6, "tag": 0, "id": 50, "prop0": 1280},
+            {"index": 7, "tag": 0, "id": 50, "prop0": 1792},
+            {"index": 8, "tag": 0, "id": 50, "prop0": 2048},
+            {"index": 9, "tag": 0, "id": 50, "prop0": 2816},
+            {"index": 10, "tag": 0, "id": 50, "prop0": 4096},
+            {"index": 11, "tag": 0, "id": 50, "prop0": 4352},
+            {"index": 12, "tag": 0, "id": 11, "prop0": 4608},
+            {"index": 13, "tag": 0, "id": 9, "prop0": 4864},
+            {"index": 14, "tag": 0, "id": 50, "prop0": 5120},
+            {"index": 15, "tag": 0, "id": 50, "prop0": 5376},
+            {"index": 16, "tag": 0, "id": 9, "prop0": 5632},
+            {"index": 17, "tag": 0, "id": 50, "prop0": 6144}
+        ],
+        "distinct_weapon_ids": [0, 1, 9, 11, 50],
+        "note": "Повторяющиеся ID с растущим prop0 интерпретируются как тиры/апгрейды одной модели (магазин, состояние 13). Точная семантика всех 28 свойств требует рантайм-трассировки."
+    },
+    "code_evidence": [
+        {
+            "id": "inventory",
+            "evidence": ["g.java:21333 (System.out.println('NEXT WEAPON (' + n + ')'))", "g.java:21341-21348 (af(int): g.L[1] = n; g.c.g[28] = L[1])", "f.java:3301 (int n2 = g.L[1])"],
+            "note": "Инвентарь g.L[]: L[1] = текущее оружие, L[3] = флаг/патроны; g[28] сущности = слот оружия"
+        },
+        {
+            "id": "damage",
+            "evidence": ["g.java:21382 (l(int n) = l(n,5) + (l(n,6)>0 ? rand%l(n,6) : 0))", "f.java:3403 (f.a(f2, n8, n9, g.l(n), true, ...))"],
+            "note": "Урон = свойство 5 + случайная добавка до свойства 6"
+        },
+        {
+            "id": "fire_logic",
+            "evidence": ["f.java:3379-3403 (цикл по g.l(n,4) - число лучей/выстрелов; hitscan-зонд g.a(n4,n5,...))"],
+            "note": "Hitscan подтверждён: зонд из позиции игрока, попадание -> f.a(урон)"
+        },
+        {
+            "id": "ammo",
+            "evidence": ["f.java:6529 (g.l(var0.g[28], 2) == 1 && var0.g[var1_1+13] < g.l(var0.g[28], 13) - пополнение)", "f.java:846 (g.l(g.L[1], 12))", "g.java:8249/8296 (предмет типа 11 = патроны?)"],
+            "note": "Свойство 2 = 'использует патроны', 13 = ёмкость магазина, 12 = ?; патроны хранятся в g[13+i] сущности"
+        },
+        {
+            "id": "reload",
+            "evidence": ["f.java:846 (g.l(g.L[1], 12))", "f.java:3505 (g.l(n6, 24) - проверка доступности оружия)"],
+            "note": "Свойства 12/24/25 участвуют в перезарядке/доступности; точная семантика требует трассировки"
+        },
+        {
+            "id": "weapon_switch_gate",
+            "evidence": ["g.java:21341 (af(int): if (g.b(c, n) && n < g.E()))"],
+            "note": "Переключение только на n < E() = 17"
+        },
+        {
+            "id": "old_claims",
+            "evidence": ["research/analysis/combat/weapons.json: 2 записи (id 0 Pistol damage 10 fire_rate 400 ammo 12; id 1 Shotgun damage 30 fire_rate 800 ammo 6)", "GAME_BIBLE.md §9: 'Оружие в инвентаре g.L (Пистолет, Дробовик, Автомат)'"],
+            "note": "Внутреннее противоречие прежней базы: weapons.json = 2, GAME_BIBLE = 3"
+        }
+    ],
+    "per_claim": [
+        {
+            "claim": "Существует ровно 2 оружия (Pistol, Shotgun) - weapons.json",
+            "bible_value": "2",
+            "primary_value": "17 записей, 5 различных ID",
+            "status": "CONTRADICTED",
+            "confidence": "HIGH (первичные данные m9)"
+        },
+        {
+            "claim": "Существует 3 оружия (Пистолет, Дробовик, Автомат) - GAME_BIBLE",
+            "bible_value": "3",
+            "primary_value": ">= 5 различных ID оружия",
+            "status": "CONTRADICTED",
+            "confidence": "HIGH (первичные данные m9)"
+        },
+        {
+            "claim": "Значения Pistol (10 урона, 400ms, 12 патронов, 1500ms, 8 тайлов) - weapons.json",
+            "bible_value": "10/400/12/1500/8",
+            "primary_value": "не воспроизводится из m9 (свойства в иных единицах; семантика свойств 0-27 не расшифрована)",
+            "status": "UNVERIFIED",
+            "confidence": "LOW",
+            "note": "Числа могли быть взяты из неверно интерпретированных записей; статически не подтверждаются"
+        }
+    ],
+    "recommendation": "Пересобрать weapons-master из m9 seg5 (17 записей x 28 свойств) с пометкой 'значения сырые, семантика требует рантайм-трассировки'; указать 5 базовых ID {0,1,9,11,50}; НЕ фиксировать '2 weapons' или '3 weapons'."
+}

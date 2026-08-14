@@ -1,0 +1,142 @@
+{
+    "audit": "mechanics-audit",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "source_compared": "research/analysis/mechanics-master.json (14 записей)",
+    "primary_sources": ["research/decompiled/*.java"],
+    "date": "2026-08-14",
+    "mechanics": [
+        {
+            "NAME": "movement",
+            "BIBLE_VALUE": "speed 16384 (f.java), CONFIRMED",
+            "PRIMARY_SOURCE": "c.java:34-37 (this.a = n << 14), c.java:86-92 (a(int) = n >> 14); g.java aC(): скорости 19660*n9/70 (ускорение), лимиты 589824 (36 px/s) и 786432 (48 px/s)",
+            "EXACT_CODE_REFERENCE": "g.java:7149-7160 (case 1 движения игрока); c.java:34 (фикс. точка)",
+            "STATUS": "CONTRADICTED",
+            "CONFIDENCE": "HIGH",
+            "note": "16384 - ЕДИНИЦА fixed-point (1.0), а не скорость. Реальные скорости: игрок 36/48 px/s (aC()), сущности 50-110 px/s (f.java:870-871, 6890). 'speed 16384' - ложное CONFIRMED."
+        },
+        {
+            "NAME": "combat",
+            "BIBLE_VALUE": "projectiles hitscan (f.java), CONFIRMED",
+            "PRIMARY_SOURCE": "f.java:3379-3403 (цикл лучей g.l(n,4), зонд g.a(n4,n5,...), попадание -> урон)",
+            "EXACT_CODE_REFERENCE": "f.java:3403",
+            "STATUS": "CONFIRMED",
+            "CONFIDENCE": "HIGH",
+            "note": "Hitscan подтверждён напрямую: луч из позиции стрелка, проверка пересечений, применение урона."
+        },
+        {
+            "NAME": "weapons",
+            "BIBLE_VALUE": "unlocked_initial Pistol, CONFIRMED",
+            "PRIMARY_SOURCE": "g.java:31859 (eZ(): an = new int[var2_2]; записи tag0 из m9 seg5); g.java:21341 (af(int))",
+            "EXACT_CODE_REFERENCE": "g.java:31831-31910 (eZ); g.java:21382-21390 (l(int))",
+            "STATUS": "UNKNOWN",
+            "CONFIDENCE": "LOW",
+            "note": "Стартовое оружие определяется данными/сохранением, статически не подтверждено; таблица - 17 записей/5 ID (см. weapon-audit.json)"
+        },
+        {
+            "NAME": "damage",
+            "BIBLE_VALUE": "formulas_count 2, CONFIRMED",
+            "PRIMARY_SOURCE": "g.java:21382 (l(n) = l(n,5) + rand(l(n,6))); f.java:3403",
+            "EXACT_CODE_REFERENCE": "g.java:21382-21390",
+            "STATUS": "UNKNOWN",
+            "CONFIDENCE": "LOW",
+            "note": "В коде найдена ОДНА формула урона оружия (prop5 + rand(prop6)). '2 формулы' не воспроизводится."
+        },
+        {
+            "NAME": "health",
+            "BIBLE_VALUE": "player_max 100, CONFIRMED",
+            "PRIMARY_SOURCE": "g.java:9040-9045 (k(): e[1][0] < 0 -> 0; > 100 -> 100)",
+            "EXACT_CODE_REFERENCE": "g.java:9040-9045",
+            "STATUS": "CONFIRMED",
+            "CONFIDENCE": "HIGH",
+            "note": "HP игрока хранится в e[1][0], клампится [0..100]."
+        },
+        {
+            "NAME": "AI",
+            "BIBLE_VALUE": "chase_distance 16, CONFIRMED",
+            "PRIMARY_SOURCE": "f.java:681/703 (n >= 1600 - дистанции агро), f.java:692 (M <= 4096)",
+            "EXACT_CODE_REFERENCE": "f.java:681, 692, 703",
+            "STATUS": "UNKNOWN",
+            "CONFIDENCE": "LOW",
+            "note": "'16 px' в коде не найден как порог; найденные дистанции - 1600 и 4096 в нерасшифрованных единицах. Требует рантайма."
+        },
+        {
+            "NAME": "collision",
+            "BIBLE_VALUE": "fixed_point_shift_18, CONFIRMED",
+            "PRIMARY_SOURCE": "f.java:6694-6695 ((f2.a.a >> 14) / 16); g.java:5804 (b(n) = n >> 4)",
+            "EXACT_CODE_REFERENCE": "f.java:6694; g.java:5804",
+            "STATUS": "INFERRED",
+            "CONFIDENCE": "HIGH",
+            "note": "Математически эквивалентно (x>>14)/16 == x>>18, НО операция '>> 18' в коде ОТСУТСТВУЕТ - выполняется два шага: >>14 (fixed->px) и /16 (px->tile). Утверждение 'код использует >>18' - неверная цитата кода."
+        },
+        {
+            "NAME": "camera",
+            "BIBLE_VALUE": "smoothing 0.25, INFERRED",
+            "PRIMARY_SOURCE": "g.java:7143-7144 (T = player - 0x1E0000; U = player - 0x280000); g.java:7154-7160 (интерполяция к цели за aa-Z кадров); g.java:7251-7262 (клампы 0..map-240, 0..map-320)",
+            "EXACT_CODE_REFERENCE": "g.java:7143, 7154-7162, 7251-7262",
+            "STATUS": "CONTRADICTED",
+            "CONFIDENCE": "MEDIUM",
+            "note": "Камера центрируется жёстко (T = player - 30px<<14, U = player - 40px<<14) с линейной интерполяцией по кадрам (aa-Z), а не экспоненциальным сглаживанием 1/4. Клампы подтверждены. Формула 'cam += (player-cam)/4' в коде не найдена."
+        },
+        {
+            "NAME": "items",
+            "BIBLE_VALUE": "medkit_heal 50, CONFIRMED",
+            "PRIMARY_SOURCE": "g.java:8249/8296 (b[g.af][0] == 11 - тип предмета из данных уровня)",
+            "EXACT_CODE_REFERENCE": "g.java:8249",
+            "STATUS": "UNKNOWN",
+            "CONFIDENCE": "LOW",
+            "note": "Логика предметов работает с данными уровня (b[][]), heal +50 статически не найден. Значение 50 не воспроизводится."
+        },
+        {
+            "NAME": "doors",
+            "BIBLE_VALUE": "keycard_required 12, CONFIRMED",
+            "PRIMARY_SOURCE": "не найдено в статическом коде; двери - объекты-тайлы (g.java:16622 L==21/24), триггеры типов 2/3",
+            "EXACT_CODE_REFERENCE": "g.java:16622; g.java:1870-1880 (c(n,bl) case 2: переход по ссылке)",
+            "STATUS": "UNKNOWN",
+            "CONFIDENCE": "LOW",
+            "note": "'keycard id 12' не найден. Ключи/двери определяются данными уровня и триггерами. Требует рантайма."
+        },
+        {
+            "NAME": "triggers",
+            "BIBLE_VALUE": "opcodes_count 10, CONFIRMED",
+            "PRIMARY_SOURCE": "g.java:1720-1870 (switch opcode: case 11,12,13,21,22,23,24,31,32,34,35,36,37,38,39,41,42,43,44)",
+            "EXACT_CODE_REFERENCE": "g.java:1744-1860",
+            "STATUS": "CONTRADICTED",
+            "CONFIDENCE": "HIGH",
+            "note": "В парсере триггеров минимум 19 значений опкодов (11-44) с размерами операндов 1-8 байт + типы заголовков 2 (переход) и 3 (спавн). '10 опкодов' - неверно. См. opcode-audit.json."
+        },
+        {
+            "NAME": "animation",
+            "BIBLE_VALUE": "cadence ticks_based, CONFIRMED",
+            "PRIMARY_SOURCE": "c.java:44-58 (a(int n): аккумулятор j по 62 тика); c.java:60-130 (b(n): d=id анимации, e=кадр, h=loop, g=повторы)",
+            "EXACT_CODE_REFERENCE": "c.java:44-130",
+            "STATUS": "CONFIRMED",
+            "CONFIDENCE": "HIGH",
+            "note": "Тиковая анимация подтверждена: кадр продвигается по накопленным тикам, есть loop/once и счётчик повторов."
+        },
+        {
+            "NAME": "progression",
+            "BIBLE_VALUE": "levels_count 30, CONFIRMED",
+            "PRIMARY_SOURCE": "g.java:50 (String[] a = {t0, m0..m13_2} - 31 имя, из них 30 m-файлов); размеры файлов: 6 файлов m5_* = 9 байт (заглушки)",
+            "EXACT_CODE_REFERENCE": "g.java:50",
+            "STATUS": "INFERRED",
+            "CONFIDENCE": "MEDIUM",
+            "note": "30 m-ресурсов подтверждено, но '30 игровых уровней' - неверно: m9 = глобальный data-контейнер (оружие/таблицы), 6 файлов m5_* - пустые заглушки 9 байт. См. level-audit.json."
+        },
+        {
+            "NAME": "save",
+            "BIBLE_VALUE": "slots 3, CONFIRMED",
+            "PRIMARY_SOURCE": "g.java:4129-4131 (RecordStore 'a', B(int n): addRecord при пустом сторе); b.java:2270-2299 (RecordStore 'igp19' - IGP)",
+            "EXACT_CODE_REFERENCE": "g.java:4129; b.java:2272",
+            "STATUS": "UNKNOWN",
+            "CONFIDENCE": "LOW",
+            "note": "RMS подтверждён (RecordStore 'a' + 'igp19'), но число слотов '3' статически не подтверждено (n - параметр B(int))."
+        }
+    ],
+    "summary": {
+        "confirmed_remaining": ["combat", "health", "animation"],
+        "downgraded_to_inferred": ["collision", "progression"],
+        "contradicted": ["movement", "camera", "triggers"],
+        "unknown": ["weapons", "damage", "AI", "items", "doors", "save"],
+        "requires_runtime": ["AI chase/attack threshold", "items heal value", "doors/keycard", "save slots count", "weapon property semantics"]
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "audit": "formula-audit",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "primary_sources": ["research/decompiled/c.java", "f.java", "g.java"],
+    "date": "2026-08-14",
+    "formulas": [
+        {
+            "NAME": "fixed-point conversion",
+            "BIBLE_VALUE": "сдвиг 14 бит (1 << 14 = 16384)",
+            "PRIMARY_SOURCE": "c.java:34-37 (this.a = n << 14), c.java:86-92 (a(int) = n >> 14), c.java:116-123 (c(int) = n << 14, d(int) = n2 << 14)",
+            "STATUS": "CONFIRMED",
+            "CONFIDENCE": "HIGH"
+        },
+        {
+            "NAME": "speed (player)",
+            "BIBLE_VALUE": "16384 в fixed-point (f.java)",
+            "PRIMARY_SOURCE": "g.java:7149-7160 (движение игрока: ускорение 19660*n9/70 и 26214*n9/70, лимиты n5=589824 (36 px/s), n6=786432 (48 px/s)); c.java:34 (16384 = единица)",
+            "STATUS": "CONTRADICTED",
+            "CONFIDENCE": "HIGH",
+            "note": "16384 - единица fixed-point; фактическая скорость игрока 36/48 px/s (в fixed: 589824/786432)."
+        },
+        {
+            "NAME": "entity speeds",
+            "BIBLE_VALUE": "зомби 8192",
+            "PRIMARY_SOURCE": "f.java:870-871 (0x104000=65 px/s, 983040=60 px/s, 1802240=110 px/s, 1474560=90 px/s), f.java:6890-6899 (шаг 819200 = 50 px)",
+            "STATUS": "CONTRADICTED",
+            "CONFIDENCE": "MEDIUM",
+            "note": "Скорости сущностей 50-110 px/s в коде; 8192 - одно из значений velocity-поля (g[13]/g[14]), не скорость."
+        },
+        {
+            "NAME": "diagonal movement",
+            "BIBLE_VALUE": "коэффициент 0.7071 (11585 в fixed-point), INFERRED",
+            "PRIMARY_SOURCE": "НЕ НАЙДЕНО: grep по 11585/0.7071/7071 по всем decompiled - 0 совпадений",
+            "STATUS": "CONTRADICTED",
+            "CONFIDENCE": "HIGH",
+            "note": "Константа 11585 в коде отсутствует. Либо диагональ не нормализуется, либо реализована иначе (например, раздельными осями)."
+        },
+        {
+            "NAME": "damage (weapon)",
+            "BIBLE_VALUE": "Pistol 10, Shotgun 30; formulas_count 2",
+            "PRIMARY_SOURCE": "g.java:21382-21390 (l(n) = l(n,5) + rand(l(n,6))); f.java:3403 (применение)",
+            "STATUS": "PARTIAL",
+            "CONFIDENCE": "MEDIUM",
+            "note": "Одна формула: prop5 + random(0..prop6-1). Значения 10/30 из m9 не воспроизводятся напрямую."
+        },
+        {
+            "NAME": "attack cooldown",
+            "BIBLE_VALUE": "кулдаун атаки 1000 мс",
+            "PRIMARY_SOURCE": "f.java:640-660 (case 16: таймер 800 мс), f.java:6363 (1000 + rand(500))",
+            "STATUS": "UNVERIFIED",
+            "CONFIDENCE": "LOW",
+            "note": "Точный кулдаун атаки не изолирован; найдены 800 мс и случайные 1000-1500 мс."
+        },
+        {
+            "NAME": "hitbox",
+            "BIBLE_VALUE": "24x40 px (player), CONFIRMED",
+            "PRIMARY_SOURCE": "f.java:4979 (5-точечный зонд: (n,n2), (n-5,n2+4), (n+4,n2+4), (n-5,n2-5), (n+4,n2-5)); g.java:21399 (k(type,6)*16 - ширина из данных)",
+            "STATUS": "CONTRADICTED",
+            "CONFIDENCE": "MEDIUM",
+            "note": "Коллизионный зонд ~10x9 px (смещения +/-5/+4); 24x40 в коде не найдено; размеры берутся из таблиц данных."
+        },
+        {
+            "NAME": "camera follow",
+            "BIBLE_VALUE": "cam += (player - cam) * 1/4, INFERRED",
+            "PRIMARY_SOURCE": "g.java:7143-7144 (T = player_x - 0x1E0000 (30 px); U = player_y - 0x280000 (40 px)); g.java:7154-7162 (интерполяция к цели за aa-Z кадров); g.java:7251-7262 (клампы 0..map-240 / 0..map-320)",
+            "STATUS": "CONTRADICTED",
+            "CONFIDENCE": "MEDIUM",
+            "note": "Формулы 1/4 нет; сглаживание - линейная интерполяция по числу кадров; центрирование со смещением (30,40) px."
+        },
+        {
+            "NAME": "collision grid",
+            "BIBLE_VALUE": "X_tile = X_fixed >> 18, CONFIRMED",
+            "PRIMARY_SOURCE": "f.java:6694-6695 ((f2.a.a >> 14) / 16); g.java:5804 (b(n) = n >> 4); g.java:5827-5832 (n / 16)",
+            "STATUS": "INFERRED",
+            "CONFIDENCE": "HIGH",
+            "note": "Математически эквивалентно, но операция выполняется в два шага (>>14 затем /16); операции '>> 18' в коде нет."
+        },
+        {
+            "NAME": "tile size",
+            "BIBLE_VALUE": "16x16 px (2^4)",
+            "PRIMARY_SOURCE": "g.java:5804 (b(n) = n >> 4), g.java:5984-5985 (n / 16)",
+            "STATUS": "CONFIRMED",
+            "CONFIDENCE": "HIGH"
+        },
+        {
+            "NAME": "game loop",
+            "BIBLE_VALUE": "sleep 40 мс, лаг-защита 166 мс, ~25-30 FPS",
+            "PRIMARY_SOURCE": "g.java:35148-35178 (run(): d = now - c; if (d > 166 || d <= 0) d = 166; ... do { l = now - c; Thread.yield(); } while (l >= 0 && l < 40);)",
+            "STATUS": "CONFIRMED",
+            "CONFIDENCE": "HIGH",
+            "note": "Кламп 166 мс подтверждён; ожидание кадра - yield-спин до 40 мс (эквивалент sleep(40))."
+        }
+    ],
+    "summary": {
+        "confirmed": ["fixed-point 14 бит", "тайл 16x16", "главный цикл (166ms/40ms)"],
+        "contradicted": ["player speed 16384", "diagonal 11585", "hitbox 24x40", "camera 1/4"],
+        "inferred_equivalent": ["tile = fixed >> 18 (реально: >>14 затем /16)"],
+        "unverified": ["attack cooldown 1000ms", "weapon damage 10/30"],
+        "requires_runtime": ["точные пороги агро/атаки", "семантика свойств оружия", "скорости в рантайме"]
+    }
+}

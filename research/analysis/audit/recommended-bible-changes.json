@@ -1,0 +1,120 @@
+{
+    "audit": "recommended-bible-changes",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "note": "Список рекомендованных изменений базы знаний. НЕ применён автоматически — только рекомендации. Приоритет: 1 = критический, 2 = важный, 3 = желательный.",
+    "date": "2026-08-14",
+    "changes": [
+        {
+            "CURRENT": "GAME_BIBLE §13: 'Первые 4 байта — количество сегментов A, далее A шт. 32-битных LE смещений'",
+            "RECOMMENDED": "Контейнер: 1 байт счётчик сегментов + A x uint32 LE смещений",
+            "WHY": "Код g.a(String) читает A = a.read() (1 байт), затем по 4 байта LE",
+            "SOURCE": "g.java:4055-4075",
+            "PRIORITY": 1
+        },
+        {
+            "CURRENT": "t0 = 'Graphic remapping and localization'; segment_04 = player sprites; segment_05 = zombie sprites; segment_19 = обводка/палитра",
+            "RECOMMENDED": "t0 = локализация/тексты (CP1251) + служебные данные; переразметить сегменты корректным парсером; спрайты искать в m9 (seg10-14) и m-файлах",
+            "WHY": "Сегменты t0 декодируются как русский текст; extract_t0.py смещает нумерацию (потеря seg0)",
+            "SOURCE": "t0 файл; g.java:4055-4075; extract_t0.py (баг)",
+            "PRIORITY": 1
+        },
+        {
+            "CURRENT": "weapons.json: 2 оружия (Pistol id0, Shotgun id1); GAME_BIBLE: 3 оружия",
+            "RECOMMENDED": "Таблица оружия: 17 записей x 28 свойств из m9 seg5, 5 базовых ID {0,1,9,11,50}; семантика свойств — REQUIRES_RUNTIME",
+            "WHY": "Первичные данные m9 (формат eZ) дают 17 записей",
+            "SOURCE": "m9 seg5; g.java:31831-31910 (eZ), 21382 (l(n))",
+            "PRIORITY": 1
+        },
+        {
+            "CURRENT": "opcodes_count = 10",
+            "RECOMMENDED": "19 опкодов (11-44) с размерами операндов; семантика — REQUIRES_RUNTIME",
+            "WHY": "switch парсера содержит case 11,12,13,21,22,23,24,31,32,34,35,36,37,38,39,41,42,43,44",
+            "SOURCE": "g.java:1720-1870",
+            "PRIORITY": 1
+        },
+        {
+            "CURRENT": "30 уровней COMPLETE/HIGH (levels-master.json); m9 = уровень с 315 диалогами",
+            "RECOMMENDED": "Классификация: m9 = DATA_LEVEL; m5_0/m5_3/m5_4/m5_7/m5_8/m5_9 = STUB; остальные = PARTIAL (по аспектам)",
+            "WHY": "m9 — глобальный data-контейнер (Z(): a('/m9') → eZ/dr); 9-байтовые файлы не содержат контента",
+            "SOURCE": "g.java:13805; размеры файлов JAR",
+            "PRIORITY": 1
+        },
+        {
+            "CURRENT": "entities-master.json: 2 записи (player, common_zombie)",
+            "RECOMMENDED": "Каталог типов по L {0,1,2,3,9,10,11,14,16,20,21,22,23,25,26} + таблицы U(35)/W(13)/V(15) из m9; статусы по ветвлениям",
+            "WHY": "Код ветвится по L (10+ значений); параметры — из таблиц данных",
+            "SOURCE": "f.java:17010; g.java:24693-24699",
+            "PRIORITY": 1
+        },
+        {
+            "CURRENT": "game-state-machine.md: state 3 = геймплей, state 6 = IGP, всего 17 состояний",
+            "RECOMMENDED": "18 ID состояний; state 3 = кинематика (V()); state 6 = активный геймплей (B(): f.b()); IGP — класс b/igp19",
+            "WHY": "switch(a) содержит 18 case; V() исполняет скриптовые шаги; B() обновляет ИИ",
+            "SOURCE": "g.java:714-793, 1107-1140, 3094-3130",
+            "PRIORITY": 1
+        },
+        {
+            "CURRENT": "VISUAL_DNA: 8-bit indexed 256 цветов",
+            "RECOMMENDED": "16-бит 4444 ARGB (расширение в 32-бит) + отдельная система палитр-ремаппинга",
+            "WHY": "a.java расширяет 4-битные каналы в 8-битные; Image.createRGBImage",
+            "SOURCE": "a.java:219-222, 355-360",
+            "PRIORITY": 1
+        },
+        {
+            "CURRENT": "скорость игрока 16384; диагональ 0.7071 (11585)",
+            "RECOMMENDED": "16384 = единица fixed-point; скорости игрока 36/48 px/s (589824/786432); диагональ — не подтверждена",
+            "WHY": "16384 — единица (c.java); скорости из aC(); 11585 отсутствует",
+            "SOURCE": "c.java:34; g.java:7149-7160",
+            "PRIORITY": 1
+        },
+        {
+            "CURRENT": "hitbox player 24x40",
+            "RECOMMENDED": "коллизионный зонд ±5/±4 px (5 точек); размеры из данных (k(type,6)*16)",
+            "WHY": "f.java:4979; g.java:21399",
+            "SOURCE": "f.java:4979",
+            "PRIORITY": 2
+        },
+        {
+            "CURRENT": "камера: cam += (player - cam) * 1/4",
+            "RECOMMENDED": "центрирование T = player - (30px<<14), U = player - (40px<<14) + линейная интерполяция по кадрам; клампы map-240/map-320",
+            "WHY": "g.java:7143-7162, 7251-7262",
+            "SOURCE": "g.java:7143",
+            "PRIORITY": 2
+        },
+        {
+            "CURRENT": "AI: 5 состояний; порог атаки < 16 px; кулдаун 1000 мс",
+            "RECOMMENDED": "состояние = (g[12] ∈ 17+ значений, g[10], флаги g[16], таймеры); порог/кулдаун → REQUIRES_RUNTIME",
+            "WHY": "ветвления f.java; найден таймер 800 мс",
+            "SOURCE": "f.java:1937-3268",
+            "PRIORITY": 2
+        },
+        {
+            "CURRENT": "medkit heal 50; keycard id 12; save slots 3",
+            "RECOMMENDED": "пометить UNVERIFIED/REQUIRES_RUNTIME; данные предметов/дверей — в файлах уровней (b[][]), слоты — параметр B(int)",
+            "WHY": "статически не найдено",
+            "SOURCE": "g.java:8249, 4129",
+            "PRIORITY": 2
+        },
+        {
+            "CURRENT": "анимации: 7 шт., длительности 80-150 мс, 4 направления, спрайты 32x48",
+            "RECOMMENDED": "10+ жёстких записей в g.java + таблица W из m9; длительности/размеры кадров — из V (15 полей); направления — не подтверждены",
+            "WHY": "g.java стат. init (b = 10x13); g.java:24697",
+            "SOURCE": "g.java:24596-24699",
+            "PRIORITY": 2
+        },
+        {
+            "CURRENT": "graphics-master.json: 20 сегментов t0",
+            "RECOMMENDED": "добавить dataIGP (12 сегментов, тексты RU/SO) и palettesAmount.bin как отдельные ресурсы с ролями",
+            "WHY": "файлы присутствуют в JAR, не описаны",
+            "SOURCE": "dataIGP; b.java:2270",
+            "PRIORITY": 3
+        },
+        {
+            "CURRENT": "GAME_BIBLE §15: 'STATICALLY RECONSTRUCTED WITH RUNTIME VALIDATION GAPS'",
+            "RECOMMENDED": "обновить статус: 'PARTIALLY RECONSTRUCTED; критические секции (оружие, скрипты, уровни, ИИ) требуют пересборки и рантайм-валидации'",
+            "WHY": "данный аудит",
+            "SOURCE": "research/analysis/audit/*.json",
+            "PRIORITY": 1
+        }
+    ]
+}

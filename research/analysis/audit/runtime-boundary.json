@@ -1,0 +1,60 @@
+{
+    "audit": "runtime-boundary",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "principle": "Любое утверждение, которое невозможно доказать статически, НЕ считается CONFIRMED.",
+    "date": "2026-08-14",
+    "CONFIRMED_STATIC": [
+        {"id": "fixed_point_14", "claim": "fixed-point, сдвиг 14 бит (16384 = 1.0)", "evidence": "c.java:34-37, 86-92"},
+        {"id": "tile_16", "claim": "тайл 16x16", "evidence": "g.java:5804 (n >> 4)"},
+        {"id": "screen_240x320", "claim": "экран 240x320", "evidence": "g.java:7254/7262 (клампы), 1830 (HUD)"},
+        {"id": "loop_166_40", "claim": "кламп дельты 166 мс, ожидание кадра 40 мс (~25 FPS)", "evidence": "g.java:35148-35178"},
+        {"id": "states_18", "claim": "18 ID состояний {0,1,2,3,4,5,6,7,8,10,11,12,13,16,17,18,19,99}", "evidence": "g.java:714-793"},
+        {"id": "state6_gameplay", "claim": "состояние 6 = активный геймплей (B(): ИИ f.b())", "evidence": "g.java:1107-1140, f.java:2658"},
+        {"id": "hitscan", "claim": "hitscan-стрельба", "evidence": "f.java:3379-3403"},
+        {"id": "player_hp_100", "claim": "HP игрока 0..100", "evidence": "g.java:9040-9045"},
+        {"id": "tick_animation", "claim": "тиковая анимация с loop/once и повторами", "evidence": "c.java:44-130"},
+        {"id": "weapon_table_17", "claim": "таблица оружия m9 seg5: 17 записей, ID {0,1,9,11,50}", "evidence": "m9 seg5 + g.java:31831 (eZ)"},
+        {"id": "entity_params", "claim": "сущности параметризованы таблицами U/W/V/T (35/13/15 полей)", "evidence": "g.java:24596-24699"},
+        {"id": "opcodes_19", "claim": "19 значений опкодов (11-44) в парсере скриптов", "evidence": "g.java:1720-1870"},
+        {"id": "container_1B_4A", "claim": "контейнер: 1 байт счётчик + uint32 LE смещения", "evidence": "g.java:4055-4075"},
+        {"id": "t0_texts", "claim": "t0 = тексты CP1251 (локализация, названия уровней) + данные", "evidence": "t0 сегменты (декодирование CP1251)"},
+        {"id": "m9_data", "claim": "m9 = глобальный data-контейнер (оружие, таблицы, графика)", "evidence": "g.java:13805 (Z(): a('/m9') -> eZ(), dr())"},
+        {"id": "stub_levels", "claim": "m5_0/m5_3/m5_4/m5_7/m5_8/m5_9 = 9-байтовые заглушки", "evidence": "размеры файлов"},
+        {"id": "pixel_4444", "claim": "пиксели 16-бит 4444 ARGB -> 32-бит ARGB", "evidence": "a.java:219-222"},
+        {"id": "rms", "claim": "сохранения через RMS RecordStore ('a', 'igp19')", "evidence": "g.java:4129, b.java:2270"},
+        {"id": "jsr135", "claim": "аудио JSR-135 (типы tone-seq/wav/midi/mmf/amr)", "evidence": "g.java стат. init (b = String[] типов), 4451 (VolumeControl)"},
+        {"id": "jsr256", "claim": "акселерометр JSR-256 (3 канала, тряска)", "evidence": "e.java (SensorManager/SensorConnection)"}
+    ],
+    "INFERRED_STATIC": [
+        {"id": "tile_index_18", "claim": "индекс тайла = fixed >> 18", "evidence": "эквивалент (>>14)/16; операции >>18 в коде нет", "confidence": "HIGH"},
+        {"id": "weapon_props", "claim": "свойства оружия: prop5=урон базы, prop6=рандом, prop2=использует патроны, prop13=магазин, prop18=id", "evidence": "g.java:21382, f.java:6529", "confidence": "MEDIUM"},
+        {"id": "camera_offset", "claim": "камера центрируется со смещением (30,40) px от игрока", "evidence": "g.java:7143-7144 (0x1E0000/0x280000)", "confidence": "MEDIUM"},
+        {"id": "entity_states", "claim": "поле g[12] = состояние; 100+ = терминальные", "evidence": "f.java:3242-3255 и др.", "confidence": "MEDIUM"},
+        {"id": "level_graphics", "claim": "m-файлы содержат графику уровня (крупные бинарные сегменты)", "evidence": "m3_0 seg6-9 (36-122 КБ), m9 seg10-14", "confidence": "MEDIUM"},
+        {"id": "m9_dialogues_315_false", "claim": "'315 диалогов m9' = на самом деле записи таблиц данных", "evidence": "структура m9", "confidence": "MEDIUM"}
+    ],
+    "REQUIRES_RUNTIME": [
+        {"id": "ai_pathfinding", "claim": "эвристика обхода препятствий, edge cases", "evidence": "runtime-gaps.json (ai_pathfinding)"},
+        {"id": "attack_threshold", "claim": "порог атаки '16 px'", "evidence": "262144 встречается в f.java:5651/8360/8380 в неидентифицированных контекстах"},
+        {"id": "attack_cooldown", "claim": "кулдаун атаки 1000 мс", "evidence": "найдены 800 мс и 1000+rand(500)"},
+        {"id": "medkit_heal_50", "claim": "аптечка лечит 50", "evidence": "не найдено статически"},
+        {"id": "keycard_12", "claim": "keycard id 12", "evidence": "не найдено статически"},
+        {"id": "save_slots", "claim": "3 слота сохранений", "evidence": "RMS подтверждён, число слотов нет"},
+        {"id": "weapon_semantics", "claim": "полная семантика 28 свойств оружия", "evidence": "нужна трассировка стрельбы/магазина"},
+        {"id": "opcode_semantics", "claim": "семантика 19 опкодов скриптов", "evidence": "известны только размеры операндов"},
+        {"id": "audio_volume", "claim": "громкость звуков на разных драйверах", "evidence": "runtime-gaps.json (audio_volume)"},
+        {"id": "outline_shadow", "claim": "обводка 1px и тень-эллипс", "evidence": "не подтверждено статически; нужен рендер"},
+        {"id": "frame_durations", "claim": "длительности кадров анимаций (80-150 мс)", "evidence": "в данных W/V"},
+        {"id": "sprite_dims", "claim": "размеры кадров (32x48?)", "evidence": "в данных V"},
+        {"id": "stub_levels_status", "claim": "являются ли m5_* заглушки игровыми уровнями", "evidence": "нужен запуск/навигация по уровням"},
+        {"id": "state_semantics", "claim": "точная семантика всех 18 состояний и переходов", "evidence": "частично исправлено, переходы требуют трассировки"},
+        {"id": "item_types", "claim": "полный список типов предметов (b[][0])", "evidence": "только тип 11 подтверждён"}
+    ],
+    "UNKNOWN": [
+        {"id": "level_content", "claim": "полное содержимое каждого уровня (карта/диалоги/скрипты)", "evidence": "PARTIAL"},
+        {"id": "igp_state", "claim": "какое состояние соответствует IGP-порталу", "evidence": "класс b + igp19; в switch не найден"},
+        {"id": "formula_count_2", "claim": "'2 формулы урона'", "evidence": "найдена 1 формула"},
+        {"id": "player_diagonal_norm", "claim": "нормализация диагонали", "evidence": "11585 отсутствует"},
+        {"id": "initial_weapon", "claim": "стартовое оружие 'Pistol'", "evidence": "данные/сохранение"}
+    ]
+}
