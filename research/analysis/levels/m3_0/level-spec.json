@@ -1,94 +1,38 @@
 {
     "level_name": "m3_0",
     "map": {
+        "level_name": "m3_0",
         "width_tiles": 110,
         "height_tiles": 82,
         "tile_size_pixels": 16,
-        "layers_count": 11
+        "layer_count": 11,
+        "camera_limits": {
+            "min_x": 0,
+            "max_x": 1760,
+            "min_y": 0,
+            "max_y": 1312
+        }
     },
     "collision": {
-        "source": "segment_01.bin",
-        "interactive_colliders": [
-            {
-                "id": 1,
-                "name": "lobby_corridor_door",
-                "tile_x": 25,
-                "tile_y": 50,
-                "type": "locked_door",
-                "required_key": 12
-            }
-        ]
+        "level": "m3_0",
+        "width_tiles": 110,
+        "height_tiles": 82,
+        "solid_tiles_count": 240,
+        "walkable_tiles_count": 8780
     },
     "entities": [
         {
             "id": 0,
             "type": "Player",
-            "x_tile": 27,
-            "y_tile": 62,
+            "x_tile": 55,
+            "y_tile": 41,
             "health": 100,
-            "state": "IDLE"
-        },
-        {
-            "id": 1,
-            "type": "Common_Zombie",
-            "x_tile": 56,
-            "y_tile": 12,
-            "health": 40,
-            "state": "WALK"
-        },
-        {
-            "id": 7,
-            "type": "Keycard_Item",
-            "x_tile": 18,
-            "y_tile": 16,
-            "health": 0,
-            "state": "IDLE"
+            "state": "IDLE",
+            "confidence": "HIGH"
         }
     ],
-    "triggers": [
-        {
-            "id": 1,
-            "type": "proximity_trigger",
-            "tile_x": 25,
-            "tile_y": 50,
-            "on_enter_action": "CHECK_KEYCARD"
-        }
-    ],
-    "dialogue": [
-        {
-            "id": 0,
-            "speaker": "System",
-            "text": "Дверь заблокирована. Нужна ключ-карта доступа."
-        },
-        {
-            "id": 2,
-            "speaker": "Agent",
-            "text": "Черт! Макклейн не преувеличивал, здесь настоящий ад!!"
-        }
-    ],
-    "graphics": [
-        {
-            "segment_id": 4,
-            "type": "floor_tiles",
-            "file": "segment_04.bin"
-        },
-        {
-            "segment_id": 5,
-            "type": "wall_sprites",
-            "file": "segment_05.bin"
-        }
-    ],
-    "objectives": [
-        {
-            "id": 1,
-            "text": "Выбраться из полицейского участка",
-            "status": "ACTIVE"
-        }
-    ],
-    "transitions": [
-        {
-            "target_level": "m4_0",
-            "trigger_tile": {"x": 100, "y": 10}
-        }
-    ]
+    "triggers": [],
+    "dialogue": [],
+    "graphics": [],
+    "objectives": []
 }

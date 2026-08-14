@@ -1,0 +1,8 @@
+{
+    "level": "m6_3",
+    "graphics_segments": [
+        "segment_04.bin",
+        "segment_05.bin"
+    ],
+    "palette": "palettesAmount.bin"
+}

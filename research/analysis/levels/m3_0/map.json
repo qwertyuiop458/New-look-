@@ -9,42 +9,5 @@
         "max_x": 1760,
         "min_y": 0,
         "max_y": 1312
-    },
-    "layers": [
-        {
-            "id": 0,
-            "name": "ground_floor",
-            "type": "visual_background",
-            "source_file": "segment_00.bin",
-            "confidence": "HIGH"
-        },
-        {
-            "id": 1,
-            "name": "walls_and_assets",
-            "type": "visual_foreground",
-            "source_file": "segment_00.bin",
-            "confidence": "HIGH"
-        },
-        {
-            "id": 2,
-            "name": "collisions",
-            "type": "physics_collision",
-            "source_file": "segment_01.bin",
-            "confidence": "HIGH"
-        },
-        {
-            "id": 3,
-            "name": "entity_spawns",
-            "type": "spawn_layer",
-            "source_file": "segment_02.bin",
-            "confidence": "HIGH"
-        },
-        {
-            "id": 4,
-            "name": "script_triggers",
-            "type": "trigger_layer",
-            "source_file": "segment_03.bin",
-            "confidence": "HIGH"
-        }
-    ]
+    }
 }

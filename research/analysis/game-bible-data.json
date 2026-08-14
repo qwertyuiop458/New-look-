@@ -1,0 +1,1675 @@
+{
+    "levels": {
+        "m0": {
+            "spec": {
+                "level_name": "m0",
+                "map": {
+                    "level_name": "m0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 3,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m0",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m0",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m1": {
+            "spec": {
+                "level_name": "m1",
+                "map": {
+                    "level_name": "m1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 3,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m1",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m1",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m10": {
+            "spec": {
+                "level_name": "m10",
+                "map": {
+                    "level_name": "m10",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 6,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m10",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m10",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m10",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m11_0": {
+            "spec": {
+                "level_name": "m11_0",
+                "map": {
+                    "level_name": "m11_0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 11,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m11_0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m11_0",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m11_0",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m11_1": {
+            "spec": {
+                "level_name": "m11_1",
+                "map": {
+                    "level_name": "m11_1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 8,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m11_1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m11_1",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m11_1",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m12": {
+            "spec": {
+                "level_name": "m12",
+                "map": {
+                    "level_name": "m12",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 4,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m12",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m12",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m12",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m13_1": {
+            "spec": {
+                "level_name": "m13_1",
+                "map": {
+                    "level_name": "m13_1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 2,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m13_1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m13_1",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m13_1",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m13_2": {
+            "spec": {
+                "level_name": "m13_2",
+                "map": {
+                    "level_name": "m13_2",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 32,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m13_2",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m13_2",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m13_2",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m2": {
+            "spec": {
+                "level_name": "m2",
+                "map": {
+                    "level_name": "m2",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 6,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m2",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m2",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m2",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m3_0": {
+            "spec": {
+                "level_name": "m3_0",
+                "map": {
+                    "level_name": "m3_0",
+                    "width_tiles": 110,
+                    "height_tiles": 82,
+                    "tile_size_pixels": 16,
+                    "layer_count": 11,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1760,
+                        "min_y": 0,
+                        "max_y": 1312
+                    }
+                },
+                "collision": {
+                    "level": "m3_0",
+                    "width_tiles": 110,
+                    "height_tiles": 82,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 8780
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 55,
+                        "y_tile": 41,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m3_0",
+                "width_tiles": 110,
+                "height_tiles": 82,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 8780
+            },
+            "resource_links": {
+                "level": "m3_0",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m4_0": {
+            "spec": {
+                "level_name": "m4_0",
+                "map": {
+                    "level_name": "m4_0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 10,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m4_0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m4_0",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m4_0",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_0": {
+            "spec": {
+                "level_name": "m5_0",
+                "map": {
+                    "level_name": "m5_0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 3,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_0",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_0",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_1": {
+            "spec": {
+                "level_name": "m5_1",
+                "map": {
+                    "level_name": "m5_1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 11,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_1",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_1",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_2": {
+            "spec": {
+                "level_name": "m5_2",
+                "map": {
+                    "level_name": "m5_2",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 4,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_2",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_2",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_2",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_3": {
+            "spec": {
+                "level_name": "m5_3",
+                "map": {
+                    "level_name": "m5_3",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 3,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_3",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_3",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_3",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_4": {
+            "spec": {
+                "level_name": "m5_4",
+                "map": {
+                    "level_name": "m5_4",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 3,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_4",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_4",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_4",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_5": {
+            "spec": {
+                "level_name": "m5_5",
+                "map": {
+                    "level_name": "m5_5",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 4,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_5",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_5",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_5",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_6": {
+            "spec": {
+                "level_name": "m5_6",
+                "map": {
+                    "level_name": "m5_6",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 6,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_6",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_6",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_6",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_7": {
+            "spec": {
+                "level_name": "m5_7",
+                "map": {
+                    "level_name": "m5_7",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 3,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_7",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_7",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_7",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_8": {
+            "spec": {
+                "level_name": "m5_8",
+                "map": {
+                    "level_name": "m5_8",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 3,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_8",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_8",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_8",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m5_9": {
+            "spec": {
+                "level_name": "m5_9",
+                "map": {
+                    "level_name": "m5_9",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 3,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m5_9",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m5_9",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m5_9",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m6_0": {
+            "spec": {
+                "level_name": "m6_0",
+                "map": {
+                    "level_name": "m6_0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 19,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m6_0",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m6_0",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m6_0",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m6_1": {
+            "spec": {
+                "level_name": "m6_1",
+                "map": {
+                    "level_name": "m6_1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 15,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m6_1",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m6_1",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m6_1",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m6_2": {
+            "spec": {
+                "level_name": "m6_2",
+                "map": {
+                    "level_name": "m6_2",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 15,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m6_2",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m6_2",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m6_2",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m6_3": {
+            "spec": {
+                "level_name": "m6_3",
+                "map": {
+                    "level_name": "m6_3",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 15,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m6_3",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m6_3",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m6_3",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m6_4": {
+            "spec": {
+                "level_name": "m6_4",
+                "map": {
+                    "level_name": "m6_4",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 15,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m6_4",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m6_4",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m6_4",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m6_5": {
+            "spec": {
+                "level_name": "m6_5",
+                "map": {
+                    "level_name": "m6_5",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 15,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m6_5",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m6_5",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m6_5",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m7": {
+            "spec": {
+                "level_name": "m7",
+                "map": {
+                    "level_name": "m7",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 9,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m7",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m7",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m7",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m8": {
+            "spec": {
+                "level_name": "m8",
+                "map": {
+                    "level_name": "m8",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 7,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m8",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m8",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m8",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        },
+        "m9": {
+            "spec": {
+                "level_name": "m9",
+                "map": {
+                    "level_name": "m9",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "tile_size_pixels": 16,
+                    "layer_count": 16,
+                    "camera_limits": {
+                        "min_x": 0,
+                        "max_x": 1024,
+                        "min_y": 0,
+                        "max_y": 1024
+                    }
+                },
+                "collision": {
+                    "level": "m9",
+                    "width_tiles": 64,
+                    "height_tiles": 64,
+                    "solid_tiles_count": 240,
+                    "walkable_tiles_count": 3856
+                },
+                "entities": [
+                    {
+                        "id": 0,
+                        "type": "Player",
+                        "x_tile": 32,
+                        "y_tile": 32,
+                        "health": 100,
+                        "state": "IDLE",
+                        "confidence": "HIGH"
+                    }
+                ],
+                "triggers": [],
+                "dialogue": [],
+                "graphics": [],
+                "objectives": []
+            },
+            "collisions_meta": {
+                "level": "m9",
+                "width_tiles": 64,
+                "height_tiles": 64,
+                "solid_tiles_count": 240,
+                "walkable_tiles_count": 3856
+            },
+            "resource_links": {
+                "level": "m9",
+                "graphics_segments": [
+                    "segment_04.bin",
+                    "segment_05.bin"
+                ],
+                "palette": "palettesAmount.bin"
+            }
+        }
+    },
+    "entities_registry": [
+        "Player",
+        "Common_Zombie",
+        "Runner_Zombie",
+        "Spitter_Zombie",
+        "Boss_Zombie",
+        "Keycard_Item",
+        "Health_Pack",
+        "Ammo_Pickup"
+    ],
+    "mechanics": [
+        "Fixed-point movement",
+        "Tile collision detection",
+        "JSR-256 Accelerometer shake detection",
+        "RMS Game progress profile save slots"
+    ],
+    "resource_formats": {
+        "pack_container": "1-byte count (A), followed by A 32-bit Little-Endian offsets",
+        "palette_format": "1-byte count (N), followed by N blocks of 1-byte length and raw indexes color-remapping",
+        "graphics_decompression": "RLE Format 10225, RLE Format 25840, 4-bit, 3-bit, 2-bit pixel formats"
+    }
+}

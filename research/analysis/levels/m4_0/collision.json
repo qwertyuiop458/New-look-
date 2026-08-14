@@ -1,0 +1,7 @@
+{
+    "level": "m4_0",
+    "width_tiles": 64,
+    "height_tiles": 64,
+    "solid_tiles_count": 240,
+    "walkable_tiles_count": 3856
+}
