@@ -1,0 +1,9 @@
+{
+    "interactive_objects": [
+        {
+            "id": 10,
+            "name": "Power Switch",
+            "on_trigger_action": "DISABLE_ELECTRICITY_GRID"
+        }
+    ]
+}

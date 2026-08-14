@@ -1,0 +1,18 @@
+{
+    "player": {
+        "width": 24,
+        "height": 40
+    },
+    "common_zombie": {
+        "width": 24,
+        "height": 40
+    },
+    "keycard_item": {
+        "width": 16,
+        "height": 16
+    },
+    "locked_door": {
+        "width": 16,
+        "height": 16
+    }
+}

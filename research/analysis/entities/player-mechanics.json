@@ -1,0 +1,29 @@
+{
+    "movement": {
+        "speed_fixed": 16384,
+        "diagonal_modifier": "0.7071 (11585 fixed-point)",
+        "collision_box_width": 24,
+        "collision_box_height": 40
+    },
+    "health": {
+        "initial": 100,
+        "invulnerability_duration_ms": 1000
+    },
+    "weapons_inventory": [
+        {
+            "id": 0,
+            "name": "Handgun",
+            "unlocked": true
+        },
+        {
+            "id": 1,
+            "name": "Shotgun",
+            "unlocked": false
+        },
+        {
+            "id": 2,
+            "name": "Assault Rifle",
+            "unlocked": false
+        }
+    ]
+}

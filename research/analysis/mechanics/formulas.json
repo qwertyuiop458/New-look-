@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Fixed-Point to Grid Tile",
+        "expression": "tile_coordinate = fixed_coordinate >> 18",
+        "source_class": "f.java",
+        "source_method": "checkCollision",
+        "confidence": "HIGH"
+    },
+    {
+        "name": "Raycast Bullet Hit",
+        "expression": "hit = bullet_line.intersects(zombie_hitbox)",
+        "source_class": "f.java",
+        "source_method": "registerShot",
+        "confidence": "HIGH"
+    }
+]

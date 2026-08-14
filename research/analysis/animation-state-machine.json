@@ -1,0 +1,13 @@
+{
+    "player": {
+        "IDLE": 0,
+        "WALK": 1,
+        "SHOOT": 2,
+        "RELOAD": 3
+    },
+    "zombie": {
+        "WALK": 10,
+        "ATTACK": 11,
+        "DIE": 12
+    }
+}

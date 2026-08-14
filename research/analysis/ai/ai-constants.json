@@ -1,0 +1,7 @@
+{
+    "common_zombie_speed": 8192,
+    "runner_zombie_speed": 16384,
+    "boss_zombie_speed": 6144,
+    "attack_distance_threshold_px": 16,
+    "attack_cooldown_ms": 1000
+}

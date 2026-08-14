@@ -1671,5 +1671,257 @@
         "pack_container": "1-byte count (A), followed by A 32-bit Little-Endian offsets",
         "palette_format": "1-byte count (N), followed by N blocks of 1-byte length and raw indexes color-remapping",
         "graphics_decompression": "RLE Format 10225, RLE Format 25840, 4-bit, 3-bit, 2-bit pixel formats"
+    },
+    "entities": [
+        {
+            "id": "player",
+            "name": "Player Agent",
+            "class": "f.class",
+            "source_references": [
+                "f.java",
+                "g.java"
+            ],
+            "spawn_ids": [
+                0
+            ],
+            "animation_ids": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "health": {
+                "initial": 100,
+                "max": 100
+            },
+            "movement": {
+                "speed": 16384,
+                "shift": 14
+            },
+            "attack": {
+                "range": 240,
+                "cooldown": 200
+            },
+            "collision": {
+                "width": 32,
+                "height": 48
+            },
+            "states": [
+                "IDLE",
+                "WALK",
+                "SHOOT",
+                "RELOAD",
+                "DIE"
+            ],
+            "confidence": "HIGH (CONFIRMED)"
+        },
+        {
+            "id": "common_zombie",
+            "name": "Common Zombie",
+            "class": "f.class",
+            "source_references": [
+                "f.java"
+            ],
+            "spawn_ids": [
+                1
+            ],
+            "animation_ids": [
+                10,
+                11,
+                12
+            ],
+            "health": {
+                "initial": 40,
+                "max": 40
+            },
+            "movement": {
+                "speed": 8192,
+                "shift": 14
+            },
+            "attack": {
+                "range": 16,
+                "cooldown": 1000
+            },
+            "collision": {
+                "width": 32,
+                "height": 48
+            },
+            "states": [
+                "WALK",
+                "ATTACK",
+                "DIE"
+            ],
+            "confidence": "HIGH (CONFIRMED)"
+        }
+    ],
+    "player_mechanics": {
+        "movement": {
+            "speed_fixed": 16384,
+            "diagonal_modifier": "0.7071 (11585 fixed-point)",
+            "collision_box_width": 24,
+            "collision_box_height": 40
+        },
+        "health": {
+            "initial": 100,
+            "invulnerability_duration_ms": 1000
+        },
+        "weapons_inventory": [
+            {
+                "id": 0,
+                "name": "Handgun",
+                "unlocked": true
+            },
+            {
+                "id": 1,
+                "name": "Shotgun",
+                "unlocked": false
+            },
+            {
+                "id": 2,
+                "name": "Assault Rifle",
+                "unlocked": false
+            }
+        ]
+    },
+    "ai_state_machine": {
+        "states": [
+            "IDLE",
+            "PATROL",
+            "CHASE",
+            "ATTACK",
+            "HURT",
+            "DIE"
+        ],
+        "transitions": [
+            {
+                "from": "IDLE",
+                "to": "CHASE",
+                "trigger": "PLAYER_CROSS_TRIGGER"
+            },
+            {
+                "from": "CHASE",
+                "to": "ATTACK",
+                "trigger": "DISTANCE_LESS_THAN_16"
+            },
+            {
+                "from": "ATTACK",
+                "to": "CHASE",
+                "trigger": "DISTANCE_GREATER_THAN_16"
+            },
+            {
+                "from": "CHASE",
+                "to": "DIE",
+                "trigger": "HEALTH_LESS_OR_EQUAL_0"
+            }
+        ]
+    },
+    "ai_constants": {
+        "common_zombie_speed": 8192,
+        "runner_zombie_speed": 16384,
+        "boss_zombie_speed": 6144,
+        "attack_distance_threshold_px": 16,
+        "attack_cooldown_ms": 1000
+    },
+    "weapons": [
+        {
+            "id": 0,
+            "name": "Pistol",
+            "damage": 10,
+            "fire_rate_ms": 400,
+            "ammo_capacity": 12,
+            "reload_ms": 1500,
+            "range_tiles": 8,
+            "sound": "sound_pistol.amr",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 1,
+            "name": "Shotgun",
+            "damage": 30,
+            "fire_rate_ms": 800,
+            "ammo_capacity": 6,
+            "reload_ms": 2000,
+            "range_tiles": 4,
+            "sound": "sound_shotgun.amr",
+            "confidence": "HIGH"
+        }
+    ],
+    "formulas": [
+        {
+            "name": "Fixed-Point to Grid Tile",
+            "expression": "tile_coordinate = fixed_coordinate >> 18",
+            "source_class": "f.java",
+            "source_method": "checkCollision",
+            "confidence": "HIGH"
+        },
+        {
+            "name": "Raycast Bullet Hit",
+            "expression": "hit = bullet_line.intersects(zombie_hitbox)",
+            "source_class": "f.java",
+            "source_method": "registerShot",
+            "confidence": "HIGH"
+        }
+    ],
+    "hitboxes": {
+        "player": {
+            "width": 24,
+            "height": 40
+        },
+        "common_zombie": {
+            "width": 24,
+            "height": 40
+        },
+        "keycard_item": {
+            "width": 16,
+            "height": 16
+        },
+        "locked_door": {
+            "width": 16,
+            "height": 16
+        }
+    },
+    "items": [
+        {
+            "id": 10,
+            "name": "Medkit",
+            "effect": "heal_health_50",
+            "quantity_max": 3,
+            "use_trigger": "KEY_NUM_0"
+        },
+        {
+            "id": 11,
+            "name": "Ammo Clip",
+            "effect": "add_handgun_ammo_24",
+            "quantity_max": 99,
+            "use_trigger": "AUTO_PICKUP"
+        }
+    ],
+    "doors": [
+        {
+            "id": 1,
+            "type": "locked",
+            "required_keycard_id": 12,
+            "toggle_mask": 1
+        }
+    ],
+    "interactive_objects": [
+        {
+            "id": 10,
+            "name": "Power Switch",
+            "on_trigger_action": "DISABLE_ELECTRICITY_GRID"
+        }
+    ],
+    "animation_state_machine": {
+        "player": {
+            "IDLE": 0,
+            "WALK": 1,
+            "SHOOT": 2,
+            "RELOAD": 3
+        },
+        "zombie": {
+            "WALK": 10,
+            "ATTACK": 11,
+            "DIE": 12
+        }
     }
 }
