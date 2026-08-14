@@ -1,0 +1,83 @@
+{
+    "mechanics": {
+        "movement": {
+            "speed": 16384,
+            "status": "CONFIRMED",
+            "evidence": "f.java"
+        },
+        "combat": {
+            "projectiles": "hitscan",
+            "status": "CONFIRMED",
+            "evidence": "f.java"
+        },
+        "weapons": {
+            "unlocked_initial": "Pistol",
+            "status": "CONFIRMED",
+            "evidence": "g.java"
+        },
+        "damage": {
+            "formulas_count": 2,
+            "status": "CONFIRMED",
+            "evidence": "f.java"
+        },
+        "health": {
+            "player_max": 100,
+            "status": "CONFIRMED",
+            "evidence": "g.java"
+        },
+        "AI": {
+            "chase_distance": 16,
+            "status": "CONFIRMED",
+            "evidence": "f.java"
+        },
+        "collision": {
+            "math": "fixed_point_shift_18",
+            "status": "CONFIRMED",
+            "evidence": "f.java"
+        },
+        "camera": {
+            "smoothing": 0.25,
+            "status": "INFERRED",
+            "evidence": "g.java"
+        },
+        "items": {
+            "medkit_heal": 50,
+            "status": "CONFIRMED",
+            "evidence": "g.java"
+        },
+        "doors": {
+            "keycard_required": 12,
+            "status": "CONFIRMED",
+            "evidence": "g.java"
+        },
+        "triggers": {
+            "opcodes_count": 10,
+            "status": "CONFIRMED",
+            "evidence": "g.java"
+        },
+        "animation": {
+            "cadence": "ticks_based",
+            "status": "CONFIRMED",
+            "evidence": "c.java"
+        },
+        "progression": {
+            "levels_count": 30,
+            "status": "CONFIRMED",
+            "evidence": "all-levels-index.json"
+        },
+        "save": {
+            "slots": 3,
+            "status": "CONFIRMED",
+            "evidence": "b.java"
+        }
+    },
+    "visual_dna_key_values": {
+        "resolution": "240x320 px (CONFIRMED)",
+        "tile_dimensions": "16x16 px (CONFIRMED)",
+        "sprite_dimensions": "32x48 px (CONFIRMED)"
+    },
+    "technical_dna_key_values": {
+        "fixed_point_shift": "14 bits (CONFIRMED)",
+        "collision_grid_shift": "18 bits (CONFIRMED)"
+    }
+}

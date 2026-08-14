@@ -1,0 +1,80 @@
+{
+    "entities": [
+        {
+            "id": "player",
+            "type": "Player Character",
+            "java_class": "f.class",
+            "states": [
+                "IDLE",
+                "WALK",
+                "SHOOT",
+                "RELOAD",
+                "DIE"
+            ],
+            "AI": "Manual Keyboard Input",
+            "animations": [
+                "player_idle",
+                "player_walk",
+                "player_shoot",
+                "player_reload"
+            ],
+            "sprites": "segment_06.bin",
+            "hitbox": {
+                "width": 24,
+                "height": 40
+            },
+            "health": 100,
+            "damage": "Weapon-dependent",
+            "movement": {
+                "speed": 16384,
+                "shift": 14
+            },
+            "spawn": "segment_02.bin",
+            "levels_used": [
+                "m0-m13_2"
+            ],
+            "interactions": [
+                "locked_doors",
+                "keycards",
+                "ammo_pickups"
+            ],
+            "evidence": "f.java line 1925"
+        },
+        {
+            "id": "common_zombie",
+            "type": "Common Zombie (Walker)",
+            "java_class": "f.class",
+            "states": [
+                "WALK",
+                "ATTACK",
+                "DIE"
+            ],
+            "AI": "Heuristic Pathfinding Grid chasing player",
+            "animations": [
+                "zombie_walk",
+                "zombie_attack",
+                "zombie_die"
+            ],
+            "sprites": "segment_05.bin",
+            "hitbox": {
+                "width": 24,
+                "height": 40
+            },
+            "health": 40,
+            "damage": 10,
+            "movement": {
+                "speed": 8192,
+                "shift": 14
+            },
+            "spawn": "segment_02.bin",
+            "levels_used": [
+                "m0-m13_2"
+            ],
+            "interactions": [
+                "bites_player",
+                "gets_shot"
+            ],
+            "evidence": "f.java line 254"
+        }
+    ]
+}
