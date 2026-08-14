@@ -1,0 +1,381 @@
+# Технический отчёт по декомпиляции класса `f`
+
+## Базовая информация
+*   **Имя класса:** `f.class`
+*   **Размер исходного .class файла:** `100180` байт
+*   **Статус декомпиляции:** `УСПЕШНО`
+*   **Количество методов:** `288`
+*   **Количество полей:** `64`
+*   **Внутренние / анонимные классы:** `Нет`
+
+---
+
+## Зависимости
+*   **Другие игровые классы:** `a`, `b`, `c`, `d`, `e`, `g`
+*   **Библиотеки J2ME (javax.microedition.*):** `javax.microedition.lcdui.Graphics`
+
+---
+
+## Предупреждения и сообщения CFR Decompiler
+> /* * Decompiled with CFR 0.152. * * Could not load the following classes: *  java.lang.Integer *  java.lang.Math *  java.lang.Object *  java.lang.System *  javax.microedition.lcdui.Graphics */
+> /* * Duplicate member names - consider using --renamedupmembers true */
+
+---
+
+## Список объявленных полей
+- `public static int a = 0`
+- `public static int b`
+- `public static int c`
+- `public static int d`
+- `public static int e`
+- `public static int f`
+- `public static int g`
+- `public static int h`
+- `public static int i`
+- `public static int j`
+- `public static int k`
+- `public static int l`
+- `public static int m`
+- `public static int n`
+- `public static int o`
+- `public static boolean a`
+- `public static int p`
+- `public static int q`
+- `public static int r`
+- `public static int s`
+- `public static f a`
+- `public static int t`
+- `public static boolean b`
+- `public static int u`
+- `public static int v`
+- `public static int w`
+- `public static int x`
+- `public static boolean c`
+- `public static boolean d`
+- `public static boolean e`
+- `public static int y`
+- `public static int z`
+- `public static c[] a`
+- `public static int[] a`
+- `public static byte[][] a`
+- `public static int[] b`
+- `public static int[] c`
+- `public static int A`
+- `public static int B`
+- `public static int[] d`
+- `public static int[][] a`
+- `public static f b`
+- `public static int C`
+- `public static int D`
+- `public static boolean f`
+- `public static boolean g`
+- `public static int E`
+- `public static boolean h`
+- `public static boolean i`
+- `public static int F`
+- `public static int G`
+- `public static int H`
+- `public static int I`
+- `public static int[] e`
+- `public static f c`
+- `public static int J`
+- `public static int[] f`
+- `public static boolean j`
+- `public static boolean k`
+- `public c a`
+- `public int K`
+- `public int L`
+- `public int M`
+- `public int[] g`
+
+---
+
+## Список сигнатур методов
+- `public static void a()`
+- `private static void a(c c2)`
+- `public static int a(int n)`
+- `private static boolean b()`
+- `public static void a(f f2, int n)`
+- `public static void a(f f2)`
+- `private static void i()`
+- `private static int b(int n, int n2)`
+- `private static boolean a(f f2, boolean bl, int n)`
+- `private static boolean c()`
+- `private static void w(f f2)`
+- `public static boolean a(f var0)`
+- `public static void b(f f2)`
+- `private static boolean m(f f2)`
+- `private static void x(f f2)`
+- `public static boolean a()`
+- `private static void y(f f2)`
+- `public static void a(int n, int[] nArray)`
+- `public static void b(f f2, int n)`
+- `public static int a(int n, int n2)`
+- `private static void a(f f2, int n, boolean bl)`
+- `public static void b()`
+- `private static boolean a(int n)`
+- `private static boolean n(f f2)`
+- `private static int b(int n)`
+- `public static void a(int n, f f2)`
+- `public static void a(int n)`
+- `public static int a()`
+- `public static void c(f f2)`
+- `private static int c(int n)`
+- `public static int a(f var0, int var1_1, int var2_2, int var3_3, int var4_4, int var5_5)`
+- `public static int a(f f2, f f3, boolean bl)`
+- `private static int a(f f2, f f3, boolean bl, boolean bl2)`
+- `private static boolean b(f f2, int n, int n2)`
+- `private static boolean o(f f2)`
+- `private static boolean a(f f2, int n, int n2, int n3, int n4)`
+- `public static boolean a(int n, int n2)`
+- `public static boolean a(f f2, f f3)`
+- `private static void c(Graphics graphics, f f2)`
+- `private static void a(Graphics graphics, f f2, int n, int n2, boolean bl)`
+- `private static void b(f f2, f f3, boolean bl)`
+- `private static void a(int n, int n2)`
+- `private static void b(Graphics graphics, f f2, boolean bl)`
+- `private static boolean d()`
+- `private static boolean e()`
+- `private static void z(f f2)`
+- `public static int[] a(f f2, boolean bl, boolean bl2)`
+- `public static int a(f f2)`
+- `private static int f(f f2)`
+- `public static void d(f f2)`
+- `private static void a(int n, int[] nArray, int n2, int n3)`
+- `public static boolean b(f f2)`
+- `public static void a(int[] nArray)`
+- `private static void a(int[] nArray, int n, int n2)`
+- `public static void a(Graphics graphics, int[] nArray, int n, int n2)`
+- `private static void e(int[] nArray)`
+- `private static boolean a(int[] nArray)`
+- `public static void b(int[] nArray)`
+- `public static void a(Graphics graphics, int[] nArray)`
+- `private static void b(int[] nArray, int n, int n2)`
+- `private static void c(int[] nArray, int n, int n2)`
+- `public static void a(Graphics graphics, int[] nArray, int n, int n2, boolean bl)`
+- `private static void b(Graphics var0, int[] var1_1, int var2_2, int var3_3)`
+- `public static int[] a(int[] nArray)`
+- `private static boolean a(int[] nArray, int n, int n2)`
+- `public static boolean c(f f2)`
+- `public static void a(f f2, int n, int n2)`
+- `private static void A(f f2)`
+- `public static f a(int n, int n2, int[] nArray, int n3)`
+- `private static f a(int n, int n2, int n3, int n4)`
+- `private static void d(int[] nArray, int n, int n2)`
+- `public static void c(int[] nArray)`
+- `public static void b(f f2, int n, int n2)`
+- `private static void a(int[] nArray, int n, boolean bl, boolean bl2, int n2, int n3, boolean bl3)`
+- `public static void a(int[] var0, int var1_1, int var2_2, int var3_3)`
+- `private static void f(int[] nArray)`
+- `public static int[] b(int[] nArray)`
+- `public static void a(int[] nArray, int n, int n2, boolean bl, boolean bl2)`
+- `private static void e(int[] nArray, int n, int n2)`
+- `public static void c()`
+- `private static void b(f f2, int n, int n2, int n3)`
+- `private static void a(f var0, int var1_1, int var2_2, int var3_3, boolean var4_4, int var5_5)`
+- `private static void c(Graphics graphics, f f2, boolean bl)`
+- `public static void e(f f2)`
+- `public static void d()`
+- `private static void j()`
+- `private static boolean f()`
+- `private static void a(int n, int n2, int n3, int n4)`
+- `private static void B(f f2)`
+- `public static boolean d(f f2)`
+- `private static boolean p(f f2)`
+- `private static void C(f f2)`
+- `private static void D(f f2)`
+- `public static void f(f f2)`
+- `private static void d(Graphics graphics, f f2, boolean bl)`
+- `public static void a(Graphics graphics, f f2)`
+- `public static void e()`
+- `private static int b()`
+- `private static int a(f f2, int n, int n2)`
+- `private static void c(f f2, int n, int n2, int n3)`
+- `private static void b(int n)`
+- `private static int a(int[] nArray)`
+- `private static void g(int[] nArray)`
+- `public static int[] c(int[] nArray)`
+- `public static void g(f f2)`
+- `private static void g(f var0, int var1_1)`
+- `public static void h(f f2)`
+- `public static void a(f f2, int n, int n2, int n3)`
+- `private static void a(f f2, int n, int n2, boolean bl, int n3, int n4)`
+- `private static void e(Graphics graphics, f f2, boolean bl)`
+- `private static void d(Graphics graphics, f f2)`
+- `public static void f()`
+- `private static int a(f f2, int n, int n2, boolean bl)`
+- `private static int b(f f2, int n)`
+- `private static int b(f f2, int n, int n2)`
+- `private static void d(f f2, int n, int n2, int n3)`
+- `private static int b(f f2, boolean bl)`
+- `public static void a(f f2, f f3)`
+- `private static void E(f f2)`
+- `private static void a(f f2, int n, int n2, int n3, int n4)`
+- `private static void F(f f2)`
+- `public static void i(f f2)`
+- `private static void G(f f2)`
+- `private static void c(f f2, boolean bl)`
+- `public static void j(f f2)`
+- `private static void H(f f2)`
+- `public static boolean a(f var0, int var1_1, int var2_2)`
+- `public static boolean a(f f2, int n, boolean bl, boolean bl2)`
+- `private static void a(f f2, int n, int n2, int n3, boolean bl, int n4, int n5, int n6, boolean bl2)`
+- `private static boolean q(f f2)`
+- `private static void d(f f2, f f3)`
+- `private static boolean b(int n, f f2)`
+- `private static boolean b(f f2, f f3)`
+- `private static f a(f f2, int n, int n2, int n3, int n4)`
+- `private static f c(f f2)`
+- `public static void k(f f2)`
+- `private static void I(f f2)`
+- `private static void J(f f2)`
+- `private static void K(f f2)`
+- `public static void c(f var0, int var1_1)`
+- `private static int c(f f2, int n, int n2)`
+- `private static void e(f f2, int n, int n2, int n3)`
+- `public static f a(f f2)`
+- `private static void L(f f2)`
+- `public static void l(f f2)`
+- `private static void M(f f2)`
+- `private static int g(f f2)`
+- `private static int c(f f2, int n)`
+- `private static boolean r(f f2)`
+- `private static void N(f f2)`
+- `private static boolean b(f f2, int n)`
+- `public static void a(f var0, boolean var1_1)`
+- `private static void h(f f2, int n)`
+- `public static int b(f f2)`
+- `private static boolean s(f f2)`
+- `public static boolean e(f f2)`
+- `public static void m(f f2)`
+- `public static int c(f f2)`
+- `private static int a(f f2, boolean bl, boolean bl2)`
+- `private static void f(f f2, int n, int n2, int n3)`
+- `public static boolean f(f f2)`
+- `private static boolean b(int n, int n2)`
+- `private static boolean c(f f2, int n)`
+- `private static boolean c(int n, int n2)`
+- `private static boolean b(int n, int n2, int n3)`
+- `private static boolean c(int n, int n2, int n3)`
+- `private static boolean d(int n, int n2)`
+- `public static boolean a(int n, int n2, int n3)`
+- `public static boolean a(int n, int n2, int n3, int n4)`
+- `private static boolean c(f f2, f f3)`
+- `private static boolean a(f var0, int var1_1, int var2_2, int var3_3)`
+- `private static boolean d(f f2, int n)`
+- `public static int a(f f2, int n)`
+- `public static boolean g(f f2)`
+- `public static void n(f var0)`
+- `private static void a(int n, int n2, int n3)`
+- `private static boolean a(f f2, f f3, boolean bl)`
+- `private static boolean t(f var0)`
+- `private static void i(f f2, int n)`
+- `public static void o(f f2)`
+- `public static void p(f f2)`
+- `private static boolean u(f f2)`
+- `public static int[] b(f var0, boolean var1_1, boolean var2_2)`
+- `private static void d(f f2, boolean bl)`
+- `private static int a(f f2, f f3, int n)`
+- `private static void j(f var0, int var1_1)`
+- `private static void O(f var0)`
+- `private static void P(f f2)`
+- `private static void Q(f f2)`
+- `private static void R(f f2)`
+- `private static void S(f f2)`
+- `public static void b(f f2, f f3)`
+- `private static boolean v(f f2)`
+- `private static void k(f var0, int var1_1)`
+- `private static void T(f f2)`
+- `private static void l(f f2, int n)`
+- `private static boolean w(f f2)`
+- `private static int h(f f2)`
+- `private static int i(f f2)`
+- `private static int j(f f2)`
+- `private static int k(f f2)`
+- `public static void b(Graphics graphics, f f2)`
+- `public static void d(int[] nArray)`
+- `public static int[] a(int[] nArray, int n, int n2)`
+- `private static int l(f f2)`
+- `public static int d(f f2)`
+- `public static int e(f f2)`
+- `private static void m(f f2, int n)`
+- `private static boolean x(f f2)`
+- `public static f b(f f2)`
+- `public static void c(f f2, f f3)`
+- `public static void a(f f2, f f3, boolean bl)`
+- `public static void d(f f2, int n)`
+- `private static void n(f f2, int n)`
+- `private static int m(f f2)`
+- `private static void U(f var0)`
+- `private static int n(f f2)`
+- `private static void V(f f2)`
+- `private static int o(f f2)`
+- `private static boolean y(f f2)`
+- `private static void W(f f2)`
+- `private static void X(f f2)`
+- `private static boolean z(f f2)`
+- `private static void Y(f f2)`
+- `private static void Z(f f2)`
+- `private static int[] b(f f2)`
+- `private static void aa(f f2)`
+- `private static void c(f f2, int n, int n2)`
+- `private static int[] c(f f2)`
+- `private static boolean A(f f2)`
+- `private static boolean B(f f2)`
+- `private static void b(f f2, int n, boolean bl)`
+- `private static void ab(f f2)`
+- `public static boolean h(f f2)`
+- `public static void a(f f2, boolean bl, int n, int n2, boolean bl2)`
+- `public static void q(f f2)`
+- `private static void g(f f2, int n, int n2, int n3)`
+- `private static void ac(f f2)`
+- `private static boolean e(f f2, int n)`
+- `private static boolean b(f f2, boolean bl, int n)`
+- `private static boolean a(f var0, int var1_1, boolean var2_2)`
+- `public static int a(f f2, boolean bl)`
+- `private static boolean a(int n, int n2, boolean bl, boolean bl2, boolean bl3)`
+- `public static boolean i(f f2)`
+- `public static void r(f f2)`
+- `public static void s(f var0)`
+- `private static void ad(f var0)`
+- `public static boolean j(f f2)`
+- `public static void e(f f2, int n)`
+- `private static void o(f f2, int n)`
+- `private static void e(Graphics graphics, f f2)`
+- `public static int[] d(int[] nArray)`
+- `private static void ae(f f2)`
+- `public static void b(f f2, boolean bl)`
+- `public static boolean a(f f2, int n)`
+- `private static void af(f f2)`
+- `private static void a(int var0, int var1_1, f var2_2, int var3_3, int var4_4)`
+- `public static void a(int n, int n2, int n3, int n4, f f2)`
+- `public static void a(int n, int n2, int n3, int n4, f[] fArray)`
+- `public static boolean k(f f2)`
+- `public static boolean a(int n, f f2)`
+- `private static void f(Graphics graphics, f f2)`
+- `public static void t(f f2)`
+- `public static boolean l(f f2)`
+- `public static int[] a(f f2)`
+- `public static void a(Graphics graphics, f f2, boolean bl)`
+- `public static void u(f f2)`
+- `public static int[] e(int[] nArray)`
+- `public static void v(f f2)`
+- `public static void f(f f2, int n)`
+- `private static void p(f f2, int n)`
+- `private static void ag(f f2)`
+- `private static boolean d(f f2, f f3)`
+- `private static f d(f f2)`
+- `private static void e(f f2, f f3)`
+- `private static void ah(f f2)`
+- `public static f[] a(f f2)`
+- `public f(int n, int[] nArray)`
+- `public f(c c2, int n, int n2, int[] nArray)`
+- `public f(int n, int n2, int n3, int n4, int[] nArray)`
+- `public final void g()`
+- `public final void a(a a2)`
+- `public final void h()`
+- `public static void a(Graphics graphics, int n, int n2, int n3)`
+- `private boolean a(Graphics graphics, boolean bl)`
+- `public final void a(Graphics var1_1, boolean var2_2)`
+- `private static int p(f var0)`
+- `private static int[] d(f var0)`
