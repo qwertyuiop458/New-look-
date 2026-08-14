@@ -1,0 +1,19 @@
+{
+    "level_name": "m11_1",
+    "total_segments": 8,
+    "offsets": [
+        0,
+        6909,
+        17573,
+        66868,
+        70305,
+        71316,
+        86132,
+        86530
+    ],
+    "map_layers": 8,
+    "tile_dimensions": "16x16 pixels (CONFIRMED)",
+    "collision_grid": "Segment 01 (CONFIRMED)",
+    "spawn_points": "Segment 02 (CONFIRMED)",
+    "script_triggers": "Segment 03 (CONFIRMED)"
+}

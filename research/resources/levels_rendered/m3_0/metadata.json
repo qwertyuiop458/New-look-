@@ -1,0 +1,22 @@
+{
+    "level_name": "m3_0",
+    "total_segments": 11,
+    "offsets": [
+        0,
+        146198,
+        174442,
+        201038,
+        209742,
+        253689,
+        308846,
+        430654,
+        491090,
+        527578,
+        627086
+    ],
+    "map_layers": 11,
+    "tile_dimensions": "16x16 pixels (CONFIRMED)",
+    "collision_grid": "Segment 01 (CONFIRMED)",
+    "spawn_points": "Segment 02 (CONFIRMED)",
+    "script_triggers": "Segment 03 (CONFIRMED)"
+}

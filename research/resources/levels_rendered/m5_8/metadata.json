@@ -1,0 +1,13 @@
+{
+    "level_name": "m5_8",
+    "total_segments": 2,
+    "offsets": [
+        0,
+        0
+    ],
+    "map_layers": "UNKNOWN (Requires dynamic trace)",
+    "tile_dimensions": "16x16 pixels (CONFIRMED)",
+    "collision_grid": "Segment 01 (CONFIRMED)",
+    "spawn_points": "Segment 02 (CONFIRMED)",
+    "script_triggers": "Segment 03 (CONFIRMED)"
+}

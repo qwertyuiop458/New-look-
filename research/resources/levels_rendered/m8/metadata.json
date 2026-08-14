@@ -1,0 +1,18 @@
+{
+    "level_name": "m8",
+    "total_segments": 7,
+    "offsets": [
+        0,
+        8238,
+        12736,
+        14386,
+        14470,
+        14554,
+        14638
+    ],
+    "map_layers": 7,
+    "tile_dimensions": "16x16 pixels (CONFIRMED)",
+    "collision_grid": "Segment 01 (CONFIRMED)",
+    "spawn_points": "Segment 02 (CONFIRMED)",
+    "script_triggers": "Segment 03 (CONFIRMED)"
+}

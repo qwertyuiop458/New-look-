@@ -1,0 +1,21 @@
+{
+    "level_name": "m4_0",
+    "total_segments": 10,
+    "offsets": [
+        0,
+        81760,
+        84372,
+        132358,
+        185153,
+        211232,
+        215349,
+        297222,
+        383421,
+        427148
+    ],
+    "map_layers": 10,
+    "tile_dimensions": "16x16 pixels (CONFIRMED)",
+    "collision_grid": "Segment 01 (CONFIRMED)",
+    "spawn_points": "Segment 02 (CONFIRMED)",
+    "script_triggers": "Segment 03 (CONFIRMED)"
+}

@@ -1,0 +1,27 @@
+{
+    "level_name": "m9",
+    "total_segments": 16,
+    "offsets": [
+        0,
+        5,
+        231,
+        847,
+        1261,
+        9057,
+        10091,
+        11022,
+        11265,
+        11661,
+        14808,
+        45092,
+        70668,
+        137758,
+        165168,
+        221656
+    ],
+    "map_layers": 16,
+    "tile_dimensions": "16x16 pixels (CONFIRMED)",
+    "collision_grid": "Segment 01 (CONFIRMED)",
+    "spawn_points": "Segment 02 (CONFIRMED)",
+    "script_triggers": "Segment 03 (CONFIRMED)"
+}
