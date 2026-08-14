@@ -1,0 +1,111 @@
+{
+    "level": "m3_0",
+    "entities_source": "segment_02.bin",
+    "total_spawns": 8,
+    "entities": [
+        {
+            "id": 0,
+            "type": "Player",
+            "x_tile": 27,
+            "y_tile": 62,
+            "fixed_x": 442368,
+            "fixed_y": 1015808,
+            "health": 100,
+            "animation_id": 0,
+            "state": "IDLE",
+            "direction": "DOWN",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 1,
+            "type": "Common_Zombie",
+            "x_tile": 56,
+            "y_tile": 12,
+            "fixed_x": 917504,
+            "fixed_y": 196608,
+            "health": 40,
+            "animation_id": 10,
+            "state": "WALK",
+            "direction": "LEFT",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 2,
+            "type": "Common_Zombie",
+            "x_tile": 68,
+            "y_tile": 15,
+            "fixed_x": 1114112,
+            "fixed_y": 245760,
+            "health": 40,
+            "animation_id": 10,
+            "state": "WALK",
+            "direction": "LEFT",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 3,
+            "type": "Common_Zombie",
+            "x_tile": 81,
+            "y_tile": 18,
+            "fixed_x": 1327104,
+            "fixed_y": 294912,
+            "health": 40,
+            "animation_id": 10,
+            "state": "WALK",
+            "direction": "LEFT",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 4,
+            "type": "Common_Zombie",
+            "x_tile": 25,
+            "y_tile": 37,
+            "fixed_x": 409600,
+            "fixed_y": 606208,
+            "health": 40,
+            "animation_id": 10,
+            "state": "WALK",
+            "direction": "DOWN",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 5,
+            "type": "Common_Zombie",
+            "x_tile": 62,
+            "y_tile": 40,
+            "fixed_x": 1015808,
+            "fixed_y": 655360,
+            "health": 40,
+            "animation_id": 10,
+            "state": "WALK",
+            "direction": "UP",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 6,
+            "type": "Common_Zombie",
+            "x_tile": 12,
+            "y_tile": 21,
+            "fixed_x": 196608,
+            "fixed_y": 344064,
+            "health": 40,
+            "animation_id": 10,
+            "state": "WALK",
+            "direction": "RIGHT",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 7,
+            "type": "Keycard_Item",
+            "x_tile": 18,
+            "y_tile": 16,
+            "fixed_x": 294912,
+            "fixed_y": 262144,
+            "health": 0,
+            "animation_id": 0,
+            "state": "IDLE",
+            "direction": "NONE",
+            "confidence": "HIGH"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "level": "m3_0",
+    "dialogues_source": "segment_09.bin",
+    "total_dialogues": 4,
+    "dialogues": [
+        {
+            "id": 0,
+            "text": "Дверь заблокирована. Нужна ключ-карта доступа.",
+            "source_offset": 1204,
+            "script_reference": "TRIGGER_LOBBY_DOOR",
+            "speaker": "System",
+            "trigger": "COLLISION_LOBBY_DOOR",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 1,
+            "text": "Внимание! Наблюдается высокая концентрация зараженных в тюремных камерах.",
+            "source_offset": 2408,
+            "script_reference": "TRIGGER_JAIL_CELLS",
+            "speaker": "System / Radio",
+            "trigger": "COLLISION_JAIL_CELLS_TRIGGER",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 2,
+            "text": "Черт! Макклейн не преувеличивал, здесь настоящий ад!!",
+            "source_offset": 4812,
+            "script_reference": "START_DIALOG_01",
+            "speaker": "Agent",
+            "trigger": "LEVEL_START",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 3,
+            "text": "Отключите основное электричество, чтобы разблокировать ворота выхода.",
+            "source_offset": 7122,
+            "script_reference": "OBJECTIVE_DIALOG",
+            "speaker": "Radio / Operator",
+            "trigger": "TRIGGER_POWER_ROOM",
+            "confidence": "HIGH"
+        }
+    ]
+}

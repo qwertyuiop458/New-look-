@@ -1,0 +1,54 @@
+{
+    "level": "m3_0",
+    "width_tiles": 110,
+    "height_tiles": 82,
+    "tile_size": 16,
+    "collision_grid_source": "segment_01.bin",
+    "physics_settings": {
+        "fixed_point_multiplier": 16384,
+        "fixed_point_shift_bits": 14,
+        "grid_shift_bits": 18
+    },
+    "static_zones": [
+        {
+            "name": "lobby",
+            "walkable": true,
+            "bounds": {"min_tile_x": 12, "max_tile_x": 93, "min_tile_y": 50, "max_tile_y": 75}
+        },
+        {
+            "name": "office",
+            "walkable": true,
+            "bounds": {"min_tile_x": 6, "max_tile_x": 37, "min_tile_y": 6, "max_tile_y": 31}
+        },
+        {
+            "name": "corridors",
+            "walkable": true,
+            "bounds": {"min_tile_x": 18, "max_tile_x": 31, "min_tile_y": 31, "max_tile_y": 50}
+        },
+        {
+            "name": "jail_cells",
+            "walkable": true,
+            "bounds": {"min_tile_x": 50, "max_tile_x": 100, "min_tile_y": 6, "max_tile_y": 37}
+        }
+    ],
+    "interactive_colliders": [
+        {
+            "id": 1,
+            "name": "lobby_corridor_door",
+            "type": "locked_door",
+            "tile_x": 25,
+            "tile_y": 50,
+            "required_key_id": 12,
+            "state": "CLOSED"
+        },
+        {
+            "id": 2,
+            "name": "office_corridor_door",
+            "type": "standard_door",
+            "tile_x": 25,
+            "tile_y": 31,
+            "required_key_id": null,
+            "state": "CLOSED"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "level": "m3_0",
+    "sprites_source": "segment_04.bin, segment_05.bin, segment_06.bin",
+    "sprite_usage": [
+        {
+            "asset": "segment_04.bin",
+            "source": "m3_0",
+            "usage": "visual_background_tiles",
+            "entity": "Map",
+            "animation": "NONE",
+            "confidence": "HIGH"
+        },
+        {
+            "asset": "segment_05.bin",
+            "source": "m3_0",
+            "usage": "visual_foreground_sprites",
+            "entity": "Map_Assets (Walls, Jail Bars)",
+            "animation": "NONE",
+            "confidence": "HIGH"
+        },
+        {
+            "asset": "segment_06.bin",
+            "source": "m3_0",
+            "usage": "actor_player_sprites",
+            "entity": "Player",
+            "animation": "player_walk, player_shoot",
+            "confidence": "HIGH"
+        },
+        {
+            "asset": "segment_07.bin",
+            "source": "m3_0",
+            "usage": "actor_enemy_sprites",
+            "entity": "Common_Zombie",
+            "animation": "zombie_walk, zombie_attack",
+            "confidence": "HIGH"
+        }
+    ]
+}

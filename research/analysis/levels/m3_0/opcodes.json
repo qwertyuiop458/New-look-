@@ -1,0 +1,94 @@
+{
+    "opcodes": [
+        {
+            "opcode": 11,
+            "hex": "0x0b",
+            "name": "SHOW_LEFT_PORTRAIT",
+            "arguments_count": 1,
+            "arg_types": ["byte"],
+            "purpose": "Renders character dialogue avatar in the left slot",
+            "confidence": "HIGH"
+        },
+        {
+            "opcode": 12,
+            "hex": "0x0c",
+            "name": "SHOW_RIGHT_PORTRAIT",
+            "arguments_count": 1,
+            "arg_types": ["byte"],
+            "purpose": "Renders character dialogue avatar in the right slot",
+            "confidence": "HIGH"
+        },
+        {
+            "opcode": 13,
+            "hex": "0x0d",
+            "name": "SPAWN_ACTOR",
+            "arguments_count": 3,
+            "arg_types": ["short", "short", "byte"],
+            "purpose": "Spawns a zombie or interactive entity at coordinates X, Y",
+            "confidence": "HIGH"
+        },
+        {
+            "opcode": 21,
+            "hex": "0x15",
+            "name": "TRIGGER_LEVEL_VICTORY",
+            "arguments_count": 0,
+            "arg_types": [],
+            "purpose": "Transitions level to victory statistics screen (state 7)",
+            "confidence": "HIGH"
+        },
+        {
+            "opcode": 22,
+            "hex": "0x16",
+            "name": "MODIFY_DOOR_COLLISION",
+            "arguments_count": 2,
+            "arg_types": ["byte", "byte"],
+            "purpose": "Opens or closes interactive doors and toggles solid tile state",
+            "confidence": "HIGH"
+        },
+        {
+            "opcode": 31,
+            "hex": "0x1f",
+            "name": "LOCK_PLAYER_CONTROLS",
+            "arguments_count": 0,
+            "arg_types": [],
+            "purpose": "Freezes main game loop inputs to start dialog/cutscene sequences",
+            "confidence": "HIGH"
+        },
+        {
+            "opcode": 32,
+            "hex": "0x20",
+            "name": "UNLOCK_PLAYER_CONTROLS",
+            "arguments_count": 0,
+            "arg_types": [],
+            "purpose": "Unfreezes main game loop inputs to resume active play",
+            "confidence": "HIGH"
+        },
+        {
+            "opcode": 35,
+            "hex": "0x23",
+            "name": "GIVE_STORY_ITEM",
+            "arguments_count": 1,
+            "arg_types": ["byte"],
+            "purpose": "Puts keycards or special quest items into player inventory slot",
+            "confidence": "HIGH"
+        },
+        {
+            "opcode": 36,
+            "hex": "0x24",
+            "name": "SET_HUD_OBJECTIVE",
+            "arguments_count": 1,
+            "arg_types": ["byte"],
+            "purpose": "Changes active objective text rendered in bottom/top HUD overlay",
+            "confidence": "HIGH"
+        },
+        {
+            "opcode": 37,
+            "hex": "0x25",
+            "name": "PLAY_AUDIO_BUFFER",
+            "arguments_count": 1,
+            "arg_types": ["byte"],
+            "purpose": "Loads and loops MIDI soundtrack or play sound effects",
+            "confidence": "HIGH"
+        }
+    ]
+}
