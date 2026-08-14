@@ -1,0 +1,18 @@
+{
+    "items": [
+        {
+            "id": 10,
+            "name": "Medkit",
+            "effect": "heal_health_50",
+            "quantity_max": 3,
+            "use_trigger": "KEY_NUM_0"
+        },
+        {
+            "id": 11,
+            "name": "Ammo Clip",
+            "effect": "add_handgun_ammo_24",
+            "quantity_max": 99,
+            "use_trigger": "AUTO_PICKUP"
+        }
+    ]
+}

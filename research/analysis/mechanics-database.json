@@ -1,0 +1,119 @@
+{
+    "movement": {
+        "speed_fixed": 16384,
+        "diagonal_modifier": "0.7071 (11585 fixed-point)",
+        "collision_box_width": 24,
+        "collision_box_height": 40
+    },
+    "combat": {
+        "projectiles": "hitscan"
+    },
+    "health": {
+        "initial": 100,
+        "invulnerability_duration_ms": 1000
+    },
+    "damage": {
+        "formulas_count": 2
+    },
+    "weapons": [
+        {
+            "id": 0,
+            "name": "Pistol",
+            "damage": 10,
+            "fire_rate_ms": 400,
+            "ammo_capacity": 12,
+            "reload_ms": 1500,
+            "range_tiles": 8,
+            "sound": "sound_pistol.amr",
+            "confidence": "HIGH"
+        },
+        {
+            "id": 1,
+            "name": "Shotgun",
+            "damage": 30,
+            "fire_rate_ms": 800,
+            "ammo_capacity": 6,
+            "reload_ms": 2000,
+            "range_tiles": 4,
+            "sound": "sound_shotgun.amr",
+            "confidence": "HIGH"
+        }
+    ],
+    "items": [
+        {
+            "id": 10,
+            "name": "Medkit",
+            "effect": "heal_health_50",
+            "quantity_max": 3,
+            "use_trigger": "KEY_NUM_0"
+        },
+        {
+            "id": 11,
+            "name": "Ammo Clip",
+            "effect": "add_handgun_ammo_24",
+            "quantity_max": 99,
+            "use_trigger": "AUTO_PICKUP"
+        }
+    ],
+    "ai": [
+        {
+            "common_zombie_speed": 8192,
+            "runner_zombie_speed": 16384,
+            "boss_zombie_speed": 6144,
+            "attack_distance_threshold_px": 16,
+            "attack_cooldown_ms": 1000
+        }
+    ],
+    "collision": {
+        "player": {
+            "width": 24,
+            "height": 40
+        },
+        "common_zombie": {
+            "width": 24,
+            "height": 40
+        },
+        "keycard_item": {
+            "width": 16,
+            "height": 16
+        },
+        "locked_door": {
+            "width": 16,
+            "height": 16
+        }
+    },
+    "camera": {
+        "bounds": "constrained"
+    },
+    "animation": {
+        "player": {
+            "IDLE": 0,
+            "WALK": 1,
+            "SHOOT": 2,
+            "RELOAD": 3
+        },
+        "zombie": {
+            "WALK": 10,
+            "ATTACK": 11,
+            "DIE": 12
+        }
+    },
+    "doors": [
+        {
+            "id": 1,
+            "type": "locked",
+            "required_keycard_id": 12,
+            "toggle_mask": 1
+        }
+    ],
+    "interaction": [
+        {
+            "id": 10,
+            "name": "Power Switch",
+            "on_trigger_action": "DISABLE_ELECTRICITY_GRID"
+        }
+    ],
+    "progression": {
+        "levels_count": 30
+    }
+}

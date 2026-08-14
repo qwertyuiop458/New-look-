@@ -1,0 +1,26 @@
+{
+    "level_name": "m6_5",
+    "total_segments": 15,
+    "offsets": [
+        0,
+        10800,
+        10802,
+        43302,
+        43304,
+        70344,
+        70346,
+        100246,
+        100248,
+        111048,
+        111050,
+        118250,
+        118252,
+        125452,
+        125454
+    ],
+    "map_layers": 15,
+    "tile_dimensions": "16x16 pixels (CONFIRMED)",
+    "collision_grid": "Segment 01 (CONFIRMED)",
+    "spawn_points": "Segment 02 (CONFIRMED)",
+    "script_triggers": "Segment 03 (CONFIRMED)"
+}

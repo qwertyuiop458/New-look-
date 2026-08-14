@@ -1,0 +1,32 @@
+{
+    "states": [
+        "IDLE",
+        "PATROL",
+        "CHASE",
+        "ATTACK",
+        "HURT",
+        "DIE"
+    ],
+    "transitions": [
+        {
+            "from": "IDLE",
+            "to": "CHASE",
+            "trigger": "PLAYER_CROSS_TRIGGER"
+        },
+        {
+            "from": "CHASE",
+            "to": "ATTACK",
+            "trigger": "DISTANCE_LESS_THAN_16"
+        },
+        {
+            "from": "ATTACK",
+            "to": "CHASE",
+            "trigger": "DISTANCE_GREATER_THAN_16"
+        },
+        {
+            "from": "CHASE",
+            "to": "DIE",
+            "trigger": "HEALTH_LESS_OR_EQUAL_0"
+        }
+    ]
+}

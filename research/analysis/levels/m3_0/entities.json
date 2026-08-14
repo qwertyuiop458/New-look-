@@ -1,0 +1,15 @@
+{
+    "level": "m3_0",
+    "total_entities": 13,
+    "entities": [
+        {
+            "id": 0,
+            "type": "Player",
+            "x_tile": 55,
+            "y_tile": 41,
+            "health": 100,
+            "state": "IDLE",
+            "confidence": "HIGH"
+        }
+    ]
+}

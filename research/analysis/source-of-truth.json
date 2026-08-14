@@ -1,0 +1,37 @@
+{
+    "architecture": {
+        "source": "decompiled Java",
+        "evidence": "g.java, f.java, a.java, c.java",
+        "status": "CONFIRMED"
+    },
+    "level_geometry": {
+        "source": "level binaries + decoder",
+        "evidence": "segment_00.bin, extract_m_resources.py",
+        "status": "CONFIRMED"
+    },
+    "graphics": {
+        "source": "level resource segments + decoder",
+        "evidence": "segment_04.bin, extract_t0.py, render_t0.py",
+        "status": "CONFIRMED"
+    },
+    "animation": {
+        "source": "c.java + graphics resources",
+        "evidence": "c.java, animation-catalog.json",
+        "status": "CONFIRMED"
+    },
+    "AI": {
+        "source": "f.java/g.java",
+        "evidence": "f.java lines 254-282",
+        "status": "CONFIRMED"
+    },
+    "dialogue": {
+        "source": "level text segments",
+        "evidence": "segment_09.bin, find_russian_text.py",
+        "status": "CONFIRMED"
+    },
+    "runtime_behavior": {
+        "source": "REQUIRES_REAL_RUNTIME",
+        "evidence": "runtime-limitations.md",
+        "status": "REQUIRES_REAL_RUNTIME"
+    }
+}

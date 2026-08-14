@@ -1,0 +1,11 @@
+{
+    "mappings": [
+        {
+            "entity": "Player",
+            "code_class": "f.java",
+            "resource_segment": "segment_06.bin",
+            "animation_id": 1,
+            "spawn_definition": "segment_02.bin"
+        }
+    ]
+}

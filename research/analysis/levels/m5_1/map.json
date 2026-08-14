@@ -1,0 +1,13 @@
+{
+    "level_name": "m5_1",
+    "width_tiles": 64,
+    "height_tiles": 64,
+    "tile_size_pixels": 16,
+    "layer_count": 11,
+    "camera_limits": {
+        "min_x": 0,
+        "max_x": 1024,
+        "min_y": 0,
+        "max_y": 1024
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "runtime_gaps": [
+        {
+            "id": "ai_pathfinding",
+            "category": "CRITICAL",
+            "issue": "Heuristic pathfinding logic and edge cases in tight spaces",
+            "how_to_verify": "Dynamic visual frame-by-frame tracing on J2ME emulator with VNC/X11 rendering",
+            "status": "REQUIRES_REAL_RUNTIME"
+        },
+        {
+            "id": "audio_volume",
+            "category": "MEDIUM",
+            "issue": "Accurate sound volume scaling on different JSR-135 sound drivers",
+            "how_to_verify": "Audio stream profiling on emulator",
+            "status": "REQUIRES_REAL_RUNTIME"
+        }
+    ]
+}

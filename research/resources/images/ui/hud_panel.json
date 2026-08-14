@@ -1,0 +1,10 @@
+{
+    "source": "t0",
+    "offset": 7352,
+    "width": 240,
+    "height": 48,
+    "palette": "palette_03",
+    "transparent_index": 0,
+    "frame": "hud_panel",
+    "confidence": "HIGH"
+}

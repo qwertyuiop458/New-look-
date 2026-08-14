@@ -1,0 +1,15 @@
+{
+    "level_name": "m5_2",
+    "total_segments": 4,
+    "offsets": [
+        0,
+        28,
+        68,
+        88
+    ],
+    "map_layers": 4,
+    "tile_dimensions": "16x16 pixels (CONFIRMED)",
+    "collision_grid": "Segment 01 (CONFIRMED)",
+    "spawn_points": "Segment 02 (CONFIRMED)",
+    "script_triggers": "Segment 03 (CONFIRMED)"
+}

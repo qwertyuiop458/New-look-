@@ -1,0 +1,13 @@
+{
+    "level_name": "m3_0",
+    "width_tiles": 110,
+    "height_tiles": 82,
+    "tile_size_pixels": 16,
+    "layer_count": 11,
+    "camera_limits": {
+        "min_x": 0,
+        "max_x": 1760,
+        "min_y": 0,
+        "max_y": 1312
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "missing_gaps": [
+        {
+            "category": "Entities",
+            "name": "Runner and Spitter Zombie HP/Attack constants",
+            "reason": "Level-specific entities defined dynamically inside level segments, requiring live emulator trace",
+            "status": "REQUIRES_REAL_RUNTIME"
+        },
+        {
+            "category": "Combat",
+            "name": "Assault Rifle damage and accuracy dispersion",
+            "reason": "Weapon upgrades and fire rate values are read dynamically from encrypted player profiles",
+            "status": "REQUIRES_REAL_RUNTIME"
+        },
+        {
+            "category": "Level Scripts",
+            "name": "Complete opcode logic of levels m4_0 through m13_2",
+            "reason": "Each map pack contains distinct event bytecode blocks in Segment 03, needing interactive walkthroughs",
+            "status": "REQUIRES_REAL_RUNTIME"
+        },
+        {
+            "category": "Audio",
+            "name": "Exact frequency and volume caps of sound effects",
+            "reason": "Depends on native JVM media drivers (JSR-135) of target device",
+            "status": "REQUIRES_REAL_RUNTIME"
+        }
+    ]
+}

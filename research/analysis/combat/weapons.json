@@ -1,0 +1,24 @@
+[
+    {
+        "id": 0,
+        "name": "Pistol",
+        "damage": 10,
+        "fire_rate_ms": 400,
+        "ammo_capacity": 12,
+        "reload_ms": 1500,
+        "range_tiles": 8,
+        "sound": "sound_pistol.amr",
+        "confidence": "HIGH"
+    },
+    {
+        "id": 1,
+        "name": "Shotgun",
+        "damage": 30,
+        "fire_rate_ms": 800,
+        "ammo_capacity": 6,
+        "reload_ms": 2000,
+        "range_tiles": 4,
+        "sound": "sound_shotgun.amr",
+        "confidence": "HIGH"
+    }
+]

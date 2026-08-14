@@ -1,0 +1,10 @@
+{
+    "source": "t0",
+    "offset": 28336,
+    "width": 32,
+    "height": 48,
+    "palette": "palette_04",
+    "transparent_index": 0,
+    "frame": "player_walk_3",
+    "confidence": "HIGH"
+}

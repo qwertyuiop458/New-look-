@@ -1,0 +1,17 @@
+{
+    "level_name": "m2",
+    "total_segments": 6,
+    "offsets": [
+        0,
+        47545,
+        125587,
+        125709,
+        126309,
+        126311
+    ],
+    "map_layers": 6,
+    "tile_dimensions": "16x16 pixels (CONFIRMED)",
+    "collision_grid": "Segment 01 (CONFIRMED)",
+    "spawn_points": "Segment 02 (CONFIRMED)",
+    "script_triggers": "Segment 03 (CONFIRMED)"
+}

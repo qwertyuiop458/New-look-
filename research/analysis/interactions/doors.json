@@ -1,0 +1,10 @@
+{
+    "doors": [
+        {
+            "id": 1,
+            "type": "locked",
+            "required_keycard_id": 12,
+            "toggle_mask": 1
+        }
+    ]
+}
