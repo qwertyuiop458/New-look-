@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+# THIS SCRIPT DOES NOT EXECUTE THE ORIGINAL GAME.
+# IT GENERATES SIMULATED/RECONSTRUCTED VISUAL EVIDENCE.
 import os
 from PIL import Image, ImageDraw, ImageFont
 
-EVIDENCE_DIR = "/home/user/New-look-/research/runtime/evidence"
+EVIDENCE_DIR = "/home/user/New-look-/research/runtime/simulated-evidence"
 
 def create_screen(title, background_color, filename):
     # Standard vertical 240x320 screen size
