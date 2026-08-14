@@ -1,0 +1,124 @@
+{
+    "game": "МЁРТВАЯ ЧАСТОТА (DEAD FREQUENCY)",
+    "section": "8. LEVEL DESIGN STANDARD",
+    "note": "Стандарт нового уровня. Сохранены: tile/grid архитектура, layered rendering, компактные коллизии, скриптовые события, триггерная прогрессия (baseline оригинала: сетка 64x64, тайл 16px, контейнер-сегменты, 10 опкодов).",
+    "screen": {
+        "width_px": 240,
+        "height_px": 320,
+        "portrait": true
+    },
+    "tile": {
+        "size_px": 16,
+        "grid_shift_bits": 4,
+        "fixed_to_tile_shift_bits": 18,
+        "note": "индекс тайла = fixed_coord >> 18 (как в оригинале)"
+    },
+    "grid": {
+        "width_tiles": 64,
+        "height_tiles": 64,
+        "world_px": "1024x1024",
+        "camera_bounds": "clamp по краям карты (baseline)"
+    },
+    "layers": {
+        "min_count": 3,
+        "max_count": 8,
+        "roles": [
+            "layer_0_floor",
+            "layer_1_decor_ground",
+            "layer_2_walls",
+            "layer_3_decor_overhead",
+            "layer_4_collision_mask",
+            "layer_5_entity_spawns",
+            "layer_6_trigger_zones",
+            "layer_7_light_baked_overlay"
+        ],
+        "note": "оригинал: 3-32 слоя; стандарт сиквела ограничивает 8 слоёв для предсказуемого бюджета отрисовки"
+    },
+    "collision": {
+        "representation": "compact_bitmask",
+        "bytes_per_tile": 1,
+        "bit_usage": "N/E/S/W проходимость + solid + door + shelter + hazard (5 бит используется, 3 запасных)",
+        "math": "AABB для сущностей; тайловый тест по маске",
+        "solid_tiles_typical": "240-600 из 4096 (диапазон оригинала)"
+    },
+    "segments": {
+        "container": "count_byte + uint32 LE offsets (как в оригинале)",
+        "roles": [
+            "seg_0_tile_layers",
+            "seg_1_collision_mask",
+            "seg_2_entity_spawns",
+            "seg_3_scripted_triggers",
+            "seg_4_dialogues",
+            "seg_5_graphics_sheets",
+            "seg_6_palette_remaps"
+        ],
+        "typical_size_bytes": 4000,
+        "max_size_bytes": 65536
+    },
+    "opcodes": [
+        {"id": 0, "name": "OPEN_DOOR", "description": "открыть дверь по маске"},
+        {"id": 1, "name": "CLOSE_DOOR", "description": "закрыть дверь"},
+        {"id": 2, "name": "SPAWN_ENEMY", "description": "спавн врага из пула в точке"},
+        {"id": 3, "name": "DIALOG", "description": "показать диалог (портрет + текст)"},
+        {"id": 4, "name": "PLAY_SOUND", "description": "проиграть сэмпл из банка уровня"},
+        {"id": 5, "name": "OBJECTIVE", "description": "обновить текст цели миссии"},
+        {"id": 6, "name": "CHECK_ITEM", "description": "проверка квест-предмета (пропуск/катушка/предохранитель)"},
+        {"id": 7, "name": "GIVE_ITEM", "description": "выдать предмет"},
+        {"id": 8, "name": "TELEPORT", "description": "переместить игрока в точку"},
+        {"id": 9, "name": "SET_FLAG", "description": "установить сюжетный флаг"},
+        {"id": 10, "name": "IF_FLAG_GOTO", "description": "ветвление по флагу"},
+        {"id": 11, "name": "SIGNAL_SURGE", "description": "НОВОЕ: скачок сигнала + волна врагов"},
+        {"id": 12, "name": "CAMERA_SHAKE", "description": "НОВОЕ: тряска камеры (смещение на 1-2 px, 0.5 сек)"},
+        {"id": 13, "name": "NOISE_EVENT", "description": "НОВОЕ: шумовое событие в точке (приманка/тревога)"}
+    ],
+    "triggers": {
+        "model": "trigger_driven_progression",
+        "types": ["rect_zone", "item_gate", "kill_gate", "shelter_gate"],
+        "max_per_level": 25,
+        "note": "оригинал: до 25 триггеров (m13_2)"
+    },
+    "entity_spawns": {
+        "player_spawn": 1,
+        "enemy_spawns_max": 24,
+        "npc_spawns_max": 3,
+        "ammo_spawns_max": 16,
+        "item_spawns_max": 12,
+        "note": "оригинал: до 24 сущностей (m11_1)"
+    },
+    "budgets": {
+        "active_enemies_max": 24,
+        "projectiles_max": 8,
+        "particles_max": 32,
+        "noise_events_max": 8,
+        "shelters_max": 4,
+        "surge_waves_max": 4,
+        "wave_size_max": 8,
+        "sprite_sheets_per_level": 8,
+        "audio_samples_per_level": 16,
+        "level_file_max_bytes": 65536,
+        "fps_target": "25-30"
+    },
+    "progression": {
+        "model": "trigger_and_flag_based",
+        "mission_complete": "достижение финального триггера выхода/цели (baseline состояние 7)",
+        "checkpoints": "убежища Фарадея (авто-сохранение)"
+    },
+    "resources": {
+        "bundling": "per-level bundles: тайлы + спрайт-листы + палитры + аудио (baseline оригинала)",
+        "palette_remap": "поддерживается: варианты врагов/смены дня без новых спрайтов",
+        "indexed_color": "8-бит, до 256 цветов на лист"
+    },
+    "example_level_sketch": {
+        "id": "sq02_tihiy_kvartal",
+        "grid": "64x64",
+        "layers": 6,
+        "collision_bytes": 4096,
+        "enemy_spawns": 9,
+        "triggers": 7,
+        "opcodes_used": [0, 2, 3, 5, 6, 7, 11],
+        "shelters": 1,
+        "dialogue_count": 4,
+        "estimated_size_bytes": 9000,
+        "flow": "спавн -> двор -> подвал (обвод щита) -> волна из вентиляции -> убежище -> выход"
+    }
+}

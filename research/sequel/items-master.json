@@ -1,0 +1,182 @@
+{
+    "game": "МЁРТВАЯ ЧАСТОТА (DEAD FREQUENCY)",
+    "note": "15 предметов в 5 категориях. Resource-friendly архитектура сохранена из оригинала: id / effect / quantity_max / use_trigger. Авто-подбор патронов, аптечка на клавишу 0.",
+    "items": [
+        {
+            "ID": "it_bandage",
+            "NAME": "Бинт",
+            "CATEGORY": "healing",
+            "EFFECT": "heal_health_25",
+            "QUANTITY_MAX": 5,
+            "USE_TRIGGER": "KEY_NUM_0",
+            "RESOURCE_NOTE": "1 спрайт 16x16, без анимации; дешёвый ярус лечения",
+            "AVAILABILITY": "shop"
+        },
+        {
+            "ID": "it_medkit",
+            "NAME": "Аптечка",
+            "CATEGORY": "healing",
+            "EFFECT": "heal_health_50",
+            "QUANTITY_MAX": 3,
+            "USE_TRIGGER": "KEY_NUM_0",
+            "RESOURCE_NOTE": "baseline оригинала (50 HP, макс. 3) сохранён как средний ярус",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_stim",
+            "NAME": "Стимулятор",
+            "CATEGORY": "healing",
+            "EFFECT": "heal_health_10_and_speed_plus_25_percent_10s",
+            "QUANTITY_MAX": 2,
+            "USE_TRIGGER": "KEY_NUM_0",
+            "RESOURCE_NOTE": "эффект скорости через shift-математику (x5/4), без float",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_ammo_9",
+            "NAME": "Патроны 9мм",
+            "CATEGORY": "ammo",
+            "EFFECT": "add_ammo_24",
+            "QUANTITY_MAX": 99,
+            "USE_TRIGGER": "AUTO_PICKUP",
+            "AMMO_FOR": [
+                "wp_osa",
+                "wp_kedr"
+            ],
+            "RESOURCE_NOTE": "авто-подбор при коллизии (baseline оригинала)",
+            "AVAILABILITY": "drop"
+        },
+        {
+            "ID": "it_ammo_12",
+            "NAME": "Патроны 12 калибра",
+            "CATEGORY": "ammo",
+            "EFFECT": "add_ammo_12",
+            "QUANTITY_MAX": 99,
+            "USE_TRIGGER": "AUTO_PICKUP",
+            "AMMO_FOR": [
+                "wp_splav"
+            ],
+            "RESOURCE_NOTE": "авто-подбор",
+            "AVAILABILITY": "drop"
+        },
+        {
+            "ID": "it_ammo_762",
+            "NAME": "Патроны 7.62мм",
+            "CATEGORY": "ammo",
+            "EFFECT": "add_ammo_10",
+            "QUANTITY_MAX": 99,
+            "USE_TRIGGER": "AUTO_PICKUP",
+            "AMMO_FOR": [
+                "wp_dolgiy"
+            ],
+            "RESOURCE_NOTE": "авто-подбор; редкий дроп",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_ammo_40",
+            "NAME": "Гранаты 40мм",
+            "CATEGORY": "ammo",
+            "EFFECT": "add_ammo_4",
+            "QUANTITY_MAX": 24,
+            "USE_TRIGGER": "AUTO_PICKUP",
+            "AMMO_FOR": [
+                "wp_kubalda"
+            ],
+            "RESOURCE_NOTE": "авто-подбор; не продаётся в магазине до Акта II",
+            "AVAILABILITY": "drop"
+        },
+        {
+            "ID": "it_ammo_emp",
+            "NAME": "ЭМИ-ячейки",
+            "CATEGORY": "ammo",
+            "EFFECT": "add_ammo_8",
+            "QUANTITY_MAX": 32,
+            "USE_TRIGGER": "AUTO_PICKUP",
+            "AMMO_FOR": [
+                "wp_glushitel"
+            ],
+            "RESOURCE_NOTE": "авто-подбор; только с Акта II",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_pass",
+            "NAME": "Пропуск службы связи",
+            "CATEGORY": "quest",
+            "EFFECT": "unlock_doors_zone_1",
+            "QUANTITY_MAX": 1,
+            "USE_TRIGGER": "AUTO",
+            "RESOURCE_NOTE": "замена keycard оригинала (id 12): пропуска открывают зоны, а не одну дверь",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_tape",
+            "NAME": "Катушка с записью",
+            "CATEGORY": "quest",
+            "EFFECT": "story_item_veras_plan",
+            "QUANTITY_MAX": 1,
+            "USE_TRIGGER": "AUTO",
+            "RESOURCE_NOTE": "миссионный предмет: включает следующий сюжетный триггер",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_fuse",
+            "NAME": "Предохранитель",
+            "CATEGORY": "quest",
+            "EFFECT": "restore_power_substation",
+            "QUANTITY_MAX": 3,
+            "USE_TRIGGER": "USE_AT_OBJECT",
+            "RESOURCE_NOTE": "используется у щитов питания (обвод)",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_filter",
+            "NAME": "Фильтр противогаза",
+            "CATEGORY": "utility",
+            "EFFECT": "reduce_spore_slow_50_percent",
+            "QUANTITY_MAX": 3,
+            "USE_TRIGGER": "KEY_NUM_0",
+            "RESOURCE_NOTE": "пассивно сокращает замедление от спор",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_scrap",
+            "NAME": "Утиль",
+            "CATEGORY": "utility",
+            "EFFECT": "currency_scrap",
+            "QUANTITY_MAX": 999,
+            "USE_TRIGGER": "AUTO_PICKUP",
+            "RESOURCE_NOTE": "валюта (эволюция «денег» оригинала): дроп с врагов и ящиков",
+            "AVAILABILITY": "drop"
+        },
+        {
+            "ID": "it_beacon",
+            "NAME": "Радиомаяк",
+            "CATEGORY": "special",
+            "EFFECT": "noise_beacon_lure_5s",
+            "QUANTITY_MAX": 2,
+            "USE_TRIGGER": "KEY_NUM_0",
+            "RESOURCE_NOTE": "создаёт noise-событие радиуса 6 тайлов - приманка для стай",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_damp",
+            "NAME": "Глушилка-доза",
+            "CATEGORY": "special",
+            "EFFECT": "global_stun_linked_3s",
+            "QUANTITY_MAX": 3,
+            "USE_TRIGGER": "KEY_NUM_0",
+            "RESOURCE_NOTE": "глобальный стаггер всех «связанных» врагов на экране на 3 сек",
+            "AVAILABILITY": "mission"
+        },
+        {
+            "ID": "it_stim_x",
+            "NAME": "Усиленный стимулятор",
+            "CATEGORY": "special",
+            "EFFECT": "heal_25_and_speed_plus_30_percent_12s",
+            "QUANTITY_MAX": 1,
+            "USE_TRIGGER": "KEY_NUM_0",
+            "RESOURCE_NOTE": "редкий дроп с «эхо»; не продаётся",
+            "AVAILABILITY": "drop"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "game": "МЁРТВАЯ ЧАСТОТА (DEAD FREQUENCY)",
+    "section": "11. TECHNICAL ARCHITECTURE",
+    "platform": {
+        "profile": "CLDC-1.0 / MIDP-2.0",
+        "display": "240x320 portrait",
+        "fps_target": "25-30 (sleep 40ms, лаг-защита 166ms - baseline оригинала)",
+        "math": "fixed-point 14 бит (1 << 14 = 16384), без float/double",
+        "audio": "JSR-135 (AMR-сэмплы)",
+        "sensors": "опционально JSR-256 (акселерометр, только в настройках)",
+        "storage": "RMS, 3 слота",
+        "heap_target": "<= 1.5 МБ на данные уровня",
+        "note": "Архитектура улучшена относительно оригинала, но остаётся реалистичной для J2ME-железа."
+    },
+    "modules": {
+        "game_loop": {
+            "description": "Цикл run(): расчёт дельты d, кламп 166мс, sleep 40мс; тик логики + отрисовка",
+            "improvement": "аккумулятор фиксированных шагов (fixed-step 40мс) для детерминизма; отдельный счётчик анимационных тиков",
+            "budget": "1 поток, 0 аллокаций в цикле"
+        },
+        "state_machine": {
+            "description": "Глобальная стейт-машина (baseline оригинала: 17+ состояний): 0 splash, 1 menu, 2 load, 3 gameplay, 4 pause, 7 complete, 10 gameover, 11 dialogue, 13 shop, 16 save, 99 exit",
+            "improvement": "состояния разделены на Scene (экраны) и Flow (переходы); таблица переходов int[][] вместо ветвлений",
+            "budget": "1 int state + таблица 20x4"
+        },
+        "entities": {
+            "description": "Пул сущностей на массивах фиксированной длины: x/y fixed-point, state, anim_tick, hp, dir, type",
+            "improvement": "struct-of-arrays (SoA) для кэш-локальности: 8 int-массивов по 32 слота; переиспользование слотов",
+            "budget": "32 слота * 8 int = 256 ints"
+        },
+        "ai": {
+            "description": "Стейтмашины ИИ по типам (baseline: IDLE/CHASE/ATTACK/HURT/DIE; новые: SCREAM, LEAP, KITE, DETONATE, BURST, FLEE, STALK)",
+            "improvement": "поиск пути: BFS по сетке 64x64 с лимитом 16 шагов + fallback прямой линии видимости; обработка noise-событий (приоритет над CHASE); порог атаки 16px и кулдаун 1000ms - baseline",
+            "budget": "BFS-очередь 256 байт, переиспользуется; <= 24 активных ИИ"
+        },
+        "collision": {
+            "description": "AABB для сущностей + тайловая маска проходимости; индекс тайла = fixed >> 18 (baseline)",
+            "improvement": "компактная маска 1 байт/тайл (N/E/S/W + solid + door + shelter + hazard); отдельный проход для дверей (toggle-маски)",
+            "budget": "4096 байт на уровень"
+        },
+        "camera": {
+            "description": "Демпфированное следование cam += (player - cam) / 4 + кламп по краям (baseline)",
+            "improvement": "мёртвая зона 8px (меньше дрожи), тряска камеры опкодом 12 (смещение 1-2px, 0.5с)",
+            "budget": "2 int + 2 int офсета"
+        },
+        "animation": {
+            "description": "Тиковый контроллер: кадр = (tick / duration_ms) % frames; 4 направления; loop/once (baseline)",
+            "improvement": "единая таблица анимаций {type, dir, frame[]} в int-массивах; до 6 кадров на анимацию",
+            "budget": "таблица <= 2 КБ на уровень"
+        },
+        "resources": {
+            "description": "Монолитные per-level бандлы: тайлы + спрайт-листы + палитры + аудио, загрузка при state 2 (baseline)",
+            "improvement": "индексированные палитры с ремаппингом (варианты врагов без новых спрайтов); банк аудио уровня <= 16 сэмплов",
+            "budget": "уровень <= 64 КБ, лист <= 256 цветов"
+        },
+        "levels": {
+            "description": "Контейнер уровня: count_byte + uint32 LE смещения; сегменты: слои, коллизия, спауны, триггеры, диалоги, графика (baseline)",
+            "improvement": "8 слоёв максимум (стандарт), 14 опкодов скриптов, триггерные зоны 4 типов",
+            "budget": "файл <= 64 КБ, декомпрессия одним проходом"
+        },
+        "script_system": {
+            "description": "VM опкодов: 0-13 (10 baseline + SURGE, SHAKE, NOISE); параметры в int-массиве сценария",
+            "improvement": "флаги (SET_FLAG/IF_FLAG_GOTO) для ветвлений; волновые таблицы скачков сигнала",
+            "budget": "сценарий <= 256 ints на уровень"
+        },
+        "save_system": {
+            "description": "RMS, 3 слота (baseline)",
+            "improvement": "авто-сохранение в убежищах Фарадея + ручное; запись: миссия, позиция, HP, патроны по калибрам, апгрейды, флаги (битовая маска), утиль, время",
+            "budget": "запись <= 256 байт"
+        },
+        "audio": {
+            "description": "JSR-135, AMR-сэмплы; звуки выстрелов, врагов, диалоговые бипы (baseline)",
+            "improvement": "громкость по категориям (sfx/music), шкалирование без float (таблица громкостей 0-100); ambient-петля уровня",
+            "budget": "<= 16 сэмплов одновременно в памяти, каждый <= 8 КБ"
+        }
+    },
+    "improvements_vs_original": [
+        "fixed-step аккумулятор вместо чистого sleep-цикла",
+        "struct-of-arrays пул сущностей",
+        "BFS-поиск пути с лимитом + noise-события в ИИ",
+        "компактная байтовая маска коллизий с флагами shelter/hazard",
+        "мёртвая зона и тряска камеры",
+        "14 опкодов скриптов (SURGE/SHAKE/NOISE)",
+        "авто-сохранение в убежищах",
+        "категорийная громкость аудио",
+        "стандарт 8 слоёв вместо неограниченных 32"
+    ]
+}

@@ -1,0 +1,198 @@
+{
+    "game": "МЁРТВАЯ ЧАСТОТА (DEAD FREQUENCY)",
+    "note": "8 новых архетипов. Базовая линия оригинала (walker/runner/boss, AI IDLE/CHASE/ATTACK/HURT/DIE, порог атаки 16px, кулдаун 1000ms) использована только как отправная точка. Скорости в fixed-point (1 << 14 = 16384).",
+    "enemies": [
+        {
+            "ID": "grim",
+            "NAME": "Тихий",
+            "ROLE": "рядовой шамблер; baseline walker оригинала расширен (45 HP против 40, стаггер от разрыва сигнала)",
+            "HEALTH": 45,
+            "SPEED": 8192,
+            "DAMAGE": 10,
+            "ATTACK": {
+                "type": "bite",
+                "range_tiles": 1,
+                "cooldown_ms": 1000,
+                "note": "порог атаки 16px как в оригинале"
+            },
+            "AI_STATES": ["IDLE", "CHASE", "ATTACK", "HURT", "DIE", "STAGGER"],
+            "WEAKNESS": ["стаггер при разрыве сигнальной связи (signal_link)", "глушилка-доза", "монтировка 2 удара"],
+            "ANIMATIONS": {
+                "walk": {"frames": 4, "duration_ms": 150, "loop": true},
+                "attack": {"frames": 3, "duration_ms": 100, "loop": false},
+                "hurt": {"frames": 2, "duration_ms": 90, "loop": false},
+                "die": {"frames": 4, "duration_ms": 120, "loop": false}
+            },
+            "VISUAL_SILHOUETTE": "сутулая фигура в рваном рабочем комбинезоне, опущенные плечи, волочащаяся походка; тёмно-зелёная кожа, 1px чёрная обводка",
+            "SPAWN_RULES": "наземные спаунеры, фоновые стаи 2-4 особи, лимит 12 на карте; появляется во всех миссиях"
+        },
+        {
+            "ID": "crawler",
+            "NAME": "Ползун",
+            "ROLE": "низкопрофильный быстрый враг из вентиляции и подвалов; быстрый архетип оригинала переосмыслен",
+            "HEALTH": 30,
+            "SPEED": 12288,
+            "DAMAGE": 8,
+            "ATTACK": {
+                "type": "leg_bite",
+                "range_tiles": 1,
+                "cooldown_ms": 900,
+                "note": "укус в ноги, замедление цели на 0.5 сек нет - только урон"
+            },
+            "AI_STATES": ["IDLE", "CRAWL", "CHASE", "ATTACK", "HURT", "DIE"],
+            "WEAKNESS": ["монтировка одним ударом в упор", "малый HP", "не умеет открывать двери и обходить бочки"],
+            "ANIMATIONS": {
+                "walk": {"frames": 4, "duration_ms": 110, "loop": true},
+                "attack": {"frames": 2, "duration_ms": 90, "loop": false},
+                "hurt": {"frames": 2, "duration_ms": 80, "loop": false},
+                "die": {"frames": 3, "duration_ms": 100, "loop": false}
+            },
+            "VISUAL_SILHOUETTE": "низкое плоское тело, ползущее на локтях, волочащиеся ноги; серая спецовка, почти не выступает над тайлами",
+            "SPAWN_RULES": "вентиляционные спаунеры, затопленные зоны, появление из решёток при шуме; лимит 8 на карте"
+        },
+        {
+            "ID": "leaper",
+            "NAME": "Прыгун",
+            "ROLE": "быстрый прыгающий ассасин; runner оригинала развит в прыжковую арку",
+            "HEALTH": 25,
+            "SPEED": 20480,
+            "DAMAGE": 12,
+            "ATTACK": {
+                "type": "leap",
+                "range_tiles": 3,
+                "cooldown_ms": 1200,
+                "note": "прыжок по дуге; при промахе - STUN 800ms (окно контратаки)"
+            },
+            "AI_STATES": ["IDLE", "CHASE", "LEAP_READY", "LEAP", "STUN", "HURT", "DIE"],
+            "WEAKNESS": ["стаггер после неудачного прыжка", "низкий HP", "уязвим в фазе LEAP_READY"],
+            "ANIMATIONS": {
+                "walk": {"frames": 4, "duration_ms": 90, "loop": true},
+                "attack": {"frames": 3, "duration_ms": 80, "loop": false},
+                "hurt": {"frames": 2, "duration_ms": 80, "loop": false},
+                "die": {"frames": 3, "duration_ms": 90, "loop": false}
+            },
+            "VISUAL_SILHOUETTE": "худой бегун с выступающими рёбрами, длинные руки, развевающаяся одежда; высокая узнаваемая арка прыжка",
+            "SPAWN_RULES": "спаунеры-засады в коридорах, прыгает с галерей; лимит 6 на карте"
+        },
+        {
+            "ID": "screamer",
+            "NAME": "Визгун",
+            "ROLE": "поддержка: криком призывает ближайших врагов (шумовое событие); прямого урона не наносит",
+            "HEALTH": 20,
+            "SPEED": 4096,
+            "DAMAGE": 0,
+            "ATTACK": {
+                "type": "scream",
+                "range_tiles": 6,
+                "cooldown_ms": 2000,
+                "note": "создаёт noise-событие радиуса 6 тайлов; прерывается любым попаданием"
+            },
+            "AI_STATES": ["IDLE", "FLEE", "SCREAM", "HURT", "DIE"],
+            "WEAKNESS": ["любое попадание прерывает крик", "ЭМИ-карабин глушит на 2 сек", "очень низкий HP"],
+            "ANIMATIONS": {
+                "walk": {"frames": 4, "duration_ms": 160, "loop": true},
+                "attack": {"frames": 3, "duration_ms": 200, "loop": false},
+                "hurt": {"frames": 2, "duration_ms": 90, "loop": false},
+                "die": {"frames": 3, "duration_ms": 110, "loop": false}
+            },
+            "VISUAL_SILHOUETTE": "сгорбленная худая фигура с непропорционально раскрытой челюстью, раздутая шея; стоит за спинами стаи",
+            "SPAWN_RULES": "в группах за стенами, на балконах; лимит 3 на карте; не появляется в одиночку"
+        },
+        {
+            "ID": "spitter",
+            "NAME": "Плевальщица",
+            "ROLE": "дальний боец: кислотные плевки по дуге; держит дистанцию (kite)",
+            "HEALTH": 35,
+            "SPEED": 6144,
+            "DAMAGE": 8,
+            "ATTACK": {
+                "type": "acid_lob",
+                "range_tiles": 4,
+                "cooldown_ms": 1200,
+                "note": "снаряд по дуге 2-4 тайла; DoT 4 HP/сек на 1.5 сек; лужа на тайле 3 сек"
+            },
+            "AI_STATES": ["IDLE", "KITE", "ATTACK_RANGED", "HURT", "DIE"],
+            "WEAKNESS": ["ЭМИ-карабин прерывает плевок", "уязвима в упор (не стреляет ближе 2 тайлов)", "медленный разворот"],
+            "ANIMATIONS": {
+                "walk": {"frames": 4, "duration_ms": 150, "loop": true},
+                "attack": {"frames": 3, "duration_ms": 120, "loop": false},
+                "hurt": {"frames": 2, "duration_ms": 90, "loop": false},
+                "die": {"frames": 3, "duration_ms": 110, "loop": false}
+            },
+            "VISUAL_SILHOUETTE": "раздутое тело с пульсирующим зобом-мешком на горле, фартук, запрокинутая голова при плевке",
+            "SPAWN_RULES": "возвышенные позиции, гнёзда у кислотных луж; лимит 5 на карте"
+        },
+        {
+            "ID": "bloom",
+            "NAME": "Споровик",
+            "ROLE": "самоуничтожающийся носитель спор: детонация в радиусе 2 тайлов",
+            "HEALTH": 20,
+            "SPEED": 8192,
+            "DAMAGE": 15,
+            "ATTACK": {
+                "type": "detonate",
+                "range_tiles": 2,
+                "cooldown_ms": 0,
+                "note": "подрыв при дистанции < 1.5 тайла или HP < 25%; облако спор замедляет 2 сек"
+            },
+            "AI_STATES": ["IDLE", "CHASE", "ARM", "DETONATE", "HURT"],
+            "WEAKNESS": ["расстрел с дистанции", "цепная детонация от других взрывов", "не успевает подорваться при стаггере"],
+            "ANIMATIONS": {
+                "walk": {"frames": 4, "duration_ms": 140, "loop": true},
+                "attack": {"frames": 3, "duration_ms": 100, "loop": false},
+                "hurt": {"frames": 2, "duration_ms": 80, "loop": false},
+                "die": {"frames": 3, "duration_ms": 100, "loop": false}
+            },
+            "VISUAL_SILHOUETTE": "округлое раздутое тело с пульсирующим мешком-спорангием, короткие руки; заметное свечение палитры",
+            "SPAWN_RULES": "ядра стай, узкие проходы, волновые спауны; лимит 4 на карте"
+        },
+        {
+            "ID": "breaker",
+            "NAME": "Ломщик",
+            "ROLE": "тяжёлый штурмовик: ломает баррикады, двери и ящики; босс-вариант «Таран» (Акт I)",
+            "HEALTH": 120,
+            "SPEED": 4096,
+            "DAMAGE": 20,
+            "ATTACK": {
+                "type": "smash",
+                "range_tiles": 2,
+                "cooldown_ms": 1500,
+                "note": "удар по площади 1.5 тайла; разрушает препятствия; медленный разворот"
+            },
+            "AI_STATES": ["IDLE", "CHASE", "SMASH", "HURT", "DIE"],
+            "WEAKNESS": ["медленный разворот - заход во фланг", "ЭМИ-стаггер 2 сек", "уязвим со спины (x1.5)"],
+            "ANIMATIONS": {
+                "walk": {"frames": 4, "duration_ms": 180, "loop": true},
+                "attack": {"frames": 4, "duration_ms": 140, "loop": false},
+                "hurt": {"frames": 2, "duration_ms": 110, "loop": false},
+                "die": {"frames": 5, "duration_ms": 130, "loop": false}
+            },
+            "VISUAL_SILHOUETTE": "массивная широкоплечая фигура в строительной каске и наплечниках, кувалда/бетонная глыба в руках",
+            "SPAWN_RULES": "скриптовые ворота, поздние акты; лимит 2 на карте; босс-вариант «Таран» 200 HP в миссии sq06"
+        },
+        {
+            "ID": "echo",
+            "NAME": "Эхо",
+            "ROLE": "элита/босс: оператор вышки, слитый с сигналом; 3 фазы; финал - «Эхо-Прайм»",
+            "HEALTH": 400,
+            "SPEED": 8192,
+            "DAMAGE": 15,
+            "ATTACK": {
+                "type": "claw_combo_and_burst",
+                "range_tiles": 2,
+                "cooldown_ms": 2000,
+                "note": "серия когтей 3x15 + сигнальный BURST радиус 3 тайла (стаггер 1 сек); фазы на 66%/33% HP - чаще BURST"
+            },
+            "AI_STATES": ["IDLE", "STALK", "ATTACK", "BURST", "PHASE", "HURT", "DIE"],
+            "WEAKNESS": ["ЭМИ-карабин стаггер 2 сек", "уязвим во время зарядки BURST", "теряет связь при перегрузке реле (sq21)"],
+            "ANIMATIONS": {
+                "walk": {"frames": 4, "duration_ms": 130, "loop": true},
+                "attack": {"frames": 3, "duration_ms": 100, "loop": false},
+                "hurt": {"frames": 2, "duration_ms": 100, "loop": false},
+                "die": {"frames": 6, "duration_ms": 140, "loop": false}
+            },
+            "VISUAL_SILHOUETTE": "человекоподобная фигура с антенной-хребтом на спине, статическое свечение, искажённый контур",
+            "SPAWN_RULES": "скриптовые арены; первая встреча sq11 (неубиваем), бой sq19, страж sq22, финал sq24 («Эхо-Прайм» 800 HP)"
+        }
+    ]
+}

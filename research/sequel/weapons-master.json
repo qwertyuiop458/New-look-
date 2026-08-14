@@ -1,0 +1,153 @@
+{
+    "game": "МЁРТВАЯ ЧАСТОТА (DEAD FREQUENCY)",
+    "note": "7 оружий. База оригинала (hitscan, пистолет/дробовик/автомат) сохранена и расширена. Все тайминги кратны кадрам анимаций (>= 80ms). Hitscan-стволы не создают снарядов; гранатомёт использует пул <= 8 объектов. Значения совместимы с CLDC-1.0 (int, fixed-point).",
+    "weapons": [
+        {
+            "ID": "wp_osa",
+            "NAME": "Оса-М",
+            "CALIBER": "9mm",
+            "category": "hitscan",
+            "damage": 10,
+            "fire_rate": 400,
+            "ammo": 12,
+            "reload": 1500,
+            "range": 8,
+            "spread": 0,
+            "special_behavior": "базовый пистолет (baseline оригинала: 10 урона, 400мс, 12 патронов, 1500мс, 8 тайлов); стабилен, бесшумен только с ЭМИ-модулем нет - обычный шум 3 тайла",
+            "animation": {
+                "shoot": {"frames": 2, "duration_ms": 80, "loop": false},
+                "reload": {"frames": 3, "duration_ms": 150, "loop": false}
+            },
+            "sound_concept": "сухой короткий хлопок + щелчок затвора; один AMR-сэмпл ~3 КБ",
+            "platform_notes": "hitscan: 0 снарядов в памяти; шумовое событие радиуса 3 тайла",
+            "mechanics_used": ["noise_aggro"],
+            "unlock_mission": "sq01"
+        },
+        {
+            "ID": "wp_splav",
+            "NAME": "Сплав-12",
+            "CALIBER": "12ga",
+            "category": "hitscan",
+            "damage": 30,
+            "fire_rate": 800,
+            "ammo": 6,
+            "reload": 2000,
+            "range": 4,
+            "spread": 25,
+            "special_behavior": "дробовик (baseline оригинала: 30 урона, 800мс, 6 патронов, 2000мс, 4 тайла); веер из 5 pellets по 6 урона; сильный шум 5 тайлов",
+            "animation": {
+                "shoot": {"frames": 2, "duration_ms": 90, "loop": false},
+                "reload": {"frames": 4, "duration_ms": 180, "loop": false}
+            },
+            "sound_concept": "тяжёлый глухой удар + раскат; AMR ~5 КБ",
+            "platform_notes": "5 hitscan-лучей за выстрел, 5 проверок AABB; шумовое событие радиуса 5 тайлов",
+            "mechanics_used": ["noise_aggro"],
+            "unlock_mission": "sq06"
+        },
+        {
+            "ID": "wp_kedr",
+            "NAME": "Кедр-9",
+            "CALIBER": "9mm",
+            "category": "hitscan",
+            "damage": 8,
+            "fire_rate": 120,
+            "ammo": 30,
+            "reload": 1800,
+            "range": 6,
+            "spread": 8,
+            "special_behavior": "автомат (baseline оригинала расширен: 8 урона, 120мс, 30 патронов); удержание огня = авто-стрельба; высокий расход патронов",
+            "animation": {
+                "shoot": {"frames": 2, "duration_ms": 60, "loop": true},
+                "reload": {"frames": 3, "duration_ms": 160, "loop": false}
+            },
+            "sound_concept": "быстрая сухая трескотня; AMR ~4 КБ, зацикленный сэмпл очереди",
+            "platform_notes": "hitscan; анимация стрельбы 2 кадра чередуются (60мс) - в пределах кадрового бюджета 25 FPS",
+            "mechanics_used": ["noise_aggro"],
+            "unlock_mission": "sq09"
+        },
+        {
+            "ID": "wp_dolgiy",
+            "NAME": "Долгий выстрел",
+            "CALIBER": "7.62mm",
+            "category": "hitscan",
+            "damage": 60,
+            "fire_rate": 1100,
+            "ammo": 5,
+            "reload": 2200,
+            "range": 16,
+            "spread": 0,
+            "special_behavior": "снайперская винтовка (НОВОЕ - в оригинале отсутствовала): пробивает до 3 врагов по линии; шум 7 тайлов",
+            "animation": {
+                "shoot": {"frames": 3, "duration_ms": 120, "loop": false},
+                "reload": {"frames": 4, "duration_ms": 200, "loop": false}
+            },
+            "sound_concept": "долгий раскатистый выстрел с эхом; AMR ~6 КБ",
+            "platform_notes": "hitscan с проходом по лучу: до 3 проверок AABB на выстрел",
+            "mechanics_used": ["noise_aggro", "signal_link"],
+            "unlock_mission": "sq12"
+        },
+        {
+            "ID": "wp_kubalda",
+            "NAME": "Кувалда",
+            "CALIBER": "40mm",
+            "category": "projectile",
+            "damage": 50,
+            "fire_rate": 1400,
+            "ammo": 4,
+            "reload": 2500,
+            "range": 10,
+            "spread": 0,
+            "special_behavior": "гранатомёт (НОВОЕ - в оригинале только hitscan): снаряд по дуге, AoE 2 тайла, поджигает топливные бочки; шум 8 тайлов",
+            "animation": {
+                "shoot": {"frames": 3, "duration_ms": 130, "loop": false},
+                "reload": {"frames": 5, "duration_ms": 220, "loop": false}
+            },
+            "sound_concept": "глухой «тумп» выстрела + дальний взрыв; 2 AMR-сэмпла ~7 КБ",
+            "platform_notes": "пул снарядов <= 8 (структура x,y fixed-point + dir); AoE = обход 3x3 тайла; взрыв = 1 спрайт-вспышка + 8 частиц",
+            "mechanics_used": ["noise_aggro", "signal_link"],
+            "unlock_mission": "sq10"
+        },
+        {
+            "ID": "wp_glushitel",
+            "NAME": "Глушитель",
+            "CALIBER": "EMP cell",
+            "category": "hitscan_emp",
+            "damage": 5,
+            "fire_rate": 900,
+            "ammo": 8,
+            "reload": 2000,
+            "range": 7,
+            "spread": 0,
+            "special_behavior": "ЭМИ-карабин (НОВОЕ): стаггер «эхо» и «ломщика» на 2 сек, прерывает крик «визгуна» и плевок «плевальщицы»; НЕ создаёт шума - тихий выстрел; по органике слаб",
+            "animation": {
+                "shoot": {"frames": 2, "duration_ms": 100, "loop": false},
+                "reload": {"frames": 3, "duration_ms": 170, "loop": false}
+            },
+            "sound_concept": "электрический вой + треск разряда; AMR ~3 КБ",
+            "platform_notes": "hitscan; спец-эффект = 1 синяя вспышка + 4 частицы; НЕ создаёт noise-событие",
+            "mechanics_used": ["signal_link", "noise_aggro"],
+            "unlock_mission": "sq14"
+        },
+        {
+            "ID": "wp_kosa",
+            "NAME": "Монтировка",
+            "CALIBER": "melee",
+            "category": "melee",
+            "damage": 18,
+            "fire_rate": 550,
+            "ammo": 999,
+            "reload": 0,
+            "range": 1,
+            "spread": 0,
+            "special_behavior": "холодное оружие (НОВОЕ - в оригинале отсутствовало): без патронов, без шума, 1 удар = «ползун», вскрывает ящики с лутом; 2 удара = «тихий»",
+            "animation": {
+                "shoot": {"frames": 2, "duration_ms": 100, "loop": false},
+                "reload": {"frames": 1, "duration_ms": 0, "loop": false}
+            },
+            "sound_concept": "металлический удар + скрежет; AMR ~2 КБ",
+            "platform_notes": "проверка AABB в 1 тайле перед игроком; 0 аллокаций",
+            "mechanics_used": ["noise_aggro"],
+            "unlock_mission": "sq01"
+        }
+    ]
+}
