@@ -1,0 +1,10 @@
+{
+    "source": "t0",
+    "offset": 37324,
+    "width": 32,
+    "height": 48,
+    "palette": "palette_05",
+    "transparent_index": 0,
+    "frame": "zombie_walk_0",
+    "confidence": "HIGH"
+}

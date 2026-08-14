@@ -1,0 +1,10 @@
+{
+    "source": "t0",
+    "offset": 107158,
+    "width": 48,
+    "height": 24,
+    "palette": "palette_10",
+    "transparent_index": 0,
+    "frame": "muzzle_flash",
+    "confidence": "HIGH"
+}

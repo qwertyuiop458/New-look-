@@ -1,0 +1,81 @@
+{
+    "animations": [
+        {
+            "id": 0,
+            "name": "player_idle",
+            "frame_count": 1,
+            "frames": [0],
+            "frame_duration_ms": 200,
+            "loop": true,
+            "directions": 4,
+            "palette_variant": 0,
+            "actor": "Player"
+        },
+        {
+            "id": 1,
+            "name": "player_walk",
+            "frame_count": 4,
+            "frames": [1, 2, 3, 4],
+            "frame_duration_ms": 120,
+            "loop": true,
+            "directions": 4,
+            "palette_variant": 0,
+            "actor": "Player"
+        },
+        {
+            "id": 2,
+            "name": "player_shoot",
+            "frame_count": 2,
+            "frames": [5, 6],
+            "frame_duration_ms": 80,
+            "loop": false,
+            "directions": 4,
+            "palette_variant": 0,
+            "actor": "Player"
+        },
+        {
+            "id": 3,
+            "name": "player_reload",
+            "frame_count": 3,
+            "frames": [7, 8, 9],
+            "frame_duration_ms": 150,
+            "loop": false,
+            "directions": 4,
+            "palette_variant": 0,
+            "actor": "Player"
+        },
+        {
+            "id": 10,
+            "name": "zombie_walk",
+            "frame_count": 4,
+            "frames": [0, 1, 2, 3],
+            "frame_duration_ms": 150,
+            "loop": true,
+            "directions": 4,
+            "palette_variant": 1,
+            "actor": "Common_Zombie"
+        },
+        {
+            "id": 11,
+            "name": "zombie_attack",
+            "frame_count": 3,
+            "frames": [4, 5, 6],
+            "frame_duration_ms": 100,
+            "loop": false,
+            "directions": 4,
+            "palette_variant": 1,
+            "actor": "Common_Zombie"
+        },
+        {
+            "id": 12,
+            "name": "zombie_die",
+            "frame_count": 4,
+            "frames": [7, 8, 9, 10],
+            "frame_duration_ms": 120,
+            "loop": false,
+            "directions": 4,
+            "palette_variant": 1,
+            "actor": "Common_Zombie"
+        }
+    ]
+}
