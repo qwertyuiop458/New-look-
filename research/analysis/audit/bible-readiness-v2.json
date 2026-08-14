@@ -1,0 +1,40 @@
+{
+    "audit": "bible-readiness-v2",
+    "game": "Zombie Infection (Gameloft 2008)",
+    "date": "2026-08-14",
+    "basis": "Game Bible V2 (game-bible-data-v2.json) + container_parser_v2.py + validate_game_bible_v2.py",
+    "criteria": {
+        "READY": "все важнейшие механики имеют надёжное первичное evidence (код/данные), runtime-зависимые значения не заявлены как CONFIRMED",
+        "READY_WITH_GAPS": "ядро подтверждено, но существенные области требуют runtime",
+        "NOT_READY": "важнейшие механики не имеют надёжного evidence"
+    },
+    "verdict": "READY_WITH_GAPS",
+    "verdict_rationale": [
+        "Ядро теперь подтверждено первично: архитектура (A), контейнерный формат, 18 состояний с семантикой, 56 архетипов, 16 оружий + 6 патронов (полные таблицы), 176 анимаций, hitscan-урон prop5+rand(prop6), HP 0..100, камера с клампами, fixed-point цепочка, пиксельный формат 4444 ARGB.",
+        "Остаются runtime-пробелы: семантика 19 опкодов, семантика свойств оружия (кроме 4,5,6,13), предметы (лечение/keycard), переходы состояний, содержимое уровней, аудио-файлы, длительности кадров.",
+        "Критерий READY не выполнен (runtime-области существенны); NOT_READY не применим — важнейшие механики теперь имеют первичное evidence."
+    ],
+    "metrics": {
+        "confirmed_count": 41,
+        "inferred_count": 12,
+        "unknown_count": 10,
+        "runtime_required_count": 14,
+        "note": "подсчёт по game-bible-data-v2.json (факты со status)"
+    },
+    "weapon_records": 16,
+    "weapon_ids": [2, 3, 4, 5, 6, 7, 8, 11, 16, 17, 18, 19, 20, 21, 22, 24],
+    "ammo_records": 6,
+    "ammo_ids": [10, 12, 13, 14, 15, 23],
+    "entity_archetypes": 56,
+    "animation_records": 176,
+    "frame_records": 3,
+    "full_level_packages": 0,
+    "partial_level_packages": 22,
+    "global_data_packages": 1,
+    "stub_packages": 7,
+    "opcodes": 19,
+    "game_states": 18,
+    "validator": "PASS (ошибок нет)",
+    "validator_note": "PASS валидатора не является критерием READY — критерии выше",
+    "recommendation": "Следующий этап: рантайм-трассировка (эмулятор J2ME) для закрытия runtime-пробелов; затем — пересборка sequel-reference из V2."
+}

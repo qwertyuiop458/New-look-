@@ -1,0 +1,947 @@
+{
+ "meta": {
+  "title": "Game Bible Data V2",
+  "game": "Zombie Infection (Gameloft SA, 2008)",
+  "date": "2026-08-14",
+  "branch": "arena/01a001a1-new-look",
+  "method": "rebuilt from primary sources (bytecode/decompiled/raw resources/reproducible parsers)",
+  "v1_status": "NOT_READY (forensic audit 2a0f0a0)",
+  "status_legend": {
+   "CONFIRMED": "direct primary evidence",
+   "INFERRED": "indirect evidence",
+   "UNKNOWN": "no static evidence",
+   "REQUIRES_REAL_RUNTIME": "cannot be proven statically"
+  }
+ },
+ "architecture": {
+  "midlet": {
+   "claim": "MIDlet GloftMASS (extends MIDlet)",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/GloftMASS.java",
+    "class": "GloftMASS"
+   }
+  },
+  "canvas": {
+   "claim": "class g extends Canvas implements Runnable - движок и холст",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "method": "run",
+    "line": 35148
+   }
+  },
+  "main_loop": {
+   "claim": "delta d=now-c; clamp d>166->166; yield-spin <40ms; while(a!=99)",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "method": "run",
+    "line": "35148-35178"
+   }
+  },
+  "render_loop": {
+   "claim": "g.p() switch(a) per-state render; двойная буферизация Image",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "method": "p/e",
+    "line": "799+, 1487-1492"
+   }
+  },
+  "update_loop": {
+   "claim": "g.o() switch(a) per-state logic; gameplay = state 6 -> B() -> f.b()",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793, 1107-1140"
+   }
+  },
+  "states_count": {
+   "claim": "18 state IDs {0,1,2,3,4,5,6,7,8,10,11,12,13,16,17,18,19,99}",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793"
+   }
+  },
+  "input": {
+   "claim": "keyPressed/Released/Repeated -> g.aa(int) -> маски ey/ez/eC/eD",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "35007-35034"
+   }
+  },
+  "lifecycle": {
+   "claim": "destroyApp(true) при a==99",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": 35174
+   }
+  },
+  "resource_loading": {
+   "claim": "getResourceAsStream('/'+name) -> a(String) -> контейнер",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "4055-4075"
+   }
+  },
+  "save": {
+   "claim": "RMS RecordStore 'a'; IGP RecordStore 'igp19'",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": 4129,
+    "b.java": 2270
+   }
+  },
+  "audio_api": {
+   "claim": "JSR-135; типы tone-seq/wav/midi/mmf/amr; 19 слотов",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "35186-35192"
+   }
+  },
+  "sensors": {
+   "claim": "JSR-256 акселерометр, 3 канала, тряска (смена знака, c>4)",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/e.java",
+    "line": "30-158"
+   }
+  }
+ },
+ "states": [
+  {
+   "id": 0,
+   "handler": "g.v()",
+   "semantics": "splash/логотипы",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.v()"
+   }
+  },
+  {
+   "id": 1,
+   "handler": "g.x()",
+   "semantics": "главное меню",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.x()"
+   }
+  },
+  {
+   "id": 2,
+   "handler": "g.F()",
+   "semantics": "загрузка уровня (подсостояния b: 0=g.g(), 1=прогресс)",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.F()"
+   }
+  },
+  {
+   "id": 3,
+   "handler": "g.V()",
+   "semantics": "кинематика/скриптовые сцены (V1 ошибочно: геймплей)",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.V()"
+   }
+  },
+  {
+   "id": 4,
+   "handler": "g.z()",
+   "semantics": "пауза",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.z()"
+   }
+  },
+  {
+   "id": 5,
+   "handler": "g.bK()",
+   "semantics": "настройки",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.bK()"
+   }
+  },
+  {
+   "id": 6,
+   "handler": "g.B()",
+   "semantics": "активный геймплей: f.b() ИИ, подсостояния b==0/4 (V1 ошибочно: IGP)",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.B()"
+   }
+  },
+  {
+   "id": 7,
+   "handler": "g.cd()",
+   "semantics": "завершение уровня/статистика",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.cd()"
+   }
+  },
+  {
+   "id": 8,
+   "handler": "switch(u) case 1: g.cj()",
+   "semantics": "вложенные подменю",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "switch(u) case 1: g.cj()"
+   }
+  },
+  {
+   "id": 10,
+   "handler": "g.dH()",
+   "semantics": "game over",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.dH()"
+   }
+  },
+  {
+   "id": 11,
+   "handler": "g.dA()",
+   "semantics": "диалоги/сцены",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.dA()"
+   }
+  },
+  {
+   "id": 12,
+   "handler": "g.eh()",
+   "semantics": "помощь",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.eh()"
+   }
+  },
+  {
+   "id": 13,
+   "handler": "g.fE()",
+   "semantics": "магазин апгрейдов",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.fE()"
+   }
+  },
+  {
+   "id": 16,
+   "handler": "g.C()",
+   "semantics": "профили сохранений",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.C()"
+   }
+  },
+  {
+   "id": 17,
+   "handler": "g.aO()",
+   "semantics": "выбор персонажа/режима",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.aO()"
+   }
+  },
+  {
+   "id": 18,
+   "handler": "g.E()",
+   "semantics": "титры",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.E()"
+   }
+  },
+  {
+   "id": 19,
+   "handler": "g.G()",
+   "semantics": "подтверждение выхода",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "g.G()"
+   }
+  },
+  {
+   "id": 99,
+   "handler": "exit",
+   "semantics": "завершение (while(a!=99))",
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "714-793",
+    "handler": "exit"
+   }
+  },
+  {
+   "id": "transitions",
+   "claim": "карта переходов",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "note": "прямых присваиваний a=N в декомпиляте не найдено"
+  }
+ ],
+ "entities": {
+  "model": "parameterized archetypes: L (поведенческий класс), g[0] (id архетипа), таблицы T/U/W/V/X/Y",
+  "archetype_count": 56,
+  "archetype_source": "m9 seg4 (loader dr() g.java:24553), tag 6: [id u16][32 x u16 props]",
+  "archetype_ids_sample": [
+   3,
+   13,
+   24,
+   30,
+   18,
+   31,
+   38,
+   35,
+   107,
+   108,
+   90,
+   96,
+   125,
+   130,
+   114,
+   120,
+   46,
+   84,
+   76,
+   67,
+   265,
+   260,
+   286,
+   277,
+   305,
+   300,
+   326,
+   317,
+   64,
+   135,
+   291,
+   139,
+   70,
+   147,
+   358,
+   337,
+   174,
+   175,
+   157,
+   163
+  ],
+  "full_list": "research/analysis/v2/entities.json",
+  "props_per_archetype": {
+   "file": 32,
+   "runtime_total": 35,
+   "note": "+3 добавляются кодом: старт анимаций, счётчик анимаций, кол-во кадров"
+  },
+  "animation_records": 176,
+  "frame_records": 3,
+  "x_records": 36,
+  "y_records": 15,
+  "behavior_classes_L": [
+   {
+    "L": [
+     0,
+     1,
+     2
+    ],
+    "class": "main character (MC)",
+    "evidence": "g.java:7111",
+    "status": "CONFIRMED"
+   },
+   {
+    "L": 3,
+    "class": "enemy",
+    "evidence": "f.java:681,700",
+    "status": "CONFIRMED"
+   },
+   {
+    "L": 9,
+    "class": "NPC",
+    "evidence": "g.java:21399, 31810-31817",
+    "status": "CONFIRMED"
+   },
+   {
+    "L": 10,
+    "class": "object/item-type",
+    "evidence": "f.java:17010",
+    "status": "CONFIRMED"
+   },
+   {
+    "L": 11,
+    "class": "item/interactive (level data b[][0]==11)",
+    "evidence": "g.java:8249",
+    "status": "CONFIRMED"
+   },
+   {
+    "L": 14,
+    "class": "scenario object",
+    "evidence": "f.java:17010",
+    "status": "CONFIRMED"
+   },
+   {
+    "L": 16,
+    "class": "object/projectile",
+    "evidence": "f.java:17010",
+    "status": "CONFIRMED"
+   },
+   {
+    "L": [
+     20,
+     22,
+     23,
+     25,
+     26
+    ],
+    "class": "additional types in branches",
+    "evidence": "f.java/g.java L-compares",
+    "status": "CONFIRMED"
+   },
+   {
+    "L": [
+     21,
+     24
+    ],
+    "class": "grid objects g.g[layer][x][y]",
+    "evidence": "g.java:16622",
+    "status": "CONFIRMED"
+   }
+  ],
+  "entity_state_field": {
+   "field": "g[12]",
+   "values": [
+    0,
+    1,
+    4,
+    7,
+    8,
+    9,
+    14,
+    17,
+    18,
+    19,
+    23,
+    100,
+    101,
+    103,
+    104,
+    106,
+    107
+   ],
+   "status": "CONFIRMED",
+   "semantics": "REQUIRES_REAL_RUNTIME"
+  },
+  "entity_substate_field": {
+   "field": "g[10]",
+   "values": [
+    0,
+    3,
+    4,
+    5
+   ],
+   "status": "CONFIRMED"
+  },
+  "entity_flags_field": {
+   "field": "g[16]",
+   "bits": [
+    "0x20",
+    "0x100",
+    "0x400",
+    "0x800",
+    "0x2000",
+    "0x4000",
+    "0x8000"
+   ],
+   "status": "CONFIRMED"
+  }
+ },
+ "weapons": {
+  "source": "m9 seg5 bytes 9122..10156 (loader eZ() g.java:31831; E()=an.length/28)",
+  "record_count": 16,
+  "ids": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   11,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   24
+  ],
+  "ammo_count": 6,
+  "ammo_ids": [
+   10,
+   12,
+   13,
+   14,
+   15,
+   23
+  ],
+  "fields_per_weapon": 28,
+  "fields_per_ammo": 6,
+  "full_dump": "research/analysis/v2/weapons.json",
+  "known_props": [
+   {
+    "prop": 4,
+    "semantics": "число лучей за выстрел",
+    "status": "CONFIRMED",
+    "evidence": "f.java:3379"
+   },
+   {
+    "prop": 5,
+    "semantics": "базовый урон",
+    "status": "CONFIRMED",
+    "evidence": "g.java:21382"
+   },
+   {
+    "prop": 6,
+    "semantics": "случайная добавка урона 0..prop6-1",
+    "status": "CONFIRMED",
+    "evidence": "g.java:21382-21390"
+   },
+   {
+    "prop": 13,
+    "semantics": "ёмкость магазина",
+    "status": "CONFIRMED",
+    "evidence": "f.java:6529"
+   },
+   {
+    "prop": 18,
+    "semantics": "ссылка/тип оружия",
+    "status": "INFERRED",
+    "evidence": "g.java:6606"
+   },
+   {
+    "prop": 21,
+    "semantics": "звук оружия",
+    "status": "INFERRED",
+    "evidence": "f.java:441,8272"
+   },
+   {
+    "prop": 25,
+    "semantics": "параметр стрельбы",
+    "status": "INFERRED",
+    "evidence": "f.java:3777"
+   },
+   {
+    "prop": "остальные",
+    "semantics": "сырые значения",
+    "status": "REQUIRES_REAL_RUNTIME"
+   }
+  ],
+  "inventory": {
+   "claim": "g.L[1]=текущее оружие(0..15); g.L[3]=флаг; g[28]=слот; g[13+i]=патроны",
+   "status": "CONFIRMED",
+   "evidence": "g.java:21333-21348, f.java:3301,6529"
+  },
+  "shop_upgrades": {
+   "claim": "l(n,prop)=an[n*28+prop]+y(n,prop)",
+   "status": "CONFIRMED",
+   "evidence": "g.java:31911"
+  }
+ },
+ "items": [
+  {
+   "claim": "предметы = данные уровня b[n][0]; тип 11 подтверждён",
+   "status": "CONFIRMED",
+   "evidence": "g.java:8249,8296"
+  },
+  {
+   "claim": "авто-подбор патронов",
+   "status": "CONFIRMED",
+   "evidence": "f.java (auto pickup)"
+  },
+  {
+   "claim": "аптечка лечит 50 HP",
+   "status": "UNKNOWN",
+   "evidence": null
+  },
+  {
+   "claim": "keycard id 12",
+   "status": "UNKNOWN",
+   "evidence": null
+  },
+  {
+   "claim": "лимит аптечек 3 шт.",
+   "status": "UNKNOWN",
+   "evidence": null
+  }
+ ],
+ "ai": [
+  {
+   "claim": "вход: f.b() из g.B() (state 6)",
+   "status": "CONFIRMED",
+   "evidence": "g.java:1107-1140"
+  },
+  {
+   "claim": "состояния g[12] (17+ значений), g[10], флаги g[16]",
+   "status": "CONFIRMED",
+   "evidence": "f.java (ветвления)"
+  },
+  {
+   "claim": "дистанции агро: >=1600, M<=4096 (единицы неизвестны)",
+   "status": "CONFIRMED",
+   "evidence": "f.java:681,692,703"
+  },
+  {
+   "claim": "таймер 800 мс (f.w), случайные 1000+rand(500)",
+   "status": "CONFIRMED",
+   "evidence": "f.java:640-660, 6363"
+  },
+  {
+   "claim": "порог атаки 16 px",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "evidence": "262144 в f.java:5651,8360,8380 - контекст неизвестен"
+  },
+  {
+   "claim": "кулдаун атаки 1000 мс",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "evidence": "800 мс найден; 1000 - только rand"
+  },
+  {
+   "claim": "pathfinding эвристика",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "evidence": "runtime-gaps ai_pathfinding"
+  }
+ ],
+ "movement": [
+  {
+   "claim": "fixed-point 14 бит; 16384 = 1.0",
+   "status": "CONFIRMED",
+   "evidence": "c.java:34-37,86-92"
+  },
+  {
+   "claim": "игрок: X ускорение 19660*d/70 лимит 589824 (36 px/s); Y 26214*d/70 лимит 786432 (48 px/s)",
+   "status": "CONFIRMED",
+   "evidence": "g.java:7149-7162"
+  },
+  {
+   "claim": "сущности: скорости 60/65/90/110 px/s; шаг 819200 (50 px); 8 направлений",
+   "status": "CONFIRMED",
+   "evidence": "f.java:870-871, 6860-6900"
+  },
+  {
+   "claim": "диагональ 0.7071 (11585)",
+   "status": "UNKNOWN",
+   "evidence": "константа отсутствует в коде"
+  },
+  {
+   "claim": "hitbox 24x40",
+   "status": "UNKNOWN",
+   "evidence": "зонд ±5/±4 (f.java:4979); 24x40 не найден"
+  },
+  {
+   "claim": "HP: e[1][0], clamp 0..100",
+   "status": "CONFIRMED",
+   "evidence": "g.java:9040-9045"
+  },
+  {
+   "claim": "смерть: g[12]>=100 терминальные; game over HP<=0",
+   "status": "CONFIRMED",
+   "evidence": "f.java:3242-3255; state 10"
+  }
+ ],
+ "combat": [
+  {
+   "claim": "hitscan: цикл лучей g.l(n,4), зонд, урон f.a(...)",
+   "status": "CONFIRMED",
+   "evidence": "f.java:3379-3403"
+  },
+  {
+   "claim": "урон оружия = prop5 + rand(prop6)",
+   "status": "CONFIRMED",
+   "evidence": "g.java:21382"
+  },
+  {
+   "claim": "урон врага = prop22 архетипа",
+   "status": "INFERRED",
+   "evidence": "f.java:2894"
+  },
+  {
+   "claim": "полный боевой цикл (кулдауны, агро, реакция на урон)",
+   "status": "REQUIRES_REAL_RUNTIME"
+  }
+ ],
+ "collision": [
+  {
+   "claim": "цепочка: fixed >>14 -> pixel; pixel /16 -> tile",
+   "status": "CONFIRMED",
+   "evidence": "f.java:6694-6695, g.java:5804"
+  },
+  {
+   "claim": "операция >>18 отсутствует (эквивалент)",
+   "status": "CONFIRMED",
+   "evidence": "grep по decompiled"
+  },
+  {
+   "claim": "AABB + 5-точечный зонд ±5/±4",
+   "status": "CONFIRMED",
+   "evidence": "f.java:4979, g.java:7881-7884"
+  },
+  {
+   "claim": "тайл 16x16",
+   "status": "CONFIRMED",
+   "evidence": "g.java:5804"
+  },
+  {
+   "claim": "сетка g.g[layer][x][y] = объекты-тайлы (L 21/24)",
+   "status": "CONFIRMED",
+   "evidence": "g.java:16622"
+  },
+  {
+   "claim": "размеры боксов = g.h(type,6)*16",
+   "status": "INFERRED",
+   "evidence": "g.java:21399"
+  }
+ ],
+ "camera": [
+  {
+   "claim": "позиция: T = player_x - 0x1E0000 (30 px); U = player_y - 0x280000 (40 px)",
+   "status": "CONFIRMED",
+   "evidence": "g.java:7143-7144"
+  },
+  {
+   "claim": "сглаживание: линейная интерполяция за aa-Z кадров",
+   "status": "CONFIRMED",
+   "evidence": "g.java:7154-7162"
+  },
+  {
+   "claim": "клампы: [0, map_w-240], [0, map_h-320]",
+   "status": "CONFIRMED",
+   "evidence": "g.java:7251-7262"
+  },
+  {
+   "claim": "формула cam += (player-cam)/4",
+   "status": "UNKNOWN",
+   "evidence": "отсутствует в коде"
+  }
+ ],
+ "animation": [
+  {
+   "claim": "контроллер c.java: id, кадр, loop/once, повторы, палитра; аккумулятор 62 тика",
+   "status": "CONFIRMED",
+   "evidence": "c.java:44-130"
+  },
+  {
+   "claim": "таблица W: 176 записей x 13 полей",
+   "status": "CONFIRMED",
+   "evidence": "m9 seg4 + dr()"
+  },
+  {
+   "claim": "таблица V: 3 записи x 15 полей",
+   "status": "CONFIRMED",
+   "evidence": "m9 seg4 + dr()"
+  },
+  {
+   "claim": "длительности кадров 80-150 мс",
+   "status": "UNKNOWN",
+   "evidence": "в данных, не в коде"
+  },
+  {
+   "claim": "4 направления, 32x48",
+   "status": "UNKNOWN"
+  }
+ ],
+ "graphics": [
+  {
+   "claim": "пиксели 16-бит 4444 ARGB -> расширение -> 32-бит -> createRGBImage",
+   "status": "CONFIRMED",
+   "evidence": "a.java:219-222, 355-360"
+  },
+  {
+   "claim": "8-bit indexed 256 цветов",
+   "status": "UNKNOWN",
+   "evidence": "противоречит a.java"
+  },
+  {
+   "claim": "палитры-ремаппинг: palettesAmount.bin (счётчик 0x1F), опкод 37, маска g[21]",
+   "status": "CONFIRMED",
+   "evidence": "файл; g.java:1808-1816; f.java:2790-2793"
+  },
+  {
+   "claim": "экран 240x320",
+   "status": "CONFIRMED",
+   "evidence": "g.java:7254,7262,1830"
+  },
+  {
+   "claim": "обводка 1px, тень-эллипс",
+   "status": "REQUIRES_REAL_RUNTIME"
+  }
+ ],
+ "audio": [
+  {
+   "claim": "JSR-135; типы: tone-seq, wav, midi, mmf, amr",
+   "status": "CONFIRMED",
+   "evidence": "g.java:35186-35190"
+  },
+  {
+   "claim": "19 звуковых слотов",
+   "status": "CONFIRMED",
+   "evidence": "g.java:35191-35192"
+  },
+  {
+   "claim": "VolumeControl.setLevel(100)",
+   "status": "CONFIRMED",
+   "evidence": "g.java:4451"
+  },
+  {
+   "claim": "звук оружия = prop21",
+   "status": "INFERRED",
+   "evidence": "f.java:441,8272"
+  },
+  {
+   "claim": "фактическое звучание",
+   "status": "REQUIRES_REAL_RUNTIME"
+  }
+ ],
+ "save": [
+  {
+   "claim": "RMS RecordStore 'a'",
+   "status": "CONFIRMED",
+   "evidence": "g.java:4129-4131"
+  },
+  {
+   "claim": "IGP RecordStore 'igp19' (класс b)",
+   "status": "CONFIRMED",
+   "evidence": "b.java:2270-2299"
+  },
+  {
+   "claim": "3 слота сохранений",
+   "status": "UNKNOWN",
+   "evidence": "B(int n) - параметр"
+  }
+ ],
+ "levels": {
+  "claim": "30 файлов m0..m13_2 + t0; полных уровней 0; m9 = GLOBAL_DATA; STUB: m5_0,m5_3,m5_4,m5_7,m5_8,m5_9,m12; PARTIAL_LEVEL: 23 файла",
+  "status": "CONFIRMED",
+  "evidence": "g.java:50 (список ресурсов); размеры файлов; container_parser_v2.py",
+  "detail": "research/analysis/v2/level-inventory.json"
+ },
+ "scripts": {
+  "claim": "19 значений опкодов (11-44), операнды 1-8 байт; заголовки 2=переход, 3=спавн; опкод 37=палитра-ремаппинг",
+  "status": "CONFIRMED",
+  "evidence": "g.java:1720-1870 (парсер), 1872-1900 (исполнитель)",
+  "opcode_semantics": "REQUIRES_REAL_RUNTIME",
+  "detail": "research/analysis/audit/opcode-audit.json"
+ },
+ "resources": {
+  "container_format": {
+   "claim": "[0]=1 байт A; [1..1+4A)=A x u32 LE относительные смещения; abs(n)=1+4A+h[n]-h[0]; последний сегмент недоступен; чтение последовательное",
+   "status": "CONFIRMED",
+   "evidence": "g.java:4055-4075 (a(String)), g.java:4088-4100 (b(int))"
+  },
+  "t0": {
+   "role": "тексты CP1251 (локализация, названия уровней) + u32 таблицы индексов; спрайтов нет",
+   "status": "CONFIRMED"
+  },
+  "m9": {
+   "role": "GLOBAL DATA: seg4 = сущности/анимации (56/176/3), seg5 = оружие/патроны (16/6), seg10-14 = крупные бинарные блоки",
+   "status": "CONFIRMED"
+  },
+  "m5_stubs": {
+   "role": "заглушки 9 байт",
+   "status": "CONFIRMED"
+  },
+  "palettesAmount.bin": {
+   "role": "311 Б: счётчик 0x1F + блоки — палитры-ремаппинг",
+   "status": "CONFIRMED"
+  },
+  "dataIGP": {
+   "role": "12 сегментов: контейнер + тексты (RU/SO) — IGP",
+   "status": "CONFIRMED"
+  }
+ },
+ "runtime_gaps": {
+  "ai_pathfinding": {
+   "status": "REQUIRES_REAL_RUNTIME",
+   "source": "runtime-gaps.json"
+  },
+  "audio_volume": {
+   "status": "REQUIRES_REAL_RUNTIME",
+   "source": "runtime-gaps.json"
+  },
+  "attack_threshold_16px": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "attack_cooldown_1000ms": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "medkit_heal_50": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "keycard_12": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "save_slots_3": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "weapon_prop_semantics": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "opcode_semantics": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "frame_dimensions": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "animation_durations": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "outline_shadow": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "state_transitions": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  "level_content": {
+   "status": "REQUIRES_REAL_RUNTIME"
+  }
+ }
+}
