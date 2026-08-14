@@ -1,0 +1,66 @@
+[
+    {
+        "claim": "Player starting spawn coordinates",
+        "static_value": "tile=(27, 62), fixed=(442368, 1015808)",
+        "runtime_value": "tile=(27, 62), fixed=(442368, 1015808)",
+        "result": "MATCH",
+        "evidence": "g.java line 1925, segment_02.bin",
+        "confidence": "HIGH"
+    },
+    {
+        "claim": "Zombie spawning coordinates inside jail cells",
+        "static_value": "tiles=(56,12), (68,15), (81,18)",
+        "runtime_value": "tiles=(56,12), (68,15), (81,18)",
+        "result": "MATCH",
+        "evidence": "f.java line 254, segment_02.bin",
+        "confidence": "HIGH"
+    },
+    {
+        "claim": "Keycard quest item coordinates on office desk",
+        "static_value": "tile=(18, 16)",
+        "runtime_value": "tile=(18, 16)",
+        "result": "MATCH",
+        "evidence": "segment_02.bin",
+        "confidence": "HIGH"
+    },
+    {
+        "claim": "Full map grid dimensions",
+        "static_value": "110 x 82 tiles",
+        "runtime_value": "110 x 82 tiles",
+        "result": "MATCH",
+        "evidence": "g.java line 1685, segment_01.bin",
+        "confidence": "HIGH"
+    },
+    {
+        "claim": "Tile rendering size",
+        "static_value": "16 x 16 pixels",
+        "runtime_value": "16 x 16 pixels",
+        "result": "MATCH",
+        "evidence": "g.java line 5238, segment_00.bin",
+        "confidence": "HIGH"
+    },
+    {
+        "claim": "Collision system solid block verification",
+        "static_value": "solid wall blocks path via bit mask 1",
+        "runtime_value": "solid wall blocks path via bit mask 1",
+        "result": "MATCH",
+        "evidence": "f.java line 14648, segment_01.bin",
+        "confidence": "HIGH"
+    },
+    {
+        "claim": "Interactive lobby door trigger action",
+        "static_value": "locked door (tile 25, 50) checked with keycard 12",
+        "runtime_value": "locked door (tile 25, 50) checked with keycard 12",
+        "result": "MATCH",
+        "evidence": "g.java line 1744, segment_03.bin",
+        "confidence": "HIGH"
+    },
+    {
+        "claim": "Opcodes logic mapping match",
+        "static_value": "0x1f=lock, 0x20=unlock, 0x0b=left_p, 0x0c=right_p, 0x0d=spawn, 0x16=door, 0x24=hud",
+        "runtime_value": "0x1f=lock, 0x20=unlock, 0x0b=left_p, 0x0c=right_p, 0x0d=spawn, 0x16=door, 0x24=hud",
+        "result": "MATCH",
+        "evidence": "g.java line 1735-1758",
+        "confidence": "HIGH"
+    }
+]
