@@ -1,0 +1,835 @@
+[
+ {
+  "index": 0,
+  "tile_id": 1072,
+  "y": 8,
+  "x_in_row": 0,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   1,
+   8,
+   0,
+   0
+  ],
+  "offset": 246,
+  "context": "mission",
+  "special_start": 7
+ },
+ {
+  "index": 1,
+  "tile_id": 1429,
+  "y": 8,
+  "x_in_row": 1,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 486,
+  "context": "mission",
+  "special_start": 24
+ },
+ {
+  "index": 2,
+  "tile_id": 1589,
+  "y": 8,
+  "x_in_row": 2,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 508,
+  "context": "mission",
+  "special_start": 27
+ },
+ {
+  "index": 3,
+  "tile_id": 873,
+  "y": 8,
+  "x_in_row": 3,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 546,
+  "context": "mission",
+  "special_start": 30
+ },
+ {
+  "index": 4,
+  "tile_id": 1039,
+  "y": 8,
+  "x_in_row": 4,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 580,
+  "context": "mission",
+  "special_start": 31
+ },
+ {
+  "index": 5,
+  "tile_id": 1579,
+  "y": 8,
+  "x_in_row": 5,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 640,
+  "context": "mission",
+  "special_start": 33
+ },
+ {
+  "index": 6,
+  "tile_id": 1433,
+  "y": 8,
+  "x_in_row": 6,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 734,
+  "context": "mission",
+  "special_start": 42
+ },
+ {
+  "index": 7,
+  "tile_id": 96,
+  "y": 8,
+  "x_in_row": 7,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 796,
+  "context": "mission",
+  "special_start": 45
+ },
+ {
+  "index": 8,
+  "tile_id": 567,
+  "y": 8,
+  "x_in_row": 8,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 1486,
+  "context": "mission",
+  "special_start": 70
+ },
+ {
+  "index": 9,
+  "tile_id": 1737,
+  "y": 8,
+  "x_in_row": 9,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 2342,
+  "context": "mission",
+  "special_start": 93
+ },
+ {
+  "index": 10,
+  "tile_id": 1603,
+  "y": 8,
+  "x_in_row": 10,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 2388,
+  "context": "mission",
+  "special_start": 95
+ },
+ {
+  "index": 11,
+  "tile_id": 1601,
+  "y": 8,
+  "x_in_row": 11,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 2486,
+  "context": "mission",
+  "special_start": 99
+ },
+ {
+  "index": 12,
+  "tile_id": 164,
+  "y": 8,
+  "x_in_row": 12,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 2532,
+  "context": "mission",
+  "special_start": 101
+ },
+ {
+  "index": 13,
+  "tile_id": 154,
+  "y": 8,
+  "x_in_row": 13,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 2552,
+  "context": "mission",
+  "special_start": 102
+ },
+ {
+  "index": 14,
+  "tile_id": 137,
+  "y": 8,
+  "x_in_row": 14,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 3088,
+  "context": "mission",
+  "special_start": 110
+ },
+ {
+  "index": 15,
+  "tile_id": 994,
+  "y": 0,
+  "x_in_row": 0,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   1,
+   0,
+   1,
+   0
+  ],
+  "offset": 4080,
+  "context": "mission",
+  "special_start": 111
+ },
+ {
+  "index": 16,
+  "tile_id": 1531,
+  "y": 0,
+  "x_in_row": 1,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "offset": 4198,
+  "context": "mission",
+  "special_start": 119
+ },
+ {
+  "index": 17,
+  "tile_id": 1373,
+  "y": 1,
+  "x_in_row": 0,
+  "value": 0,
+  "walkable": true,
+  "flags": [
+   1,
+   1,
+   0,
+   1
+  ],
+  "offset": 4246,
+  "context": "mission",
+  "special_start": 121
+ },
+ {
+  "index": 18,
+  "tile_id": 1067,
+  "y": 1,
+  "x_in_row": 1,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 4836,
+  "context": "mission",
+  "special_start": 154
+ },
+ {
+  "index": 19,
+  "tile_id": 1015,
+  "y": 1,
+  "x_in_row": 2,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 4884,
+  "context": "mission",
+  "special_start": 156
+ },
+ {
+  "index": 20,
+  "tile_id": 1570,
+  "y": 1,
+  "x_in_row": 3,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 4892,
+  "context": "mission",
+  "special_start": 156
+ },
+ {
+  "index": 21,
+  "tile_id": 77,
+  "y": 1,
+  "x_in_row": 4,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 4928,
+  "context": "mission",
+  "special_start": 158
+ },
+ {
+  "index": 22,
+  "tile_id": 76,
+  "y": 1,
+  "x_in_row": 5,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 4936,
+  "context": "mission",
+  "special_start": 158
+ },
+ {
+  "index": 23,
+  "tile_id": 1247,
+  "y": 2,
+  "x_in_row": 0,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   1,
+   2,
+   1,
+   0
+  ],
+  "offset": 4972,
+  "context": "mission",
+  "special_start": 160
+ },
+ {
+  "index": 24,
+  "tile_id": 1058,
+  "y": 2,
+  "x_in_row": 1,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "offset": 5282,
+  "context": "mission",
+  "special_start": 179
+ },
+ {
+  "index": 25,
+  "tile_id": 718,
+  "y": 2,
+  "x_in_row": 2,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "offset": 5334,
+  "context": "mission",
+  "special_start": 181
+ },
+ {
+  "index": 26,
+  "tile_id": 1416,
+  "y": 4,
+  "x_in_row": 0,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   1,
+   4,
+   1,
+   0
+  ],
+  "offset": 5382,
+  "context": "mission",
+  "special_start": 183
+ },
+ {
+  "index": 27,
+  "tile_id": 1294,
+  "y": 3,
+  "x_in_row": 0,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   1,
+   3,
+   0,
+   0
+  ],
+  "offset": 11992,
+  "context": "mission",
+  "special_start": 211
+ },
+ {
+  "index": 28,
+  "tile_id": 834,
+  "y": 3,
+  "x_in_row": 1,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   3,
+   0,
+   0
+  ],
+  "offset": 12322,
+  "context": "mission",
+  "special_start": 231
+ },
+ {
+  "index": 29,
+  "tile_id": 740,
+  "y": 3,
+  "x_in_row": 2,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   3,
+   0,
+   0
+  ],
+  "offset": 12440,
+  "context": "mission",
+  "special_start": 239
+ },
+ {
+  "index": 30,
+  "tile_id": 1038,
+  "y": 3,
+  "x_in_row": 3,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   2,
+   0,
+   0
+  ],
+  "offset": 16284,
+  "context": "mission",
+  "special_start": 252
+ },
+ {
+  "index": 31,
+  "tile_id": 1079,
+  "y": 3,
+  "x_in_row": 4,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 16370,
+  "context": "mission",
+  "special_start": 257
+ },
+ {
+  "index": 32,
+  "tile_id": 1506,
+  "y": 3,
+  "x_in_row": 5,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 16418,
+  "context": "mission",
+  "special_start": 259
+ },
+ {
+  "index": 33,
+  "tile_id": 1835,
+  "y": 3,
+  "x_in_row": 6,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 16548,
+  "context": "mission",
+  "special_start": 267
+ },
+ {
+  "index": 34,
+  "tile_id": 1313,
+  "y": 3,
+  "x_in_row": 7,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   4,
+   0,
+   0
+  ],
+  "offset": 16572,
+  "context": "mission",
+  "special_start": 268
+ },
+ {
+  "index": 35,
+  "tile_id": 1438,
+  "y": 3,
+  "x_in_row": 8,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   0,
+   4,
+   1,
+   0
+  ],
+  "offset": 16728,
+  "context": "mission",
+  "special_start": 277
+ },
+ {
+  "index": 36,
+  "tile_id": 1089,
+  "y": 5,
+  "x_in_row": 0,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   1,
+   5,
+   1,
+   0
+  ],
+  "offset": 17152,
+  "context": "mission",
+  "special_start": 298
+ },
+ {
+  "index": 37,
+  "tile_id": 1571,
+  "y": 5,
+  "x_in_row": 1,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   4,
+   0,
+   0
+  ],
+  "offset": 17306,
+  "context": "mission",
+  "special_start": 307
+ },
+ {
+  "index": 38,
+  "tile_id": 1059,
+  "y": 5,
+  "x_in_row": 2,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 18232,
+  "context": "mission",
+  "special_start": 328
+ },
+ {
+  "index": 39,
+  "tile_id": 1368,
+  "y": 5,
+  "x_in_row": 3,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 18256,
+  "context": "mission",
+  "special_start": 329
+ },
+ {
+  "index": 40,
+  "tile_id": 776,
+  "y": 5,
+  "x_in_row": 4,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "offset": 19956,
+  "context": "mission",
+  "special_start": 342
+ },
+ {
+  "index": 41,
+  "tile_id": 813,
+  "y": 5,
+  "x_in_row": 5,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 20046,
+  "context": "mission",
+  "special_start": 347
+ },
+ {
+  "index": 42,
+  "tile_id": 44,
+  "y": 5,
+  "x_in_row": 6,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 20136,
+  "context": "mission",
+  "special_start": 352
+ },
+ {
+  "index": 43,
+  "tile_id": 68,
+  "y": 7,
+  "x_in_row": 0,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   1,
+   7,
+   1,
+   0
+  ],
+  "offset": 20264,
+  "context": "mission",
+  "special_start": 361
+ },
+ {
+  "index": 44,
+  "tile_id": 27,
+  "y": 6,
+  "x_in_row": 0,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   1,
+   6,
+   1,
+   0
+  ],
+  "offset": 24938,
+  "context": "mission",
+  "special_start": 386
+ },
+ {
+  "index": 45,
+  "tile_id": 103,
+  "y": 6,
+  "x_in_row": 1,
+  "value": 1,
+  "walkable": false,
+  "flags": [
+   0,
+   6,
+   1,
+   0
+  ],
+  "offset": 25056,
+  "context": "mission",
+  "special_start": 393
+ },
+ {
+  "index": 46,
+  "tile_id": 32,
+  "y": 6,
+  "x_in_row": 2,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 25104,
+  "context": "mission",
+  "special_start": 395
+ },
+ {
+  "index": 47,
+  "tile_id": 88,
+  "y": 6,
+  "x_in_row": 3,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 25130,
+  "context": "mission",
+  "special_start": 396
+ },
+ {
+  "index": 48,
+  "tile_id": 65,
+  "y": 6,
+  "x_in_row": 4,
+  "value": 0,
+  "walkable": false,
+  "flags": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": 25186,
+  "context": "mission",
+  "special_start": 399
+ }
+]

@@ -1,0 +1,242 @@
+[
+ {
+  "index": 0,
+  "obj_id": 1313,
+  "len": 0,
+  "offset": 37340,
+  "context": "mission",
+  "special_start": 425
+ },
+ {
+  "index": 1,
+  "obj_id": 502,
+  "len": 0,
+  "offset": 37356,
+  "context": "mission",
+  "special_start": 426
+ },
+ {
+  "index": 2,
+  "obj_id": 739,
+  "len": 0,
+  "offset": 37390,
+  "context": "mission",
+  "special_start": 427
+ },
+ {
+  "index": 3,
+  "obj_id": 1798,
+  "len": 0,
+  "offset": 57760,
+  "context": "mission",
+  "special_start": 966
+ },
+ {
+  "index": 4,
+  "obj_id": 2052,
+  "len": 0,
+  "offset": 57794,
+  "context": "mission",
+  "special_start": 967
+ },
+ {
+  "index": 5,
+  "obj_id": 2087,
+  "len": 0,
+  "offset": 57868,
+  "context": "mission",
+  "special_start": 970
+ },
+ {
+  "index": 6,
+  "obj_id": 2127,
+  "len": 0,
+  "offset": 57916,
+  "context": "mission",
+  "special_start": 972
+ },
+ {
+  "index": 7,
+  "obj_id": 1764,
+  "len": 0,
+  "offset": 57950,
+  "context": "mission",
+  "special_start": 973
+ },
+ {
+  "index": 8,
+  "obj_id": 2413,
+  "len": 0,
+  "offset": 58404,
+  "context": "mission",
+  "special_start": 1001
+ },
+ {
+  "index": 9,
+  "obj_id": 3019,
+  "len": 0,
+  "offset": 58438,
+  "context": "mission",
+  "special_start": 1002
+ },
+ {
+  "index": 10,
+  "obj_id": 3023,
+  "len": 0,
+  "offset": 58472,
+  "context": "mission",
+  "special_start": 1003
+ },
+ {
+  "index": 11,
+  "obj_id": 3027,
+  "len": 0,
+  "offset": 58506,
+  "context": "mission",
+  "special_start": 1004
+ },
+ {
+  "index": 12,
+  "obj_id": 1844,
+  "len": 0,
+  "offset": 58540,
+  "context": "mission",
+  "special_start": 1005
+ },
+ {
+  "index": 13,
+  "obj_id": 2012,
+  "len": 0,
+  "offset": 58700,
+  "context": "mission",
+  "special_start": 1013
+ },
+ {
+  "index": 14,
+  "obj_id": 2073,
+  "len": 0,
+  "offset": 58764,
+  "context": "mission",
+  "special_start": 1017
+ },
+ {
+  "index": 15,
+  "obj_id": 2066,
+  "len": 0,
+  "offset": 58798,
+  "context": "mission",
+  "special_start": 1018
+ },
+ {
+  "index": 16,
+  "obj_id": 3151,
+  "len": 0,
+  "offset": 58832,
+  "context": "mission",
+  "special_start": 1019
+ },
+ {
+  "index": 17,
+  "obj_id": 3192,
+  "len": 0,
+  "offset": 58848,
+  "context": "mission",
+  "special_start": 1020
+ },
+ {
+  "index": 18,
+  "obj_id": 1826,
+  "len": 0,
+  "offset": 58864,
+  "context": "mission",
+  "special_start": 1021
+ },
+ {
+  "index": 19,
+  "obj_id": 2137,
+  "len": 0,
+  "offset": 58880,
+  "context": "mission",
+  "special_start": 1022
+ },
+ {
+  "index": 20,
+  "obj_id": 2626,
+  "len": 0,
+  "offset": 58914,
+  "context": "mission",
+  "special_start": 1023
+ },
+ {
+  "index": 21,
+  "obj_id": 2910,
+  "len": 0,
+  "offset": 58948,
+  "context": "mission",
+  "special_start": 1024
+ },
+ {
+  "index": 22,
+  "obj_id": 2837,
+  "len": 0,
+  "offset": 58964,
+  "context": "mission",
+  "special_start": 1025
+ },
+ {
+  "index": 23,
+  "obj_id": 2841,
+  "len": 0,
+  "offset": 58998,
+  "context": "mission",
+  "special_start": 1026
+ },
+ {
+  "index": 24,
+  "obj_id": 2674,
+  "len": 0,
+  "offset": 59062,
+  "context": "mission",
+  "special_start": 1030
+ },
+ {
+  "index": 25,
+  "obj_id": 3121,
+  "len": 0,
+  "offset": 59096,
+  "context": "mission",
+  "special_start": 1031
+ },
+ {
+  "index": 26,
+  "obj_id": 1684,
+  "len": 0,
+  "offset": 59130,
+  "context": "mission",
+  "special_start": 1032
+ },
+ {
+  "index": 27,
+  "obj_id": 2701,
+  "len": 0,
+  "offset": 59214,
+  "context": "mission",
+  "special_start": 1037
+ },
+ {
+  "index": 28,
+  "obj_id": 2687,
+  "len": 0,
+  "offset": 59282,
+  "context": "mission",
+  "special_start": 1043
+ },
+ {
+  "index": 29,
+  "obj_id": 3006,
+  "len": 0,
+  "offset": 59376,
+  "context": "mission",
+  "special_start": 1050
+ }
+]

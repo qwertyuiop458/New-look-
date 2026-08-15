@@ -1,0 +1,42 @@
+[
+ {
+  "index": 0,
+  "obj_id": 268,
+  "len": 0,
+  "offset": 3922,
+  "context": "mission",
+  "special_start": 16
+ },
+ {
+  "index": 1,
+  "obj_id": 923,
+  "len": 0,
+  "offset": 4018,
+  "context": "mission",
+  "special_start": 24
+ },
+ {
+  "index": 2,
+  "obj_id": 928,
+  "len": 0,
+  "offset": 16776,
+  "context": "mission",
+  "special_start": 227
+ },
+ {
+  "index": 3,
+  "obj_id": 952,
+  "len": 0,
+  "offset": 16880,
+  "context": "mission",
+  "special_start": 235
+ },
+ {
+  "index": 4,
+  "obj_id": 621,
+  "len": 0,
+  "offset": 25448,
+  "context": "mission",
+  "special_start": 356
+ }
+]

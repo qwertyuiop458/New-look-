@@ -1,0 +1,43 @@
+{
+ "mission": "mission_03",
+ "order_of_contexts": [
+  "m8.s3.b0",
+  "m8.s3.b1",
+  "m8.s3.b2",
+  "mission",
+  "m8.s3.b3",
+  "m8.s3.b4",
+  "m8.s3.b5"
+ ],
+ "flow": [
+  {
+   "step": 0,
+   "context": "m8.s3.b0"
+  },
+  {
+   "step": 1,
+   "context": "m8.s3.b1"
+  },
+  {
+   "step": 2,
+   "context": "m8.s3.b2"
+  },
+  {
+   "step": 3,
+   "context": "mission"
+  },
+  {
+   "step": 4,
+   "context": "m8.s3.b3"
+  },
+  {
+   "step": 5,
+   "context": "m8.s3.b4"
+  },
+  {
+   "step": 6,
+   "context": "m8.s3.b5"
+  }
+ ],
+ "note": "контексты: mission = поток миссии; m8.s3.bX = под-блок seg3 m8 (флаги, 10 Б); переключение по маркеру 99; после исчерпания под-блока возврат в mission"
+}

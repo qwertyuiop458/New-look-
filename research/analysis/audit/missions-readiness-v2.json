@@ -1,0 +1,47 @@
+{
+    "audit": "missions-readiness-v2",
+    "date": "2026-08-15",
+    "status": "PARTIAL",
+    "criteria": {
+        "all_5_missions_parsed": true,
+        "all_record_types_classified": true,
+        "opcodes_110_172_documented": false,
+        "mission_world_links_established": true,
+        "unknowns_explicitly_listed": true
+    },
+    "summary": {
+        "parsed": {
+            "mission_00": {"records": 471, "tiles": 82, "objects": 16, "data": 16, "special": 880, "switches": 42},
+            "mission_01": {"records": 704, "tiles": 49, "objects": 21, "data": 21, "special": 429, "switches": 42},
+            "mission_02": {"records": 1850, "tiles": 67, "objects": 30, "data": 30, "special": 1075, "switches": 42},
+            "mission_03": {"records": 895, "tiles": 33, "objects": 5, "data": 5, "special": 382, "switches": 42},
+            "mission_04": {"records": 1349, "tiles": 114, "objects": 41, "data": 41, "special": 1174, "switches": 44}
+        },
+        "totals": {"records": 5269, "tiles_101": 345, "objects_102": 113, "data_103": 113, "special": 3940, "switches": 212},
+        "special_opcodes": {
+            "union": 46,
+            "common_to_all": 27,
+            "unique_per_mission": {"mission_00": [111, 129], "mission_02": [128], "mission_03": [131, 147], "mission_04": [144]},
+            "documented_semantics": 0,
+            "status": "структура привязки CONFIRMED; семантика REQUIRES_REAL_RUNTIME"
+        },
+        "mission_world_links": {
+            "established": "все 212 switch -> m8 seg3 sub 0..5 (слои-флаги); m8 seg0/1/2 миссиями не используются",
+            "world_objects": "m8 seg0: 340 записей (types 10,15,22,23,9,14,18,12,13,16,17,11,3), seg1: 172, seg2: 64 — потребитель UNKNOWN"
+        },
+        "record_types_classified": {
+            "0": "MC", "1": "персонаж/MC-вариант", "2": "персонаж", "3": "враг", "9": "NPC",
+            "10/11/12/14/16/17/20..26": "объекты/предметы/интерактив",
+            "101": "тайл", "102": "объект", "103": "данные", "99": "switch", "110..172/200": "спец-скрипты",
+            "104..109": "терминаторы"
+        }
+    },
+    "why_not_READY": [
+        "семантика 46 спец-опкодов (3940 записей) не документирована — только структура и привязки",
+        "completion/fail/transition условия миссий не установлены",
+        "связь tile_id/obj_id с графическими ресурсами не установлена",
+        "text linkage (диалоги) не установлена",
+        "потребитель m8 seg0/1/2 не найден"
+    ],
+    "recommendation": "READY_FOR_MASS_PARSING уже достигнут (этап 15.7); для полного READY требуется рантайм-трассировка исполнителя спец-записей g.z[] и диалогового состояния 11."
+}

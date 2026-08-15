@@ -1,0 +1,52 @@
+[
+ {
+  "index": 0,
+  "len": 2,
+  "bytes": [
+   0,
+   0
+  ],
+  "offset": 3925,
+  "context": "mission"
+ },
+ {
+  "index": 1,
+  "len": 2,
+  "bytes": [
+   0,
+   0
+  ],
+  "offset": 4021,
+  "context": "mission"
+ },
+ {
+  "index": 2,
+  "len": 2,
+  "bytes": [
+   0,
+   0
+  ],
+  "offset": 16779,
+  "context": "mission"
+ },
+ {
+  "index": 3,
+  "len": 2,
+  "bytes": [
+   0,
+   0
+  ],
+  "offset": 16883,
+  "context": "mission"
+ },
+ {
+  "index": 4,
+  "len": 2,
+  "bytes": [
+   0,
+   0
+  ],
+  "offset": 25451,
+  "context": "mission"
+ }
+]

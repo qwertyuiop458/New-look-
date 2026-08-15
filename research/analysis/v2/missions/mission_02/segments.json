@@ -1,0 +1,15 @@
+{
+ "mission": "mission_02",
+ "source": "m9 seg12",
+ "container": {
+  "file": "m9",
+  "segment": 12,
+  "start": 70733,
+  "end": 137823,
+  "size": 67090,
+  "sha256": "dbda66cc3bd802db5ae23a515b0c8ac5e24505e16902788f65b0670f45c29c04"
+ },
+ "m8_used_segments": [
+  3
+ ]
+}
