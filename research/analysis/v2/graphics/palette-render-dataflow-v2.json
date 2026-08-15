@@ -1,0 +1,6 @@
+{
+ "meta": "Палитра -> финальный RGB. Два механизма: (1) мини-кадры: пиксели сразу ARGB (форматы 0x8888/0x4444/0x6505 в заголовке листа); (2) большие кадры (RLE-блоки j): палитра-индексы this.a[this.i] (int[256]) -> int[] -> Image. prop31 = индекс палитры актёра при отрисовке (f.java:4107); c.java: this.c = палитра актёра.",
+ "chain": "RLE-блок j -> индексы (бит-пак: 1/2/3/4/8 bpp, RLE-варианты) -> палитра a[i][256] -> int[] ARGB -> createRGBImage -> drawRegion",
+ "prop31": "g.a(graphics, g.b, null, 9, g.h(type,31), 0, RGBA...) — индекс палитры в draw",
+ "status": "STATICALLY_RESOLVED (декодер+палитра); точный выбор палитры актёра — RENDER_RUNTIME_REQUIRED"
+}

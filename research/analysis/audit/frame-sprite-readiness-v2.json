@@ -1,0 +1,30 @@
+{
+    "audit": "frame-sprite-readiness-v2",
+    "date": "2026-08-15",
+    "status": "PARTIAL",
+    "criteria": {
+        "x_frame_linkage_proven": true,
+        "sprite_package_linkage_proven": true,
+        "pixel_block_linkage_proven": true,
+        "decoder_format_proven": true,
+        "palette_linkage_proven": true
+    },
+    "summary": {
+        "frame_to_sprite_bridge": "НАЙДЕН: a.java a(int n) декодер (a.java:800-960): RLE-блоки j + палитра -> int[] -> createRGBImage -> drawImage/drawRegion (a.java:763/770/772)",
+        "pixel_decoder": "НАЙДЕН: 8 форматов сжатия (512/1024/2048/5632/10225/22018/22258/25840), все прочитаны из кода",
+        "formats_used": ["0x8888 ARGB32 (мини-кадры)", "0x4444 ARGB4444 (мини-кадры)", "0x6505 RGB565 (мини-кадры)", "RLE/бит-пак 1-8 bpp (большие кадры)"],
+        "transforms": "a = {0,2,1,3,5,7,4,6} (SPRITE_TRANSFORM_*), drawRegion(image, 0,0,w,h, a[n4&7], x, y, 0)",
+        "palette": "двойной механизм: мини-кадры сразу ARGB; большие кадры через палитру-индексы a[i][256]; prop31 = индекс палитры актёра (f.java:4107)",
+        "reference_chain": "архетип 3: instance -> props[0] -> g.m -> архетип -> анимации (prop33=5) -> кадр (dir+g.i) -> X -> декодер -> Image -> drawRegion (всё CONFIRMED, кроме последнего шага)"
+    },
+    "frame_mappings_confirmed": "структурно: все X-пары -> кадры (g.d accessor CONFIRMED); конкретных кадр->объект листа: 0 (RENDER_RUNTIME_REQUIRED)",
+    "sprites_linked": "мини-кадры листов декодированы в PNG (m2_seg1, m7_seg6); большие кадры — декодер доказан, но привязка к экземплярам не выполнена (нужен рантайм)",
+    "unknowns": [
+        "какой X-индекс -> какой объект (c x d) листа (нет статической таблицы)",
+        "точный выбор палитры актёра (prop21 vs prop31)",
+        "источник n4 (transform-флаг) в a(Graphics)",
+        "второй элемент X-пары"
+    ],
+    "why_PARTIAL": "вся цепочка до пикселей доказана статически (decoder + render); последний шаг (X-индекс -> объект листа) — RENDER_RUNTIME_REQUIRED",
+    "recommendation": "READY_STATIC достижим после рантайм-рендера одного кадра архетипа 3 (запись отладочного вывода a.a(d,e,...))"
+}

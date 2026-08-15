@@ -1,0 +1,39 @@
+{
+ "meta": "Трансформы drawRegion: static int[] a = {0, 2, 1, 3, 5, 7, 4, 6} (a.java static init)",
+ "transforms": [
+  {
+   "index": 0,
+   "sprite": "SPRITE_TRANSFORM_NONE (0)",
+   "evidence": "a.java:772 (a[n4 & 7])"
+  },
+  {
+   "index": 1,
+   "sprite": "SPRITE_TRANSFORM_MIRROR_ROT180 (2)"
+  },
+  {
+   "index": 2,
+   "sprite": "SPRITE_TRANSFORM_ROT90 (1)"
+  },
+  {
+   "index": 3,
+   "sprite": "SPRITE_TRANSFORM_ROT180 (3)"
+  },
+  {
+   "index": 4,
+   "sprite": "SPRITE_TRANSFORM_MIRROR (5)"
+  },
+  {
+   "index": 5,
+   "sprite": "SPRITE_TRANSFORM_MIRROR_ROT270 (7)"
+  },
+  {
+   "index": 6,
+   "sprite": "SPRITE_TRANSFORM_ROT270 (4)"
+  },
+  {
+   "index": 7,
+   "sprite": "SPRITE_TRANSFORM_MIRROR_ROT90 (6)"
+  }
+ ],
+ "source": "n4 & 7 (флаг в вызове a(Graphics)) — параметр transform; источник n4: анимация/кадр (c.java: this.c поле?; точный источник — RENDER_RUNTIME_REQUIRED)"
+}

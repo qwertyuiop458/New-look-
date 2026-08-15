@@ -859,6 +859,20 @@
   {
    "claim": "связь кадр/тайл -> пиксели листа",
    "status": "REQUIRES_REAL_RUNTIME"
+  },
+  {
+   "claim": "декодер пикселей: 8 форматов (512/1024/2048/5632/10225/22018/22258/25840); RLE-блоки j + палитра a[i][256] -> int[] -> createRGBImage -> drawRegion",
+   "status": "CONFIRMED",
+   "evidence": "a.java:800-960, 763-772"
+  },
+  {
+   "claim": "трансформы drawRegion: a = {0,2,1,3,5,7,4,6}",
+   "status": "CONFIRMED",
+   "evidence": "a.java static init"
+  },
+  {
+   "claim": "X-индекс кадра -> объект листа (c x d)",
+   "status": "RENDER_RUNTIME_REQUIRED"
   }
  ],
  "audio": [

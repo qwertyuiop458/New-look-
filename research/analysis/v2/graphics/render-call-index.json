@@ -1,0 +1,68 @@
+{
+ "meta": "Все render-вызовы (первичный код). Ключевые: a.java:360/763 createRGBImage; a.java:770/772 drawImage/drawRegion (трансформы a[n4 & 7]).",
+ "calls": [
+  {
+   "class": "a",
+   "method": "a(Graphics)",
+   "line": 770,
+   "call": "drawImage(image, n2, n3, 0)",
+   "args": "image (кэш), x, y, anchor=0",
+   "source": "Image.createRGBImage(pixels,w,h,alpha)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "a",
+   "method": "a(Graphics)",
+   "line": 772,
+   "call": "drawRegion(image, 0, 0, n6, n5, a[n4 & 7], n2, n3, 0)",
+   "args": "src (0,0,w,h), transform=a[n4&7], dst (n2,n3)",
+   "source": "тот же Image",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "a",
+   "method": "a(Graphics)",
+   "line": 360,
+   "call": "Image.createRGBImage(nArray, n4, n5, bl)",
+   "args": "int[] пиксели, w, h, alpha-флаг",
+   "source": "this.a(n) — декодер RLE",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "a",
+   "method": "a(Graphics)",
+   "line": 763,
+   "call": "Image.createRGBImage(nArray2, n6, n5, this.a)",
+   "args": "int[] пиксели кадра, w, h, alpha",
+   "source": "this.a(n) — декодер RLE",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "a",
+   "method": "a(int)",
+   "line": 800,
+   "call": "декодер: j-блоки + палитра a[i] -> int[]",
+   "args": "RLE-блоки this.j, палитра this.a[this.i], форматы 512..25840",
+   "source": "сырые байты листа",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "g",
+   "method": "a(Graphics,int,int,int[],...)",
+   "line": 9115,
+   "call": "drawRGB(v, 0, n3, n, n2, n3, n4, true)",
+   "args": "массив пикселей v, w, h",
+   "source": "масштабирование/эффекты (g.a(int[],...))",
+   "confidence": "CONFIRMED (не основной путь)"
+  },
+  {
+   "class": "g",
+   "method": "paint",
+   "line": 687,
+   "call": "Image.createImage(240,320) + drawImage",
+   "args": "буфер экрана",
+   "source": "двойная буферизация",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

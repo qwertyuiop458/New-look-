@@ -1,0 +1,102 @@
+{
+ "meta": "Reference chain: mission instance -> archetype 3 -> animation -> frame -> X -> pixel decoder -> Image",
+ "archetype": 3,
+ "props32": [
+  4,
+  6,
+  0,
+  4,
+  8,
+  16,
+  24,
+  12,
+  36,
+  65535,
+  0,
+  7,
+  17,
+  1,
+  30,
+  1,
+  500,
+  30,
+  9,
+  1,
+  1,
+  1,
+  0,
+  0,
+  0,
+  0,
+  38,
+  137,
+  141,
+  153,
+  157,
+  65535
+ ],
+ "anim_count": 5,
+ "chain": [
+  {
+   "stage": "instance",
+   "detail": "type 3 record: g[0] = g.a(g.m, props[0])",
+   "status": "CONFIRMED",
+   "evidence": "f.c()"
+  },
+  {
+   "stage": "archetype",
+   "detail": "id 3, props32=[4, 6, 0, 4, 8, 16, 24, 12, 36, 65535, 0, 7, 17, 1, 30, 1, 500, 30, 9, 1, 1, 1, 0, 0, 0, 0, 38, 137, 141, 153, 157, 65535]",
+   "status": "CONFIRMED",
+   "evidence": "m9 seg4"
+  },
+  {
+   "stage": "animation",
+   "detail": "5 анимаций; prop33; слоты g[30+i] = W[i][0] или X-кадры",
+   "status": "CONFIRMED",
+   "evidence": "f.g() f.java:2572"
+  },
+  {
+   "stage": "frame",
+   "detail": "кадр = dir + g.i(type, state) = V[prop34*15 + state]",
+   "status": "CONFIRMED",
+   "evidence": "f.java:4656"
+  },
+  {
+   "stage": "X entry",
+   "detail": "g.d(type, anim, fr, 0/1) = X[W[10] + fr*2 + 0/1]",
+   "status": "CONFIRMED",
+   "evidence": "g.java:24747"
+  },
+  {
+   "stage": "sprite resource",
+   "detail": "a.java лист: объект (c x d размеры) + RLE-блоки j",
+   "status": "CONFIRMED (структура)",
+   "evidence": "a.java:60-300"
+  },
+  {
+   "stage": "pixel block",
+   "detail": "a(int n): j-блоки + палитра a[i][256] -> int[] (форматы 512..25840)",
+   "status": "CONFIRMED",
+   "evidence": "a.java:800-960"
+  },
+  {
+   "stage": "Image",
+   "detail": "Image.createRGBImage(pixels, w, h, alpha)",
+   "status": "CONFIRMED",
+   "evidence": "a.java:763"
+  },
+  {
+   "stage": "render",
+   "detail": "drawImage/drawRegion(image, 0,0,w,h, a[n4&7], x, y, 0)",
+   "status": "CONFIRMED",
+   "evidence": "a.java:770-772"
+  },
+  {
+   "stage": "кадр->объект листа",
+   "detail": "какой именно X-индекс -> какой объект (c/d) листа",
+   "status": "RENDER_RUNTIME_REQUIRED",
+   "evidence": "нет статической таблицы"
+  }
+ ],
+ "gap": "последний шаг (X-индекс -> конкретный объект листа) требует рантайм-рендера; всё остальное доказано статически."
+}

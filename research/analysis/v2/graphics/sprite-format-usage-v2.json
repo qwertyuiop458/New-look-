@@ -1,0 +1,86 @@
+{
+ "meta": "Реальные форматы пикселей по сегментам (декодировано parse_sprite_list).",
+ "segments": [
+  {
+   "resource": "m0",
+   "segment": 0,
+   "size": 2893,
+   "obj_count": 5,
+   "pixel_format": "0x4444",
+   "evidence": "a.java декодер (этап 15.11/15.14)",
+   "confidence": "INFERRED"
+  },
+  {
+   "resource": "m2",
+   "segment": 1,
+   "size": 78042,
+   "obj_count": 8,
+   "pixel_format": "0x8888",
+   "evidence": "a.java декодер (этап 15.11/15.14)",
+   "confidence": "INFERRED"
+  },
+  {
+   "resource": "m2",
+   "segment": 2,
+   "size": 122,
+   "obj_count": 1,
+   "pixel_format": null,
+   "evidence": "a.java декодер (этап 15.11/15.14)",
+   "confidence": "UNKNOWN"
+  },
+  {
+   "resource": "m7",
+   "segment": 3,
+   "size": 337,
+   "obj_count": 36,
+   "pixel_format": null,
+   "evidence": "a.java декодер (этап 15.11/15.14)",
+   "confidence": "UNKNOWN"
+  },
+  {
+   "resource": "m7",
+   "segment": 6,
+   "size": 32382,
+   "obj_count": 112,
+   "pixel_format": null,
+   "evidence": "a.java декодер (этап 15.11/15.14)",
+   "confidence": "UNKNOWN"
+  },
+  {
+   "resource": "m11_0",
+   "segment": 4,
+   "size": 1221,
+   "obj_count": 3,
+   "pixel_format": null,
+   "evidence": "a.java декодер (этап 15.11/15.14)",
+   "confidence": "UNKNOWN"
+  },
+  {
+   "resource": "m11_0",
+   "segment": 5,
+   "size": 511,
+   "obj_count": 3,
+   "pixel_format": null,
+   "evidence": "a.java декодер (этап 15.11/15.14)",
+   "confidence": "UNKNOWN"
+  },
+  {
+   "resource": "m11_0",
+   "segment": 7,
+   "size": 7912,
+   "obj_count": 14,
+   "pixel_format": null,
+   "evidence": "a.java декодер (этап 15.11/15.14)",
+   "confidence": "UNKNOWN"
+  },
+  {
+   "resource": "m6_0",
+   "segment": 0,
+   "size": 8470,
+   "obj_count": 236,
+   "pixel_format": null,
+   "evidence": "a.java декодер (этап 15.11/15.14)",
+   "confidence": "UNKNOWN"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "meta": "Пакеты, загружаемые как спрайт-листы a.java (сценарий g.g() + геймплей).",
+ "packages": [
+  {
+   "resource": "m0",
+   "segments": [
+    0,
+    9
+   ],
+   "loader": "g.g() case 3 -> a[][0..1]",
+   "sprite_objects": null,
+   "pixel_blocks": null,
+   "format": null,
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "resource": "m1",
+   "segments": [
+    0
+   ],
+   "loader": "g.g() case 2 -> b[][1]",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "resource": "m2",
+   "segments": [
+    1,
+    2,
+    23
+   ],
+   "loader": "g.g() case 3 -> a[][0..2]",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "resource": "m7",
+   "segments": [
+    3,
+    6
+   ],
+   "loader": "g.g() case 3 -> a[][0] + геймплей (a[22])",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "resource": "m11_0",
+   "segments": [
+    4,
+    5,
+    7,
+    11,
+    12,
+    13,
+    14,
+    19,
+    20,
+    21
+   ],
+   "loader": "g.g() case 3 -> a[][0..9]",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "resource": "m11_1",
+   "segments": [
+    8,
+    10,
+    15,
+    16,
+    17,
+    18,
+    22
+   ],
+   "loader": "g.g() case 3 -> a[][0..6]",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "resource": "m6_0..m6_5",
+   "segments": "все",
+   "loader": "геймплей: g.java:2501 a[16+n]; 2524 g.a(byArray)",
+   "confidence": "CONFIRMED (загрузка)"
+  }
+ ],
+ "note": "форматы/объекты каждого листа — см. sprite-format-usage-v2.json"
+}

@@ -118,7 +118,8 @@
     "0x4444 ARGB4444",
     "0x6505 RGB565"
    ],
-   "sprite_list_format": "a.java: объекты+палитры+записи+мини-кадры (до 8 x 256px)+блоки; magic 0x64F0"
+   "sprite_list_format": "a.java: объекты+палитры+записи+мини-кадры (до 8 x 256px)+блоки; magic 0x64F0",
+   "pixel_decoder": "8 форматов сжатия RLE/бит-пак (512..25840), палитра-индексы -> int[] -> createRGBImage -> drawRegion (CONFIRMED)"
   },
   "audio": {
    "api": "JSR-135",
