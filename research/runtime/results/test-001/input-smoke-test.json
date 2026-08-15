@@ -1,0 +1,77 @@
+{
+ "test": "input-smoke-test",
+ "timestamp": 1786798154.0930092,
+ "runtime": "FreeJ2ME SDL (Anbu) x86 JRE17",
+ "emulator": "freej2me-sdl.jar",
+ "jar_sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+ "control_channel": {
+  "status": "OK",
+  "reply": "PONG"
+ },
+ "breakpoint": {
+  "class": "Lorg/recompile/freej2me/Anbu$SDL$SDLKeyTimerTask;",
+  "method": "run()V",
+  "code_index": "0x89 (putfield code)",
+  "request_id": 2
+ },
+ "sent": {
+  "key": "FIRE",
+  "code": 13,
+  "packet_hex": "press: 01 00 00 00 0d | release: 00 00 00 00 0d"
+ },
+ "received": {
+  "key_packet_breakpoint_hits": 2,
+  "events": [
+   {
+    "kind": 2,
+    "request": 2,
+    "suspend": 0,
+    "type_tag": 0,
+    "class_id": 423937,
+    "method_id": 127,
+    "code_index": 140689238199904,
+    "thread": 137
+   },
+   {
+    "kind": 2,
+    "request": 2,
+    "suspend": 0,
+    "type_tag": 0,
+    "class_id": 423937,
+    "method_id": 127,
+    "code_index": 140689238199904,
+    "thread": 137
+   }
+  ],
+  "state_before": {
+   "state": 1,
+   "sub": 3,
+   "bB": 0,
+   "bC": 0,
+   "bF": 0,
+   "by": 0,
+   "bz": 0,
+   "ey": 0,
+   "ez": 0,
+   "u": 0,
+   "v": 0,
+   "aF": 0
+  },
+  "state_after": {
+   "state": 1,
+   "sub": 3,
+   "bB": 0,
+   "bC": 0,
+   "bF": 0,
+   "by": 0,
+   "bz": 0,
+   "ey": 0,
+   "ez": 0,
+   "u": 0,
+   "v": 0,
+   "aF": 0
+  }
+ },
+ "verdict": "KEY_RECEIVED",
+ "alive": true
+}

@@ -1,0 +1,37 @@
+{
+  "meta": "Карта клавиш TEST-001: логическая клавиша -> код в 5-байтовом пакете sdl_interface -> код игры",
+  "verified_from": "bytecode Anbu.getMobileKey (useFlag=0) + Anbu$SDL$SDLKeyTimerTask + g.aa() (класс g, оригинальный JAR 1111f12b)",
+  "packet_format": "[byte0=(type<<4)|pressed][u32 BE code]",
+  "key_type": 0,
+  "stream": "stderr sdl_interface (proc.getErrorStream() в Anbu$SDL.start)",
+  "keys": {
+    "UP":       {"sdl_code": 1073741906, "mobile_code": 50,  "game_key": "'2'", "game_bit": 4,     "status": "DELIVERED_OBSERVED"},
+    "DOWN":     {"sdl_code": 1073741905, "mobile_code": 56,  "game_key": "'8'", "game_bit": 256,   "status": "DELIVERED_OBSERVED"},
+    "LEFT":     {"sdl_code": 1073741904, "mobile_code": 52,  "game_key": "'4'", "game_bit": 16,    "status": "DELIVERED_OBSERVED"},
+    "RIGHT":    {"sdl_code": 1073741903, "mobile_code": 54,  "game_key": "'6'", "game_bit": 64,    "status": "DELIVERED_OBSERVED"},
+    "FIRE":     {"sdl_code": 13,         "mobile_code": 53,  "game_key": "'5'", "game_bit": 32,    "status": "DELIVERED_OBSERVED"},
+    "DIGIT_0":  {"sdl_code": 48,         "mobile_code": 48,  "game_key": "'0'", "game_bit": 1,     "status": "DELIVERED"},
+    "DIGIT_1":  {"sdl_code": 49,         "mobile_code": 49,  "game_key": "'1'", "game_bit": 2,     "status": "DELIVERED"},
+    "DIGIT_2":  {"sdl_code": 50,         "mobile_code": 50,  "game_key": "'2'", "game_bit": 4,     "status": "DELIVERED"},
+    "DIGIT_3":  {"sdl_code": 51,         "mobile_code": 51,  "game_key": "'3'", "game_bit": 8,     "status": "DELIVERED"},
+    "DIGIT_4":  {"sdl_code": 52,         "mobile_code": 52,  "game_key": "'4'", "game_bit": 16,    "status": "DELIVERED"},
+    "DIGIT_5":  {"sdl_code": 53,         "mobile_code": 53,  "game_key": "'5'", "game_bit": 32,    "status": "DELIVERED"},
+    "DIGIT_6":  {"sdl_code": 54,         "mobile_code": 54,  "game_key": "'6'", "game_bit": 64,    "status": "DELIVERED"},
+    "DIGIT_7":  {"sdl_code": 55,         "mobile_code": 55,  "game_key": "'7'", "game_bit": 128,   "status": "DELIVERED"},
+    "DIGIT_8":  {"sdl_code": 56,         "mobile_code": 56,  "game_key": "'8'", "game_bit": 256,   "status": "DELIVERED"},
+    "DIGIT_9":  {"sdl_code": 57,         "mobile_code": 57,  "game_key": "'9'", "game_bit": 512,   "status": "DELIVERED"},
+    "STAR":     {"sdl_code": 42,         "mobile_code": 42,  "game_key": "'*'", "game_bit": 262144, "status": "DELIVERED"},
+    "POUND":    {"sdl_code": 35,         "mobile_code": 35,  "game_key": "'#'", "game_bit": 524288, "status": "DELIVERED"},
+    "SOFT_LEFT":  {"sdl_code": -6, "mobile_code": null, "game_key": "-6", "game_bit": 32768, "status": "NOT_DELIVERABLE_EMULATOR"},
+    "SOFT_RIGHT": {"sdl_code": -7, "mobile_code": null, "game_key": "-7", "game_bit": 65536, "status": "NOT_DELIVERABLE_EMULATOR"},
+    "BACK":       {"sdl_code": 27,  "mobile_code": null, "game_key": null, "game_bit": null, "status": "QUITS_EMULATOR"},
+    "QUIT":       {"sdl_code": -1,  "mobile_code": null, "game_key": null, "game_bit": null, "status": "QUITS_EMULATOR"}
+  },
+  "notes": [
+    "useFlag=0: SDL-стрелки -> клавиши цифровой панели ('2','8','4','6'), ENTER -> '5'.",
+    "getMobileKey (useFlag=0) возвращает 0 для всех кодов вне таблицы — SOFT_LEFT(-6)/SOFT_RIGHT(-7) ДОСТАВИТЬ НЕЛЬЗЯ; игра в меню сама трактует '*'-бит и софт-клавиши через внутренние маски.",
+    "Код 27 (ESC) и -1 завершают эмулятор (exit) — НЕ использовать как BACK.",
+    "g.aa(): отрицательные коды -1..-7 -> биты 1024..65536 (Nokia-стиль); цифры -> биты 1..512.",
+    "Наблюдение TEST-001: в меню первое нажатие после активации даёт серию +5 шагов курсора (артефакт конвейера кадров эмулятора), далее +1."
+  ]
+}

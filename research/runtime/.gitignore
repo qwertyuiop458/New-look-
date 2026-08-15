@@ -11,3 +11,8 @@ config/
 hs_err_*.log
 # Кадры (можно перегенерировать; оставляем только 01_boot.png)
 evidence/real/frame_*.png
+# TEST-001: кадры (перегенерируемы) — в git только именованные evidence
+evidence/real/test-001/frame_*.png
+evidence/real/test-001/latest.png
+results/test-001/runtime-stdout*.log
+results/test-001/sdl_interface.log

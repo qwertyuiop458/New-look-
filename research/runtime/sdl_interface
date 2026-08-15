@@ -1,60 +1,147 @@
 #!/usr/bin/env python3
-"""FreeJ2ME Anbu SDL-interface stub: принимает RGB-кадры 240x320 по stdin, сохраняет PNG."""
-import sys, os, struct, time
+"""FreeJ2ME Anbu sdl_interface stub v2 (TEST-001).
+
+Протокол (верифицирован по байткоду Anbu$SDL$SDLKeyTimerTask, см.
+research/runtime/input/input-protocol.md):
+  * кадры RGB 240x320x3 Anbu пишет в НАШ stdin  -> сохраняем PNG
+  * клавиши Anbu читает из НАШЕГО stderr (proc.getErrorStream())
+    пакетами по 5 байт: [0]= (type<<4)|pressed (type 0=key, 1=pointer),
+    [1..4]=u32 BE code (key) / x u16, y u16 (pointer)
+Управление клавишами: TCP 127.0.0.1:PORT, команды:
+  KEY <code:int> <0|1>     — нажать/отпустить key code (SDL-код)
+  RAW <hex5>               — сырой 5-байтовый пакет
+  PING                     — ответ PONG
+  QUIT                     — завершить
+"""
+import sys, os, struct, time, socket, threading, zlib, json
 
 W = 240
 H = 320
 FRAME = W * H * 3
-OUT_DIR = "/home/user/New-look-/research/runtime/evidence/real"
-LOG = "/home/user/New-look-/research/runtime/results/boot/boot.log"
+
+OUT_DIR = os.environ.get("SDL_OUT_DIR", "/home/user/New-look-/research/runtime/evidence/real")
+LOG = os.environ.get("SDL_LOG", "/home/user/New-look-/research/runtime/results/test-001/sdl_interface.log")
+CTRL_PORT = int(os.environ.get("SDL_CTRL_PORT", "0"))
+SAVE_EVERY = int(os.environ.get("SDL_SAVE_EVERY", "10"))   # сохранять каждый N-й кадр
+SAVE_FIRST = int(os.environ.get("SDL_SAVE_FIRST", "5"))    # и первые N кадров
+
 frames = 0
 start = time.time()
+logf = open(LOG, "a")
+def log(msg):
+    logf.write(f"{time.time()-start:.3f} {msg}\n")
+    logf.flush()
 
 os.makedirs(OUT_DIR, exist_ok=True)
+log(f"SDL_STUB_START argv={sys.argv[1:]} out={OUT_DIR} ctrl={CTRL_PORT}")
 
-def log(msg):
-    with open(LOG, "a") as f:
-        f.write(f"{time.time()-start:.3f} {msg}\n")
+def write_png(path, frame):
+    raw = bytearray()
+    for y in range(H):
+        raw.append(0)
+        raw += frame[y*W*3:(y+1)*W*3]
+    def chunk(tag, data):
+        c = struct.pack(">I", len(data)) + tag + data
+        return c + struct.pack(">I", zlib.crc32(tag+data) & 0xffffffff)
+    png = b"\x89PNG\r\n\x1a\n"
+    png += chunk(b"IHDR", struct.pack(">IIBBBBB", W, H, 8, 2, 0, 0, 0))
+    png += chunk(b"IDAT", zlib.compress(bytes(raw), 6))
+    png += chunk(b"IEND", b"")
+    with open(path, "wb") as f:
+        f.write(png)
 
-log(f"SDL_STUB_START argv={sys.argv[1:]}")
+def key_packet(code, pressed):
+    """5-байтовый key-пакет: [0x00|pressed][u32 BE code]."""
+    return bytes([0x00 | (1 if pressed else 0)]) + struct.pack(">I", code & 0xffffffff)
 
-buf = bytearray()
-try:
+def ctrl_loop(port):
+    srv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    srv.bind(("127.0.0.1", port))
+    srv.listen(4)
+    log(f"CTRL_LISTEN {port}")
     while True:
-        chunk = sys.stdin.buffer.read(65536)
-        if not chunk:
-            log("SDL_STUB_STDIN_EOF")
-            break
-        buf += chunk
-        while len(buf) >= FRAME:
-            frame = bytes(buf[:FRAME])
-            del buf[:FRAME]
-            frames += 1
-            # сохранить каждый 10-й кадр и первые 3
-            if frames <= 3 or frames % 10 == 0:
-                path = os.path.join(OUT_DIR, f"frame_{frames:04d}.png")
+        try:
+            conn, addr = srv.accept()
+        except OSError:
+            return
+        conn.settimeout(0.5)
+        with conn:
+            while True:
                 try:
-                    # RGB -> PNG через zlib
-                    import zlib
-                    raw = bytearray()
-                    for y in range(H):
-                        raw.append(0)
-                        raw += frame[y*W*3:(y+1)*W*3]
-                    def chunk(tag, data):
-                        c = struct.pack(">I", len(data)) + tag + data
-                        return c + struct.pack(">I", zlib.crc32(tag+data) & 0xffffffff)
-                    png = b"\x89PNG\r\n\x1a\n"
-                    png += chunk(b"IHDR", struct.pack(">IIBBBBB", W, H, 8, 2, 0, 0, 0))
-                    png += chunk(b"IDAT", zlib.compress(bytes(raw), 6))
-                    png += chunk(b"IEND", b"")
-                    with open(path, "wb") as f:
-                        f.write(png)
-                    log(f"FRAME_SAVED {path} ({frames})")
+                    line = conn.recv(4096)
+                except socket.timeout:
+                    continue
+                except OSError:
+                    break
+                if not line:
+                    break
+                for cmd in line.decode().strip().split("\n"):
+                    cmd = cmd.strip()
+                    if not cmd:
+                        continue
+                    try:
+                        if cmd.startswith("KEY "):
+                            _, code_s, press_s = cmd.split()
+                            code = int(code_s); press = int(press_s)
+                            pkt = key_packet(code, press)
+                            sys.stderr.buffer.write(pkt)
+                            sys.stderr.buffer.flush()
+                            log(f"KEY_SENT code={code} press={press} pkt={pkt.hex()}")
+                            conn.sendall(b"OK\n")
+                        elif cmd.startswith("RAW "):
+                            pkt = bytes.fromhex(cmd.split()[1])
+                            sys.stderr.buffer.write(pkt)
+                            sys.stderr.buffer.flush()
+                            log(f"RAW_SENT pkt={pkt.hex()}")
+                            conn.sendall(b"OK\n")
+                        elif cmd == "PING":
+                            conn.sendall(b"PONG\n")
+                        elif cmd == "QUIT":
+                            log("CTRL_QUIT")
+                            os._exit(0)
+                        else:
+                            conn.sendall(b"ERR unknown\n")
+                    except Exception as e:
+                        log(f"CTRL_ERR {cmd!r} {e}")
+                        try:
+                            conn.sendall(f"ERR {e}\n".encode())
+                        except OSError:
+                            pass
+
+def main():
+    global frames
+    t = threading.Thread(target=ctrl_loop, args=(CTRL_PORT,), daemon=True)
+    t.start()
+    buf = bytearray()
+    try:
+        while True:
+            chunk = sys.stdin.buffer.read(65536)
+            if not chunk:
+                log("SDL_STUB_STDIN_EOF")
+                break
+            buf += chunk
+            while len(buf) >= FRAME:
+                frame = bytes(buf[:FRAME])
+                del buf[:FRAME]
+                frames += 1
+                if frames <= SAVE_FIRST or frames % SAVE_EVERY == 0:
+                    path = os.path.join(OUT_DIR, f"frame_{frames:05d}.png")
+                    try:
+                        write_png(path, frame)
+                        log(f"FRAME_SAVED {path} ({frames})")
+                    except Exception as e:
+                        log(f"PNG_ERROR {e}")
+                try:
+                    write_png(os.path.join(OUT_DIR, "latest.png"), frame)
                 except Exception as e:
-                    log(f"PNG_ERROR {e}")
-            if frames % 50 == 0:
-                log(f"FRAMES_TOTAL {frames}")
-except KeyboardInterrupt:
-    pass
-finally:
-    log(f"SDL_STUB_END frames={frames}")
+                    log(f"LATEST_PNG_ERROR {e}")
+                if frames % 100 == 0:
+                    log(f"FRAMES_TOTAL {frames}")
+    except KeyboardInterrupt:
+        pass
+    finally:
+        log(f"SDL_STUB_END frames={frames}")
+
+if __name__ == "__main__":
+    main()

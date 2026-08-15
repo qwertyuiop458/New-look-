@@ -1,0 +1,40 @@
+{
+  "meta": "Quality gate Этапа 15.30 (TEST-001)",
+  "status": "PASSED",
+  "criteria": {
+    "statuses": ["NOT_EXECUTED", "INPUT_FAILED", "PARTIAL", "PASSED", "MISMATCH_FOUND"],
+    "PASSED_requires": "реальный проход BOOT -> MENU -> GAMEPLAY с сохранёнными evidence"
+  },
+  "evidence": {
+    "flow_completed": true,
+    "screens_reached": {
+      "BOOT": true,
+      "MENU": true,
+      "NEW_GAME_setup": true,
+      "PROFILE_difficulty": true,
+      "CHARACTER_SELECT_confirm": true,
+      "LOADING": true,
+      "GAMEPLAY": true
+    },
+    "input_smoke": "KEY_RECEIVED",
+    "state_trace_events": 122,
+    "entities_traced": 1034,
+    "screenshots_saved": [
+      "boot.png", "menu.png", "profile.png", "character-select.png",
+      "loading.png", "gameplay.png", "first-entity.png"
+    ],
+    "jar_sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+    "original_jar_modified": false,
+    "instrumentation": "JDWP external (jar bytes unchanged)"
+  },
+  "comparison": {
+    "file": "research/runtime/results/test-001/comparison.json",
+    "MATCH": 11,
+    "PARTIAL": 1,
+    "NEW_OBSERVATION": 1,
+    "INCONCLUSIVE": 1,
+    "MISMATCH": 0
+  },
+  "audio_status": "AUDIO_RUNTIME_BLOCKED_BY_STUB",
+  "verdict": "TEST-001 PASSED — первый воспроизводимый runtime-эксперимент выполнен: реальные input events перевели оригинальную игру BOOT -> MENU -> NEW GAME -> PROFILE -> CHARACTER SELECT -> LOADING -> GAMEPLAY; сняты state-trace (122 события), entity-trace (1034 сущности) и 7 evidence-скриншотов; статика/рантайм: 11 MATCH, 0 MISMATCH."
+}
