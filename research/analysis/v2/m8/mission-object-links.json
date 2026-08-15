@@ -1,0 +1,26 @@
+{
+ "note": "Связь объектов m8 с миссиями. DIRECT = объект читается в потоке миссии; NONE = не читается ни одной миссией; UNKNOWN = не установлено.",
+ "SEG0": {
+  "reference": "NONE",
+  "detail": "340 записей не читаются ни одной из 5 миссий (все switch -> SEG3)"
+ },
+ "SEG1": {
+  "reference": "NONE",
+  "detail": "172 записи"
+ },
+ "SEG2": {
+  "reference": "NONE",
+  "detail": "64 записи"
+ },
+ "SEG3": {
+  "reference": "DIRECT",
+  "detail": "все 212 switch 5 миссий -> SEG3 sub 0..5; под-блоки = 10-байтовые флаги, записей нет"
+ },
+ "SEG4": {
+  "reference": "NONE"
+ },
+ "SEG5": {
+  "reference": "NONE"
+ },
+ "shared_objects": "не применимо: SEG0/1/2 не используются миссиями"
+}

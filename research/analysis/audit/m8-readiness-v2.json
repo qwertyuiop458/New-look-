@@ -1,0 +1,30 @@
+{
+    "audit": "m8-readiness-v2",
+    "date": "2026-08-15",
+    "status": "PARTIAL",
+    "criteria": {
+        "all_m8_readings_found": true,
+        "seg0_1_2_classified_from_primary_code": false,
+        "world_coordinate_model_confirmed": true,
+        "mission_object_linkage_proven": true
+    },
+    "findings": {
+        "m8_readings": [
+            "g.Z(int) g.java:13886 — единственное открытие '/m8' (маркер 99 миссии); читает SEG3 (под-блоки 0..5) во всех 5 миссиях",
+            "g.java:3492 g.a[23] — СЛОТ 23 массива спрайт-листов (заполняется из m2 seg2 сценарием {3,3,2,23,0,2}), НЕ чтение m8"
+        ],
+        "seg0_1_2": "UNKNOWN_STATIC: 340/172/64 записей (14 типов) не читаются ни одним статическим путём; формат записей CONFIRMED",
+        "seg3_4_5": "7 под-блоков [0xC8][10 флагов] каждый; SEG3 используется миссиями как границы секций; флаги структурированы ([ref?][sub_index][...][value]) но пропускаются кодом Z() — UNKNOWN_STATIC",
+        "world_coordinate_model": "CONFIRMED: пиксельная сцена ~3000x2100 px; мира 64x64 нет; камера с клампами; fixed->px->tile цепочка",
+        "mission_object_linkage": "CONFIRMED: все 212 switch -> SEG3 sub 0..5 (DIRECT); SEG0/1/2/4/5 -> NONE",
+        "m9_archetype_link": "NO_DIRECT_LINK: пересечение id SEG-объектов с 56 архетипами = 1 из 576 (type 10 id 114); id записей не являются архетипами"
+    },
+    "why_not_READY": [
+        "SEG0/SEG1/SEG2 классифицированы только по формату (14 типов, координаты, props), но consumer и семантика не установлены",
+        "семантика флагов SEG3/4/5 не установлена",
+        "связь tile_id миссий со спрайт-пакетами не установлена",
+        "семантика props записей не установлена"
+    ],
+    "neutral_naming": "SEG0/SEG1/SEG2/SEG3/SEG4/SEG5 (вместо 'world'/'object layer'/'placeholder' — не доказано)",
+    "recommendation": "Требуется рантайм: трассировка рендера (что рисует кадры из SEG0/1/2) и g.z-исполнителя для семантики."
+}

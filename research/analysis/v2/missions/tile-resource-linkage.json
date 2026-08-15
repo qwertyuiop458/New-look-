@@ -1,0 +1,27 @@
+{
+ "note": "Связь mission tile_id/obj_id с ресурсами визуализации.",
+ "tile_ids_union_count": 325,
+ "tile_id_range": [
+  13,
+  3201
+ ],
+ "tile_ids_intersect_archetypes": [
+  13,
+  18,
+  76,
+  96,
+  174,
+  227,
+  317,
+  326,
+  349
+ ],
+ "obj_ids_intersect_archetypes": [
+  114
+ ],
+ "graphics_resource": "UNKNOWN — рендер тайлов миссии не прослежен до спрайт-пакета (кандидаты m6_0..m6_5/m7/m3_0..m5_9 через g.g() case 2/3/9)",
+ "x_y_definition": "y из data[1] маркера строки; x = порядок в фрагменте (см. tile-format.md)",
+ "walkability": "data[3]==1 -> g.d[idx] (CONFIRMED, спец-парсер 16860)",
+ "world_link": "тайлы миссии не привязаны к объектам SEG0/1/2 (те не читаются); связь с SEG3-флагами: UNKNOWN",
+ "status": "UNKNOWN (кроме walkability)"
+}
