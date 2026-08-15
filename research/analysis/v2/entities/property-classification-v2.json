@@ -1,0 +1,250 @@
+{
+ "meta": "Классификация 35 свойств",
+ "classification": [
+  {
+   "property": 0,
+   "PRIMARY_ROLE": "RESOURCE",
+   "SEMANTIC_STATUS": "INFERRED",
+   "chain": "индекс/ссылка (g.java: g.h(n,0) в таблицах m(); n4=(n6-4)*10+... — индексация данных)",
+   "evidence": "g.java:24695-24700 m(int)"
+  },
+  {
+   "property": 1,
+   "PRIMARY_ROLE": "RESOURCE",
+   "SEMANTIC_STATUS": "INFERRED",
+   "chain": "индекс/ссылка (m(int): n5 = (n4-4)*10 + g.h(n,1); t[n5] — выбор записи)",
+   "evidence": "g.java:24695-24700"
+  },
+  {
+   "property": 2,
+   "PRIMARY_ROLE": "MOVEMENT",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "сдвиг направления для состояния g[12]==0/6/28: кадр n = dir + prop2; и m(): направление += prop2",
+   "evidence": "f.java:4656, 4618, 3637 m()"
+  },
+  {
+   "property": 3,
+   "PRIMARY_ROLE": "MOVEMENT",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "сдвиг направления для состояния g[12]==1: кадр n = dir + prop3",
+   "evidence": "f.java:4660"
+  },
+  {
+   "property": 4,
+   "PRIMARY_ROLE": "MOVEMENT",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "сдвиг направления для состояния g[12]==2 (и аналогичных)",
+   "evidence": "f.java:4679"
+  },
+  {
+   "property": 5,
+   "PRIMARY_ROLE": "MOVEMENT",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "сдвиг направления для состояния g[12]==3 (и аналогичных)",
+   "evidence": "f.java:4746"
+  },
+  {
+   "property": 6,
+   "PRIMARY_ROLE": "MOVEMENT",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "сдвиг направления для состояния g[12]==4 (и аналогичных)",
+   "evidence": "f.java:4768"
+  },
+  {
+   "property": 7,
+   "PRIMARY_ROLE": "AI",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "диапазон направлений A [n, n+4): f.s(): f2.a.d >= n2 && < n2+4 (зона видимости/атаки)",
+   "evidence": "f.java:3667, 4604, 4599"
+  },
+  {
+   "property": 8,
+   "PRIMARY_ROLE": "AI",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "диапазон направлений B [n, n+4): второй диапазон",
+   "evidence": "f.java:3668, 4605"
+  },
+  {
+   "property": 9,
+   "PRIMARY_ROLE": "STATE",
+   "SEMANTIC_STATUS": "INFERRED",
+   "chain": "поле состояния (g.java: var2_2 = g.h(var0.g[0], 9))",
+   "evidence": "g.java:31805"
+  },
+  {
+   "property": 10,
+   "PRIMARY_ROLE": "AI",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "КЛАСС ИИ: 0/3/5/7 = направленные/стреляющие ветвления (d(), C(), I(), J(), s(), e()); 1/2 = особые",
+   "evidence": "f.java:2380,2637,2830,3662,4603 (46 чтений)"
+  },
+  {
+   "property": 11,
+   "PRIMARY_ROLE": "STATE",
+   "SEMANTIC_STATUS": "INFERRED",
+   "chain": "вспомогательное поле (var5_6 = g.h(var0.g[0], 11) рядом с 12)",
+   "evidence": "f.java:2830"
+  },
+  {
+   "property": 12,
+   "PRIMARY_ROLE": "AI",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "атака/урон-параметр: f.i() case 7: f.d(f2, n2) (урон цели), f.j() case 12/13: тайминги",
+   "evidence": "f.java:2830, 2952, 3913"
+  },
+  {
+   "property": 13,
+   "PRIMARY_ROLE": "UNKNOWN",
+   "SEMANTIC_STATUS": "UNKNOWN",
+   "chain": "нет чтений в исследованном коде",
+   "evidence": "-"
+  },
+  {
+   "property": 14,
+   "PRIMARY_ROLE": "AI",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "анимация цели при атаке: f.b(f3, g.h(f2.g[0],14)) (проигрывание анимации жертвы)",
+   "evidence": "f.java:2830 (f.i case 7)"
+  },
+  {
+   "property": 15,
+   "PRIMARY_ROLE": "STATE",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "бинарный флаг: var4_4 = g.h(type,15)==1 (выбор ветки поведения)",
+   "evidence": "f.java:4644"
+  },
+  {
+   "property": 16,
+   "PRIMARY_ROLE": "UNKNOWN",
+   "SEMANTIC_STATUS": "UNKNOWN",
+   "chain": "var6_7 = g.h(var0.g[0], 16) — контекст не изолирован",
+   "evidence": "f.java:2830"
+  },
+  {
+   "property": 17,
+   "PRIMARY_ROLE": "AI",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "дистанция атаки: f.i() case 7: n <= n3 (сравнение с дистанцией); f.j() case 12",
+   "evidence": "f.java:2830 (f.i), 2952 (f.j)"
+  },
+  {
+   "property": 18,
+   "PRIMARY_ROLE": "UNKNOWN",
+   "SEMANTIC_STATUS": "UNKNOWN",
+   "chain": "var8_9 = g.h(var0.g[0], 18)",
+   "evidence": "f.java:2830"
+  },
+  {
+   "property": 19,
+   "PRIMARY_ROLE": "COLLISION",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "полуширина коллизионного бокса в тайлах: n4 = 16*prop19/2 - 5 << 14 (px fixed); g.a проверки",
+   "evidence": "f.java:5360-5366"
+  },
+  {
+   "property": 20,
+   "PRIMARY_ROLE": "COLLISION",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "полувысота коллизионного бокса в тайлах: n5 = 16*prop20/2 - 5 << 14; также g.java: g.h(type,20)*16/2",
+   "evidence": "f.java:5361; g.java:12725"
+  },
+  {
+   "property": 21,
+   "PRIMARY_ROLE": "RENDER",
+   "SEMANTIC_STATUS": "INFERRED",
+   "chain": "палитра/цветовой индекс (g.java: n = g.h(f2.g[0], 21) в отрисовке)",
+   "evidence": "g.java:17669"
+  },
+  {
+   "property": 22,
+   "PRIMARY_ROLE": "AI",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "урон атаки: f.java:2894 (n6 = g.h(f2.g[0],22) в ветке нанесения урона — condition f2.g[10]!=5 && g[12]<100)",
+   "evidence": "f.java:2894"
+  },
+  {
+   "property": 23,
+   "PRIMARY_ROLE": "MOVEMENT",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "сдвиг направления для состояния g[12]==9 (кадр = dir + prop23)",
+   "evidence": "f.java:4789"
+  },
+  {
+   "property": 24,
+   "PRIMARY_ROLE": "RENDER",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "смещение X спрайта: n5 = n + (prop24 + g[28]*4) (оружие-сдвиг); n5 = n + prop24",
+   "evidence": "f.java:4720, 4728, 4107"
+  },
+  {
+   "property": 25,
+   "PRIMARY_ROLE": "RENDER",
+   "SEMANTIC_STATUS": "INFERRED",
+   "chain": "звук/эффект выстрела: g.a(позиция, prop25, позиция, ...50, 200) (AABB-проверка попадания)",
+   "evidence": "f.java:4107"
+  },
+  {
+   "property": 26,
+   "PRIMARY_ROLE": "STATE",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "графика/эффект телепорта: g.b(n5, x<<14, y<<14) (вызов после перемещения)",
+   "evidence": "f.java:2658-2680"
+  },
+  {
+   "property": 27,
+   "PRIMARY_ROLE": "MOVEMENT",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "сдвиг направления для состояния g[12]==10",
+   "evidence": "f.java:4801"
+  },
+  {
+   "property": 28,
+   "PRIMARY_ROLE": "MOVEMENT",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "сдвиг направления для состояния g[12]==11",
+   "evidence": "f.java:4814"
+  },
+  {
+   "property": 29,
+   "PRIMARY_ROLE": "STATE",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "спец-поле: g.h(type,29)==-1 проверка (ветвление); также сдвиг кадра (n5 = n + prop29)",
+   "evidence": "f.java:2830, 4834"
+  },
+  {
+   "property": 30,
+   "PRIMARY_ROLE": "MOVEMENT",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "сдвиг направления для состояния g[12]==12",
+   "evidence": "f.java:4841"
+  },
+  {
+   "property": 31,
+   "PRIMARY_ROLE": "RENDER",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "палитра при отрисовке: g.a(graphics, g.b, null, 9, g.h(type,31), 0, RGBA...) — индекс палитры",
+   "evidence": "f.java:4107 (2 чтения)"
+  },
+  {
+   "property": 32,
+   "PRIMARY_ROLE": "ANIMATION",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "старт анимаций в W (dr(); g.d(type,anim,f) = W[prop32+anim*13+f])",
+   "evidence": "g.java:24553 dr(), 24756"
+  },
+  {
+   "property": 33,
+   "PRIMARY_ROLE": "ANIMATION",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "число анимаций (циклы: for n4 < g.h(type,33); System.arraycopy g[30..])",
+   "evidence": "f.java:2637, 2719, 3913 (22 чтения)"
+  },
+  {
+   "property": 34,
+   "PRIMARY_ROLE": "ANIMATION",
+   "SEMANTIC_STATUS": "CONFIRMED",
+   "chain": "индекс frame-записи в V (g.i(type,f)=V[prop34*15+f]; -1 = нет кадров)",
+   "evidence": "g.java:24765; f.java:2935, 3985"
+  }
+ ]
+}

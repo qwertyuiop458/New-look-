@@ -1,0 +1,155 @@
+{
+ "meta": "Формулы/преобразования для подтверждённых свойств",
+ "formulas": [
+  {
+   "property": 2,
+   "formula": "кадр = dir + prop2 (сдвиг направления для состояния)",
+   "source": "f.java:4656, 4618, 3637 m()",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 3,
+   "formula": "кадр = dir + prop3 (сдвиг направления для состояния)",
+   "source": "f.java:4660",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 4,
+   "formula": "кадр = dir + prop4 (сдвиг направления для состояния)",
+   "source": "f.java:4679",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 5,
+   "formula": "кадр = dir + prop5 (сдвиг направления для состояния)",
+   "source": "f.java:4746",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 6,
+   "formula": "кадр = dir + prop6 (сдвиг направления для состояния)",
+   "source": "f.java:4768",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 7,
+   "formula": "зона: prop7 <= направление < prop7+4",
+   "source": "f.java:3667, 4604, 4599",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 8,
+   "formula": "зона: prop8 <= направление < prop8+4",
+   "source": "f.java:3668, 4605",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 10,
+   "formula": "0/3/5/7 = направленные/стреляющие ветвления (d(), C(), I(), J(), s(), e()); 1/2 = особые",
+   "source": "f.java:2380,2637,2830,3662,4603 (46 чтений)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 12,
+   "formula": "тайминги",
+   "source": "f.java:2830, 2952, 3913",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 14,
+   "formula": "f.b(f3, g.h(f2.g[0],14)) (проигрывание анимации жертвы)",
+   "source": "f.java:2830 (f.i case 7)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 17,
+   "formula": "сравнение: дистанция <= prop17 (порог атаки)",
+   "source": "f.java:2830 (f.i), 2952 (f.j)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 19,
+   "formula": "n4 = (16 * prop19 / 2 - 5) << 14  [fixed-point px; полуширина бокса]",
+   "source": "f.java:5360-5366",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 20,
+   "formula": "n5 = (16 * prop20 / 2 - 5) << 14; g.h(type,20)*16/2",
+   "source": "f.java:5361; g.java:12725",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 22,
+   "formula": "урон: применяется в ветке атаки (f.java:2894)",
+   "source": "f.java:2894",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 23,
+   "formula": "кадр = dir + prop23 (сдвиг направления для состояния)",
+   "source": "f.java:4789",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 24,
+   "formula": "n5 = n + prop24 + g[28]*4 (со смещением оружия); n5 = n + prop24",
+   "source": "f.java:4720, 4728, 4107",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 26,
+   "formula": "g.b(n5, x<<14, y<<14) (вызов после перемещения)",
+   "source": "f.java:2658-2680",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 27,
+   "formula": "кадр = dir + prop27 (сдвиг направления для состояния)",
+   "source": "f.java:4801",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 28,
+   "formula": "кадр = dir + prop28 (сдвиг направления для состояния)",
+   "source": "f.java:4814",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 29,
+   "formula": "g.h(type,29)==-1 проверка (ветвление); также сдвиг кадра (n5 = n + prop29)",
+   "source": "f.java:2830, 4834",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 30,
+   "formula": "кадр = dir + prop30 (сдвиг направления для состояния)",
+   "source": "f.java:4841",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 31,
+   "formula": "индекс палитры при отрисовке (2 варианта: prop31 / prop31+1)",
+   "source": "f.java:4107 (2 чтения)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 32,
+   "formula": "g.d(type,anim,f) = W[prop32 + anim*13 + f]",
+   "source": "g.java:24553 dr(), 24756",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 33,
+   "formula": "циклы: for (i < prop33) — число анимаций; arraycopy g[30..30+prop33]",
+   "source": "f.java:2637, 2719, 3913 (22 чтения)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "property": 34,
+   "formula": "g.i(type,f) = V[prop34*15 + f]; prop34 == -1 => нет кадров",
+   "source": "g.java:24765; f.java:2935, 3985",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

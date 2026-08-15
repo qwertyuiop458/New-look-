@@ -37,7 +37,8 @@
    "entity_state_field": "g[12] (17+ значений, 100+ терминальные)",
    "status": "CONFIRMED",
    "props_semantics": "prop7/8 диапазоны направлений, prop10 класс ИИ, prop32/33/34 индексы таблиц (CONFIRMED); прочие UNKNOWN",
-   "directions": 4
+   "directions": 4,
+   "property_semantics": "26 CONFIRMED/6 INFERRED/3 UNKNOWN (15.12): AI prop7/8/10/12/14/17/22, collision prop19/20, animation prop32/33/34, render prop24/31"
   },
   "weapons": {
    "record_count": 16,

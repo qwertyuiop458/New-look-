@@ -104,6 +104,28 @@ def main():
         if len(ti & arche) > 20:
             err("подозрительно большое пересечение tile_ids/archetypes")
         warn(f"информация: tile∩arche={len(ti & arche)}, obj∩arche={len(oi & arche)}")
+
+    # 8. properties 0..34 — семантика
+    cls = load("entities/property-classification-v2.json")
+    if cls:
+        conf = {}
+        for c in cls["classification"]:
+            conf[c["SEMANTIC_STATUS"]] = conf.get(c["SEMANTIC_STATUS"], 0) + 1
+        print("property classification:", conf)
+        if conf.get("CONFIRMED", 0) < 12:
+            err(f"CONFIRMED свойств < 12 ({conf.get('CONFIRMED', 0)}) — критерий качества")
+        if len(cls["classification"]) != 35:
+            err("classification != 35")
+    prof = load("entities/archetype-profiles-v2.json")
+    if prof and len(prof["archetypes"]) != 56:
+        err("profiles != 56")
+    cl = load("entities/archetype-clusters-v2.json")
+    if cl and cl.get("cluster_count", 0) == 0:
+        err("нет кластеров")
+    idx = load("entities/property-read-write-index.json")
+    if idx and len(idx["properties"]) != 35:
+        err("read-write index != 35")
+
     # 7. property refs consistency
     if props:
         ok_props = {p["property_index"] for p in props["properties"] if p["confidence"] != "UNKNOWN"}

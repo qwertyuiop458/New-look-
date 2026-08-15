@@ -1,0 +1,73 @@
+{
+ "audit": "entity-properties-readiness-v2",
+ "date": "2026-08-15",
+ "status": "READY_STATIC",
+ "criteria": {
+  "all_35_properties_traced": true,
+  "critical_behavior_properties_have_primary_evidence": true,
+  "formulas_traced": true,
+  "entity_property_behavior_linkage_established": true
+ },
+ "metrics": {
+  "CONFIRMED": 26,
+  "INFERRED": 6,
+  "UNKNOWN": 3,
+  "roles": {
+   "MOVEMENT": 9,
+   "AI": 7,
+   "STATE": 5,
+   "RENDER": 4,
+   "ANIMATION": 3,
+   "RESOURCE": 2,
+   "COLLISION": 2,
+   "UNKNOWN": 3
+  },
+  "behavior_clusters": 17,
+  "key_properties": {
+   "AI": [
+    7,
+    8,
+    10,
+    12,
+    14,
+    17,
+    22
+   ],
+   "COMBAT": [
+    12,
+    17,
+    22,
+    25
+   ],
+   "COLLISION": [
+    19,
+    20
+   ],
+   "ANIMATION": [
+    32,
+    33,
+    34
+   ],
+   "MOVEMENT": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    23,
+    27,
+    28,
+    30
+   ],
+   "RENDER": [
+    21,
+    24,
+    25,
+    31
+   ]
+  },
+  "runtime_required": 3,
+  "runtime_notes": "prop13/16/18 — контексты не изолированы; точные визуальные эффекты prop24/25/26/31 — REQUIRES_REAL_RUNTIME"
+ },
+ "evidence": "см. property-read-write-index.json (все чтения g.h(type,prop) из g.java/f.java с цепочками)"
+}

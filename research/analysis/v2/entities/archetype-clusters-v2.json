@@ -1,0 +1,283 @@
+{
+ "meta": "Структурная кластеризация по сигнатуре (prop10, prop7, prop8, prop19, prop20, prop22) — без субъективных имён. prop33/34 вычисляются кодом и здесь недоступны.",
+ "cluster_count": 17,
+ "clusters": [
+  {
+   "signature": {
+    "ai_class": 0,
+    "facing_a": 12,
+    "facing_b": 36,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    3,
+    13,
+    24,
+    30,
+    90,
+    96,
+    107,
+    108,
+    147,
+    209,
+    215,
+    226,
+    227,
+    337,
+    358
+   ],
+   "size": 15
+  },
+  {
+   "signature": {
+    "ai_class": 3,
+    "facing_a": 50,
+    "facing_b": 58,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    31,
+    35,
+    38,
+    114,
+    120,
+    130,
+    233,
+    239,
+    249
+   ],
+   "size": 9
+  },
+  {
+   "signature": {
+    "ai_class": 5,
+    "facing_a": 12,
+    "facing_b": 36,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    157,
+    163,
+    174,
+    175
+   ],
+   "size": 4
+  },
+  {
+   "signature": {
+    "ai_class": 3,
+    "facing_a": 50,
+    "facing_b": 58,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    18,
+    125,
+    244
+   ],
+   "size": 3
+  },
+  {
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 0,
+    "facing_b": 0,
+    "box_w_tiles": 4,
+    "box_h_tiles": 2,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    46,
+    265,
+    305
+   ],
+   "size": 3
+  },
+  {
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 52,
+    "facing_b": 52,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    84,
+    260,
+    300
+   ],
+   "size": 3
+  },
+  {
+   "signature": {
+    "ai_class": 7,
+    "facing_a": 50,
+    "facing_b": 58,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    181,
+    187,
+    197
+   ],
+   "size": 3
+  },
+  {
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 133,
+    "facing_b": 133,
+    "box_w_tiles": 2,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    286,
+    326
+   ],
+   "size": 2
+  },
+  {
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 137,
+    "facing_b": 137,
+    "box_w_tiles": 2,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    277,
+    317
+   ],
+   "size": 2
+  },
+  {
+   "signature": {
+    "ai_class": 2,
+    "facing_a": 89,
+    "facing_b": 89,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    135,
+    291
+   ],
+   "size": 2
+  },
+  {
+   "signature": {
+    "ai_class": 4,
+    "facing_a": 0,
+    "facing_b": 0,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    70,
+    139
+   ],
+   "size": 2
+  },
+  {
+   "signature": {
+    "ai_class": 6,
+    "facing_a": 0,
+    "facing_b": 0,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    202,
+    345
+   ],
+   "size": 2
+  },
+  {
+   "signature": {
+    "ai_class": 2,
+    "facing_a": 47,
+    "facing_b": 47,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    206,
+    349
+   ],
+   "size": 2
+  },
+  {
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 56,
+    "facing_b": 56,
+    "box_w_tiles": 2,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    76
+   ],
+   "size": 1
+  },
+  {
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 56,
+    "facing_b": 56,
+    "box_w_tiles": 2,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    67
+   ],
+   "size": 1
+  },
+  {
+   "signature": {
+    "ai_class": 2,
+    "facing_a": 31,
+    "facing_b": 31,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    64
+   ],
+   "size": 1
+  },
+  {
+   "signature": {
+    "ai_class": 7,
+    "facing_a": 50,
+    "facing_b": 58,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "archetype_ids": [
+    192
+   ],
+   "size": 1
+  }
+ ]
+}

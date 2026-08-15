@@ -1,0 +1,65 @@
+{
+ "meta": "opcode -> archetype property (из opcode-master-v2 + property index)",
+ "map": [
+  {
+   "opcode": 110,
+   "property": [
+    28,
+    29
+   ],
+   "effect": "команда: g[28] (оружие), g[29], позиция, направление"
+  },
+  {
+   "opcode": 113,
+   "property": [],
+   "effect": "запись g[prop] объекта-тайла (L-зависимо)"
+  },
+  {
+   "opcode": 115,
+   "property": [],
+   "effect": "запись g[n4]=n5 сущности сетки"
+  },
+  {
+   "opcode": 116,
+   "property": [],
+   "effect": "инкремент g[n4]+=n5"
+  },
+  {
+   "opcode": 120,
+   "property": [
+    14
+   ],
+   "effect": "запись байта в g[n3+14] (merge 65280)"
+  },
+  {
+   "opcode": 128,
+   "property": [],
+   "effect": "g.c.g[n] = n2 (игрок)"
+  },
+  {
+   "opcode": 151,
+   "property": [
+    10,
+    7,
+    8,
+    19,
+    20
+   ],
+   "effect": "СПАВН: архетип в props; поведение/бокс из свойств"
+  },
+  {
+   "opcode": 160,
+   "property": [
+    10,
+    7,
+    8
+   ],
+   "effect": "СПАВН вариант"
+  },
+  {
+   "opcode": 141,
+   "property": [],
+   "effect": "смена персонажа (c[], bt, L[1])"
+  }
+ ]
+}

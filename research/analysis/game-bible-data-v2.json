@@ -498,6 +498,31 @@
   "behavior_class_prop": {
    "prop10": "класс ИИ (0/3/5/7 направленные; 1/2 особые)",
    "status": "CONFIRMED"
+  },
+  "property_semantics": {
+   "status": "READY_STATIC (этап 15.12)",
+   "CONFIRMED": 26,
+   "INFERRED": 6,
+   "UNKNOWN": 3,
+   "roles": {
+    "MOVEMENT": 9,
+    "AI": 7,
+    "STATE": 5,
+    "RENDER": 4,
+    "ANIMATION": 3,
+    "RESOURCE": 2,
+    "COLLISION": 2
+   },
+   "key": {
+    "prop10": "класс ИИ",
+    "prop7/8": "зоны направлений",
+    "prop12/17/22": "атака (урон/дистанция)",
+    "prop19/20": "коллизионный бокс (16*prop/2-5)<<14",
+    "prop32/33/34": "анимации/кадры",
+    "prop24/31": "смещение X/палитра",
+    "prop26": "графика телепорта"
+   },
+   "detail": "research/analysis/v2/entities/property-classification-v2.json"
   }
  },
  "weapons": {

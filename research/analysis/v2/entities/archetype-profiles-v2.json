@@ -1,0 +1,9301 @@
+{
+ "meta": "Профили 56 архетипов. Семантика свойств — из property-read-write-index; значения — сырые u16 из m9 seg4.",
+ "archetypes": [
+  {
+   "id": 3,
+   "name": "ARCHETYPE_003",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 7,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 17,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 9,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 13,
+   "name": "ARCHETYPE_013",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 7,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 17,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 25,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 11,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 24,
+   "name": "ARCHETYPE_024",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 7,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 17,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 25,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 11,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 30,
+   "name": "ARCHETYPE_030",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 7,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 17,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 20,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 13,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 18,
+   "name": "ARCHETYPE_018",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 6,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 25,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 31,
+   "name": "ARCHETYPE_031",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 6,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 20,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 38,
+   "name": "ARCHETYPE_038",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 6,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 20,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 35,
+   "name": "ARCHETYPE_035",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 3,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 15,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 107,
+   "name": "ARCHETYPE_107",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 8,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 3,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 8,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 8,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 49,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 66,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 70,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 78,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 82,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 108,
+   "name": "ARCHETYPE_108",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 8,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 3,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 8,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 10,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 49,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 66,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 70,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 78,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 82,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 90,
+   "name": "ARCHETYPE_090",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 8,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 3,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 8,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 10,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 49,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 66,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 70,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 78,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 82,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 96,
+   "name": "ARCHETYPE_096",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 8,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 3,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 8,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 10,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 49,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 66,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 70,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 78,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 82,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 125,
+   "name": "ARCHETYPE_125",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 8,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 2,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 4,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 49,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 74,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 74,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 78,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 82,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 130,
+   "name": "ARCHETYPE_130",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 8,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 2,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 49,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 74,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 74,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 78,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 82,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 114,
+   "name": "ARCHETYPE_114",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 8,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 2,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 49,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 74,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 74,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 78,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 82,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 120,
+   "name": "ARCHETYPE_120",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 8,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 1,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 2,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 25,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 49,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 74,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 74,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 78,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 82,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 46,
+   "name": "ARCHETYPE_046",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 0,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 10,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 25,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 4,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 2,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 23,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 61,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 40,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 129,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 84,
+   "name": "ARCHETYPE_084",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 52,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 52,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 3,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 0,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 25,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 73,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 81,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 40,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 65535,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 76,
+   "name": "ARCHETYPE_076",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 149,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 56,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 56,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 2,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 5,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 15,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 2,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 73,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 81,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 40,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 141,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 67,
+   "name": "ARCHETYPE_067",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 56,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 56,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 56,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 56,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 153,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 56,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 56,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 1,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 5,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 15,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 2,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 2,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 77,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 89,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 40,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 145,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 56,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 265,
+   "name": "ARCHETYPE_265",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 121,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 125,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 125,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 0,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 15,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 34,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 4,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 2,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 165,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 169,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 108,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 129,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 22,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 260,
+   "name": "ARCHETYPE_260",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 52,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 52,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 3,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 0,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 25,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 73,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 81,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 108,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 65535,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 22,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 286,
+   "name": "ARCHETYPE_286",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 133,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 133,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 133,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 149,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 133,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 133,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 2,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 5,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 18,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 2,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 73,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 81,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 108,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 141,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 22,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 277,
+   "name": "ARCHETYPE_277",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 153,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 137,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 137,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 1,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 5,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 18,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 2,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 2,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 77,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 89,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 108,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 145,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 56,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 22,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 305,
+   "name": "ARCHETYPE_305",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 121,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 125,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 125,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 0,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 15,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 34,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 60,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 4,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 2,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 23,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 129,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 22,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 300,
+   "name": "ARCHETYPE_300",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 52,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 52,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 3,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 0,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 45,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 73,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 81,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 65535,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 22,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 326,
+   "name": "ARCHETYPE_326",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 133,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 133,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 133,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 149,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 133,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 133,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 2,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 5,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 18,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 2,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 65535,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 141,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 52,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 22,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 317,
+   "name": "ARCHETYPE_317",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 153,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 137,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 137,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 1,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 1,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 5,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 18,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 2,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 2,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 73,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 60,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 145,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 56,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 22,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 64,
+   "name": "ARCHETYPE_064",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 7,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 31,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 31,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 31,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 31,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 31,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 31,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 31,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 2,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 20,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 4,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 135,
+   "name": "ARCHETYPE_135",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 89,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 89,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 2,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 0,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 0,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 291,
+   "name": "ARCHETYPE_291",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 89,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 89,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 89,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 2,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 0,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 0,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 2,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 139,
+   "name": "ARCHETYPE_139",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 5,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 36,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 4,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 25,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 2000,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 150,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 16,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 23,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 32,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 24,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 70,
+   "name": "ARCHETYPE_070",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 5,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 36,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 4,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 25,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 150,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 16,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 125,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 23,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 32,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 147,
+   "name": "ARCHETYPE_147",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 7,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 17,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 33,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 9,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 125,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 129,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 358,
+   "name": "ARCHETYPE_358",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 7,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 17,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 33,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 9,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 125,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 129,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 337,
+   "name": "ARCHETYPE_337",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 17,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 9,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 125,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 129,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 122,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 29,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 174,
+   "name": "ARCHETYPE_174",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 4,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 7,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 9,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 175,
+   "name": "ARCHETYPE_175",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 7,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 17,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 11,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 157,
+   "name": "ARCHETYPE_157",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 7,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 17,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 11,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 163,
+   "name": "ARCHETYPE_163",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 7,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 17,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 13,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 192,
+   "name": "ARCHETYPE_192",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 7,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 6,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 197,
+   "name": "ARCHETYPE_197",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 7,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 6,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 181,
+   "name": "ARCHETYPE_181",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 7,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 6,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 187,
+   "name": "ARCHETYPE_187",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 7,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 3,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 25,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 202,
+   "name": "ARCHETYPE_202",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 5,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 36,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 6,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 25,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 38,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 150,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 16,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 23,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 32,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 25,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 349,
+   "name": "ARCHETYPE_349",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 5,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 47,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 47,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 2,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 30,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 45,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 20,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 4,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 47,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 345,
+   "name": "ARCHETYPE_345",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 5,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 36,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 6,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 25,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 49,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 150,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 5,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 12,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 16,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 23,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 32,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 25,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 206,
+   "name": "ARCHETYPE_206",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 5,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 47,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 47,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 2,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 30,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 45,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 20,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 4,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 47,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 47,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 226,
+   "name": "ARCHETYPE_226",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 20,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 40,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 9,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 227,
+   "name": "ARCHETYPE_227",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 18,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 28,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 11,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 209,
+   "name": "ARCHETYPE_209",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 18,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 28,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 11,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 215,
+   "name": "ARCHETYPE_215",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 4,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 8,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 16,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 24,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 12,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 36,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 14,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 24,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 500,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 13,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 137,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 141,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 244,
+   "name": "ARCHETYPE_244",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 9,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 19,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 35,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 0,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 249,
+   "name": "ARCHETYPE_249",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 12,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 15,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 233,
+   "name": "ARCHETYPE_233",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 12,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 15,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  },
+  {
+   "id": 239,
+   "name": "ARCHETYPE_239",
+   "properties": {
+    "prop0": {
+     "value": 4,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop1": {
+     "value": 6,
+     "role": "RESOURCE",
+     "status": "INFERRED"
+    },
+    "prop2": {
+     "value": 58,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop3": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop4": {
+     "value": 40,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop5": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop6": {
+     "value": 46,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop7": {
+     "value": 50,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop8": {
+     "value": 58,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop9": {
+     "value": 65535,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop10": {
+     "value": 3,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop11": {
+     "value": 6,
+     "role": "STATE",
+     "status": "INFERRED"
+    },
+    "prop12": {
+     "value": 10,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop13": {
+     "value": 1,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop14": {
+     "value": 25,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop15": {
+     "value": 1,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop16": {
+     "value": 300,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop17": {
+     "value": 30,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop18": {
+     "value": 0,
+     "role": "UNKNOWN",
+     "status": "UNKNOWN"
+    },
+    "prop19": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop20": {
+     "value": 1,
+     "role": "COLLISION",
+     "status": "CONFIRMED"
+    },
+    "prop21": {
+     "value": 1,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop22": {
+     "value": 65535,
+     "role": "AI",
+     "status": "CONFIRMED"
+    },
+    "prop23": {
+     "value": 0,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop24": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    },
+    "prop25": {
+     "value": 0,
+     "role": "RENDER",
+     "status": "INFERRED"
+    },
+    "prop26": {
+     "value": 38,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop27": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop28": {
+     "value": 145,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop29": {
+     "value": 153,
+     "role": "STATE",
+     "status": "CONFIRMED"
+    },
+    "prop30": {
+     "value": 157,
+     "role": "MOVEMENT",
+     "status": "CONFIRMED"
+    },
+    "prop31": {
+     "value": 65535,
+     "role": "RENDER",
+     "status": "CONFIRMED"
+    }
+   }
+  }
+ ]
+}
