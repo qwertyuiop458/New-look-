@@ -1,0 +1,30 @@
+{
+ "meta": "Статистика P[]",
+ "fields": [
+  {
+   "field": "P[7]",
+   "meaning": "время (сохраняется в E)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "P[4]/P[14]",
+   "meaning": "сброс при загрузке (0)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "kills",
+   "meaning": "UNKNOWN (нет прямого поля)",
+   "confidence": "UNKNOWN"
+  },
+  {
+   "field": "accuracy",
+   "meaning": "UNKNOWN",
+   "confidence": "UNKNOWN"
+  },
+  {
+   "field": "score",
+   "meaning": "L[4] (деньги/очки)",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

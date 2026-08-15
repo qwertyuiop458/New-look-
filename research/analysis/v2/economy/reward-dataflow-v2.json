@@ -1,0 +1,30 @@
+{
+ "meta": "Reward dataflow",
+ "chain": [
+  {
+   "writer": "g.a(f2,n,byArray,n2) (23300): Q[i*2]=u16, Q[i*2+1]=u16 (8 байт)",
+   "consumer": "cZ()",
+   "status": "CONFIRMED"
+  },
+  {
+   "writer": "da = cU*1 + cW*-10 + cY*-5 (cw==1)",
+   "consumer": "M(da)",
+   "status": "CONFIRMED"
+  },
+  {
+   "writer": "M(da): db = последний i: da >= Q[i*2]",
+   "consumer": "cZ() cw==2/3",
+   "status": "CONFIRMED"
+  },
+  {
+   "writer": "n = Q[dc*2+1]; g.k(n, 10)",
+   "consumer": "выдача награды",
+   "status": "CONFIRMED (вызов); эффект k(int,int) REQUIRES_REAL_RUNTIME"
+  },
+  {
+   "writer": "g.E() -> g.a(n, false, false) (cw==3)",
+   "consumer": "доп. награда",
+   "status": "CONFIRMED (вызов)"
+  }
+ ]
+}

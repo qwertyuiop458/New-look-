@@ -1,0 +1,10 @@
+{
+ "meta": "Q[] reward format: 4 пары u16 (id=Q[i*2] порог, value=Q[i*2+1] награда) из byArray (данные миссии)",
+ "structure": {
+  "pair": "Q[i*2] = порог (сравнение da < Q[i*2] в M())",
+  "Q[i*2+1]": "id награды (g.k(n,10))"
+ },
+ "M": "db = последний i где da >= Q[i*2] — выбор награды по счёту da",
+ "per_mission_values": "UNKNOWN (вызов g.a(f2,n,byArray,n2) не найден статически — REQUIRES_REAL_RUNTIME)",
+ "confidence": "CONFIRMED (структура); значения REQUIRES_REAL_RUNTIME"
+}

@@ -1,0 +1,28 @@
+{
+ "audit": "economy-readiness-v2",
+ "date": "2026-08-15",
+ "status": "PARTIAL",
+ "criteria": {
+  "reward_pipeline_traced": true,
+  "currency_traced": true,
+  "shop_traced": true,
+  "weapon_availability_traced": false,
+  "inventory_traced": true,
+  "save_traced": true
+ },
+ "key": {
+  "currency": "L[4] двойная роль: деньги (cap 45000) + энергия оружия тип 6 (L[4] -= d, min 0); L[2] вторая шкала (2800)",
+  "rewards": "Q[] 4 пары (порог, id); M(da) выбор; k(n,10) выдача; типы REQUIRES_REAL_RUNTIME",
+  "shop": "state 13; апгрейды g.y аддитивно с клампами; скидка по рангу b[n][15]>=3: (ранг-2)*10%; цены UNKNOWN",
+  "weapon_availability": "все 16 слотов g.L[1]; PLAYER/ENEMY разделение REQUIRES_REAL_RUNTIME",
+  "save": "L[4] u16 в записи 1; оружие/патроны/ранги в записях 1/2",
+  "exploits": "клампы: cap 45000, min 0, патроны cap g.l(n,27)"
+ },
+ "why_PARTIAL": [
+  "цены магазина UNKNOWN",
+  "тип наград k(n,10) UNKNOWN",
+  "Q[] значения миссий UNKNOWN",
+  "PLAYER/ENEMY weapon split UNKNOWN",
+  "repeated rewards/duplicate purchase RUNTIME"
+ ]
+}

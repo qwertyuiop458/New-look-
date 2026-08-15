@@ -1,0 +1,14 @@
+{
+ "meta": "Типы наград: g.k(n,10) и g.a(n,false,false) — точный тип награды по ID не доказан",
+ "k": "g.k(n, 10) — выдача предмета/награды по id n; k(int,int) не найден в статике (обфускация)",
+ "a(n,false,false)": "g.a(int,int,boolean) — выдача (cw==3)",
+ "types": {
+  "money": "L[4] (g.ah) — отдельный механизм",
+  "item": "UNKNOWN",
+  "weapon": "UNKNOWN",
+  "ammo": "UNKNOWN",
+  "upgrade": "g.l/g.y аддитивно",
+  "score": "P[]"
+ },
+ "confidence": "только структура; тип по ID REQUIRES_REAL_RUNTIME"
+}

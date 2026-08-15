@@ -1,0 +1,55 @@
+{
+ "meta": "Инвентарь",
+ "fields": [
+  {
+   "field": "L[0]",
+   "meaning": "счётчик/флаг",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "L[1]",
+   "meaning": "текущее оружие (0..15, -1 нет)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "L[2]",
+   "meaning": "второй ресурс (2800 cap)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "L[3]",
+   "meaning": "флаг (патроны/режим)",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "L[4]",
+   "meaning": "деньги/энергия (45000 cap)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "M[]",
+   "meaning": "патроны по типам",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[13+i]",
+   "meaning": "патроны сущности",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "b[][]",
+   "meaning": "состояние оружия (b[n][15]=ранг, b[n][16]=флаг)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "c[bt][n][prop]",
+   "meaning": "апгрейды оружия (g.y)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "u[]",
+   "meaning": "массив u (сейв)",
+   "confidence": "CONFIRMED (сейв)"
+  }
+ ]
+}

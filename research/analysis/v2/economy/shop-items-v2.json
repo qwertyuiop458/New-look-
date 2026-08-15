@@ -1,0 +1,24 @@
+{
+ "meta": "Магазин (state 13, fE())",
+ "items": [
+  {
+   "item": "оружие",
+   "data": "weapon records m9 seg5 (16)",
+   "price": "UNKNOWN (нет статической таблицы цен)",
+   "availability": "g.b(c, n) && n < g.E() (21341) — n < 16",
+   "status": "CONFIRMED (механизм); цены REQUIRES_REAL_RUNTIME"
+  },
+  {
+   "item": "апгрейды",
+   "data": "g.y(n, prop) = c[bt][n][prop]; l(n,n2,n3): c[bt][n][n2] += n3",
+   "formula": "g.l(n, prop) = an[n*28+prop] + g.y(n, prop)",
+   "clamp": "n2==13: <= g.l(n,27); n2==5: <= 65/g.l(n,4)",
+   "status": "CONFIRMED"
+  },
+  {
+   "item": "скидка по рангу",
+   "data": "b[n][15] = ранг; >=3: скидка (ранг-3+1)*10% (f.java:815)",
+   "status": "CONFIRMED"
+  }
+ ]
+}

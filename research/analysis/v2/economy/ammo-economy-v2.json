@@ -1,0 +1,39 @@
+{
+ "meta": "Боеприпасы (m9 seg5, 6 records)",
+ "records": [
+  {
+   "id": 10,
+   "props": null,
+   "link": "UNKNOWN"
+  },
+  {
+   "id": 12,
+   "props": null,
+   "link": "UNKNOWN"
+  },
+  {
+   "id": 13,
+   "props": null,
+   "link": "UNKNOWN"
+  },
+  {
+   "id": 14,
+   "props": null,
+   "link": "UNKNOWN"
+  },
+  {
+   "id": 15,
+   "props": null,
+   "link": "UNKNOWN"
+  },
+  {
+   "id": 23,
+   "props": null,
+   "link": "UNKNOWN"
+  }
+ ],
+ "storage": "патроны в g[13+i] сущности (f.java:6529) + M[] инвентарь",
+ "pickup": "авто-подбор (тип 11 предметы)",
+ "consumption": "g.l(weapon,2)==1 -> расход",
+ "confidence": "CONFIRMED (хранение/подбор); связь ammo id -> weapon REQUIRES_REAL_RUNTIME"
+}

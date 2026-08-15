@@ -1,0 +1,9 @@
+{
+ "meta": "Экономический граф",
+ "nodes": [
+  "MISSION (L==10) -> REWARD (Q[]/k(n,10)) -> CURRENCY (L[4])",
+  "CURRENCY -> SHOP (state 13) -> WEAPON (m9 seg5 + g.y апгрейды)",
+  "WEAPON -> AMMO (патроны g[13+i]/M[]) -> COMBAT",
+  "SHOP -> SAVE (запись 1/2 RMS: L[4], b[][], апгрейды)"
+ ]
+}

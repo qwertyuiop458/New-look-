@@ -1,0 +1,73 @@
+{
+ "meta": "Доступность оружия (m9 seg5, 16 records)",
+ "note": "PLAYER_AVAILABLE: g.L[1] слоты (0..15); ENEMY_ONLY: props[0]-конвертеры?",
+ "records": [
+  {
+   "id": 2,
+   "availability": "PLAYER (слот)",
+   "evidence": "g.E()=16, af(int): n<g.E()"
+  },
+  {
+   "id": 3,
+   "availability": "PLAYER",
+   "evidence": "то же"
+  },
+  {
+   "id": 4,
+   "availability": "PLAYER"
+  },
+  {
+   "id": 5,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 6,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 7,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 8,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 11,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 16,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 17,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 18,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 19,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 20,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 21,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 22,
+   "availability": "UNKNOWN"
+  },
+  {
+   "id": 24,
+   "availability": "UNKNOWN"
+  }
+ ],
+ "confidence": "все 16 доступны как слоты g.L[1]; вражеские/особые — REQUIRES_REAL_RUNTIME"
+}

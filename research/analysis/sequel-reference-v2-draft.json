@@ -187,6 +187,12 @@
    "status": "CONFIRMED (частично)",
    "completion": "объект-миссия L==10 (cB=200) -> cB<=0 -> state 7; награды Q[]; сохранение ad()",
    "mission_object": "L==10: cB=200 HP миссии, Q[] 4 награды, cy пространственный лимит, cB<=0 -> state 7 (CONFIRMED)"
+  },
+  "economy": {
+   "currency": "L[4] (деньги cap 45000 + энергия)",
+   "rewards": "Q[] -> k(n,10)",
+   "shop": "апгрейды аддитивно, скидки по рангу",
+   "prices": "UNKNOWN"
   }
  },
  "not_for_sequel_reference": [
