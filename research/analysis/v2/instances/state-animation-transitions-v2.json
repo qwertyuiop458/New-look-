@@ -1,0 +1,80 @@
+{
+ "meta": "Переходы состояние -> кадр/анимация (доказано кодом)",
+ "transitions": [
+  {
+   "state": "g[12] (0/6/28)",
+   "frame_sel": "n5 = dir + g.i(type, 0)",
+   "source": "f.java:4656"
+  },
+  {
+   "state": "g[12] == 1",
+   "frame_sel": "n5 = dir + g.i(type, 1)",
+   "source": "f.java:4660"
+  },
+  {
+   "state": "g[12] == 2",
+   "frame_sel": "n5 = dir + g.i(type, 2)",
+   "source": "f.java:4679"
+  },
+  {
+   "state": "g[12] == 3",
+   "frame_sel": "n5 = dir + g.i(type, 3)",
+   "source": "f.java:4746"
+  },
+  {
+   "state": "g[12] == 4",
+   "frame_sel": "n5 = dir + g.i(type, 4)",
+   "source": "f.java:4768"
+  },
+  {
+   "state": "g[12] == 5",
+   "frame_sel": "n5 = dir + g.i(type, 5)",
+   "source": "f.java:4789"
+  },
+  {
+   "state": "g[12] == 7/8",
+   "frame_sel": "n5 = dir + g.i(type, 7/8)",
+   "source": "f.java:4706/4725"
+  },
+  {
+   "state": "g[12] == 9",
+   "frame_sel": "n5 = dir + g.i(type, 9)",
+   "source": "f.java:4739"
+  },
+  {
+   "state": "g[12] == 10",
+   "frame_sel": "n5 = dir + g.i(type, 10)",
+   "source": "f.java:4801"
+  },
+  {
+   "state": "g[12] == 11",
+   "frame_sel": "n5 = dir + g.i(type, 11)",
+   "source": "f.java:4814"
+  },
+  {
+   "state": "g[12] == 12",
+   "frame_sel": "n5 = dir + g.i(type, 12)",
+   "source": "f.java:4834"
+  },
+  {
+   "state": "g[12] == 13",
+   "frame_sel": "n5 = dir + g.i(type, 13)",
+   "source": "f.java:4841"
+  },
+  {
+   "state": "начальная анимация L==0",
+   "anim": "66",
+   "source": "f.java конструктор"
+  },
+  {
+   "state": "начальная анимация L==3",
+   "anim": "g.h(type, 2) (сдвиг направления)",
+   "source": "f.java конструктор"
+  },
+  {
+   "state": "начальная анимация L==9",
+   "anim": "g.k(type, 3)",
+   "source": "f.java конструктор"
+  }
+ ]
+}

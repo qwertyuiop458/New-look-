@@ -1,0 +1,14 @@
+{
+ "meta": "Cross-check цепочки",
+ "checks": [],
+ "stats": {
+  "records": 5269,
+  "with_archetype": 666,
+  "enemy_type3": 628,
+  "npc_type9": 23,
+  "mc_type0": 15,
+  "object_types": 4012,
+  "unmapped": 591
+ },
+ "conclusion": "цепочка record->архетип->кластер->анимации подтверждена; sprite link = STATIC_LINK_UNKNOWN"
+}

@@ -1,0 +1,185 @@
+{
+ "meta": "Анимации архетипов и их X-кадры (первые N для каждого архетипа)",
+ "archetypes": [
+  {
+   "id": 3,
+   "anim_count": 5,
+   "anim_start_W": 0,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 13,
+   "anim_count": 4,
+   "anim_start_W": 5,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 24,
+   "anim_count": 4,
+   "anim_start_W": 9,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 30,
+   "anim_count": 3,
+   "anim_start_W": 13,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 18,
+   "anim_count": 4,
+   "anim_start_W": 16,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 31,
+   "anim_count": 3,
+   "anim_start_W": 20,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 38,
+   "anim_count": 3,
+   "anim_start_W": 23,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 35,
+   "anim_count": 2,
+   "anim_start_W": 26,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 107,
+   "anim_count": 5,
+   "anim_start_W": 28,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 108,
+   "anim_count": 4,
+   "anim_start_W": 33,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 90,
+   "anim_count": 4,
+   "anim_start_W": 37,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 96,
+   "anim_count": 3,
+   "anim_start_W": 41,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 125,
+   "anim_count": 4,
+   "anim_start_W": 44,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 130,
+   "anim_count": 3,
+   "anim_start_W": 48,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 114,
+   "anim_count": 3,
+   "anim_start_W": 51,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 120,
+   "anim_count": 2,
+   "anim_start_W": 54,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 46,
+   "anim_count": 4,
+   "anim_start_W": 56,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 84,
+   "anim_count": 2,
+   "anim_start_W": 60,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 76,
+   "anim_count": 3,
+   "anim_start_W": 62,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 67,
+   "anim_count": 3,
+   "anim_start_W": 65,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 265,
+   "anim_count": 4,
+   "anim_start_W": 68,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 260,
+   "anim_count": 2,
+   "anim_start_W": 72,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 286,
+   "anim_count": 3,
+   "anim_start_W": 74,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 277,
+   "anim_count": 3,
+   "anim_start_W": 77,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 305,
+   "anim_count": 4,
+   "anim_start_W": 80,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 300,
+   "anim_count": 2,
+   "anim_start_W": 84,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 326,
+   "anim_count": 3,
+   "anim_start_W": 86,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 317,
+   "anim_count": 3,
+   "anim_start_W": 89,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 64,
+   "anim_count": 1,
+   "anim_start_W": 92,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  },
+  {
+   "id": 135,
+   "anim_count": 1,
+   "anim_start_W": 93,
+   "note": "W[10]=X-старт, W[11]=число X-кадров; X[W10+fr*2+0/1]"
+  }
+ ]
+}

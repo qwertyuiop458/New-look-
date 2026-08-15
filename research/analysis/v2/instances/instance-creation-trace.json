@@ -1,0 +1,75 @@
+{
+ "meta": "Трассировка создания экземпляра (из g.Z() и f.java).",
+ "chain": [
+  {
+   "stage": "mission record",
+   "source": "m9 seg10..14",
+   "method": "g.Z() поток",
+   "value": "[type][id][x][y][len][props]",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "stage": "конвертер props",
+   "source": "g.Z() case 0/1/2/3/9",
+   "method": "f.a(props,n17,n18) / f.d(props) / f.c(props)",
+   "value": "расширение массива; g[26]/g[27]=слой (MC); g[28]/g[29]=-2 (оружие)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "stage": "архетип lookup",
+   "source": "f.c(): nArray3[0]=g.a(g.m, props[0])",
+   "method": "g.a(int[][],int) g.java:15539",
+   "value": "линейный поиск id -> индекс; -1 если нет",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "stage": "архетип lookup NPC",
+   "source": "f.d(): nArray3[0]=g.a(g.w, props[0])",
+   "method": "ey() g.java:29237 (m9 seg8)",
+   "value": "таблица NPC id -> индекс",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "stage": "инициализация анимаций",
+   "source": "f.c -> f.g(nArray)",
+   "method": "f.g() f.java:2572",
+   "value": "g[30+i] = W[a][0] или массив X-кадров; g[18]=f.a(nArray)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "stage": "создание объекта",
+   "source": "g.Z()",
+   "method": "new f(c, s, n8, n44, n45, nArray34)",
+   "value": "L=n8; позиция (n44,n45); начальная анимация: L0->66, L3->g.h(type,2), L9->g.k(type,3)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "stage": "поведение",
+   "source": "g.B() state 6",
+   "method": "f.b(entity)",
+   "value": "ветвления по L, g[12], g[10], g[16], prop10",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "stage": "кадр по состоянию",
+   "source": "f.a(f2,bl,bl2)",
+   "method": "n5 = dir + g.i(type, state_field)",
+   "value": "V[prop34*15 + f]",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "stage": "рендер",
+   "source": "c.java a(Graphics)",
+   "method": "a.a(d, e, x, y, palette)",
+   "value": "кадр e анимации d из спрайт-листа",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "stage": "пиксели спрайта",
+   "source": "-",
+   "method": "-",
+   "value": "связь X-кадр -> блок листа a.java",
+   "confidence": "STATIC_LINK_UNKNOWN"
+  }
+ ]
+}

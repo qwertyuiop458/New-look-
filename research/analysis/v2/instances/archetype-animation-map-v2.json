@@ -1,0 +1,341 @@
+{
+ "meta": "prop32/33/34 для каждого архетипа (вычислено по dr() логике)",
+ "archetypes": [
+  {
+   "id": 3,
+   "prop32_start_W": 0,
+   "prop33_anim_count": 5,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 13,
+   "prop32_start_W": 5,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 24,
+   "prop32_start_W": 9,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 30,
+   "prop32_start_W": 13,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 18,
+   "prop32_start_W": 16,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 31,
+   "prop32_start_W": 20,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 38,
+   "prop32_start_W": 23,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 35,
+   "prop32_start_W": 26,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 107,
+   "prop32_start_W": 28,
+   "prop33_anim_count": 5,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 108,
+   "prop32_start_W": 33,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 90,
+   "prop32_start_W": 37,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 96,
+   "prop32_start_W": 41,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 125,
+   "prop32_start_W": 44,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 130,
+   "prop32_start_W": 48,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 114,
+   "prop32_start_W": 51,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 120,
+   "prop32_start_W": 54,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 46,
+   "prop32_start_W": 56,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 84,
+   "prop32_start_W": 60,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 76,
+   "prop32_start_W": 62,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 67,
+   "prop32_start_W": 65,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 265,
+   "prop32_start_W": 68,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 260,
+   "prop32_start_W": 72,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 286,
+   "prop32_start_W": 74,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 277,
+   "prop32_start_W": 77,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 305,
+   "prop32_start_W": 80,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 300,
+   "prop32_start_W": 84,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 326,
+   "prop32_start_W": 86,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 317,
+   "prop32_start_W": 89,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 64,
+   "prop32_start_W": 92,
+   "prop33_anim_count": 1,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 135,
+   "prop32_start_W": 93,
+   "prop33_anim_count": 1,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 291,
+   "prop32_start_W": 94,
+   "prop33_anim_count": 1,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 139,
+   "prop32_start_W": 95,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 70,
+   "prop32_start_W": 97,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 147,
+   "prop32_start_W": 99,
+   "prop33_anim_count": 5,
+   "prop34_frame_V_index": 0
+  },
+  {
+   "id": 358,
+   "prop32_start_W": 104,
+   "prop33_anim_count": 5,
+   "prop34_frame_V_index": 1
+  },
+  {
+   "id": 337,
+   "prop32_start_W": 109,
+   "prop33_anim_count": 5,
+   "prop34_frame_V_index": 2
+  },
+  {
+   "id": 174,
+   "prop32_start_W": 114,
+   "prop33_anim_count": 5,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 175,
+   "prop32_start_W": 119,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 157,
+   "prop32_start_W": 123,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 163,
+   "prop32_start_W": 127,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 192,
+   "prop32_start_W": 130,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 197,
+   "prop32_start_W": 134,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 181,
+   "prop32_start_W": 137,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 187,
+   "prop32_start_W": 140,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 202,
+   "prop32_start_W": 142,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 349,
+   "prop32_start_W": 144,
+   "prop33_anim_count": 1,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 345,
+   "prop32_start_W": 145,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 206,
+   "prop32_start_W": 147,
+   "prop33_anim_count": 1,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 226,
+   "prop32_start_W": 148,
+   "prop33_anim_count": 5,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 227,
+   "prop32_start_W": 153,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 209,
+   "prop32_start_W": 157,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 215,
+   "prop32_start_W": 161,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 244,
+   "prop32_start_W": 164,
+   "prop33_anim_count": 4,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 249,
+   "prop32_start_W": 168,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 233,
+   "prop32_start_W": 171,
+   "prop33_anim_count": 3,
+   "prop34_frame_V_index": -1
+  },
+  {
+   "id": 239,
+   "prop32_start_W": 174,
+   "prop33_anim_count": 2,
+   "prop34_frame_V_index": -1
+  }
+ ]
+}

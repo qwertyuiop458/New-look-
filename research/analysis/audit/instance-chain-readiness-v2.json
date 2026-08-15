@@ -1,0 +1,49 @@
+{
+ "audit": "instance-chain-readiness-v2",
+ "date": "2026-08-15",
+ "status": "PARTIAL",
+ "criteria": {
+  "instance_creation_traced": true,
+  "archetype_linkage_traced": true,
+  "property_linkage_traced": true,
+  "behavior_linkage_traced": true,
+  "animation_linkage_traced": true,
+  "frame_linkage_traced": true,
+  "sprite_linkage_traced": false
+ },
+ "stats": {
+  "total_records": 5269,
+  "object_records_10_26": 4012,
+  "instances_with_archetype": 666,
+  "enemy_type3": 628,
+  "npc_type9": 23,
+  "mc_type0": 15,
+  "unmapped": 591,
+  "archetypes_used": 25,
+  "archetypes_total": 56,
+  "behavior_clusters": 17,
+  "top_archetypes": {
+   "3": 403,
+   "107": 46,
+   "18": 35,
+   "358": 28,
+   "147": 27,
+   "70": 22,
+   "13": 21,
+   "46": 16
+  }
+ },
+ "chain_status": {
+  "record_to_archetype": "CONFIRMED (g.a(g.m/g.w, props[0])",
+  "archetype_to_properties": "CONFIRMED (U[T+prop])",
+  "properties_to_behavior": "CONFIRMED (prop10/7/8 + L + g[12])",
+  "behavior_to_animation": "CONFIRMED (prop32/33/34 -> W/X/V)",
+  "animation_to_frame": "CONFIRMED (W[10..12] -> X-пары; V-смещения по состоянию)",
+  "frame_to_sprite": "STATIC_LINK_UNKNOWN (промежуточная таблица кадр->пиксели не найдена)"
+ },
+ "unmap_reasons": [
+  "props[0] не найден в g.m/g.w (-1): вероятно -1/65535 маркеры или объектные id"
+ ],
+ "why_PARTIAL": "sprite linkage (frame -> pixel block) не доказана статически — REQUIRES_REAL_RUNTIME",
+ "recommendation": "READY_STATIC достижим после рантайм-рендера (трассировка a.a(d,e,...) -> пиксели)"
+}
