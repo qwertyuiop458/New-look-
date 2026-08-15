@@ -1,0 +1,5 @@
+{
+ "meta": "Камера",
+ "detail": "T = player_x - 0x1E0000; U = player_y - 0x280000; клампы [0, map-240/320]; экран = world - (T>>14, U>>14)",
+ "confidence": "CONFIRMED"
+}

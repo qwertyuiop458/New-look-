@@ -1,0 +1,68 @@
+{
+ "meta": "Таймеры экземпляра",
+ "timers": [
+  {
+   "field": "g[15]",
+   "unit": "мс",
+   "init": 0,
+   "decrement": "НЕТ (аккумуляция: g[15] += d)",
+   "reset": "g[15]=0 (case 8)",
+   "consumer": "атака 8: >= 1000",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "f.w",
+   "unit": "мс",
+   "init": 0,
+   "decrement": "нет (аккумуляция)",
+   "reset": "f.w=0",
+   "consumer": "case 16: >= 800",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[24]",
+   "unit": "мс",
+   "init": 0,
+   "decrement": "g[24] -= d",
+   "reset": "0",
+   "consumer": "<=0 (0x800 флаг)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[22]",
+   "unit": "мс",
+   "init": -1,
+   "decrement": "g[22] -= d (f.java:4050 паттерн)",
+   "reset": "-1",
+   "consumer": "< 0",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[27]",
+   "unit": "мс (время)",
+   "init": "спавн-время",
+   "decrement": "нет",
+   "reset": "действие",
+   "consumer": "f.j(): f.g - g[27] <= 1500",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "c.java аккумулятор",
+   "unit": "тики (62)",
+   "init": 0,
+   "decrement": "нет (j += n; j >= 62)",
+   "reset": "j -= 62",
+   "consumer": "смена кадра",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[22+i] (случайный)",
+   "unit": "мс",
+   "init": "1000 + rand(500)",
+   "decrement": "да",
+   "reset": "по срабатыванию",
+   "consumer": "таймеры поведения",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

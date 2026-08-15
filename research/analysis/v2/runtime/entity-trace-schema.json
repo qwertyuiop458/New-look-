@@ -1,0 +1,22 @@
+{
+ "meta": "Формат трассировки экземпляра (для будущего рантайма)",
+ "schema": {
+  "timestamp": "int (мс)",
+  "instance_id": "str",
+  "state": "int (g[12])",
+  "substate": "int (g[10])",
+  "x": "int (fixed)",
+  "y": "int (fixed)",
+  "velocity_x": "int (fixed)",
+  "velocity_y": "int (fixed)",
+  "target": "instance_id|null",
+  "hp": "int (g[7])",
+  "flags": "int (g[16])",
+  "timer_g15": "int",
+  "timer_fw": "int",
+  "animation": "int (c.d)",
+  "frame": "int (c.e)",
+  "archetype": "int (g[0])",
+  "cluster": "str"
+ }
+}

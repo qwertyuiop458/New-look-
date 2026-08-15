@@ -1,0 +1,37 @@
+{
+ "meta": "Тайминги атак",
+ "attacks": [
+  {
+   "model": "ATTACK_7",
+   "trigger": "g[12]==7, цель в prop17, анимация завершена",
+   "timer": "g[15] (после перехода в 8)",
+   "damage": "моментально f.b(f3, prop14)",
+   "transition": "7->8",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "model": "ATTACK_8",
+   "trigger": "g[12]==8, g[15] >= 1000",
+   "timer": "g[15] (аккумуляция += d)",
+   "damage": "f.b(g.c, prop14) / f.o(f3, prop14)",
+   "sound": "g.b(21)",
+   "transition": "8->4/9",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "model": "ATTACK_12",
+   "trigger": "g[12]==12, анимация, цель в зоне",
+   "damage": "f.b(f3, prop14<<1)",
+   "transition": "12->13->4",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "model": "RANGED",
+   "trigger": "prop10 ∈ {0,3,5,7}",
+   "timer": "скорость снаряда n14=819200",
+   "damage": "по попаданию",
+   "transition": "-",
+   "confidence": "CONFIRMED (наведение)"
+  }
+ ]
+}

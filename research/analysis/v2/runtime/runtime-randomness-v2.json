@@ -1,0 +1,39 @@
+{
+ "meta": "Случайность рантайма",
+ "sources": [
+  {
+   "source": "g.a()",
+   "range": "g.a() % 100 (0..99)",
+   "consumer": "смещение цели снаряда 20 + (%100 - 50)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "source": "g.a()",
+   "range": "g.a() % n11",
+   "consumer": "выбор кадра/варианта (f.java:3208)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "source": "g.a()",
+   "range": "1000 + g.a() % 500",
+   "consumer": "случайный таймер поведения",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "source": "g.a()",
+   "range": "g.a() % 2",
+   "consumer": "чёт/нечет ветки",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "source": "g.a()",
+   "range": "g.a() % 100 < 25",
+   "consumer": "вероятность 25% (f.java:4223)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "seed": "не найден",
+   "note": "платформенный Random (Java ME)"
+  }
+ ]
+}

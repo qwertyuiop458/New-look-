@@ -1,0 +1,29 @@
+{
+ "audit": "runtime-state-readiness-v2",
+ "date": "2026-08-15",
+ "status": "READY_STATIC",
+ "criteria": {
+  "state_vector_traced": true,
+  "update_order_traced": true,
+  "timer_mechanics_traced": true,
+  "timing_units_traced": true,
+  "state_transitions_traced": true
+ },
+ "metrics": {
+  "runtime_fields": 27,
+  "states": 24,
+  "transition_conditions": "12 подтверждённых + полная таблица 24 состояний",
+  "timers": 7,
+  "timing_units": 4,
+  "attack_timings": 4,
+  "animation_timings": "аккумулятор 62 тика; сброс фазы при f.c(); не универсальный AI tick",
+  "randomness_sources": 5,
+  "runtime_required": [
+   "invulnerability",
+   "knockback",
+   "множественные удары/тик",
+   "агро-единицы 1600/4096",
+   "точные скорости"
+  ]
+ }
+}

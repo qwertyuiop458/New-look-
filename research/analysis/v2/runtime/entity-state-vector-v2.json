@@ -1,0 +1,387 @@
+{
+ "meta": "Вектор состояния экземпляра (поля f.g[], c-объект). Писатели/читатели из f.java/g.java.",
+ "fields": [
+  {
+   "field": "g[0]",
+   "type": "int",
+   "initial": "props[0] (архетип-индекс)",
+   "writers": [
+    "конвертеры f.c/f.d",
+    "opcode 114 (g[0]=n4)"
+   ],
+   "readers": [
+    "g.h(type,...) везде"
+   ],
+   "meaning": "ИНДЕКС АРХЕТИПА",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[1]",
+   "type": "int",
+   "initial": "props",
+   "readers": [
+    "f.e(graphics): f2.a.a.e = g[1]",
+    "f.java:2830 (n19=g[1])"
+   ],
+   "meaning": "поле анимации/типа (передаётся в c-контроллер)",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[2]",
+   "type": "int",
+   "initial": "props",
+   "readers": [
+    "f.java:2830 (n20=g[2]); конструктор L9: a.b(g.k(type,3))"
+   ],
+   "meaning": "поле анимации/состояния",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[7]",
+   "type": "int",
+   "initial": "0 (HP)",
+   "writers": [
+    "f.b(f2,n): g[7] -= n + 30%*bF"
+   ],
+   "readers": [
+    "урон"
+   ],
+   "meaning": "HP экземпляра (НЕ в архетипе)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[9]",
+   "type": "int",
+   "initial": "-1 (дефолт)",
+   "writers": [
+    "f.c()/инициализация",
+    "opcode 132: g.d.g[9]=0"
+   ],
+   "readers": [
+    "f.java:2380-2474 (сравнения)"
+   ],
+   "meaning": "поле состояния/цели (d.g[9] сброс)",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[10]",
+   "type": "int",
+   "initial": "0",
+   "writers": [
+    "f.o(): g[10]=0",
+    "ветвления"
+   ],
+   "readers": [
+    "f.b(): g[10]==5 continue",
+    "f.java:2894"
+   ],
+   "meaning": "ПОДСОСТОЯНИЕ (0/3/4/5/6)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[12]",
+   "type": "int",
+   "initial": "23 (спавн) / 4",
+   "writers": [
+    "f.c(f2,n)",
+    "инициализация",
+    "опкоды"
+   ],
+   "readers": [
+    "все AI-ветки"
+   ],
+   "meaning": "СОСТОЯНИЕ (24 значения)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[13]",
+   "type": "int",
+   "initial": "0",
+   "writers": [
+    "движение (velocity X)",
+    "f.o(): g[13]=0"
+   ],
+   "readers": [
+    "f.b() направление"
+   ],
+   "meaning": "СКОРОСТЬ X (fixed-point)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[14]",
+   "type": "int",
+   "initial": "16384 (дефолт)",
+   "writers": [
+    "движение (velocity Y)",
+    "f.o(): g[14]=-16384"
+   ],
+   "readers": [
+    "f.b()"
+   ],
+   "meaning": "СКОРОСТЬ Y (fixed-point)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[15]",
+   "type": "int",
+   "initial": "0",
+   "writers": [
+    "f.i() case 8: g[15] += d"
+   ],
+   "readers": [
+    "case 8: g[15] < 1000"
+   ],
+   "meaning": "ТАЙМЕР АТАКИ (мс)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[16]",
+   "type": "int",
+   "initial": "0",
+   "writers": [
+    "флаги: 0x20/0x100/0x400/0x800/0x2000/0x4000/0x8000"
+   ],
+   "readers": [
+    "все ветки"
+   ],
+   "meaning": "БИТОВЫЕ ФЛАГИ",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[17]",
+   "type": "int",
+   "initial": "-",
+   "writers": [
+    "f.m(f2,n): g[17]=n"
+   ],
+   "readers": [
+    "f.e(f2): g[17]"
+   ],
+   "meaning": "поле (f.e/f.m пара)",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[18]",
+   "type": "int",
+   "initial": "f.a(nArray) (инициализация)",
+   "readers": [
+    "f.m(): g[18]==1"
+   ],
+   "meaning": "флаг/маска",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[19]/g[20]",
+   "type": "int",
+   "initial": "-120/-120 (bounds)",
+   "readers": [
+    "рендер"
+   ],
+   "meaning": "границы (установка при спавне)",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[21]",
+   "type": "int",
+   "initial": "маска 4 байта",
+   "writers": [
+    "f.c(): merge 255<<n*8"
+   ],
+   "readers": [
+    "рендер-палитра"
+   ],
+   "meaning": "ЦВЕТОВАЯ МАСКА (4 канала)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[22]",
+   "type": "int",
+   "initial": "-1",
+   "writers": [
+    "f.c(): g[22]=-1",
+    "таймеры"
+   ],
+   "readers": [
+    "f.java:2353 (g[22]<0)"
+   ],
+   "meaning": "ТАЙМЕР/СЧЁТЧИК",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[23]",
+   "type": "int",
+   "initial": "prop10==5/7 -> -1",
+   "writers": [
+    "f.c()"
+   ],
+   "readers": [
+    "f.java:2422"
+   ],
+   "meaning": "поле (стрелки)",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[24]",
+   "type": "int",
+   "initial": "0",
+   "writers": [
+    "f.java:4050 (g[24] -= d)"
+   ],
+   "readers": [
+    "f.java:4050-4053"
+   ],
+   "meaning": "ТАЙМЕР (0x800-флаг)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[26]/g[27]",
+   "type": "int",
+   "initial": "слой (f.a(3): n/n2)",
+   "writers": [
+    "опкоды 142 (телепорт)"
+   ],
+   "readers": [
+    "телепорт/слой"
+   ],
+   "meaning": "КООРДИНАТЫ СЛОЯ (x/y тайловые)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[28]",
+   "type": "int",
+   "initial": "-2",
+   "writers": [
+    "f.a(3)",
+    "опкод 110",
+    "смена оружия"
+   ],
+   "readers": [
+    "оружие: g.l(..., g[28])"
+   ],
+   "meaning": "СЛОТ ОРУЖИЯ",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[29]",
+   "type": "int",
+   "initial": "-2",
+   "writers": [
+    "опкод 110",
+    "f.a(3)"
+   ],
+   "readers": [
+    "оружие/апгрейд"
+   ],
+   "meaning": "ПАРАМЕТР ОРУЖИЯ/АПГРЕЙД",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[30+i]",
+   "type": "int",
+   "initial": "f.g(): W[i][0] или X-кадры",
+   "writers": [
+    "f.g()",
+    "опкоды"
+   ],
+   "readers": [
+    "f.java:2541 (кадры)"
+   ],
+   "meaning": "АНИМАЦИОННЫЕ СЛОТЫ (0..prop33)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "c.a/c.b",
+   "type": "fixed-point",
+   "initial": "спавн-позиция",
+   "writers": [
+    "движение",
+    "опкоды 111/142"
+   ],
+   "readers": [
+    "рендер",
+    "камера"
+   ],
+   "meaning": "ПОЗИЦИЯ X/Y (fixed 14)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "c.d",
+   "type": "int",
+   "initial": "анимация при спавне",
+   "writers": [
+    "f.m(): c.b(n)",
+    "смена состояния"
+   ],
+   "readers": [
+    "c.java тики"
+   ],
+   "meaning": "ТЕКУЩАЯ АНИМАЦИЯ (id)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "c.e",
+   "type": "int",
+   "initial": "0",
+   "writers": [
+    "c.java: тиковый аккумулятор"
+   ],
+   "readers": [
+    "рендер a.a(d,e,...)"
+   ],
+   "meaning": "ТЕКУЩИЙ КАДР",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "c.f",
+   "type": "int",
+   "initial": "0",
+   "writers": [
+    "c.java"
+   ],
+   "readers": [
+    "c.java"
+   ],
+   "meaning": "суб-кадр",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "c.g",
+   "type": "int",
+   "initial": "-1 (бесконечно)",
+   "writers": [
+    "c.java повторы"
+   ],
+   "readers": [
+    "c.java"
+   ],
+   "meaning": "ПОВТОРЫ АНИМАЦИИ",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "c.h",
+   "type": "int",
+   "initial": "1 (loop)",
+   "writers": [
+    "c.java a(n,n2,n3)"
+   ],
+   "readers": [
+    "c.java"
+   ],
+   "meaning": "LOOP/ONCE",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "f.w",
+   "type": "int",
+   "initial": "0",
+   "writers": [
+    "case 16: f.w += d"
+   ],
+   "readers": [
+    "case 16: < 800"
+   ],
+   "meaning": "ТАЙМЕР 800 мс",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

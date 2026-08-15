@@ -1,0 +1,67 @@
+{
+ "meta": "Может ли скрипт переопределять...",
+ "overrides": [
+  {
+   "target": "movement",
+   "opcodes": [
+    "111 (телепорт)",
+    "142 (телепорт персонажа)"
+   ],
+   "status": "CONFIRMED"
+  },
+  {
+   "target": "state",
+   "opcodes": [
+    "157 (смена состояния/диалога)",
+    "132 (g.d.g[9]=0)"
+   ],
+   "status": "CONFIRMED"
+  },
+  {
+   "target": "position",
+   "opcodes": [
+    "111/142",
+    "118 (размещение в тайле)"
+   ],
+   "status": "CONFIRMED"
+  },
+  {
+   "target": "target",
+   "opcodes": [
+    "148 (SetNPCTarget)"
+   ],
+   "status": "CONFIRMED"
+  },
+  {
+   "target": "animation",
+   "opcodes": [
+    "121 (стек анимаций)",
+    "110/150/162 (команды)"
+   ],
+   "status": "CONFIRMED"
+  },
+  {
+   "target": "attack",
+   "opcodes": [
+    "110/150/162 (команды с направлением)",
+    "128 (g.c.g[n]=n2)"
+   ],
+   "status": "CONFIRMED"
+  },
+  {
+   "target": "death",
+   "opcodes": [
+    "151/160 (спавн)",
+    "132"
+   ],
+   "status": "INFERRED (прямого 'убить' опкода не найдено)"
+  },
+  {
+   "target": "visibility",
+   "opcodes": [
+    "нет прямого"
+   ],
+   "status": "UNKNOWN"
+  }
+ ]
+}

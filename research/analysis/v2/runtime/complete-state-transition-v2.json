@@ -1,0 +1,145 @@
+{
+ "meta": "Полные переходы 24 состояний",
+ "states": {
+  "0": {
+   "next": [
+    "4 (f.c(f2,4))",
+    "7 (атака)"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "1": {
+   "next": [
+    "4"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "4": {
+   "next": [
+    "7 (атака)",
+    "8",
+    "12",
+    "100+"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "7": {
+   "next": [
+    "8 (попадание)",
+    "4 (вне зоны)",
+    "0 (нет цели)"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "8": {
+   "next": [
+    "4",
+    "9 (жертва m<555)"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "9": {
+   "next": [
+    "0/4"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "12": {
+   "next": [
+    "13"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "13": {
+   "next": [
+    "4"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "14": {
+   "next": [
+    "100"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "17": {
+   "next": [
+    "4"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "18": {
+   "next": [
+    "4"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "19": {
+   "next": [
+    "4"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "23": {
+   "next": [
+    "0/4 (инициализация)"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "24": {
+   "next": [
+    "4 (после флага 0x100)"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "26": {
+   "next": [
+    "100 (f.p)"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "27": {
+   "next": [
+    "100"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "28": {
+   "next": [
+    "100"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "100+": {
+   "next": [
+    "терминальные (без перехода)"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  },
+  "108": {
+   "next": [
+    "100"
+   ],
+   "conditions": "см. ai-transition-graph-v2",
+   "source": "f.java"
+  }
+ }
+}

@@ -1032,5 +1032,26 @@
   "level_content": {
    "status": "REQUIRES_REAL_RUNTIME"
   }
+ },
+ "runtime": {
+  "state_vector": "27 полей (g[0..30+], c-объект: позиция/анимация/кадр/loop/повторы)",
+  "update_order": "g.B(): eF, Q, bM, bE, f.b() (агро), per-entity f.a/f.i/f.o/f.p, движение, коллизии, рендер",
+  "timers": {
+   "g[15]": "атака 8 (>=1000)",
+   "f.w": "800 мс",
+   "g[24]": "0x800-таймер",
+   "g[22]": "таймеры",
+   "g[27]": "время действия",
+   "c.java": "62 тика/кадр"
+  },
+  "time_units": [
+   "GAME_LOOP 40мс/166мс",
+   "ENTITY мс",
+   "ANIMATION 62-тики",
+   "SCRIPT кадры"
+  ],
+  "damage": "g[7] -= урон + 30%*bF; смерть g[12]>=100",
+  "randomness": "g.a(): %100, %500, %25",
+  "note": "READY_STATIC; invulnerability/knockback — REQUIRES_REAL_RUNTIME"
  }
 }
