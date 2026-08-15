@@ -10,7 +10,8 @@
    "REQUIRES_RUNTIME",
    "CONTRADICTED",
    "DEPRECATED"
-  ]
+  ],
+  "updated": "2026-08-15 TEST-002 runtime observations (F044-F048)"
  },
  "facts": [
   {
@@ -460,6 +461,62 @@
    "last_verified": "15.24",
    "supersedes": "-",
    "notes": "реальные FPS RUNTIME"
+  },
+  {
+   "id": "F044",
+   "category": "AI",
+   "statement": "RUNTIME (TEST-002): у 152 врагов миссии 0: state g[12]=0 (128) и state=-1 (24); HP g[7]=0 у 150 (не заспавнены), HP=2 у 2; props length 35; подсостояния g[10]={0:84,1:13,3:21,4:4,5:6}; флаги g[16]=0",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-002 ai-trace.json",
+   "exact_reference": "results/test-002/ai-trace.json",
+   "derivation": "внешнее JDWP-чтение живого JAR",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-15",
+   "note": "state=-1 и g[10]=1 не описаны в ai-state-machine-v2"
+  },
+  {
+   "id": "F045",
+   "category": "AI",
+   "statement": "RUNTIME (TEST-002): камера T = player.x - 0x1E0000 подтверждена (f.a = T+0x1E0000 в sub=0); игрок HP g[7]=200; игрок state g[12]=8, v13=1, g[15]=35",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-002",
+   "exact_reference": "results/test-002/ai-trace.json",
+   "derivation": "JDWP",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-15"
+  },
+  {
+   "id": "F046",
+   "category": "AI",
+   "statement": "RUNTIME (TEST-002): в sub=1 (вступительная сцена) клавиши игнорируются (камера едет сама); FIRE продвигает сцену; в sub=0 движение от клавиш работает (LEFT -82px/1.4s и т.д.)",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-002",
+   "exact_reference": "results/test-002/",
+   "derivation": "JDWP + клавиши",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-15"
+  },
+  {
+   "id": "F047",
+   "category": "AI",
+   "statement": "RUNTIME (TEST-002): миссия 0 не имеет активного mission object: i=0, cB=0, cy=0, Q=[0x8]; подтверждает статику: opcode 147 (установка i/cB=200/Q) только в mission_03",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-002",
+   "exact_reference": "results/test-002/mission-object-trace.json",
+   "derivation": "JDWP",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-15"
+  },
+  {
+   "id": "F048",
+   "category": "AI",
+   "statement": "RUNTIME (TEST-002): игрок заперт в стартовой зоне миссии 0 (x 2066-2600, y 780-854 px); враги (мин 955px) недостижимы; aggro/attack/damage не наблюдаемы (INCONCLUSIVE); возможна особенность FreeJ2ME",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-002",
+   "exact_reference": "results/test-002/report.md",
+   "derivation": "JDWP + клавиши",
+   "confidence": "MEDIUM",
+   "first_discovered": "2026-08-15"
   }
  ]
 }

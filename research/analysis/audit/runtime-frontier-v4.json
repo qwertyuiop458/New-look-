@@ -83,5 +83,25 @@
     "GC"
    ]
   }
- ]
+ ],
+ "test002": {
+  "date": "2026-08-15",
+  "status": "PARTIAL",
+  "confirmed": [
+   "AI state 0 (idle) у врагов",
+   "state=-1 (новое)",
+   "HP=0 не-заспавненные",
+   "T=player-0x1E0000",
+   "player HP=200",
+   "миссия 0 без mission object (i=0,cB=0,Q=8)"
+  ],
+  "not_observed": [
+   "aggro distance (1600)",
+   "attack cycle (1000/800ms)",
+   "damage",
+   "cB>0",
+   "completion cB->0->state 7"
+  ],
+  "blocker": "игрок заперт в стартовой зоне миссии 0; mission object требует mission_03 (bB=3), недостижимой меню (баг курсора TEST-001 S09)"
+ }
 }

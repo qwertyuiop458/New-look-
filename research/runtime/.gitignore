@@ -16,3 +16,5 @@ evidence/real/test-001/frame_*.png
 evidence/real/test-001/latest.png
 results/test-001/runtime-stdout*.log
 results/test-001/sdl_interface.log
+# TEST-002: логи экспериментов
+results/test-002/runtime-stdout*.log

@@ -1,0 +1,25 @@
+{
+  "meta": "Quality gate Этапа 15.31 (TEST-002)",
+  "status": "PARTIAL",
+  "statuses": ["NOT_EXECUTED", "PARTIAL", "PASSED", "MISMATCH_FOUND", "INCONCLUSIVE"],
+  "rationale": "Реальные AI-наблюдения получены (152 врага: state 0/-1, HP 0/2, подсостояния g[10]; управление игроком; камера; отсутствие mission object в миссии 0 — MATCH со статикой). Однако aggro/attack/damage/cB-completion НЕ наблюдаемы: игрок заперт в стартовой зоне миссии 0, активный объект миссии отсутствует (статически: opcode 147 только в mission_03). По ТЗ отсутствие наблюдения не опровергает гипотезы.",
+  "evidence": {
+    "ai_trace": "results/test-002/ai-trace.json (approach 189-211 сэмплов, attack 76-88)",
+    "state_transitions": "results/test-002/state-transitions.json (только state 0)",
+    "attack_trace": "results/test-002/attack-trace.json (attack cycle не наблюдён)",
+    "damage_trace": "results/test-002/damage-trace.json (0 событий)",
+    "mission_object_trace": "results/test-002/mission-object-trace.json (i=0, cB=0, Q=8 нулей)",
+    "comparison": "results/test-002/comparison.json (MATCH 5, PARTIAL 1, INCONCLUSIVE 6, NEW 1, MISMATCH 0)",
+    "screenshots": ["enemy-before.png", "enemy-approach.png", "enemy-attack.png", "mission-object.png"],
+    "jar_sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+    "original_jar_modified": false
+  },
+  "audio_status": "AUDIO_RUNTIME_BLOCKED_BY_STUB",
+  "new_observations": [
+    "state g[12] = -1 у 24 врагов (нет в ai-state-machine-v2)",
+    "g[10] = 1 у 13 врагов (нет в списке подсостояний v2)",
+    "HP=0 у 150/152 врагов (не-заспавненные)",
+    "стартовая зона миссии 0: игрок заперт (x 2066-2600, y 780-854 px)"
+  ],
+  "verdict": "PARTIAL — TEST-002 выполнен с ограничениями; AI state (idle) и mission-object absence подтверждены; attack/aggro/damage/cB/completion — INCONCLUSIVE (недостижимы в миссии 0)"
+}
