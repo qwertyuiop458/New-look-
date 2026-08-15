@@ -1,0 +1,7 @@
+{
+ "id": "chain-03",
+ "archetype": "NPC (type 9)",
+ "instance": "mission_00 type9 (23 записи)",
+ "chain": "props[0] -> g.a(g.w) -> NPC-индекс (m9 seg8) -> NPS props (ag-таблица 15 полей) -> анимации -> ...",
+ "status": "STATICALLY_RESOLVED (структура); NPC-анимации через g.k(type,3) инициализация"
+}

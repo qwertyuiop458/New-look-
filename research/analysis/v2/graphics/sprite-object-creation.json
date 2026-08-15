@@ -1,0 +1,43 @@
+{
+ "meta": "Создание sprite-list объектов класса a (загрузчики).",
+ "objects": [
+  {
+   "object": "g.a[slot]",
+   "creation": "g.g() case 3: a[slot] = g.a(a[slot], n, n3, n4, n5, false)",
+   "resource": "a[n] (m0/m1/m2/m7/m11_0/m11_1/m13_2...)",
+   "segment": "n3",
+   "slot": "n2 (0..9)",
+   "fields": "a.a(сегмент) + f(a2,n,n2) кол-во + b(a2,n,n2,i) ремаппинг",
+   "evidence": "g.java:2518-2540, 2803-2838",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "object": "g.b[slot]",
+   "creation": "g.g() case 2: b[slot] = ...; b[slot].b = 4",
+   "resource": "a[n]",
+   "segment": "n3",
+   "slot": "n2",
+   "evidence": "g.java:2499-2507",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "object": "g.a[n][n2] (геймплейные листы)",
+   "creation": "g.java:2501 (a[16+n] -> m6_*); 2524 g.a(byArray)",
+   "resource": "m6_0..m6_5",
+   "segment": "все",
+   "slot": "a[16..21]",
+   "evidence": "g.java:2501, 2524",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "object": "геймплейные маски m7",
+   "creation": "g.java:33601 a(n,n2,byArray): сегменты (n<<1)+1",
+   "resource": "m7",
+   "segment": "нечётные",
+   "slot": "d[layer][chunk]",
+   "evidence": "g.java:33601-33643",
+   "confidence": "CONFIRMED"
+  }
+ ],
+ "note": "индекс массива g.a[] НЕ равен resource ID: слоты назначаются сценарием (n2), ресурс задаётся (n)."
+}

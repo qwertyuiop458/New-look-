@@ -1,0 +1,35 @@
+{
+ "meta": "Трассировка записей сценарного загрузчика g.g() (case 1/2/3/9).",
+ "records": [
+  {
+   "op": 1,
+   "params": "{1, n8, n9}",
+   "action": "a.a = g.b(n9) (спрайт-лист из сегмента n9 ресурса a[n8])",
+   "evidence": "g.java:2438-2445"
+  },
+  {
+   "op": 2,
+   "params": "{2, n, n2, n3, n4, n5}",
+   "action": "g.a(n8,n10,n11,n12,n13,b) (лист в b[]); b[slot].b=4",
+   "evidence": "g.java:2450-2458"
+  },
+  {
+   "op": 3,
+   "params": "{3, n, n2, n3, n4, n5}",
+   "action": "a[slot] = g.a(a[slot], n, n3, n4, n5, false) (лист в a[])",
+   "evidence": "g.java:2459-2467"
+  },
+  {
+   "op": 9,
+   "params": "{9, n8, n17, n11, n18, n12, n19}",
+   "action": "a[n11].a(n18, g.b(n17)) — загрузка кадра/листа в слот",
+   "evidence": "g.java:2480-2498"
+  },
+  {
+   "op": 11,
+   "params": "{11, n21, n22}",
+   "action": "g.a('/'+a[16+n21]) — открытие m6_* (геймплей)",
+   "evidence": "g.java:2499"
+  }
+ ]
+}

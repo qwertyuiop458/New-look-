@@ -1,0 +1,32 @@
+{
+ "audit": "x-sprite-readiness-v2",
+ "date": "2026-08-15",
+ "status": "READY_STATIC",
+ "criteria": {
+  "x_index_to_sprite_object_proven": true,
+  "evidence": "a.java:574: n13 = e[n] + i; n6 = c[n13]&0xFF | (d[n13]&0xC0)<<2 (индекс объекта листа); c.java:117: a.a(d, e, n, n2, c); f.java:2719: g[30+i] слоты = X-кадры"
+ },
+ "bridge": "X-пара -> g[30+i] -> c.java кадр e -> e[n]+i -> c[n13] объект листа -> декодер -> Image -> drawRegion",
+ "x_mappings_confirmed": "структурно все (цепочка доказана); конкретные числовые пары X->объект: RENDER_RUNTIME_REQUIRED (зависят от данных листа m6_*)",
+ "sprite_slots": "10 сценарных (a[][0..9]) + 6 геймплейных (a[16..21] = m6_0..m6_5) + a[22] = m7",
+ "resources": [
+  "m6_0..m6_5 (геймплей)",
+  "m7 (геймплей)",
+  "m0/m1/m2/m11_0/m11_1/m13_2 (сцены)"
+ ],
+ "prop21": "UNKNOWN (1 read; не доказано как palette)",
+ "prop31": "INFERRED (индекс при отрисовке; f.java:4107)",
+ "transform_source": "n4 & 7: (1) палитра актёра this.c из c.java:117; (2) отдельный параметр a(Graphics,...,n4,n5); точный выбор — RENDER_RUNTIME_REQUIRED",
+ "reference_chains": [
+  "chain-01 (архетип 3)",
+  "chain-02 (архетип 107)",
+  "chain-03 (NPC type 9)"
+ ],
+ "unknowns": [
+  "конкретные числовые пары X->объект листа",
+  "точный transform для экземпляра",
+  "prop21",
+  "второй элемент X-пары"
+ ],
+ "note": "READY_STATIC = структурный мост доказан кодом; значения для конкретных экземпляров требуют рантайм-рендера"
+}

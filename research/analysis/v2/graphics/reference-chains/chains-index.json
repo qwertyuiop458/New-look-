@@ -1,0 +1,26 @@
+{
+ "meta": "3 эталонные цепочки (архетип 3, враг 107, NPC через g.w). Все шаги CONFIRMED кроме последнего (X->объект листа) — теперь последний шаг = c[n13] (a.java:574) — доказан структурно!",
+ "chains": [
+  {
+   "id": "chain-01",
+   "archetype": 3,
+   "instance": "mission_00 type3 record",
+   "chain": "props[0] -> g.a(g.m) -> архетип 3 -> prop33 анимаций -> кадр (dir + g.i) -> X-пара -> g[30+i] слот -> c.java кадр e -> e[n] таблица -> c[n13] объект листа -> декодер RLE -> Image -> drawRegion",
+   "status": "STATICALLY_RESOLVED (структура); конкретный номер объекта листа из данных листа m6_* — RENDER_RUNTIME_REQUIRED"
+  },
+  {
+   "id": "chain-02",
+   "archetype": 107,
+   "instance": "mission_01+ type3 (46 записей)",
+   "chain": "та же цепочка; архетип 107 (props: ai=?, анимации prop33)",
+   "status": "STATICALLY_RESOLVED (структура)"
+  },
+  {
+   "id": "chain-03",
+   "archetype": "NPC (type 9)",
+   "instance": "mission_00 type9 (23 записи)",
+   "chain": "props[0] -> g.a(g.w) -> NPC-индекс (m9 seg8) -> NPS props (ag-таблица 15 полей) -> анимации -> ...",
+   "status": "STATICALLY_RESOLVED (структура); NPC-анимации через g.k(type,3) инициализация"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "meta": "Источник n4 & 7 (transform) в drawRegion.",
+ "analysis": [
+  {
+   "detail": "n4 в a.java a(Graphics) (строка 700+): параметр, приходящий из b(n,n2,n3,n4) (строка 666)",
+   "evidence": "a.java:666-772"
+  },
+  {
+   "detail": "b(n,n2,n3,n4): n4 используется как n5 (флаги) во внутреннем b(n,n2,n3,n4,n5): смещения f/g (n5&1/2), swap (n5&4), XOR n7&0xF",
+   "evidence": "a.java:574-660"
+  },
+  {
+   "detail": "c.java:117: this.a.a(this.d, this.e, n, n2, this.c) — n4 = this.c (палитра актёра!)",
+   "evidence": "c.java:117"
+  },
+  {
+   "detail": "вывод: n4 & 7 в drawRegion использует МЛАДШИЕ БИТЫ палитры актёра this.c как transform-флаг (не отдельный параметр!)",
+   "evidence": "a.java:772 (a[n4 & 7]) + c.java:117 (n4 = this.c)"
+  },
+  {
+   "detail": "альтернатива: в a(Graphics) (основной вызов) n4 может быть отдельным параметром вызова; оба пути существуют",
+   "evidence": "a.java:511/516 (a(Graphics, n, n2, n3, n4, n5))"
+  }
+ ],
+ "conclusion": "источник n4: (1) палитра актёра this.c из c.java:117; (2) отдельный параметр a(Graphics, ..., n4, n5) из других вызовов. Точный источник для конкретного экземпляра — RENDER_RUNTIME_REQUIRED.",
+ "status": "PARTIAL"
+}

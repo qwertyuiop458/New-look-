@@ -1,0 +1,83 @@
+{
+ "meta": "Карта слотов g.a[]/g.b[] (из статического сценария g.g(), этап 15.11).",
+ "slots": [
+  {
+   "slot": "a[][0]",
+   "resource": "m0 seg0",
+   "loader": "case 3 {1,0,0,-1,2}",
+   "purpose": "menu/hero",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[][1]",
+   "resource": "m0 seg9",
+   "loader": "case 3 {1,1,9,-1,2}",
+   "purpose": "menu",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "b[][1]",
+   "resource": "m1 seg0",
+   "loader": "case 2 {2,1,0,0,10}",
+   "purpose": "menu",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[][0]",
+   "resource": "m2 seg1",
+   "loader": "case 3 {3,0,1,0,4}",
+   "purpose": "menu",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[][1]",
+   "resource": "m2 seg2",
+   "loader": "case 3 {3,1,2,0,2}",
+   "purpose": "menu",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[][2]",
+   "resource": "m2 seg23",
+   "loader": "case 3 {3,2,23,0,2}",
+   "purpose": "menu",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[][0]",
+   "resource": "m7 seg3",
+   "loader": "case 3 {22,0,3,-1,9}",
+   "purpose": "menu/фон",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[][0..9]",
+   "resource": "m11_0 seg 4,5,7,11,12,13,14,19,20,21",
+   "loader": "case 3 {26,slot,seg,-1,2}",
+   "purpose": "сцены",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[][0..6]",
+   "resource": "m11_1 seg 8,10,15,16,17,18,22",
+   "loader": "case 3 {27,slot,seg,-1,2}",
+   "purpose": "сцены",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[16..21]",
+   "resource": "m6_0..m6_5",
+   "loader": "геймплей (2501)",
+   "purpose": "ГЕЙМПЛЕЙ (уровни)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[22]",
+   "resource": "m7",
+   "loader": "геймплей (2501)",
+   "purpose": "ГЕЙМПЛЕЙ",
+   "confidence": "CONFIRMED"
+  }
+ ],
+ "conclusion": "Геймплейные спрайт-листы = m6_0..m6_5 (слоты a[16..21]) и m7 (a[22]); тайлы миссий, вероятно, из этих листов (числовая связь tile_id -> лист не доказана)."
+}

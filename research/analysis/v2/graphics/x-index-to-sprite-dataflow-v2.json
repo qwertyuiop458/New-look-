@@ -1,0 +1,42 @@
+{
+ "meta": "X-значение -> объект листа (ПОЛНАЯ ЦЕПОЧКА, доказана в a.java).",
+ "chain": [
+  {
+   "stage": "X-пара",
+   "detail": "g.d(type, anim, fr, 0/1) = X[W10 + fr*2 + 0/1]",
+   "evidence": "g.java:24747"
+  },
+  {
+   "stage": "слот анимации",
+   "detail": "g[30+i] = f.b() (новый c-контроллер) с кадрами f.a[slot][fr] = g.d(type, n, fr, 0)",
+   "evidence": "f.java:2719-2721, 2572"
+  },
+  {
+   "stage": "кадр c.java",
+   "detail": "c.java: this.d = анимация, this.e = кадр (продвигается по тикам)",
+   "evidence": "c.java:44-130"
+  },
+  {
+   "stage": "вызов рендера",
+   "detail": "c.java:117: this.a.a(this.d, this.e, n, n2, this.c)",
+   "evidence": "c.java:117"
+  },
+  {
+   "stage": "таблица e/c/d листа",
+   "detail": "a.java:574: n13 = e[n] + i; n6 = c[n13]&0xFF | (n7&0xC0)<<2 (ИНДЕКС ОБЪЕКТА); f/g[n13] = смещения",
+   "evidence": "a.java:574-590"
+  },
+  {
+   "stage": "объект листа",
+   "detail": "b(n6, ...) -> декодер a(n6): j-блоки + палитра -> пиксели c[n6]x d[n6]",
+   "evidence": "a.java:666-700, 800"
+  },
+  {
+   "stage": "Image + draw",
+   "detail": "createRGBImage -> drawImage/drawRegion(transform)",
+   "evidence": "a.java:763-772"
+  }
+ ],
+ "conclusion": "X-индекс кадра -> c.java кадр e -> e[n] таблица -> c[n13] = объект листа -> пиксели. МОСТ ДОКАЗАН.",
+ "status": "STATICALLY_RESOLVED"
+}

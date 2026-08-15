@@ -873,6 +873,16 @@
   {
    "claim": "X-индекс кадра -> объект листа (c x d)",
    "status": "RENDER_RUNTIME_REQUIRED"
+  },
+  {
+   "claim": "X-мост: g[30+i] слоты -> c.java кадр e -> a.java e[n]+i -> c[n13] объект листа -> декодер -> drawRegion",
+   "status": "CONFIRMED",
+   "evidence": "a.java:574, c.java:117, f.java:2719"
+  },
+  {
+   "claim": "геймплейные спрайт-листы: m6_0..m6_5 (a[16..21]) и m7 (a[22])",
+   "status": "CONFIRMED",
+   "evidence": "g.java:2501"
   }
  ],
  "audio": [

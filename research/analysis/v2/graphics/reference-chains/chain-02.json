@@ -1,0 +1,7 @@
+{
+ "id": "chain-02",
+ "archetype": 107,
+ "instance": "mission_01+ type3 (46 записей)",
+ "chain": "та же цепочка; архетип 107 (props: ai=?, анимации prop33)",
+ "status": "STATICALLY_RESOLVED (структура)"
+}

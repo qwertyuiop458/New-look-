@@ -1,0 +1,24 @@
+{
+ "meta": "resource -> объект листа (структура a.java-листа; конкретные объекты — из данных)",
+ "resources": [
+  {
+   "resource": "m6_0..m6_5",
+   "slot": "a[16..21]",
+   "objects": "листы a.java (объекты k=0/1/2, кадры c x d, RLE-блоки)",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "resource": "m7",
+   "slot": "a[22]",
+   "objects": "листы + маски (сегменты нечётные)",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "resource": "m0/m1/m2/m11_0/m11_1/m13_2",
+   "slot": "a[][0..9], b[][1]",
+   "objects": "листы сцен/меню",
+   "confidence": "CONFIRMED (структура)"
+  }
+ ],
+ "note": "привязка конкретного tile_id/X-индекса к объекту конкретного листа: RENDER_RUNTIME_REQUIRED (нет статической таблицы)"
+}

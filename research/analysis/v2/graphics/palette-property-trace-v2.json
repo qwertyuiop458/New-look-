@@ -1,0 +1,23 @@
+{
+ "meta": "prop21 vs prop31.",
+ "prop21": {
+  "reads": [
+   "g.java:17669 (n = g.h(f2.g[0], 21))",
+   "g.java:21409 (g.l(n,11) звук?)"
+  ],
+  "chain": "g.h(type,21) -> n -> ... (контекст 17669: отрисовка HUD/диалога?)",
+  "status": "UNKNOWN (1 изолированный read; не доказано как palette)"
+ },
+ "prop31": {
+  "reads": [
+   "f.java:4107 (g.a(graphics, g.b, null, 9, g.h(type,31), 0, RGBA...))",
+   "f.java:4107 (g.h(type,31) + 1)"
+  ],
+  "chain": "g.h(type,31) -> аргумент draw (позиция 5) -> g.a(Graphics, image?, ..., index, ...) — похоже на ИНДЕКС КАДРА/ПАЛИТРЫ при отрисовке",
+  "status": "INFERRED (индекс при отрисовке; точная семантика RENDER_RUNTIME_REQUIRED)"
+ },
+ "c_palette": {
+  "detail": "c.java: this.c = палитра актёра (передаётся в a.a(d, e, x, y, this.c)); a.java: кадр с палитрой c — отдельный механизм",
+  "status": "CONFIRMED (передача палитры актёра в рендер)"
+ }
+}
