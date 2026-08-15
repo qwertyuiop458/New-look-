@@ -166,6 +166,14 @@
    "container": "1B count + A x u32 LE относительные смещения; последний сегмент недоступен",
    "full_levels_reconstructed": 0,
    "status": "CONFIRMED (формат); содержимое REQUIRES_RUNTIME"
+  },
+  "ai": {
+   "classes": "prop10 (6 классов)",
+   "states": "g[12] (24+), терминальные 100+",
+   "pathfinding": "НЕТ — прямое преследование",
+   "attack": "7/8/12 + ranged velocity",
+   "damage": "g[7] -= урон + 30%*bF",
+   "status": "CONFIRMED (структура)"
   }
  },
  "not_for_sequel_reference": [

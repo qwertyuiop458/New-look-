@@ -1,0 +1,401 @@
+{
+ "meta": "Профили 17 кластеров (сигнатуры из archetype-clusters-v2)",
+ "clusters": [
+  {
+   "cluster": "BEHAVIOR_CLUSTER_00",
+   "size": 15,
+   "archetypes": [
+    3,
+    13,
+    24,
+    30,
+    90,
+    96,
+    107,
+    108,
+    147,
+    209,
+    215,
+    226,
+    227,
+    337,
+    358
+   ],
+   "signature": {
+    "ai_class": 0,
+    "facing_a": 12,
+    "facing_b": 36,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 0,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_01",
+   "size": 9,
+   "archetypes": [
+    31,
+    35,
+    38,
+    114,
+    120,
+    130,
+    233,
+    239,
+    249
+   ],
+   "signature": {
+    "ai_class": 3,
+    "facing_a": 50,
+    "facing_b": 58,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 3,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_02",
+   "size": 4,
+   "archetypes": [
+    157,
+    163,
+    174,
+    175
+   ],
+   "signature": {
+    "ai_class": 5,
+    "facing_a": 12,
+    "facing_b": 36,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 5,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_03",
+   "size": 3,
+   "archetypes": [
+    18,
+    125,
+    244
+   ],
+   "signature": {
+    "ai_class": 3,
+    "facing_a": 50,
+    "facing_b": 58,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 3,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_04",
+   "size": 3,
+   "archetypes": [
+    46,
+    265,
+    305
+   ],
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 0,
+    "facing_b": 0,
+    "box_w_tiles": 4,
+    "box_h_tiles": 2,
+    "attack_damage": -1
+   },
+   "ai_class": 1,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_05",
+   "size": 3,
+   "archetypes": [
+    84,
+    260,
+    300
+   ],
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 52,
+    "facing_b": 52,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 1,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_06",
+   "size": 3,
+   "archetypes": [
+    181,
+    187,
+    197
+   ],
+   "signature": {
+    "ai_class": 7,
+    "facing_a": 50,
+    "facing_b": 58,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 7,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_07",
+   "size": 2,
+   "archetypes": [
+    286,
+    326
+   ],
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 133,
+    "facing_b": 133,
+    "box_w_tiles": 2,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 1,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_08",
+   "size": 2,
+   "archetypes": [
+    277,
+    317
+   ],
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 137,
+    "facing_b": 137,
+    "box_w_tiles": 2,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 1,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_09",
+   "size": 2,
+   "archetypes": [
+    135,
+    291
+   ],
+   "signature": {
+    "ai_class": 2,
+    "facing_a": 89,
+    "facing_b": 89,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 2,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_10",
+   "size": 2,
+   "archetypes": [
+    70,
+    139
+   ],
+   "signature": {
+    "ai_class": 4,
+    "facing_a": 0,
+    "facing_b": 0,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 4,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_11",
+   "size": 2,
+   "archetypes": [
+    202,
+    345
+   ],
+   "signature": {
+    "ai_class": 6,
+    "facing_a": 0,
+    "facing_b": 0,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 6,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_12",
+   "size": 2,
+   "archetypes": [
+    206,
+    349
+   ],
+   "signature": {
+    "ai_class": 2,
+    "facing_a": 47,
+    "facing_b": 47,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 2,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_13",
+   "size": 1,
+   "archetypes": [
+    76
+   ],
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 56,
+    "facing_b": 56,
+    "box_w_tiles": 2,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 1,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_14",
+   "size": 1,
+   "archetypes": [
+    67
+   ],
+   "signature": {
+    "ai_class": 1,
+    "facing_a": 56,
+    "facing_b": 56,
+    "box_w_tiles": 2,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 1,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_15",
+   "size": 1,
+   "archetypes": [
+    64
+   ],
+   "signature": {
+    "ai_class": 2,
+    "facing_a": 31,
+    "facing_b": 31,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 2,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  },
+  {
+   "cluster": "BEHAVIOR_CLUSTER_16",
+   "size": 1,
+   "archetypes": [
+    192
+   ],
+   "signature": {
+    "ai_class": 7,
+    "facing_a": 50,
+    "facing_b": 58,
+    "box_w_tiles": 1,
+    "box_h_tiles": 1,
+    "attack_damage": -1
+   },
+   "ai_class": 7,
+   "states": "общие g[12] (7/8/12 атаки; 100+ смерть)",
+   "movement": "прямое преследование velocity (нет pathfinding)",
+   "attack": "по prop10: 0/3/5/7 ranged-наведение; иначе melee (7/8/12)",
+   "animation": "prop32/33/34",
+   "missions": "см. mission usage"
+  }
+ ]
+}

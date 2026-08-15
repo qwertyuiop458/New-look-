@@ -1,0 +1,61 @@
+{
+ "meta": "Формулы AI (из кода)",
+ "formulas": [
+  {
+   "id": "velocity_to_target",
+   "formula": "n15 = |dx_fixed| * 1000 / 819200; n17 = dx_fixed / (n15+1)",
+   "source": "f.java:2830",
+   "known": "полная",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": "attack_zone",
+   "formula": "зона = [prop7, prop7+4) ∪ [prop8, prop8+4) направлений",
+   "source": "f.java:4599",
+   "known": "полная",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": "attack_distance",
+   "formula": "дистанция <= prop17 (порог)",
+   "source": "f.java:5448",
+   "known": "порог; единицы UNKNOWN",
+   "confidence": "PARTIAL"
+  },
+  {
+   "id": "damage",
+   "formula": "g[7] -= урон + 30%*bF (f.b); урон = prop14 (атака) / prop22 (ветка)",
+   "source": "f.java:767, 2894",
+   "known": "частично (свойство урона зависит от ветки)",
+   "confidence": "PARTIAL"
+  },
+  {
+   "id": "attack_timer",
+   "formula": "g[15] >= 1000 мс (case 8); f.w >= 800 мс (case 16)",
+   "source": "f.java:5457, 640",
+   "known": "полная",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": "speed_const",
+   "formula": "шаг 819200 (50 px); скорости 983040/1048576/1474560/1802240",
+   "source": "f.java:6890, 870",
+   "known": "полная",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": "direction",
+   "formula": "dir: g[13]>8192->3; <-8192->2; g[14]>8192->1; <-8192->0",
+   "source": "f.java:4572",
+   "known": "полная",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": "aggro_distance",
+   "formula": "f.b(): дистанция < 1600 (единицы UNKNOWN); f.m(): M <= 4096",
+   "source": "f.java:681, 692",
+   "known": "частично (единицы)",
+   "confidence": "PARTIAL"
+  }
+ ]
+}

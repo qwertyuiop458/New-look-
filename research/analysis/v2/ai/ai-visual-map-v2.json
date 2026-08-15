@@ -1,0 +1,341 @@
+{
+ "meta": "cluster -> sprite",
+ "clusters": [
+  {
+   "archetype": 3,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 13,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 24,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 30,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 90,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 96,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 107,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 108,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 147,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 209,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 215,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 226,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 227,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 337,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 358,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 31,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 35,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 38,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 114,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 120,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 130,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 233,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 239,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 249,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 157,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 163,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 174,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 175,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 18,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 125,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 244,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 46,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 265,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 305,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 84,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 260,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 300,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 181,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 187,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 197,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 286,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 326,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 277,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 317,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 135,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 291,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 70,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 139,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 202,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 345,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 206,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 349,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 76,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 67,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 64,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  },
+  {
+   "archetype": 192,
+   "cluster": "BEHAVIOR_CLUSTER",
+   "sprite_resources": "m6_*/m7",
+   "visual_dimensions": "UNKNOWN (RENDER_RUNTIME_REQUIRED)"
+  }
+ ]
+}

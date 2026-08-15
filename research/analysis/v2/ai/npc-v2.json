@@ -1,0 +1,6 @@
+{
+ "meta": "NPC: таблица g.w (m9 seg8, ey()), 15 полей; L=9; анимации g.k(type,3);цели SetNPCTarget (opcode 148); состояния как у сущностей",
+ "source": "g.java:29237 ey(); g.java:31810 m() case 9",
+ "states": "g[12] общие; L=9 не участвует в enemy-агро (f.b(): L!=3 continue)",
+ "note": "NPC отделены от enemy: f.b() фильтрует L==3"
+}

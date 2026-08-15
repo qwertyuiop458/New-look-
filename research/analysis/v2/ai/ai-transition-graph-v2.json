@@ -1,0 +1,89 @@
+{
+ "meta": "Граф переходов (из f.i()/f.o()/f.p()/f.j(), доказанные ветки)",
+ "transitions": [
+  {
+   "from": "23 (спавн)",
+   "to": "0/4",
+   "condition": "инициализация",
+   "evidence": "f.java:2799,2823",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "7 (атака)",
+   "to": "8",
+   "condition": "цель в дистанции prop17, анимация завершена",
+   "evidence": "f.java:5448 (f.c(f2,8))",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "7",
+   "to": "4",
+   "condition": "цель вне зоны/нет цели",
+   "evidence": "f.java:5452",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "7",
+   "to": "0",
+   "condition": "цель = null",
+   "evidence": "f.java:5454",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "8",
+   "to": "4",
+   "condition": "после таймера/урона",
+   "evidence": "f.java:5470-5487",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "8",
+   "to": "9",
+   "condition": "жертва f.m<555 -> f.d(f3,101)",
+   "evidence": "f.java:5483",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "12",
+   "to": "13",
+   "condition": "анимация завершена",
+   "evidence": "f.java:5493",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "13",
+   "to": "4",
+   "condition": "завершение",
+   "evidence": "f.java:5511",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "24",
+   "to": "4",
+   "condition": "установка флага 0x100",
+   "evidence": "f.java:5518",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "14",
+   "to": "100",
+   "condition": "f.o(): переход к терминальному",
+   "evidence": "f.java:5434",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "108",
+   "to": "100",
+   "condition": "f.p() g[12]==108",
+   "evidence": "f.java:5545",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "from": "0/4/9/14/17/18/19",
+   "to": "100+",
+   "condition": "g[12] >= 100 (смерть)",
+   "evidence": "f.java:3242-3255",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

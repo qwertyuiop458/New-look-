@@ -1,0 +1,35 @@
+{
+ "meta": "Тайминги AI (из кода)",
+ "timings": [
+  {
+   "id": "attack_cooldown_8",
+   "value": "1000 мс (g[15])",
+   "source": "f.java:5457",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": "timer_16",
+   "value": "800 мс (f.w)",
+   "source": "f.java:640",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": "random_timer",
+   "value": "1000 + rand(500) мс (g[n2+2])",
+   "source": "f.java:6363",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": "anim_tick",
+   "value": "62 тика/кадр (c.java)",
+   "source": "c.java:44",
+   "confidence": "CONFIRMED (анимация, не AI)"
+  },
+  {
+   "id": "frame_time",
+   "value": "40 мс/кадр (главный цикл)",
+   "source": "g.java:35170",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "audit": "ai-readiness-v2",
+ "date": "2026-08-15",
+ "status": "READY_STATIC",
+ "criteria": {
+  "ai_dispatch_proven": true,
+  "states_proven": true,
+  "transitions_proven": true,
+  "movement_proven": true,
+  "attack_proven": true,
+  "damage_response_proven": true,
+  "archetype_behavior_proven": true
+ },
+ "metrics": {
+  "ai_classes": "6 (prop10: 0,1,2,3,5,7 + особые)",
+  "states": "24 (g[12]: 0,1,4,7,8,9,12,13,14,17,18,19,23,24,26,27,28,100,101,103..108)",
+  "transitions": 12,
+  "clusters": 17,
+  "formulas": 8,
+  "pathfinding": "НЕТ (прямое преследование + wall-sliding; f.p() смена направления)",
+  "attack_models": "4 (ATTACK_7/8/12 + RANGED)",
+  "damage_models": "1 (f.b: g[7] -= урон + 30%*bF; смерть g[12]>=100)",
+  "instances_mapped": 666,
+  "archetypes_per_cluster": "см. behavior-clusters-v2.json"
+ },
+ "runtime_notes": "точные тайминги/визуальные эффекты — REQUIRES_REAL_RUNTIME; агро-единицы 1600/4096 — UNKNOWN",
+ "note": "READY_STATIC: диспетчер, состояния, переходы, движение, атаки, урон доказаны кодом"
+}

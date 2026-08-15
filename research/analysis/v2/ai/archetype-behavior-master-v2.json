@@ -1,0 +1,1125 @@
+{
+ "meta": "56 архетипов -> кластеры/поведение",
+ "archetypes": [
+  {
+   "archetype_id": 3,
+   "name": "ARCHETYPE_003",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_0",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 13,
+   "name": "ARCHETYPE_013",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_1",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 24,
+   "name": "ARCHETYPE_024",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_2",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 30,
+   "name": "ARCHETYPE_030",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_3",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 18,
+   "name": "ARCHETYPE_018",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_28",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 31,
+   "name": "ARCHETYPE_031",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_15",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 38,
+   "name": "ARCHETYPE_038",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_17",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 35,
+   "name": "ARCHETYPE_035",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_16",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 107,
+   "name": "ARCHETYPE_107",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_6",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 108,
+   "name": "ARCHETYPE_108",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_7",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 90,
+   "name": "ARCHETYPE_090",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_4",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 96,
+   "name": "ARCHETYPE_096",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_5",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 125,
+   "name": "ARCHETYPE_125",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_29",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 130,
+   "name": "ARCHETYPE_130",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_20",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 114,
+   "name": "ARCHETYPE_114",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_18",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 120,
+   "name": "ARCHETYPE_120",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_19",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 46,
+   "name": "ARCHETYPE_046",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_31",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    0,
+    0
+   ],
+   "collision_box_tiles": [
+    4,
+    2
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 84,
+   "name": "ARCHETYPE_084",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_34",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    52,
+    52
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 76,
+   "name": "ARCHETYPE_076",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_52",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    56,
+    56
+   ],
+   "collision_box_tiles": [
+    2,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 67,
+   "name": "ARCHETYPE_067",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_53",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    56,
+    56
+   ],
+   "collision_box_tiles": [
+    2,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 265,
+   "name": "ARCHETYPE_265",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_32",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    0,
+    0
+   ],
+   "collision_box_tiles": [
+    4,
+    2
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 260,
+   "name": "ARCHETYPE_260",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_35",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    52,
+    52
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 286,
+   "name": "ARCHETYPE_286",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_40",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    133,
+    133
+   ],
+   "collision_box_tiles": [
+    2,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 277,
+   "name": "ARCHETYPE_277",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_42",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    137,
+    137
+   ],
+   "collision_box_tiles": [
+    2,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 305,
+   "name": "ARCHETYPE_305",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_33",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    0,
+    0
+   ],
+   "collision_box_tiles": [
+    4,
+    2
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 300,
+   "name": "ARCHETYPE_300",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_36",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    52,
+    52
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 326,
+   "name": "ARCHETYPE_326",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_41",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    133,
+    133
+   ],
+   "collision_box_tiles": [
+    2,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 317,
+   "name": "ARCHETYPE_317",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_43",
+   "ai_class_prop10": 1,
+   "facing_zones": [
+    137,
+    137
+   ],
+   "collision_box_tiles": [
+    2,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 64,
+   "name": "ARCHETYPE_064",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_54",
+   "ai_class_prop10": 2,
+   "facing_zones": [
+    31,
+    31
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 135,
+   "name": "ARCHETYPE_135",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_44",
+   "ai_class_prop10": 2,
+   "facing_zones": [
+    89,
+    89
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 291,
+   "name": "ARCHETYPE_291",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_45",
+   "ai_class_prop10": 2,
+   "facing_zones": [
+    89,
+    89
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 139,
+   "name": "ARCHETYPE_139",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_47",
+   "ai_class_prop10": 4,
+   "facing_zones": [
+    0,
+    0
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 70,
+   "name": "ARCHETYPE_070",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_46",
+   "ai_class_prop10": 4,
+   "facing_zones": [
+    0,
+    0
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 147,
+   "name": "ARCHETYPE_147",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_8",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 358,
+   "name": "ARCHETYPE_358",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_14",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 337,
+   "name": "ARCHETYPE_337",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_13",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 174,
+   "name": "ARCHETYPE_174",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_26",
+   "ai_class_prop10": 5,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 175,
+   "name": "ARCHETYPE_175",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_27",
+   "ai_class_prop10": 5,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 157,
+   "name": "ARCHETYPE_157",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_24",
+   "ai_class_prop10": 5,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 163,
+   "name": "ARCHETYPE_163",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_25",
+   "ai_class_prop10": 5,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 192,
+   "name": "ARCHETYPE_192",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_55",
+   "ai_class_prop10": 7,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 197,
+   "name": "ARCHETYPE_197",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_39",
+   "ai_class_prop10": 7,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 181,
+   "name": "ARCHETYPE_181",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_37",
+   "ai_class_prop10": 7,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 187,
+   "name": "ARCHETYPE_187",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_38",
+   "ai_class_prop10": 7,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 202,
+   "name": "ARCHETYPE_202",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_48",
+   "ai_class_prop10": 6,
+   "facing_zones": [
+    0,
+    0
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 349,
+   "name": "ARCHETYPE_349",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_51",
+   "ai_class_prop10": 2,
+   "facing_zones": [
+    47,
+    47
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 345,
+   "name": "ARCHETYPE_345",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_49",
+   "ai_class_prop10": 6,
+   "facing_zones": [
+    0,
+    0
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 206,
+   "name": "ARCHETYPE_206",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_50",
+   "ai_class_prop10": 2,
+   "facing_zones": [
+    47,
+    47
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 226,
+   "name": "ARCHETYPE_226",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_11",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 227,
+   "name": "ARCHETYPE_227",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_12",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 209,
+   "name": "ARCHETYPE_209",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_9",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 215,
+   "name": "ARCHETYPE_215",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_10",
+   "ai_class_prop10": 0,
+   "facing_zones": [
+    12,
+    36
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 244,
+   "name": "ARCHETYPE_244",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_30",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 249,
+   "name": "ARCHETYPE_249",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_23",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 233,
+   "name": "ARCHETYPE_233",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_21",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  },
+  {
+   "archetype_id": 239,
+   "name": "ARCHETYPE_239",
+   "behavior_cluster": "BEHAVIOR_CLUSTER_22",
+   "ai_class_prop10": 3,
+   "facing_zones": [
+    50,
+    58
+   ],
+   "collision_box_tiles": [
+    1,
+    1
+   ],
+   "attack_damage_prop22": -1,
+   "state_machine": "g[12] общая (см. ai-state-machine-v2)",
+   "animation": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite": "m6_*/m7 (структурно)",
+   "mission_usage": "см. mission-entity-usage",
+   "confidence": "CONFIRMED (структура)"
+  }
+ ]
+}

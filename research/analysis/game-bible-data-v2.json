@@ -647,39 +647,33 @@
  ],
  "ai": [
   {
-   "claim": "вход: f.b() из g.B() (state 6)",
+   "claim": "AI-классы = prop10 (0/1/2/3/5/7); состояния g[12] (24 значения); переходы 12",
    "status": "CONFIRMED",
-   "evidence": "g.java:1107-1140"
+   "evidence": "f.java:2380-5535"
   },
   {
-   "claim": "состояния g[12] (17+ значений), g[10], флаги g[16]",
+   "claim": "атаки: ATTACK_7 (урон prop14, порог prop17, таймер 1000мс), ATTACK_8 (звук 21), ATTACK_12 (prop14<<1), RANGED (velocity-наведение 819200)",
    "status": "CONFIRMED",
-   "evidence": "f.java (ветвления)"
+   "evidence": "f.java:5422-5535, 2830"
   },
   {
-   "claim": "дистанции агро: >=1600, M<=4096 (единицы неизвестны)",
+   "claim": "pathfinding отсутствует (прямое преследование)",
    "status": "CONFIRMED",
-   "evidence": "f.java:681,692,703"
+   "evidence": "f.java:2830, 2402"
   },
   {
-   "claim": "таймер 800 мс (f.w), случайные 1000+rand(500)",
+   "claim": "урон: g[7] -= урон + 30%*bF; смерть g[12]>=100",
    "status": "CONFIRMED",
-   "evidence": "f.java:640-660, 6363"
+   "evidence": "f.java:767, 3242"
   },
   {
-   "claim": "порог атаки 16 px",
-   "status": "REQUIRES_REAL_RUNTIME",
-   "evidence": "262144 в f.java:5651,8360,8380 - контекст неизвестен"
+   "claim": "HP хранится в g[7] экземпляра (не в архетипе)",
+   "status": "CONFIRMED",
+   "evidence": "f.java:767-780"
   },
   {
-   "claim": "кулдаун атаки 1000 мс",
-   "status": "REQUIRES_REAL_RUNTIME",
-   "evidence": "800 мс найден; 1000 - только rand"
-  },
-  {
-   "claim": "pathfinding эвристика",
-   "status": "REQUIRES_REAL_RUNTIME",
-   "evidence": "runtime-gaps ai_pathfinding"
+   "claim": "агро-дистанции 1600/4096 (единицы UNKNOWN)",
+   "status": "REQUIRES_REAL_RUNTIME"
   }
  ],
  "movement": [

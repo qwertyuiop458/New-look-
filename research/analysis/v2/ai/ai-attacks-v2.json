@@ -1,0 +1,33 @@
+{
+ "meta": "Модели атак (по состояниям 7/8/12 и prop12/14/17/22)",
+ "models": [
+  {
+   "id": "ATTACK_7",
+   "condition": "g[12]==7, цель в prop17, анимация",
+   "damage": "f.b(f3, prop14) (урон жертве)",
+   "cooldown": "таймер g[15] (case 8)",
+   "animation": "prop14 = анимация жертвы",
+   "state": "7->8"
+  },
+  {
+   "id": "ATTACK_8",
+   "condition": "g[12]==8, цель рядом, g[15]>=1000",
+   "damage": "f.b(g.c, prop14) / f.o(f3, prop14)",
+   "sound": "g.b(21)",
+   "state": "8->4/9"
+  },
+  {
+   "id": "ATTACK_12",
+   "condition": "g[12]==12, анимация, цель в зоне",
+   "damage": "f.b(f3, prop14<<1)",
+   "state": "12->13"
+  },
+  {
+   "id": "RANGED",
+   "condition": "prop10 ∈ {0,3,5,7}: наведение g.a() со снарядной скоростью (n14=819200 px/s)",
+   "damage": "по prop22/снаряд",
+   "evidence": "f.java:2830"
+  }
+ ],
+ "ranged_formula": "n15 = |dx|*1000/819200; n17 = dx/(n15+1) — скорость снаряда к цели (fixed-point)"
+}
