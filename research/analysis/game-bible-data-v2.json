@@ -371,7 +371,9 @@
   "props_per_archetype": {
    "file": 32,
    "runtime_total": 35,
-   "note": "+3 добавляются кодом: старт анимаций, счётчик анимаций, кол-во кадров"
+   "prop32": "старт анимаций в W (CONFIRMED)",
+   "prop33": "счётчик анимаций (CONFIRMED)",
+   "prop34": "индекс frame-записи V (CONFIRMED)"
   },
   "animation_records": 176,
   "frame_records": 3,
@@ -491,6 +493,10 @@
     "0x4000",
     "0x8000"
    ],
+   "status": "CONFIRMED"
+  },
+  "behavior_class_prop": {
+   "prop10": "класс ИИ (0/3/5/7 направленные; 1/2 особые)",
    "status": "CONFIRMED"
   }
  },
@@ -765,53 +771,68 @@
  ],
  "animation": [
   {
-   "claim": "контроллер c.java: id, кадр, loop/once, повторы, палитра; аккумулятор 62 тика",
+   "claim": "таблица W: 176 записей x 13 полей (10 из файла + 10/11/12 кодом)",
+   "status": "CONFIRMED",
+   "evidence": "m9 seg4 + dr()"
+  },
+  {
+   "claim": "X-таблица: 36 пар u16 = списки кадров анимаций (W[10]=старт, W[11]=кол-во)",
+   "status": "CONFIRMED",
+   "evidence": "g.java:24747"
+  },
+  {
+   "claim": "V-таблица: 3 записи x 15 полей = смещения кадров по состояниям g[12]",
+   "status": "CONFIRMED",
+   "evidence": "g.java:24765, f.java:4636-4841"
+  },
+  {
+   "claim": "4 направления (dir из velocity, порог 8192)",
+   "status": "CONFIRMED",
+   "evidence": "f.java:4572-4600"
+  },
+  {
+   "claim": "контроллер: c.java тиковый (62 тика/кадр), loop/once, повторы, палитра",
    "status": "CONFIRMED",
    "evidence": "c.java:44-130"
   },
   {
-   "claim": "таблица W: 176 записей x 13 полей",
+   "claim": "слоты анимаций сущности g[30+n]; кадры из X (f.a[slot][fr] = g.d(type,n,fr,0))",
    "status": "CONFIRMED",
-   "evidence": "m9 seg4 + dr()"
+   "evidence": "f.java:2719-2721"
   },
   {
-   "claim": "таблица V: 3 записи x 15 полей",
-   "status": "CONFIRMED",
-   "evidence": "m9 seg4 + dr()"
-  },
-  {
-   "claim": "длительности кадров 80-150 мс",
-   "status": "UNKNOWN",
-   "evidence": "в данных, не в коде"
-  },
-  {
-   "claim": "4 направления, 32x48",
-   "status": "UNKNOWN"
+   "claim": "длительности кадров и семантика W 0..9 / X-пар",
+   "status": "REQUIRES_REAL_RUNTIME"
   }
  ],
  "graphics": [
   {
-   "claim": "пиксели 16-бит 4444 ARGB -> расширение -> 32-бит -> createRGBImage",
+   "claim": "пиксели: 16-бит 4444 ARGB -> 32-бит (a.java)",
    "status": "CONFIRMED",
-   "evidence": "a.java:219-222, 355-360"
+   "evidence": "a.java:219-222"
   },
   {
-   "claim": "8-bit indexed 256 цветов",
-   "status": "UNKNOWN",
-   "evidence": "противоречит a.java"
-  },
-  {
-   "claim": "палитры-ремаппинг: palettesAmount.bin (счётчик 0x1F), опкод 37, маска g[21]",
+   "claim": "доп. форматы: 0x8888 ARGB32 и 0x6505 RGB565 (альфа-маркер 0xF81F)",
    "status": "CONFIRMED",
-   "evidence": "файл; g.java:1808-1816; f.java:2790-2793"
+   "evidence": "a.java:209-235"
   },
   {
-   "claim": "экран 240x320",
+   "claim": "спрайт-лист a.java: объекты (k=0/1/2, размеры c x d), палитры, b/f/e-записи, g мини-кадров x h px (h u8, 0->256), magic 0x64F0, блоки",
    "status": "CONFIRMED",
-   "evidence": "g.java:7254,7262,1830"
+   "evidence": "a.java:60-300"
   },
   {
-   "claim": "обводка 1px, тень-эллипс",
+   "claim": "спрайт-листы сцен: m0/m1/m2/m7/m11_0/m11_1/m13_2 (сценарий g.g()); геймплей: m6_*/m7",
+   "status": "CONFIRMED",
+   "evidence": "g.java:2414-2540, 2501, 33601"
+  },
+  {
+   "claim": "m13_2 seg0 = MIDI (MThd) — музыка (audio/midi)",
+   "status": "CONFIRMED",
+   "evidence": "m13_2 файл; g.java:35186"
+  },
+  {
+   "claim": "связь кадр/тайл -> пиксели листа",
    "status": "REQUIRES_REAL_RUNTIME"
   }
  ],
@@ -839,6 +860,11 @@
   {
    "claim": "фактическое звучание",
    "status": "REQUIRES_REAL_RUNTIME"
+  },
+  {
+   "claim": "MIDI-файл в m13_2 seg0 (MThd)",
+   "status": "CONFIRMED",
+   "evidence": "m13_2 seg0 head 4d546864"
   }
  ],
  "save": [

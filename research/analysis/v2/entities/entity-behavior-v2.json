@@ -1,0 +1,117 @@
+{
+ "meta": "Поведение = L-класс (ветвления f2.L) + состояние g[12] + подсостояние g[10] + флаги g[16] + prop10 (класс ИИ)",
+ "L_classes": [
+  {
+   "L": [
+    0,
+    1,
+    2
+   ],
+   "class": "MC (main character)",
+   "evidence": "g.java:7111 (aB)"
+  },
+  {
+   "L": 3,
+   "class": "ENEMY",
+   "evidence": "f.java:681,700"
+  },
+  {
+   "L": 9,
+   "class": "NPC",
+   "evidence": "g.java:21399, 31810"
+  },
+  {
+   "L": 10,
+   "class": "object",
+   "evidence": "f.java:17010"
+  },
+  {
+   "L": 11,
+   "class": "item/interactive",
+   "evidence": "g.java:8249"
+  },
+  {
+   "L": 14,
+   "class": "scenario object",
+   "evidence": "f.java:17010"
+  },
+  {
+   "L": 16,
+   "class": "object",
+   "evidence": "f.java:17010"
+  },
+  {
+   "L": 15,
+   "class": "trigger/zone (g.e[] L15)",
+   "evidence": "f.java:2402 (f3.L != 15 continue; AABB-зоны)"
+  },
+  {
+   "L": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "class": "tile-objects (g.g[layer][x][y])",
+   "evidence": "g.java:16622,18203 j(),18239 k()"
+  },
+  {
+   "L": 26,
+   "class": "tile-object",
+   "evidence": "f.java/g.java L==26"
+  }
+ ],
+ "states_g12": {
+  "values": [
+   0,
+   1,
+   4,
+   7,
+   8,
+   9,
+   14,
+   17,
+   18,
+   19,
+   23,
+   100,
+   101,
+   103,
+   104,
+   106,
+   107
+  ],
+  "note": "17+ значений; 100+ = терминальные (смерть); семантика каждого — REQUIRES_REAL_RUNTIME"
+ },
+ "substates_g10": {
+  "values": [
+   0,
+   3,
+   4,
+   5
+  ]
+ },
+ "flags_g16": {
+  "bits": [
+   "0x20",
+   "0x100",
+   "0x400",
+   "0x800",
+   "0x2000",
+   "0x4000",
+   "0x8000"
+  ]
+ },
+ "prop10_behavior_classes": {
+  "0": "standard",
+  "1": "special",
+  "2": "special2",
+  "3": "variant",
+  "5": "shooter",
+  "7": "shooter2",
+  "note": "ветвления f.java (d(), C(), I(), J(), s(), e()): 0/3/5/7 = направленные/стреляющие; 2 = особый (g[12] 7/8)"
+ },
+ "ai_entry": "f.b(entity) из g.B() state 6 (g.java:1107)"
+}

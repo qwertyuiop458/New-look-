@@ -1,0 +1,100 @@
+{
+ "meta": "opcode -> свойства/поля сущностей (из opcode-master-v2, этап 15.10)",
+ "links": [
+  {
+   "opcode": 110,
+   "field": "g[28] (оружие), g[29], позиция a, направление",
+   "target": "сущность по (n,n2,n3,n4)"
+  },
+  {
+   "opcode": 113,
+   "field": "g.g[layer][x][y].g[prop]",
+   "target": "tile-object: L25->g[9], L20->g[6], L21->g[4], L22->g[6], L24->g[2]"
+  },
+  {
+   "opcode": 114,
+   "field": "g[0] (тип), L-поведение",
+   "target": "tile-object: L23=дверь open/close, L21->f.b, L25->f.a"
+  },
+  {
+   "opcode": 115,
+   "field": "g[n4] = n5",
+   "target": "сущность сетки f[layer][x][y]"
+  },
+  {
+   "opcode": 116,
+   "field": "g[n4] += n5",
+   "target": "сущность сетки"
+  },
+  {
+   "opcode": 118,
+   "field": "позиция a.b(x*16+8, y*16+8), g[9..12] (L14)",
+   "target": "сущность в тайле"
+  },
+  {
+   "opcode": 120,
+   "field": "g[n3+14] merge 65280",
+   "target": "сущность g.a(n)"
+  },
+  {
+   "opcode": 127,
+   "field": "передача буфера z",
+   "target": "сущность + данные"
+  },
+  {
+   "opcode": 128,
+   "field": "g[n] = n2",
+   "target": "игрок g.c"
+  },
+  {
+   "opcode": 134,
+   "field": "активный персонаж",
+   "target": "переключение c[]"
+  },
+  {
+   "opcode": 141,
+   "field": "c[], bt, L[1], M[0]",
+   "target": "смена персонажа"
+  },
+  {
+   "opcode": 142,
+   "field": "g[26], g[27] (слой), a.b(n5,n6)",
+   "target": "персонаж"
+  },
+  {
+   "opcode": 147,
+   "field": "выбор по координатам",
+   "target": "сущность"
+  },
+  {
+   "opcode": 148,
+   "field": "цель NPC",
+   "target": "MC/NPC"
+  },
+  {
+   "opcode": 150,
+   "field": "как 110 + var8_8",
+   "target": "сущность"
+  },
+  {
+   "opcode": 151,
+   "field": "СПАВН: g.a(g.b,0,...)",
+   "target": "новая сущность"
+  },
+  {
+   "opcode": 152,
+   "field": "f.y",
+   "target": "сущность"
+  },
+  {
+   "opcode": 160,
+   "field": "СПАВН вариант",
+   "target": "новая сущность"
+  },
+  {
+   "opcode": 162,
+   "field": "как 110 + bool",
+   "target": "сущность"
+  }
+ ]
+}

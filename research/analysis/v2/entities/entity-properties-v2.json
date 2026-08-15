@@ -1,0 +1,215 @@
+{
+ "meta": "семантика свойств по всем чтениям g.h(type,prop)/g.i(type,f) в g.java+f.java",
+ "properties": [
+  {
+   "property_index": 0,
+   "possible_semantics": "UNKNOWN_PROPERTY_0",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 1,
+   "possible_semantics": "UNKNOWN_PROPERTY_1",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 2,
+   "possible_semantics": "dir_offset",
+   "confidence": "INFERRED",
+   "evidence": "сдвиг направления (f.java:4618/4654 n += g.h(type,2); m(): n += g.h(type,2))"
+  },
+  {
+   "property_index": 3,
+   "possible_semantics": "dir_offset_alt",
+   "confidence": "INFERRED",
+   "evidence": "сдвиг для состояния g[12]==1 (f.java:4660 n += g.h(type,3))"
+  },
+  {
+   "property_index": 4,
+   "possible_semantics": "UNKNOWN_PROPERTY_4",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 5,
+   "possible_semantics": "UNKNOWN_PROPERTY_5",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 6,
+   "possible_semantics": "collision_size",
+   "confidence": "INFERRED",
+   "evidence": "размер бокса *16 (g.java:21399 k(type,6)*16)"
+  },
+  {
+   "property_index": 7,
+   "possible_semantics": "facing_range_a",
+   "confidence": "CONFIRMED",
+   "evidence": "диапазон направлений [n, n+4): f.s/I() (f.java:3667,4604: f2.a.d >= n2 && < n2+4)"
+  },
+  {
+   "property_index": 8,
+   "possible_semantics": "facing_range_b",
+   "confidence": "CONFIRMED",
+   "evidence": "второй диапазон направлений [n, n+4) (f.java:3668,4605)"
+  },
+  {
+   "property_index": 9,
+   "possible_semantics": "UNKNOWN_PROPERTY_9",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 10,
+   "possible_semantics": "behavior_class",
+   "confidence": "CONFIRMED",
+   "evidence": "класс поведения ИИ: 0/3/5/7 — ветвления направлений/стрельбы; 1,2 — особые (f.java:2380,2637,3662,4603)"
+  },
+  {
+   "property_index": 11,
+   "possible_semantics": "UNKNOWN_PROPERTY_11",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 12,
+   "possible_semantics": "prop12",
+   "confidence": "UNKNOWN",
+   "evidence": "5 чтений в f.java (контексты не изолированы)"
+  },
+  {
+   "property_index": 13,
+   "possible_semantics": "UNKNOWN_PROPERTY_13",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 14,
+   "possible_semantics": "prop14",
+   "confidence": "UNKNOWN",
+   "evidence": "5 чтений в f.java"
+  },
+  {
+   "property_index": 15,
+   "possible_semantics": "flag15",
+   "confidence": "INFERRED",
+   "evidence": "бинарный флаг (f.java:4644 g.h(type,15)==1 ? 1 : 0)"
+  },
+  {
+   "property_index": 16,
+   "possible_semantics": "UNKNOWN_PROPERTY_16",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 17,
+   "possible_semantics": "prop17",
+   "confidence": "UNKNOWN",
+   "evidence": "f.java:2 чтения"
+  },
+  {
+   "property_index": 18,
+   "possible_semantics": "prop18",
+   "confidence": "UNKNOWN",
+   "evidence": "f.java:1 чтение"
+  },
+  {
+   "property_index": 19,
+   "possible_semantics": "prop19",
+   "confidence": "UNKNOWN",
+   "evidence": "f.java:2 чтения"
+  },
+  {
+   "property_index": 20,
+   "possible_semantics": "prop20",
+   "confidence": "UNKNOWN",
+   "evidence": "g.java:2 чтения"
+  },
+  {
+   "property_index": 21,
+   "possible_semantics": "UNKNOWN_PROPERTY_21",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 22,
+   "possible_semantics": "UNKNOWN_PROPERTY_22",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 23,
+   "possible_semantics": "UNKNOWN_PROPERTY_23",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 24,
+   "possible_semantics": "sprite_width",
+   "confidence": "INFERRED",
+   "evidence": "смещение X при отрисовке (f.java:4107,4720,4728 n5 = n + (g.h(type,24) + g[28]*4))"
+  },
+  {
+   "property_index": 25,
+   "possible_semantics": "prop25",
+   "confidence": "UNKNOWN",
+   "evidence": "f.java:1 чтение"
+  },
+  {
+   "property_index": 26,
+   "possible_semantics": "UNKNOWN_PROPERTY_26",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 27,
+   "possible_semantics": "UNKNOWN_PROPERTY_27",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 28,
+   "possible_semantics": "UNKNOWN_PROPERTY_28",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 29,
+   "possible_semantics": "prop29",
+   "confidence": "UNKNOWN",
+   "evidence": "f.java:2 чтения"
+  },
+  {
+   "property_index": 30,
+   "possible_semantics": "UNKNOWN_PROPERTY_30",
+   "confidence": "UNKNOWN",
+   "evidence": "нет чтений в исследованном коде"
+  },
+  {
+   "property_index": 31,
+   "possible_semantics": "prop31",
+   "confidence": "UNKNOWN",
+   "evidence": "f.java:2 чтения"
+  },
+  {
+   "property_index": 32,
+   "possible_semantics": "anim_start_W",
+   "confidence": "CONFIRMED",
+   "evidence": "старт анимаций в W (dr() g.java:24646; g.d(type,anim,f)=W[P32+anim*13+f])"
+  },
+  {
+   "property_index": 33,
+   "possible_semantics": "anim_count",
+   "confidence": "CONFIRMED",
+   "evidence": "число анимаций (dr() g.java:24677; циклы по g.h(type,33))"
+  },
+  {
+   "property_index": 34,
+   "possible_semantics": "frame_index_V",
+   "confidence": "CONFIRMED",
+   "evidence": "индекс frame-записи в V (dr() g.java:24681; g.i(type,f)=V[P34*15+f]; ==-1 => нет кадров)"
+  }
+ ]
+}

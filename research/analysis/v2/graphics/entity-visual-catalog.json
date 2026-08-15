@@ -1,0 +1,397 @@
+{
+ "meta": "Визуальный каталог архетипов. Визуальная привязка архетип->спрайт UNKNOWN: связь не доказана (V-смещения + X-кадры + спрайт-листы a.java не связаны численно).",
+ "archetypes": [
+  {
+   "entity_id": 3,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 13,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 24,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 30,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 18,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 31,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 38,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 35,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 107,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 108,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 90,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 96,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 125,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 130,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 114,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 120,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 46,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 84,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 76,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 67,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 265,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 260,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 286,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 277,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 305,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 300,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 326,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 317,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 64,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 135,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 291,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 139,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 70,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 147,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 358,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 337,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 174,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 175,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 157,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 163,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 192,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 197,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 181,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 187,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 202,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 349,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 345,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 206,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 226,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 227,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 209,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 215,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 244,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 249,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 233,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  },
+  {
+   "entity_id": 239,
+   "animation_ids": "UNKNOWN (prop33 счётчик; конкретные id требуют рантайма)",
+   "frame_ids": "UNKNOWN",
+   "sprite_resources": "UNKNOWN",
+   "visual_confidence": "UNKNOWN"
+  }
+ ]
+}

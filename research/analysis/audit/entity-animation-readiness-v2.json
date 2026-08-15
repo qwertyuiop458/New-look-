@@ -1,0 +1,44 @@
+{
+ "audit": "entity-animation-readiness-v2",
+ "date": "2026-08-15",
+ "status": "PARTIAL",
+ "criteria": {
+  "entity_parser_proven": true,
+  "entity_properties_traced": false,
+  "animation_parser_proven": true,
+  "frame_linkage_proven": true,
+  "graphics_linkage_proven": false
+ },
+ "metrics": {
+  "archetypes": 56,
+  "animation_records": 176,
+  "frame_records_V": 3,
+  "frame_pairs_X": 36,
+  "Y_records": 15,
+  "properties_with_semantics": {
+   "CONFIRMED": 6,
+   "INFERRED": 5,
+   "UNKNOWN": 24
+  },
+  "graphics_formats": [
+   "0x8888 ARGB32 (CONFIRMED)",
+   "0x4444 ARGB4444 (CONFIRMED)",
+   "0x6505 RGB565+alpha (CONFIRMED)"
+  ],
+  "directions": 4,
+  "sprite_sources": "m0/m1/m2/m7/m11_0/m11_1/m13_2 (сцены), m6_*/m7 (геймплей), m13_2 = MIDI",
+  "midi_found": true
+ },
+ "why_not_READY_STATIC": [
+  "семантика 24/35 свойств UNKNOWN (чтения не изолированы)",
+  "связь кадр -> пиксели спрайт-листа UNKNOWN (X-кадры не связаны с объектами a.java)",
+  "связь запись миссии -> архетип (через props) REQUIRES_REAL_RUNTIME",
+  "семантика W-полей 0..9 и X-пар REQUIRES_REAL_RUNTIME"
+ ],
+ "why_not_NOT_READY": [
+  "парсеры архетипов/анимаций/кадров доказаны и воспроизводимы",
+  "структура V (смещения по состояниям) и X (пары кадров) доказана",
+  "4 направления доказаны; 3 пиксельных формата доказаны; MIDI найден"
+ ],
+ "recommendation": "READY_STATIC достижим после изоляции чтений оставшихся свойств и трассировки рендера кадра (рантайм)."
+}

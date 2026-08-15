@@ -1,0 +1,112 @@
+{
+ "meta": "Мастер-граф entity -> property -> behavior -> animation -> frame -> sprite -> mission -> opcode. Связи, доказанные статически — со ссылками; неподтверждённые — UNKNOWN.",
+ "nodes": {
+  "entity_archetypes": {
+   "count": 56,
+   "source": "m9 seg4 tag6"
+  },
+  "properties": {
+   "count": 35,
+   "per_archetype": "32 файл + 3 код (32/33/34)",
+   "semantics_confirmed": 7,
+   "semantics_inferred": 5,
+   "unknown": 23
+  },
+  "animations": {
+   "count": 176,
+   "source": "m9 seg4 tag7",
+   "fields": 13
+  },
+  "frames_V": {
+   "count": 3,
+   "source": "m9 seg4 tag10",
+   "fields": 15,
+   "note": "3 записи = 3 набора смещений кадров по состояниям, не 3 визуальных кадра"
+  },
+  "frames_X": {
+   "count": 36,
+   "note": "пары u16 (кадр, ?)"
+  },
+  "sprites": {
+   "note": "a.java листы: m0/m1/m2/m7/m11_0/m11_1/m13_2 (сцены) + m6_*/m7 (геймплей)"
+  },
+  "missions": {
+   "count": 5,
+   "objects_102": 113,
+   "tiles_101": 345
+  },
+  "opcodes": {
+   "count": 46,
+   "entity_affecting": 20
+  }
+ },
+ "edges": [
+  {
+   "from": "entity",
+   "to": "properties",
+   "type": "U[type*35+prop]",
+   "status": "CONFIRMED",
+   "evidence": "g.h(type,prop) g.java:24693"
+  },
+  {
+   "from": "entity",
+   "to": "animations",
+   "type": "prop32/33 -> W",
+   "status": "CONFIRMED",
+   "evidence": "dr() g.java:24553; g.d(type,anim,f) g.java:24756"
+  },
+  {
+   "from": "entity",
+   "to": "frames_V",
+   "type": "prop34 -> V",
+   "status": "CONFIRMED",
+   "evidence": "g.i(type,f) g.java:24765"
+  },
+  {
+   "from": "animation",
+   "to": "frames_X",
+   "type": "W[10]=X-start, W[11]=count",
+   "status": "CONFIRMED",
+   "evidence": "g.d(type,anim,fr,0/1) g.java:24747"
+  },
+  {
+   "from": "animation",
+   "to": "sprites",
+   "type": "кадр -> пиксели a.java",
+   "status": "UNKNOWN",
+   "note": "связь X-кадр -> объект/блок листа REQUIRES_REAL_RUNTIME"
+  },
+  {
+   "from": "entity",
+   "to": "behavior",
+   "type": "L + g[12] + prop10",
+   "status": "CONFIRMED",
+   "evidence": "f.java ветвления"
+  },
+  {
+   "from": "mission",
+   "to": "entity",
+   "type": "records 0..26 -> сущности",
+   "status": "CONFIRMED",
+   "evidence": "g.Z() case 0..26 (new f(...))"
+  },
+  {
+   "from": "mission",
+   "to": "archetypes",
+   "type": "props -> f.a/f.c/f.d (архетип в props)",
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  {
+   "from": "opcode",
+   "to": "entity",
+   "type": "110..162 (команды)",
+   "status": "CONFIRMED"
+  },
+  {
+   "from": "tile(101)",
+   "to": "sprites",
+   "type": "tile_id -> лист",
+   "status": "UNKNOWN"
+  }
+ ]
+}

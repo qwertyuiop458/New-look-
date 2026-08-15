@@ -1,0 +1,97 @@
+{
+ "meta": "Маппинг графических ресурсов. Спрайт-листы a.java: сценарий g.g() case 1/2/3 (g.java:2414-2540) + геймплейные m6_*/m7 (g.java:2501).",
+ "sprite_lists_from_script": [
+  {
+   "resource": "m0",
+   "segments": [
+    0,
+    9
+   ],
+   "slot": "a[][0..1]"
+  },
+  {
+   "resource": "m1",
+   "segments": [
+    0
+   ],
+   "slot": "b[][1]"
+  },
+  {
+   "resource": "m2",
+   "segments": [
+    1,
+    2,
+    23
+   ],
+   "slot": "a[][0..2]"
+  },
+  {
+   "resource": "m7",
+   "segments": [
+    3,
+    6
+   ],
+   "slot": "a[][0]"
+  },
+  {
+   "resource": "m11_0",
+   "segments": [
+    4,
+    5,
+    7,
+    11,
+    12,
+    13,
+    14,
+    19,
+    20,
+    21
+   ],
+   "slot": "a[][0..9]"
+  },
+  {
+   "resource": "m11_1",
+   "segments": [
+    8,
+    10,
+    15,
+    16,
+    17,
+    18,
+    22
+   ],
+   "slot": "a[][0..6]"
+  },
+  {
+   "resource": "m13_2",
+   "segments": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    23
+   ],
+   "slot": "a[][-1]",
+   "note": "СЕГМЕНТ 0 = MIDI (MThd) — m13_2 содержит музыку!"
+  }
+ ],
+ "gameplay_graphics": [
+  {
+   "resource": "m6_0..m6_5",
+   "role": "геймплейные листы (g.java:2501: a[16+n] -> m6_*; 2524: g.a(byArray))",
+   "segments": "все"
+  },
+  {
+   "resource": "m7",
+   "role": "геймплейные маски/листы (g.java:33601: a(n,n2,byArray): сегменты (n<<1)+1)",
+   "segments": "нечётные"
+  }
+ ],
+ "midi_audio": {
+  "resource": "m13_2",
+  "seg0_head": "4d546864 (MThd)",
+  "evidence": "MIDI header, g.java:35186 (audio/midi)"
+ },
+ "sprite_format": "a.java a(byte[],int): объекты (w×h / смещения), палитры, b/f/e-записи, формат u16: 0x8888=ARGB32, 0x4444=ARGB4444, 0x6505=RGB565(+0xF81F alpha); g кадров × h пикселей (h u8, 0->256); magic 0x64F0; блоки данных"
+}
