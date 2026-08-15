@@ -1,0 +1,13 @@
+# Тяжёлые инструменты (не хранить в git — переустанавливаются)
+tools/nodejdk/
+tools/eriideps/
+tools/javac/
+tools/jre17.tar.gz
+tools/*.jar
+tools/*.so
+# Эфемерные runtime-данные
+rms/
+config/
+hs_err_*.log
+# Кадры (можно перегенерировать; оставляем только 01_boot.png)
+evidence/real/frame_*.png
