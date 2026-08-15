@@ -1,0 +1,42 @@
+{
+ "meta": {
+  "title": "Game Bible Data V3 (patch над V2)",
+  "date": "2026-08-15",
+  "basis": "forensic audit V3 (этап 15.25); V2 остаётся основой"
+ },
+ "corrections": [
+  {
+   "fact": "G03",
+   "v2": "120238 мини-кадров",
+   "v3": "120238 сумма mini_frames; 2038 объектов с кадрами; 9698 объектов всего",
+   "status": "CONFIRMED (уточнено)"
+  },
+  {
+   "fact": "AU01",
+   "v2": "m13_2 = музыка",
+   "v3": "медиа-контейнер: 14 MIDI + 15 WAV",
+   "status": "CONFIRMED (уточнено)"
+  },
+  {
+   "fact": "prop21",
+   "v2": "звук оружия INFERRED",
+   "v3": "multi-use; роль RUNTIME",
+   "status": "INFERRED"
+  },
+  {
+   "fact": "O03",
+   "v2": "cy пространственный лимит CONFIRMED",
+   "v3": "формула CONFIRMED; роль INFERRED",
+   "status": "MEDIUM"
+  },
+  {
+   "fact": "M04",
+   "v2": "m8 seg0/1/2 объектные слои",
+   "v3": "SEG0/1/2; NO_CONSUMER_FOUND",
+   "status": "CONFIRMED (отсутствие)"
+  }
+ ],
+ "master_index": "research/analysis/audit/v3/master-fact-index.json",
+ "grades": "research/analysis/audit/v3/v2-quality-scores.json",
+ "readiness": "READY_WITH_GAPS"
+}

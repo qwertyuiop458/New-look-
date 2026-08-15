@@ -1,0 +1,70 @@
+{
+ "meta": "Матрица противоречий",
+ "contradictions": [
+  {
+   "cat": "INTERNAL",
+   "A": "GAME_BIBLE_v2: '120238 мини-кадров'",
+   "B": "sprite-frame-inventory: 2038 объектов с кадрами",
+   "sources": [
+    "15.16 формулировка",
+    "15.25 пересчёт"
+   ],
+   "resolution": "120238 = сумма mini_frames; 2038 = число объектов с кадрами; формулировка уточнена",
+   "confidence": "RESOLVED"
+  },
+  {
+   "cat": "CROSS_MODULE",
+   "A": "prop21 = звук оружия (INFERRED)",
+   "B": "prop21 = палитра (ранее INFERRED)",
+   "sources": [
+    "f.java:441 (звук)",
+    "g.java:17669 (палитра?)"
+   ],
+   "resolution": "оба чтения существуют; prop21 multi-use; точная роль RUNTIME",
+   "confidence": "OPEN"
+  },
+  {
+   "cat": "RESOURCE",
+   "A": "m13_2 = 'музыка'",
+   "B": "m13_2 содержит и MIDI (14) и WAV (15)",
+   "sources": [
+    "15.14 (MIDI)",
+    "15.23 (полный скан)"
+   ],
+   "resolution": "m13_2 = медиа-контейнер (музыка+SFX)",
+   "confidence": "RESOLVED"
+  },
+  {
+   "cat": "RUNTIME_BOUNDARY",
+   "A": "агро 1600 CONFIRMED в V1",
+   "B": "единицы UNKNOWN (V2)",
+   "sources": [
+    "f.java:681"
+   ],
+   "resolution": "V2 правильно понизил до RUNTIME",
+   "confidence": "RESOLVED"
+  },
+  {
+   "cat": "LEGACY_V1",
+   "A": "'3 слота сейвов'",
+   "B": "минимум 2 записи (V2)",
+   "sources": [
+    "старые отчёты",
+    "B(int) n=2"
+   ],
+   "resolution": "V2 правильно: 3 не подтверждено",
+   "confidence": "RESOLVED"
+  },
+  {
+   "cat": "INTERNAL",
+   "A": "m8 seg0/1/2 = 'объектные слои мира' (15.7)",
+   "B": "consumer UNKNOWN (15.9)",
+   "sources": [
+    "15.7",
+    "15.9"
+   ],
+   "resolution": "нейтральное SEG0/1/2; NO_CONSUMER_FOUND",
+   "confidence": "RESOLVED"
+  }
+ ]
+}

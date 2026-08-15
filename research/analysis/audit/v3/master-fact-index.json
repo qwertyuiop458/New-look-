@@ -1,0 +1,468 @@
+{
+ "meta": "Master fact index V3",
+ "count": 45,
+ "facts": [
+  {
+   "id": "C01",
+   "category": "CONTAINER",
+   "statement": "count = 1 байт; offsets u32 LE относительные; base = 1+4A; last недоступен",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.java:4055-4100",
+    "m9 файл"
+   ],
+   "derivation": "прямое чтение кода",
+   "cross_checks": [
+    "container_parser_v2.py"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "M01",
+   "category": "MISSION",
+   "statement": "5 mission streams m9 seg10..14; таблица seg0=[1,1,1,1,1]",
+   "status": "CONFIRMED",
+   "sources": [
+    "m9 seg0/10-14"
+   ],
+   "derivation": "парсер",
+   "cross_checks": [
+    "process_all_missions_v2.py"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "M02",
+   "category": "MISSION",
+   "statement": "101/102/103/110-172 форматы",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.java:16860"
+   ],
+   "derivation": "прямое чтение",
+   "confidence": "HIGH"
+  },
+  {
+   "id": "M03",
+   "category": "MISSION",
+   "statement": "все switch -> m8 seg3 (не seg0/1/2)",
+   "status": "CONFIRMED",
+   "sources": [
+    "миссии"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "M04",
+   "category": "MISSION",
+   "statement": "m8 seg0/1/2 consumer = UNKNOWN_STATIC",
+   "status": "CONFIRMED (отсутствие)",
+   "sources": [
+    "grep '/m8'"
+   ],
+   "derivation": "исчерпывающий поиск",
+   "confidence": "HIGH"
+  },
+  {
+   "id": "S01",
+   "category": "SCRIPT",
+   "statement": "46 опкодов в данных; 44 с семантикой",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.H()/K()/n()"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "S02",
+   "category": "SCRIPT",
+   "statement": "145/146/143/144/159 контрольные",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.n(boolean)"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "E01",
+   "category": "ENTITY",
+   "statement": "56 архетипов; 35 props (32 файл + 3 код)",
+   "status": "CONFIRMED",
+   "sources": [
+    "m9 seg4",
+    "dr()"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "E02",
+   "category": "ENTITY",
+   "statement": "26/35 props CONFIRMED семантика",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.h чтения"
+   ],
+   "confidence": "MEDIUM (26/35)"
+  },
+  {
+   "id": "E03",
+   "category": "ENTITY",
+   "statement": "instance -> archetype через g.m/g.w (props[0])",
+   "status": "CONFIRMED",
+   "sources": [
+    "f.c():2599, f.d()"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "E04",
+   "category": "ENTITY",
+   "statement": "666 instances mapped; 25/56 архетипов",
+   "status": "CONFIRMED",
+   "sources": [
+    "instance-registry"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "A01",
+   "category": "AI",
+   "statement": "6 AI classes (prop10)",
+   "status": "CONFIRMED",
+   "sources": [
+    "f.java ветвления"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "A02",
+   "category": "AI",
+   "statement": "24 states g[12]",
+   "status": "CONFIRMED",
+   "sources": [
+    "f.java"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "A03",
+   "category": "AI",
+   "statement": "pathfinding НЕТ (прямое преследование)",
+   "status": "CONFIRMED",
+   "sources": [
+    "f.java:2830"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "A04",
+   "category": "AI",
+   "statement": "агро-дистанции 1600/4096 (единицы UNKNOWN)",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "sources": [
+    "f.java:681"
+   ],
+   "confidence": "LOW"
+  },
+  {
+   "id": "A05",
+   "category": "AI",
+   "statement": "урон g[7] -= урон + 30%*bF",
+   "status": "CONFIRMED",
+   "sources": [
+    "f.java:767"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "G01",
+   "category": "GRAPHICS",
+   "statement": "176 animation records; 3 V; 36 X; 15 Y",
+   "status": "CONFIRMED",
+   "sources": [
+    "m9 seg4"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "G02",
+   "category": "GRAPHICS",
+   "statement": "17 sprite slots; 6 gameplay (m6_*/m7)",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.java:2501, сценарий"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "G03",
+   "category": "GRAPHICS",
+   "statement": "9698 объектов; 120238 мини-кадров (2038 объектов с кадрами)",
+   "status": "CONFIRMED",
+   "sources": [
+    "инвентарь"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "G04",
+   "category": "GRAPHICS",
+   "statement": "8 pixel encodings (512..25840); 3 формата (8888/4444/565)",
+   "status": "CONFIRMED",
+   "sources": [
+    "a.java:800-960, 209-235"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "G05",
+   "category": "GRAPHICS",
+   "statement": "X-index -> sprite object (c[n13] a.java:574)",
+   "status": "CONFIRMED (структура); числовые пары RUNTIME",
+   "sources": [
+    "a.java:574"
+   ],
+   "confidence": "MEDIUM"
+  },
+  {
+   "id": "G06",
+   "category": "GRAPHICS",
+   "statement": "prop21 = palette (UNKNOWN); prop31 = index (INFERRED)",
+   "status": "INFERRED",
+   "sources": [
+    "f.java:4107"
+   ],
+   "confidence": "LOW"
+  },
+  {
+   "id": "AU01",
+   "category": "AUDIO",
+   "statement": "14 MIDI + 15 WAV (m13_2)",
+   "status": "CONFIRMED",
+   "sources": [
+    "m13_2 сегменты"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "AU02",
+   "category": "AUDIO",
+   "statement": "2 Player канала; VolumeControl 100",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.java:4250-4520"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "AU03",
+   "category": "AUDIO",
+   "statement": "10 звуковых ID (0,5,7,8,10,11,14,20,21,24)",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.b(N)"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "AU04",
+   "category": "AUDIO",
+   "statement": "MIDI resource <-> playback link",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "sources": [
+    "-"
+   ],
+   "confidence": "LOW"
+  },
+  {
+   "id": "AU05",
+   "category": "AUDIO",
+   "statement": "prop21 = звук оружия",
+   "status": "INFERRED",
+   "sources": [
+    "f.java:441"
+   ],
+   "confidence": "LOW"
+  },
+  {
+   "id": "GL01",
+   "category": "GLOBAL",
+   "statement": "18 state IDs; bB=миссия; bC=режим; bF=сложность",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.java"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "GL02",
+   "category": "GLOBAL",
+   "statement": "RMS запись 1 = профиль, запись 2 = прогресс",
+   "status": "CONFIRMED",
+   "sources": [
+    "ci()/ad()"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "GL03",
+   "category": "GLOBAL",
+   "statement": "save slots count (старое '3' НЕ подтверждено)",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "sources": [
+    "B(int)"
+   ],
+   "confidence": "LOW"
+  },
+  {
+   "id": "GL04",
+   "category": "GLOBAL",
+   "statement": "bB инкремента НЕТ",
+   "status": "CONFIRMED",
+   "sources": [
+    "grep bB"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "GL05",
+   "category": "GLOBAL",
+   "statement": "mission increment (выбор следующей)",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "sources": [
+    "-"
+   ],
+   "confidence": "LOW"
+  },
+  {
+   "id": "O01",
+   "category": "OBJECTIVE",
+   "statement": "L==10 объект-миссия: cB=200, Q[] 4 пары",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.java:23300"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "O02",
+   "category": "OBJECTIVE",
+   "statement": "cB<=0 -> g.e() -> state 7",
+   "status": "CONFIRMED",
+   "sources": [
+    "cZ():23605"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "O03",
+   "category": "OBJECTIVE",
+   "statement": "cy = пространственный лимит ((ab?3:16)*d.length*16)",
+   "status": "CONFIRMED (формула); роль INFERRED",
+   "sources": [
+    "g.java:23280"
+   ],
+   "confidence": "MEDIUM"
+  },
+  {
+   "id": "O04",
+   "category": "OBJECTIVE",
+   "statement": "источник урона cB (n9)",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "sources": [
+    "f.a(8|16,n9)"
+   ],
+   "confidence": "LOW"
+  },
+  {
+   "id": "O05",
+   "category": "OBJECTIVE",
+   "statement": "воскрешение g[7]=200 при 0 HP",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.java:14998"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "EC01",
+   "category": "ECONOMY",
+   "statement": "L[4] деньги/энергия (cap 45000); L[2] 2800",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.java:21534, 21610"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "EC02",
+   "category": "ECONOMY",
+   "statement": "награды Q[] -> M(da) -> k(n,10)",
+   "status": "CONFIRMED (цепочка); тип RUNTIME",
+   "sources": [
+    "cZ()"
+   ],
+   "confidence": "MEDIUM"
+  },
+  {
+   "id": "EC03",
+   "category": "ECONOMY",
+   "statement": "цены магазина",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "sources": [
+    "-"
+   ],
+   "confidence": "LOW"
+  },
+  {
+   "id": "EC04",
+   "category": "ECONOMY",
+   "statement": "скидка по рангу b[n][15]>=3: (ранг-2)*10%",
+   "status": "CONFIRMED",
+   "sources": [
+    "f.java:815"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "P01",
+   "category": "PERFORMANCE",
+   "statement": "loop 40мс/166мс; yield-спин",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.run()"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "P02",
+   "category": "PERFORMANCE",
+   "statement": "freeMemory < 100000 guard (звук)",
+   "status": "CONFIRMED",
+   "sources": [
+    "g.java:4366/4421"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "P03",
+   "category": "PERFORMANCE",
+   "statement": "пиксельный буфер 16384 ints",
+   "status": "CONFIRMED",
+   "sources": [
+    "a.java static"
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "id": "P04",
+   "category": "PERFORMANCE",
+   "statement": "реальные FPS/RAM",
+   "status": "REQUIRES_REAL_RUNTIME",
+   "sources": [
+    "-"
+   ],
+   "confidence": "LOW"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "meta": "Кандидаты на ложный CONFIRMED (понижение статуса)",
+ "candidates": [
+  {
+   "fact": "E02: 26/35 props CONFIRMED",
+   "reason": "часть пропов 'CONFIRMED' основана на 1-2 чтениях без полной цепочки consumer; prop21/31 — INFERRED/UNKNOWN",
+   "recommended_status": "частично понизить: prop2-6,23,27,28,30 (сдвиги кадров) — CONFIRMED (прямые чтения); prop24/25/26 — INFERRED (рендер-контексты)",
+   "source_gap": "полная визуальная семантика не доказана"
+  },
+  {
+   "fact": "G05: X-index -> sprite object CONFIRMED",
+   "reason": "структура доказана (a.java:574), но числовые пары X->объект не разрешены",
+   "recommended_status": "CONFIRMED (структура) — корректно; числовые пары RUNTIME"
+  },
+  {
+   "fact": "O03: cy роль",
+   "reason": "формула CONFIRMED, но 'пространственный лимит' — интерпретация (сравнение g.i.a.a() > cy)",
+   "recommended_status": "CONFIRMED (формула) / INFERRED (роль)",
+   "source_gap": "точная семантика cy (таймер vs лимит) требует рантайма"
+  },
+  {
+   "fact": "EC02: награды k(n,10)",
+   "reason": "цепочка CONFIRMED, тип награды неизвестен",
+   "recommended_status": "CONFIRMED (цепочка) — корректно"
+  },
+  {
+   "fact": "AU03: 10 звуковых ID",
+   "reason": "вызовы g.b(N) подтверждают ID, но не содержание звука",
+   "recommended_status": "CONFIRMED (вызовы) — корректно; содержание RUNTIME"
+  },
+  {
+   "fact": "G03: 120238 мини-кадров",
+   "reason": "сумма mini_frames по объектам; не путать с записью '120238 frames' (объектов с кадрами 2038)",
+   "recommended_status": "CONFIRMED (сумма); уточнить формулировку"
+  }
+ ]
+}

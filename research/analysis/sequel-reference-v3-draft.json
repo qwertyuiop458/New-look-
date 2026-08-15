@@ -1,0 +1,92 @@
+{
+ "title": "Sequel Reference V3 — DRAFT",
+ "date": "2026-08-15",
+ "status": "DRAFT (V3 readiness = READY_WITH_GAPS)",
+ "facts": {
+  "platform": {
+   "profiles": "CLDC-1.0/MIDP-2.0",
+   "display": "240x320",
+   "loop": "40/166 мс",
+   "audio": "JSR-135 2 канала"
+  },
+  "math": {
+   "fixed": "14 бит",
+   "tile": "16 px",
+   "chain": "fixed>>14 -> px; /16 -> tile"
+  },
+  "container": {
+   "count": "1 байт",
+   "offsets": "u32 LE относительные",
+   "base": "1+4A",
+   "last": "недоступен"
+  },
+  "missions": {
+   "count": 5,
+   "streams": "m9 seg10-14",
+   "records": "формат подтверждён"
+  },
+  "script": {
+   "opcodes": 46,
+   "semantics": "44/46",
+   "control": "145/146/143/144/159"
+  },
+  "entities": {
+   "archetypes": 56,
+   "props": "26 CONFIRMED/6 INFERRED/3 UNKNOWN",
+   "clusters": 17,
+   "instances": 666
+  },
+  "ai": {
+   "classes": 6,
+   "states": 24,
+   "pathfinding": "нет",
+   "damage": "g[7] -= урон + 30%*bF"
+  },
+  "animation": {
+   "W": 176,
+   "V": 3,
+   "X": 36,
+   "Y": 15,
+   "directions": 4
+  },
+  "graphics": {
+   "formats": [
+    "8888",
+    "4444",
+    "565"
+   ],
+   "encodings": 8,
+   "slots": 17,
+   "decoder": "RLE+палитра"
+  },
+  "audio": {
+   "resources": "14 MIDI + 15 WAV",
+   "sounds": 10,
+   "voice": "нет"
+  },
+  "global": {
+   "states": 18,
+   "mission": "bB",
+   "money": "L[4] cap 45000",
+   "save": "RMS записи 1/2"
+  },
+  "objective": {
+   "entity": "L==10",
+   "cb": 200,
+   "completion": "cB<=0 -> state 7"
+  },
+  "performance": {
+   "loop": "40/166",
+   "guard": "freeMemory 100000",
+   "buffer": "16384 ints"
+  }
+ },
+ "not_included": [
+  "цены",
+  "тип наград",
+  "MIDI-привязка",
+  "агро-единицы",
+  "X->спрайт числа",
+  "выбор следующей миссии"
+ ]
+}

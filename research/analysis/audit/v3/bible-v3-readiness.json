@@ -1,0 +1,6 @@
+{
+ "meta": "Статус Bible V3",
+ "status": "READY_WITH_GAPS",
+ "rationale": "все статические структуры доказаны; остались runtime-вопросы (миссия-инкремент, cB-урон, числа X->спрайт, цены, MIDI-привязка, агро-единицы). STATICALLY_COMPLETE недостижим: есть нерешённые статические вопросы (вызов g.a(f2,n,byArray,n2) скрыт CFR, prop13/16/18 контексты)",
+ "static_frontier": "см. v3-remaining-static-frontier.md"
+}

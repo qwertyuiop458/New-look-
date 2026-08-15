@@ -1,0 +1,105 @@
+{
+ "meta": "Knowledge gaps V3 (перестроен)",
+ "gaps": [
+  {
+   "id": "KG01",
+   "priority": "CRITICAL",
+   "desc": "выбор следующей миссии (bB increment/меню)",
+   "evidence": "bB пишется в 4 местах; инкремента нет",
+   "missing": "механизм перехода",
+   "static_possible": "нет",
+   "runtime_required": true,
+   "next": "рантайм-трассировка после state 7/13"
+  },
+  {
+   "id": "KG02",
+   "priority": "CRITICAL",
+   "desc": "источник урона cB (n9)",
+   "evidence": "f.a(8|16,n9)",
+   "missing": "кто вызывает",
+   "static_possible": "частично (поиск вызова)",
+   "runtime_required": true,
+   "next": "трассировка"
+  },
+  {
+   "id": "KG03",
+   "priority": "CRITICAL",
+   "desc": "semantics 46 опкодов (полная)",
+   "evidence": "структура+методы",
+   "missing": "визуальные эффекты",
+   "static_possible": "частично",
+   "runtime_required": true,
+   "next": "рантайм"
+  },
+  {
+   "id": "KG04",
+   "priority": "HIGH",
+   "desc": "m8 seg0/1/2 consumer",
+   "evidence": "нет статических читателей",
+   "missing": "кто читает",
+   "static_possible": "нет (grep исчерпывающий)",
+   "runtime_required": true,
+   "next": "рантайм"
+  },
+  {
+   "id": "KG05",
+   "priority": "HIGH",
+   "desc": "frame->pixel числа (X->объект листа)",
+   "evidence": "структура",
+   "missing": "значения",
+   "static_possible": "нет",
+   "runtime_required": true,
+   "next": "рендер"
+  },
+  {
+   "id": "KG06",
+   "priority": "HIGH",
+   "desc": "цены магазина; тип наград k(n,10)",
+   "evidence": "нет таблиц",
+   "missing": "данные",
+   "static_possible": "нет",
+   "runtime_required": true,
+   "next": "рантайм"
+  },
+  {
+   "id": "KG07",
+   "priority": "HIGH",
+   "desc": "MIDI->музыка привязка",
+   "evidence": "14 MIDI",
+   "missing": "таблица",
+   "static_possible": "нет",
+   "runtime_required": true,
+   "next": "рантайм"
+  },
+  {
+   "id": "KG08",
+   "priority": "MEDIUM",
+   "desc": "prop13/16/18 семантика",
+   "evidence": "чтения без контекста",
+   "missing": "контекст",
+   "static_possible": "частично",
+   "runtime_required": true,
+   "next": "рантайм"
+  },
+  {
+   "id": "KG09",
+   "priority": "MEDIUM",
+   "desc": "save slots count",
+   "evidence": "минимум 2",
+   "missing": "точное",
+   "static_possible": "нет",
+   "runtime_required": true,
+   "next": "рантайм"
+  },
+  {
+   "id": "KG10",
+   "priority": "MEDIUM",
+   "desc": "голос/диалоги аудио",
+   "evidence": "NO_VOICE_FOUND",
+   "missing": "-",
+   "static_possible": "решено (нет голоса)",
+   "runtime_required": false,
+   "next": "-"
+  }
+ ]
+}

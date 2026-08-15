@@ -1,0 +1,70 @@
+{
+ "meta": "Оценки подсистем (по coverage первичных источников, не по объёму документов)",
+ "grades": [
+  {
+   "subsystem": "ARCHITECTURE",
+   "grade": "A",
+   "basis": "главный цикл, состояния, вход/выход — прямое чтение"
+  },
+  {
+   "subsystem": "CONTAINER",
+   "grade": "A",
+   "basis": "1B count + u32 LE — подтверждено кодом и парсерами"
+  },
+  {
+   "subsystem": "MISSION",
+   "grade": "A",
+   "basis": "5 streams, форматы записей, m8 linkage — полный парс"
+  },
+  {
+   "subsystem": "SCRIPT",
+   "grade": "B",
+   "basis": "44/46 семантика из кода; визуальные эффекты RUNTIME"
+  },
+  {
+   "subsystem": "ENTITY",
+   "grade": "B",
+   "basis": "56 архетипов, 26/35 props; 9 пропов UNKNOWN"
+  },
+  {
+   "subsystem": "AI",
+   "grade": "B",
+   "basis": "классы/состояния/переходы доказаны; агро-единицы RUNTIME"
+  },
+  {
+   "subsystem": "ANIMATION",
+   "grade": "B",
+   "basis": "176/3/36/15; тайминги кадров RUNTIME"
+  },
+  {
+   "subsystem": "GRAPHICS",
+   "grade": "B",
+   "basis": "форматы/декодер/слоты доказаны; X->объект числа RUNTIME"
+  },
+  {
+   "subsystem": "AUDIO",
+   "grade": "B",
+   "basis": "API/ресурсы/звуки доказаны; музыка-привязка RUNTIME"
+  },
+  {
+   "subsystem": "GLOBAL STATE",
+   "grade": "B",
+   "basis": "поля/переходы доказаны; mission increment RUNTIME"
+  },
+  {
+   "subsystem": "SAVE",
+   "grade": "B",
+   "basis": "форматы записей доказаны; слоты RUNTIME"
+  },
+  {
+   "subsystem": "ECONOMY",
+   "grade": "C",
+   "basis": "валюта/скидки доказаны; цены/награды RUNTIME"
+  },
+  {
+   "subsystem": "PERFORMANCE",
+   "grade": "B",
+   "basis": "loop/guards/буферы доказаны; реальные FPS RUNTIME"
+  }
+ ]
+}
