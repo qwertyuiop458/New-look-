@@ -1,0 +1,33 @@
+{
+ "meta": "Первый реальный запуск оригинального J2ME JAR (этап 15.29)",
+ "date": "2026-08-15",
+ "runtime": {
+  "emulator": "FreeJ2ME (SDL-версия, freej2me-sdl.jar из MizumiKawai/freej2me-anbernic)",
+  "emulator_main": "org.recompile.freej2me.Anbu",
+  "java": "Temurin JRE 17.0.19 (x86_64, из npm @spcookie/erii-runtime-linux-x64)",
+  "display": "240x320 offscreen (SDL-интерфейс заменён Python-заглушкой, сохраняющей кадры в PNG)",
+  "audio": "libaudio.so (JNI-заглушки, собранные gcc)",
+  "x11": "НЕ требуется (off-screen рендер)"
+ },
+ "original_jar": {
+  "path": "research/runtime/jar/original.jar",
+  "sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+  "size": 1042925
+ },
+ "boot_results": {
+  "jar_opened": true,
+  "midlet_detected": "MIDlet-1: Zombie Infection, /icon.png, GloftMASS",
+  "midlet_class": "GloftMASS",
+  "canvas_created": "поток рендера активен (кадры генерируются)",
+  "first_frame": "frame_0001.png",
+  "frames_total": 193,
+  "rms": "RecordStore 'a' создан (записи a.1, a.2)",
+  "audio_types": [
+   "audio/midi",
+   "audio/x-wav"
+  ],
+  "screenshot": "evidence/real/01_boot.png",
+  "status": "RUNTIME_CONFIRMED (реальный запуск)"
+ },
+ "evidence_policy": "Все кадры получены от выполняющегося оригинального JAR через эмулятор FreeJ2ME. НЕ симулированы."
+}

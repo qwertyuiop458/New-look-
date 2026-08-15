@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+"""FreeJ2ME Anbu SDL-interface stub: принимает RGB-кадры 240x320 по stdin, сохраняет PNG."""
+import sys, os, struct, time
+
+W = 240
+H = 320
+FRAME = W * H * 3
+OUT_DIR = "/home/user/New-look-/research/runtime/evidence/real"
+LOG = "/home/user/New-look-/research/runtime/results/boot/boot.log"
+frames = 0
+start = time.time()
+
+os.makedirs(OUT_DIR, exist_ok=True)
+
+def log(msg):
+    with open(LOG, "a") as f:
+        f.write(f"{time.time()-start:.3f} {msg}\n")
+
+log(f"SDL_STUB_START argv={sys.argv[1:]}")
+
+buf = bytearray()
+try:
+    while True:
+        chunk = sys.stdin.buffer.read(65536)
+        if not chunk:
+            log("SDL_STUB_STDIN_EOF")
+            break
+        buf += chunk
+        while len(buf) >= FRAME:
+            frame = bytes(buf[:FRAME])
+            del buf[:FRAME]
+            frames += 1
+            # сохранить каждый 10-й кадр и первые 3
+            if frames <= 3 or frames % 10 == 0:
+                path = os.path.join(OUT_DIR, f"frame_{frames:04d}.png")
+                try:
+                    # RGB -> PNG через zlib
+                    import zlib
+                    raw = bytearray()
+                    for y in range(H):
+                        raw.append(0)
+                        raw += frame[y*W*3:(y+1)*W*3]
+                    def chunk(tag, data):
+                        c = struct.pack(">I", len(data)) + tag + data
+                        return c + struct.pack(">I", zlib.crc32(tag+data) & 0xffffffff)
+                    png = b"\x89PNG\r\n\x1a\n"
+                    png += chunk(b"IHDR", struct.pack(">IIBBBBB", W, H, 8, 2, 0, 0, 0))
+                    png += chunk(b"IDAT", zlib.compress(bytes(raw), 6))
+                    png += chunk(b"IEND", b"")
+                    with open(path, "wb") as f:
+                        f.write(png)
+                    log(f"FRAME_SAVED {path} ({frames})")
+                except Exception as e:
+                    log(f"PNG_ERROR {e}")
+            if frames % 50 == 0:
+                log(f"FRAMES_TOTAL {frames}")
+except KeyboardInterrupt:
+    pass
+finally:
+    log(f"SDL_STUB_END frames={frames}")

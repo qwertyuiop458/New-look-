@@ -1,0 +1,39 @@
+{
+ "events": [
+  {
+   "event": "JAR_OPEN",
+   "detail": "loadJar(file:///.../original.jar)",
+   "source": "Anbu"
+  },
+  {
+   "event": "MIDLET_FOUND",
+   "detail": "MIDlet-1: Zombie Infection, /icon.png, GloftMASS",
+   "source": "JAR manifest"
+  },
+  {
+   "event": "MIDLET_INIT",
+   "detail": "runJar() вызван",
+   "source": "Anbu"
+  },
+  {
+   "event": "RENDER",
+   "detail": "кадры 240x320 сохраняются (193 шт.)",
+   "source": "sdl_interface stub"
+  },
+  {
+   "event": "SAVE",
+   "detail": "RecordStore a: записи a.1, a.2 созданы",
+   "source": "RMS"
+  },
+  {
+   "event": "AUDIO",
+   "detail": "media types: audio/midi, audio/x-wav",
+   "source": "PlatformPlayer"
+  },
+  {
+   "event": "FIRST_FRAME",
+   "detail": "frame_0001.png (сплэш), frame_0010.png (переход), frame_0100.png (контент)",
+   "source": "sdl_interface stub"
+  }
+ ]
+}

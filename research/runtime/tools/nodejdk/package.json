@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@spcookie/erii-runtime-linux-x64": "^1.0.0"
+  }
+}

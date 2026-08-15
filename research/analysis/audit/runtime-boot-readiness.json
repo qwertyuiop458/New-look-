@@ -1,0 +1,20 @@
+{
+ "audit": "runtime-boot-readiness",
+ "date": "2026-08-15",
+ "status": "BOOT_SUCCESS",
+ "evidence": {
+  "emulator": "FreeJ2ME SDL (freej2me-sdl.jar, Anbu) на JRE 17 x86_64",
+  "jar": "original.jar SHA-256 1111f12b... (не изменён)",
+  "midlet": "GloftMASS (Zombie Infection)",
+  "frames": "193 кадра 240x320 (первый: frame_0001, контент: frame_0100)",
+  "screenshot": "research/runtime/evidence/real/01_boot.png (240x320, RUNTIME_CONFIRMED)",
+  "rms": "RecordStore 'a' создан",
+  "audio": "media types audio/midi + audio/x-wav загружены"
+ },
+ "notes": [
+  "X11 не требовался (offscreen)",
+  "JNI-аудио заглушено (libaudio.so)",
+  "клавиши пока не подаются"
+ ],
+ "next": "следующие эксперименты: ввод, миссия, скрины меню"
+}
