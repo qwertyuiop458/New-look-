@@ -119,7 +119,8 @@
     "0x6505 RGB565"
    ],
    "sprite_list_format": "a.java: объекты+палитры+записи+мини-кадры (до 8 x 256px)+блоки; magic 0x64F0",
-   "pixel_decoder": "8 форматов сжатия RLE/бит-пак (512..25840), палитра-индексы -> int[] -> createRGBImage -> drawRegion (CONFIRMED)"
+   "pixel_decoder": "8 форматов сжатия RLE/бит-пак (512..25840), палитра-индексы -> int[] -> createRGBImage -> drawRegion (CONFIRMED)",
+   "sprite_inventory": "17 слотов; 6 gameplay (m6_0..m6_5, m7); 9698 объектов; форматы 4444/565/8888 + RLE (CONFIRMED)"
   },
   "audio": {
    "api": "JSR-135",

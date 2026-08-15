@@ -1,0 +1,12 @@
+{
+ "meta": "Трансформы: источник n4&7.",
+ "map": [
+  {
+   "direction": "dir (0..3 из f.b)",
+   "c_state": "кадр e",
+   "transform": "a[n4 & 7]",
+   "source": "n4 = палитра актёра this.c (c.java:117) или параметр a(Graphics,...,n4,n5)",
+   "status": "PARTIAL (RENDER_RUNTIME_REQUIRED для точного значения)"
+  }
+ ]
+}

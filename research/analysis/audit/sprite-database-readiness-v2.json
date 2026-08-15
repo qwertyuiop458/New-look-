@@ -1,0 +1,50 @@
+{
+ "audit": "sprite-database-readiness-v2",
+ "date": "2026-08-15",
+ "status": "READY_STATIC",
+ "criteria": {
+  "all_17_slots_traced": true,
+  "resource_inventory_complete": true,
+  "sprite_object_format_traced": true,
+  "frame_inventory_valid": true,
+  "major_animation_links_established": true
+ },
+ "metrics": {
+  "slots": {
+   "gameplay": [
+    "a[16]..a[21] = m6_0..m6_5",
+    "a[22] = m7"
+   ],
+   "scene_menu": [
+    "a[][0..9] (m0/m2/m11_0/m11_1/m7)",
+    "b[][1] (m1)"
+   ]
+  },
+  "sprite_objects": 9698,
+  "mini_frames": 120238,
+  "resources_inventoried": 13,
+  "gameplay_resources": [
+   "m6_0..m6_5",
+   "m7"
+  ],
+  "scene_menu_resources": [
+   "m0",
+   "m1",
+   "m2",
+   "m11_0",
+   "m11_1",
+   "m13_2 (частично)"
+  ],
+  "archetypes_with_sprite_linkage": "56 структурно (через prop32/33/34 -> W/X -> e/c/d листа); числовые пары RENDER_RUNTIME_REQUIRED",
+  "instances_with_sprite_linkage": "666 структурно (все с архетипом); числовые пары RENDER_RUNTIME_REQUIRED"
+ },
+ "palette_questions": [
+  "prop21 UNKNOWN (не повышен)",
+  "prop31 INFERRED",
+  "c.java this.c = палитра актёра CONFIRMED"
+ ],
+ "transform_questions": [
+  "n4 & 7: источник = this.c или параметр; точное значение RENDER_RUNTIME_REQUIRED"
+ ],
+ "note": "READY_STATIC = структура и формат доказаны; конкретные числовые привязки экземпляров требуют рантайм-рендера"
+}

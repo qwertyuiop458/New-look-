@@ -1,0 +1,19 @@
+{
+ "meta": "Контак-листы декодированных мини-кадров (не доказательство семантических ролей)",
+ "sheets": [
+  {
+   "slot": "a[][0]",
+   "resource": "m2",
+   "segment": 1,
+   "png": "research/analysis/v2/graphics/png/m2_seg1.png",
+   "format": "0x8888"
+  },
+  {
+   "slot": "a[][-1]",
+   "resource": "m7",
+   "segment": 6,
+   "png": "research/analysis/v2/graphics/png/m7_seg6.png",
+   "format": "0x8888"
+  }
+ ]
+}

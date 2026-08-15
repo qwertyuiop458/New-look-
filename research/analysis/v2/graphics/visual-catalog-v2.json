@@ -1,0 +1,33 @@
+{
+ "meta": "Визуальный каталог (мини-кадры, декодированные в PNG этапом 15.11/15.14).",
+ "entries": [
+  {
+   "resource": "m2",
+   "slot": "a[][0]",
+   "segment": 1,
+   "object": null,
+   "frame": 0,
+   "width": 16,
+   "height": 255,
+   "format": "0x8888",
+   "png": "research/analysis/v2/graphics/png/m2_seg1.png",
+   "entity_link": "UNKNOWN",
+   "animation_link": "UNKNOWN",
+   "confidence": "DECODED (мини-кадр 255px)"
+  },
+  {
+   "resource": "m7",
+   "slot": "a[][0]/a[22]",
+   "segment": 6,
+   "object": null,
+   "frame": "0..1",
+   "width": 16,
+   "height": 250,
+   "format": "0x8888",
+   "png": "research/analysis/v2/graphics/png/m7_seg6.png",
+   "entity_link": "UNKNOWN",
+   "animation_link": "UNKNOWN",
+   "confidence": "DECODED (2 мини-кадра)"
+  }
+ ]
+}

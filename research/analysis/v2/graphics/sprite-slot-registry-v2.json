@@ -1,0 +1,276 @@
+{
+ "meta": "17 sprite slots (доказано этапом 15.15): 6 gameplay a[16..21]=m6_*, a[22]=m7, 10 сценических a[][0..9]/b[][1]",
+ "slots": [
+  {
+   "slot": "a[16]",
+   "resource": "m6_0",
+   "segment": "все",
+   "loader": "g.java:2501",
+   "source_record": "a[16+n] -> m6_*",
+   "purpose": "GAMEPLAY",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[17]",
+   "resource": "m6_1",
+   "segment": "все",
+   "loader": "g.java:2501",
+   "source_record": "a[16+n] -> m6_*",
+   "purpose": "GAMEPLAY",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[18]",
+   "resource": "m6_2",
+   "segment": "все",
+   "loader": "g.java:2501",
+   "source_record": "a[16+n] -> m6_*",
+   "purpose": "GAMEPLAY",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[19]",
+   "resource": "m6_3",
+   "segment": "все",
+   "loader": "g.java:2501",
+   "source_record": "a[16+n] -> m6_*",
+   "purpose": "GAMEPLAY",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[20]",
+   "resource": "m6_4",
+   "segment": "все",
+   "loader": "g.java:2501",
+   "source_record": "a[16+n] -> m6_*",
+   "purpose": "GAMEPLAY",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[21]",
+   "resource": "m6_5",
+   "segment": "все",
+   "loader": "g.java:2501",
+   "source_record": "a[16+n] -> m6_*",
+   "purpose": "GAMEPLAY",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[22]",
+   "resource": "m7",
+   "segment": "все",
+   "loader": "g.java:2501",
+   "source_record": "a[22]",
+   "purpose": "GAMEPLAY",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "slot": "a[][0]",
+   "resource": "m0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE/MENU",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][1]",
+   "resource": "m0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE/MENU",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "b[][1]",
+   "resource": "m1",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE/MENU",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][0]",
+   "resource": "m2",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE/MENU",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][1]",
+   "resource": "m2",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE/MENU",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][2]",
+   "resource": "m2",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE/MENU",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][0]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][1]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][2]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][3]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][4]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][5]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][6]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][7]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][8]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][9]",
+   "resource": "m11_0",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][0]",
+   "resource": "m11_1",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][1]",
+   "resource": "m11_1",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][2]",
+   "resource": "m11_1",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][3]",
+   "resource": "m11_1",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][4]",
+   "resource": "m11_1",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][5]",
+   "resource": "m11_1",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  },
+  {
+   "slot": "a[][6]",
+   "resource": "m11_1",
+   "segment": "см. sprite-slot-map",
+   "loader": "g.g() case 3",
+   "source_record": "{3, slot, seg, -1, 2}",
+   "purpose": "SCENE",
+   "confidence": "CONFIRMED (загрузка)"
+  }
+ ],
+ "count": 30
+}

@@ -1,0 +1,453 @@
+{
+ "meta": "Архетип -> sprite slot/object. Прямая числовая связь НЕ доказана: архетип -> W/X -> кадр -> e[n] таблица -> c[n13] объект листа (a.java:574), но номер объекта зависит от данных листа (RENDER_RUNTIME_REQUIRED).",
+ "archetypes": [
+  {
+   "id": 3,
+   "name": "ARCHETYPE_003",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 13,
+   "name": "ARCHETYPE_013",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 24,
+   "name": "ARCHETYPE_024",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 30,
+   "name": "ARCHETYPE_030",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 18,
+   "name": "ARCHETYPE_018",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 31,
+   "name": "ARCHETYPE_031",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 38,
+   "name": "ARCHETYPE_038",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 35,
+   "name": "ARCHETYPE_035",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 107,
+   "name": "ARCHETYPE_107",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 108,
+   "name": "ARCHETYPE_108",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 90,
+   "name": "ARCHETYPE_090",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 96,
+   "name": "ARCHETYPE_096",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 125,
+   "name": "ARCHETYPE_125",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 130,
+   "name": "ARCHETYPE_130",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 114,
+   "name": "ARCHETYPE_114",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 120,
+   "name": "ARCHETYPE_120",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 46,
+   "name": "ARCHETYPE_046",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 84,
+   "name": "ARCHETYPE_084",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 76,
+   "name": "ARCHETYPE_076",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 67,
+   "name": "ARCHETYPE_067",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 265,
+   "name": "ARCHETYPE_265",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 260,
+   "name": "ARCHETYPE_260",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 286,
+   "name": "ARCHETYPE_286",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 277,
+   "name": "ARCHETYPE_277",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 305,
+   "name": "ARCHETYPE_305",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 300,
+   "name": "ARCHETYPE_300",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 326,
+   "name": "ARCHETYPE_326",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 317,
+   "name": "ARCHETYPE_317",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 64,
+   "name": "ARCHETYPE_064",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 135,
+   "name": "ARCHETYPE_135",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 291,
+   "name": "ARCHETYPE_291",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 139,
+   "name": "ARCHETYPE_139",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 70,
+   "name": "ARCHETYPE_070",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 147,
+   "name": "ARCHETYPE_147",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 358,
+   "name": "ARCHETYPE_358",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 337,
+   "name": "ARCHETYPE_337",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 174,
+   "name": "ARCHETYPE_174",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 175,
+   "name": "ARCHETYPE_175",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 157,
+   "name": "ARCHETYPE_157",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 163,
+   "name": "ARCHETYPE_163",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 192,
+   "name": "ARCHETYPE_192",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 197,
+   "name": "ARCHETYPE_197",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 181,
+   "name": "ARCHETYPE_181",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 187,
+   "name": "ARCHETYPE_187",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 202,
+   "name": "ARCHETYPE_202",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 349,
+   "name": "ARCHETYPE_349",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 345,
+   "name": "ARCHETYPE_345",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 206,
+   "name": "ARCHETYPE_206",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 226,
+   "name": "ARCHETYPE_226",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 227,
+   "name": "ARCHETYPE_227",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 209,
+   "name": "ARCHETYPE_209",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 215,
+   "name": "ARCHETYPE_215",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 244,
+   "name": "ARCHETYPE_244",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 249,
+   "name": "ARCHETYPE_249",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 233,
+   "name": "ARCHETYPE_233",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  },
+  {
+   "id": 239,
+   "name": "ARCHETYPE_239",
+   "animation_set": "prop32/33/34 (см. archetype-animation-map)",
+   "sprite_slots": "a[16..21] (m6_*) / a[22] (m7) — ГЕЙМПЛЕЙ (структурно)",
+   "sprite_objects": "UNKNOWN (через e/c/d таблицу листа)",
+   "linkage_status": "STRUCTURAL_ONLY"
+  }
+ ]
+}

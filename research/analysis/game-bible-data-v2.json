@@ -883,6 +883,11 @@
    "claim": "геймплейные спрайт-листы: m6_0..m6_5 (a[16..21]) и m7 (a[22])",
    "status": "CONFIRMED",
    "evidence": "g.java:2501"
+  },
+  {
+   "claim": "инвентаризация спрайтов: 17 слотов (6 gameplay a[16..21]=m6_*, a[22]=m7; 10 сцен), 9698 объектов, 120238 мини-кадров",
+   "status": "CONFIRMED",
+   "evidence": "build_sprite_inventory_v2.py"
   }
  ],
  "audio": [

@@ -1,0 +1,16 @@
+{
+ "meta": "Сценические слоты: назначение каждого НЕ доказано (нет evidence); только факт загрузки",
+ "slots": [
+  {
+   "slot": "a[][0..9]",
+   "resource": "m11_0/m11_1/m0/m2/m7",
+   "purpose": "UNKNOWN (загружается сценарием g.g())"
+  },
+  {
+   "slot": "b[][1]",
+   "resource": "m1",
+   "purpose": "UNKNOWN"
+  }
+ ],
+ "note": "не называть menu/splash/portrait без evidence"
+}

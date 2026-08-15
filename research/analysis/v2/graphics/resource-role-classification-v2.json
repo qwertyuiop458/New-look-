@@ -1,0 +1,70 @@
+{
+ "meta": "Роли ресурсов (evidence-based)",
+ "resources": [
+  {
+   "resource": "m0",
+   "role": "SCENE/MENU",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m1",
+   "role": "SCENE/MENU",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m2",
+   "role": "SCENE/MENU",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m6_0",
+   "role": "GAMEPLAY",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m6_1",
+   "role": "GAMEPLAY",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m6_2",
+   "role": "GAMEPLAY",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m6_3",
+   "role": "GAMEPLAY",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m6_4",
+   "role": "GAMEPLAY",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m6_5",
+   "role": "GAMEPLAY",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m7",
+   "role": "GAMEPLAY",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m11_0",
+   "role": "SCENE/MENU",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m11_1",
+   "role": "SCENE/MENU",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  },
+  {
+   "resource": "m13_2",
+   "role": "MUSIC (MIDI seg0) + SCENE листы",
+   "evidence": "g.java:2501 (m6_*/m7 gameplay); сценарий g.g() (сцены)"
+  }
+ ]
+}

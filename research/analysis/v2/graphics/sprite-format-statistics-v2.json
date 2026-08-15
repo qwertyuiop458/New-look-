@@ -1,0 +1,117 @@
+{
+ "meta": "Статистика форматов",
+ "resources": [
+  {
+   "resource": "m0",
+   "formats": {
+    "0x4444": 2
+   },
+   "segments": 2
+  },
+  {
+   "resource": "m1",
+   "formats": {
+    "0x4444": 1
+   },
+   "segments": 1
+  },
+  {
+   "resource": "m2",
+   "formats": {
+    "0x0": 2,
+    "0x8888": 1,
+    "0x4444": 1
+   },
+   "segments": 4
+  },
+  {
+   "resource": "m6_0",
+   "formats": {
+    "0x1300": 1,
+    "0x12": 2,
+    "0x0": 2,
+    "0x128": 1,
+    "0xec": 2,
+    "0x1200": 1
+   },
+   "segments": 9
+  },
+  {
+   "resource": "m6_1",
+   "formats": {
+    "0x0": 7
+   },
+   "segments": 7
+  },
+  {
+   "resource": "m6_2",
+   "formats": {
+    "0x8f": 1,
+    "0x0": 6
+   },
+   "segments": 7
+  },
+  {
+   "resource": "m6_3",
+   "formats": {
+    "0x700": 1,
+    "0xe8": 1,
+    "0x48": 1,
+    "0x0": 3,
+    "0xf3": 1
+   },
+   "segments": 7
+  },
+  {
+   "resource": "m6_4",
+   "formats": {
+    "0xd800": 2,
+    "0x12": 2,
+    "0x2": 3
+   },
+   "segments": 7
+  },
+  {
+   "resource": "m6_5",
+   "formats": {
+    "0x0": 6,
+    "0x1e01": 1
+   },
+   "segments": 7
+  },
+  {
+   "resource": "m7",
+   "formats": {
+    "0x8888": 4,
+    "0x0": 3
+   },
+   "segments": 7
+  },
+  {
+   "resource": "m11_0",
+   "formats": {
+    "0x4444": 6,
+    "0x0": 3,
+    "0x900": 1
+   },
+   "segments": 10
+  },
+  {
+   "resource": "m11_1",
+   "formats": {
+    "0xa14": 1,
+    "0x4444": 4,
+    "0x8888": 1,
+    "0x0": 1
+   },
+   "segments": 7
+  },
+  {
+   "resource": "m13_2",
+   "formats": {
+    "0x0": 11
+   },
+   "segments": 11
+  }
+ ]
+}

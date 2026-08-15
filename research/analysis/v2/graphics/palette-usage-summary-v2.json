@@ -1,0 +1,8 @@
+{
+ "meta": "Итог по палитрам (этап 15.16).",
+ "prop21": "UNKNOWN (1 read; не повышаем)",
+ "prop31": "INFERRED (индекс при отрисовке f.java:4107)",
+ "c_actor_palette": "CONFIRMED: c.java this.c -> a.a(d, e, x, y, this.c)",
+ "list_palettes": "a.java n8-записи (палитры листа) + n10 (f&0x8000)",
+ "remap": "opcode 37 (палитра-ремаппинг) + g[21] маска сущности"
+}
