@@ -1,0 +1,189 @@
+{
+ "reference_level": "m8 (объектные слои мира) + m9 seg10-14 (миссии)",
+ "m8": {
+  "file": "research/extracted/jar/m8",
+  "segments": [
+   {
+    "segment": 0,
+    "start": 29,
+    "end": 8267,
+    "size": 8238,
+    "sha256": "7c5048f29f6cfa8455ab6154a4c8829ab05c52488d265e4d7a511bc462c535d1",
+    "sub_blocks": 15
+   },
+   {
+    "segment": 1,
+    "start": 8267,
+    "end": 12765,
+    "size": 4498,
+    "sha256": "121a0ee9a383edb6108f34019d9a948d3416399ea744aa18b6c4fc5f3c7ded4c",
+    "sub_blocks": 11
+   },
+   {
+    "segment": 2,
+    "start": 12765,
+    "end": 14415,
+    "size": 1650,
+    "sha256": "6e55555d2b9b47a026332a5723d8d567ffa203748daf57212fd9c8d30d1f9f9b",
+    "sub_blocks": 7
+   },
+   {
+    "segment": 3,
+    "start": 14415,
+    "end": 14499,
+    "size": 84,
+    "sha256": "db0599ec1b5b8fabf52a6574afb6f46c4751564452565467389bd73cc725a13c",
+    "sub_blocks": 7
+   },
+   {
+    "segment": 4,
+    "start": 14499,
+    "end": 14583,
+    "size": 84,
+    "sha256": "235d13889d788782db582bc72dcdbabd7731ee8d7f5f9a8e783846fc587334c2",
+    "sub_blocks": 7
+   },
+   {
+    "segment": 5,
+    "start": 14583,
+    "end": 14667,
+    "size": 84,
+    "sha256": "f095dab0c0cdd30caf76ed512b3de109b79bc1ed4baeaa191bc0985385dbc892",
+    "sub_blocks": 7
+   }
+  ]
+ },
+ "m9": {
+  "file": "research/extracted/jar/m9",
+  "segments": [
+   {
+    "segment": 0,
+    "start": 65,
+    "end": 70,
+    "size": 5,
+    "sha256": "377a23f52c6b357696238c3318f677a082dd3430bb6691042bd550a5cda28ebb",
+    "role": "binary_block"
+   },
+   {
+    "segment": 1,
+    "start": 70,
+    "end": 296,
+    "size": 226,
+    "sha256": "076ddf2eaa4a53438b4a827b23c664f5be241c4c1ec09d74143e33d0015c1c89",
+    "role": "global_data"
+   },
+   {
+    "segment": 2,
+    "start": 296,
+    "end": 912,
+    "size": 616,
+    "sha256": "dda6260f7e7289e7f019c14ae1f76361f9462f5e2cbbfb81f3ec87016868164a",
+    "role": "global_data"
+   },
+   {
+    "segment": 3,
+    "start": 912,
+    "end": 1326,
+    "size": 414,
+    "sha256": "62fe398d3ba62d6a8b13f75f3d40392dd46d513b27cbb2528e274b0060f016c5",
+    "role": "binary_block"
+   },
+   {
+    "segment": 4,
+    "start": 1326,
+    "end": 9122,
+    "size": 7796,
+    "sha256": "7c1026c0e9d03d414b63a670b67cb3685a9495f00357b7e873d00180f33fcf0f",
+    "role": "global_data"
+   },
+   {
+    "segment": 5,
+    "start": 9122,
+    "end": 10156,
+    "size": 1034,
+    "sha256": "6882568978823364e88e11bcc0691c79a144724bb329dbcecb1a1b84f1a9c8fa",
+    "role": "global_data"
+   },
+   {
+    "segment": 6,
+    "start": 10156,
+    "end": 11087,
+    "size": 931,
+    "sha256": "cae251a1dd7a26bd302ca895674c70b3e094262a119ad8a36a77abd74ed56728",
+    "role": "binary_block"
+   },
+   {
+    "segment": 7,
+    "start": 11087,
+    "end": 11330,
+    "size": 243,
+    "sha256": "74c2dd218b9ed0356433abca5fe033e50179caf878dcd1abffecdf85e7417bb4",
+    "role": "global_data"
+   },
+   {
+    "segment": 8,
+    "start": 11330,
+    "end": 11726,
+    "size": 396,
+    "sha256": "f3bbe13bd7cb376f23903815042446b6e28cee3f496b9a2043360f8145f56839",
+    "role": "global_data"
+   },
+   {
+    "segment": 9,
+    "start": 11726,
+    "end": 14873,
+    "size": 3147,
+    "sha256": "73a472cb396c7c681394e37df834f50f99750d6ce0180506307fee0b5e2cac35",
+    "role": "global_data"
+   },
+   {
+    "segment": 10,
+    "start": 14873,
+    "end": 45157,
+    "size": 30284,
+    "sha256": "e985199b42386f77bb762ae5cb3bbf05bd9e776f25534ee61207f1c5df6cd72a",
+    "role": "mission"
+   },
+   {
+    "segment": 11,
+    "start": 45157,
+    "end": 70733,
+    "size": 25576,
+    "sha256": "2e9ec98b32297aa5c6147f4c013b45024f8d509985abb243ecf0895eba7adc44",
+    "role": "mission"
+   },
+   {
+    "segment": 12,
+    "start": 70733,
+    "end": 137823,
+    "size": 67090,
+    "sha256": "dbda66cc3bd802db5ae23a515b0c8ac5e24505e16902788f65b0670f45c29c04",
+    "role": "mission"
+   },
+   {
+    "segment": 13,
+    "start": 137823,
+    "end": 165233,
+    "size": 27410,
+    "sha256": "43214fa4a571a4a592859f9e9224e3a60641fec5be7662e1bae6490d5418dcfa",
+    "role": "mission"
+   },
+   {
+    "segment": 14,
+    "start": 165233,
+    "end": 221721,
+    "size": 56488,
+    "sha256": "3e1f159d3b65a7ff7d847e89326b2363c27b6d547dfbb1cb5839e0c0bf34ea5a",
+    "role": "mission"
+   }
+  ],
+  "mission_segments": [
+   10,
+   11,
+   12,
+   13,
+   14
+  ]
+ },
+ "container_format": "1B count + A x u32 LE rel offsets; abs(n) = 1+4A+h[n]-h[0]"
+}

@@ -1,0 +1,37 @@
+{
+    "audit": "reference-level-readiness-v2",
+    "date": "2026-08-14",
+    "status": "READY_FOR_MASS_PARSING",
+    "criteria": {
+        "container_boundaries_proven": true,
+        "loader_pipeline_proven": true,
+        "segments_classified": true,
+        "map_entity_script_pipeline_understood": true,
+        "parser_reproducible": true
+    },
+    "evidence": {
+        "container_boundaries_proven": "формула abs(n)=1+4A+h[n]-h[0] подтверждена кодом g.b(int) и воспроизводится container_parser_v2.py",
+        "loader_pipeline_proven": "g.Z(int) (13796): m9->seg0->миссия seg10+n->маркеры 99->m8; g.c(int,byte[]) (13736): под-блоки 0xC8",
+        "segments_classified": "m8: seg0-2 объектные слои, seg3-5 заглушки; m9: seg0 таблица, seg1/2 старт, seg4 сущности, seg5 оружие, seg10-14 миссии; m0..m7/m10..m13_2 (кроме m8/m9/m12): спрайт-пакеты; m12: sin",
+        "map_entity_script_pipeline_understood": "карта = тайловые ячейки (101) + объекты (m8) + сущности (0..26) + спец-записи (110..172); формат записей подтверждён на 340+471 записях без сбоев",
+        "parser_reproducible": "parse_reference_level_v2.py: segments.json, mission-0.json, entity-links-v2.json, opcode-table-v2.json, level-spec-v2.json"
+    },
+    "readiness_gate": {
+        "REFERENCE_LEVEL_FORMAT_CONFIRMED": true,
+        "note": "Формат настоящего level package подтверждён: m8 (мир) + m9 seg10..14 (миссии). m3_0 — спрайт-пакет, НЕ уровень.",
+        "ready_for_universal_v2_analyzer": true,
+        "restrictions": [
+            "массовый анализатор уровней должен использовать ТОЛЬКО формат V2",
+            "семантика спец-записей 110..172 остаётся REQUIRES_REAL_RUNTIME",
+            "старый analyze_all_levels.py НЕ запускать (4-байтный счётчик, абсолютные offsets)"
+        ]
+    },
+    "remaining_unknowns": [
+        "семантика спец-записей 110..172",
+        "точная x-логика тайловых ячеек",
+        "назначение записей 103",
+        "связь tile_id -> спрайт-лист",
+        "диалоги (string linkage)",
+        "роль g.b[10][10][8]"
+    ]
+}

@@ -1,0 +1,133 @@
+{
+ "audit": "entity-links-v2",
+ "date": "2026-08-14",
+ "note": "Связь level record type -> поведенческий класс L (ветвления f.java/g.java) -> архетипы m9 seg4 (56 шт). Точный маппинг record id -> archetype id требует рантайма: в записях id u16 — идентификатор экземпляра; архетип задаётся свойствами (f.a(props) / f.c(props)).",
+ "links": [
+  {
+   "level_record_type": 0,
+   "L_class": "0/1/2 (MC)",
+   "count_mission0": 31,
+   "evidence": "g.java:14193 (case 0: g.c[n15] = new f(...))",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 1,
+   "L_class": "1 (персонаж/MC-вариант)",
+   "count_mission0": 84,
+   "evidence": "g.java:14205 (case 1: расширение массива + f.d)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 2,
+   "L_class": "2 (персонаж)",
+   "count_mission0": 21,
+   "evidence": "g.java:14205 (case 2)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 3,
+   "L_class": "3 (ENEMY)",
+   "count_mission0": 127,
+   "evidence": "g.java:14193-14200 (case 3: new f(s,3,n44,n45,f.c(props)); f.l())",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 9,
+   "L_class": "9 (NPC)",
+   "count_mission0": 29,
+   "evidence": "g.java:14201-14204 (case 9: f.d(props))",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 10,
+   "L_class": "10 (объект)",
+   "count_mission0": 44,
+   "evidence": "m8 seg0: 220 записей type 10 (props[0]=5)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 11,
+   "L_class": "11 (предмет/интерактив)",
+   "count_mission0": 17,
+   "evidence": "g.java:8249 (b[][0]==11)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 12,
+   "L_class": "12",
+   "count_mission0": 2,
+   "evidence": "g.java (switch case 12)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 14,
+   "L_class": "14 (объект сценария)",
+   "count_mission0": 14,
+   "evidence": "f.java:17010",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 15,
+   "L_class": "15 (дверь/переход?)",
+   "count_mission0": 6,
+   "evidence": "m8 seg0: 24 записи type 15 len=5",
+   "confidence": "INFERRED"
+  },
+  {
+   "level_record_type": 16,
+   "L_class": "16",
+   "count_mission0": 16,
+   "evidence": "f.java:17010",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 17,
+   "L_class": "17",
+   "count_mission0": 10,
+   "evidence": "g.java:14205 (case 17)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 20,
+   "L_class": "20",
+   "count_mission0": 58,
+   "evidence": "g.java:13999 (case 20-25)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 22,
+   "L_class": "22 (объект с размерами)",
+   "count_mission0": 1,
+   "evidence": "m8 seg0: 10 записей (размеры 110x95, 60x80)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 23,
+   "L_class": "23 (объект 32x32)",
+   "count_mission0": 5,
+   "evidence": "m8 seg0: 8 записей",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 101,
+   "L_class": "тайловая ячейка (не сущность)",
+   "count_mission0": 82,
+   "evidence": "спец-парсер 16860",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "level_record_type": 102,
+   "L_class": "объект-строка (не сущность)",
+   "count_mission0": 16,
+   "evidence": "спец-парсер 16860",
+   "confidence": "CONFIRMED"
+  }
+ ],
+ "archetypes_m9": {
+  "source": "m9 seg4 (dr())",
+  "count": 56,
+  "props_per_archetype": 35,
+  "note": "Связь level record -> archetype id из m9 seg4: запись [type][id][x][y][len][props]; архетип кодируется в props (обработка f.a/f.c/f.d) — точное поле REQUIRES_REAL_RUNTIME",
+  "full_list": "research/analysis/v2/entities.json"
+ }
+}

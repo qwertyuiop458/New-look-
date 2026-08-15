@@ -1,0 +1,212 @@
+{
+ "audit": "opcode-table-v2",
+ "date": "2026-08-14",
+ "note": "Opcode database настоящего level package (поток миссии m9 seg10..14 + m8). Ранее заявленные '10 опкодов'/'19 значений 11-44' относились к парсеру a(byte[]) (1682) — таблицам сцен g.g(), а НЕ к потоку уровня. Настоящие opcodes уровня = типы записей 0..26, 99, 101..103, 110..172.",
+ "parser": "g.Z(int) (13796) + спец-парсеры 16742/16860",
+ "opcodes": [
+  {
+   "opcode": 0,
+   "operand_format": "[id u16][x u16][y u16][len u8][len x u16]",
+   "handler": "g.Z case 0: g.c[n15] = new f(s,0,x,y,props)",
+   "known_effect": "создание сущности (MC)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 1,
+   "operand_format": "[id u16][x u16][y u16][len u8][len x u16]",
+   "handler": "g.Z case 1: расширение props + f.d",
+   "known_effect": "создание персонажа (MC-вариант)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 2,
+   "operand_format": "тот же",
+   "handler": "g.Z case 2",
+   "known_effect": "создание сущности",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 3,
+   "operand_format": "тот же",
+   "handler": "g.Z case 3: f.c(props), f.l()",
+   "known_effect": "создание врага (L=3)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 9,
+   "operand_format": "тот же",
+   "handler": "g.Z case 9: f.d(props)",
+   "known_effect": "создание NPC (L=9)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 10,
+   "operand_format": "тот же",
+   "handler": "g.Z case 10",
+   "known_effect": "объект мира",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 11,
+   "operand_format": "тот же",
+   "handler": "g.Z case 11",
+   "known_effect": "предмет/интерактив",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 12,
+   "operand_format": "тот же",
+   "handler": "g.Z case 12",
+   "known_effect": "объект",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 13,
+   "operand_format": "тот же",
+   "handler": "g.Z case 13: ++n14",
+   "known_effect": "счётчик k (массив k = short[n14*3])",
+   "confidence": "INFERRED"
+  },
+  {
+   "opcode": 14,
+   "operand_format": "тот же",
+   "handler": "g.Z case 14",
+   "known_effect": "объект сценария",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 15,
+   "operand_format": "тот же",
+   "handler": "g.Z case 15",
+   "known_effect": "дверь/переход (m8 seg0: 24 шт, len=5)",
+   "confidence": "INFERRED"
+  },
+  {
+   "opcode": 16,
+   "operand_format": "тот же",
+   "handler": "g.Z case 16",
+   "known_effect": "объект",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 17,
+   "operand_format": "тот же",
+   "handler": "g.Z case 17",
+   "known_effect": "объект",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 18,
+   "operand_format": "тот же",
+   "handler": "g.Z case 18 (с доп. u16 из props)",
+   "known_effect": "объект с маркером",
+   "confidence": "INFERRED"
+  },
+  {
+   "opcode": 19,
+   "operand_format": "тот же",
+   "handler": "g.Z case 19 (с доп. u16)",
+   "known_effect": "объект с маркером",
+   "confidence": "INFERRED"
+  },
+  {
+   "opcode": 20,
+   "operand_format": "тот же",
+   "handler": "g.Z case 20-25: общий счётчик",
+   "known_effect": "объект (58 шт в миссии 0)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 21,
+   "operand_format": "тот же",
+   "handler": "g.Z case 20-25",
+   "known_effect": "объект",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 22,
+   "operand_format": "тот же",
+   "handler": "g.Z case 20-25",
+   "known_effect": "объект с размерами",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 23,
+   "operand_format": "тот же",
+   "handler": "g.Z case 20-25",
+   "known_effect": "объект 32x32",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 24,
+   "operand_format": "тот же",
+   "handler": "g.Z case 20-25",
+   "known_effect": "объект",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 25,
+   "operand_format": "тот же",
+   "handler": "g.Z case 20-25",
+   "known_effect": "объект",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 26,
+   "operand_format": "тот же",
+   "handler": "g.Z case 26",
+   "known_effect": "объект",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 99,
+   "operand_format": "[seg u8][sub u8][1 u8][u16 value]",
+   "handler": "g.Z: переключение потока на m8 seg.sub",
+   "known_effect": "секция уровня из m8 (42 в миссии 0)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 101,
+   "operand_format": "[tile_id u16][len u8][len байт]",
+   "handler": "спец-парсер 16860: g.l/g.C/g.d/g.H",
+   "known_effect": "тайловая ячейка (x=порядок, y=data[1], проходимость=data[3])",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "opcode": 102,
+   "operand_format": "[obj_id u16][len u8]",
+   "handler": "спец-парсер 16860: g.G",
+   "known_effect": "объект-строка",
+   "confidence": "CONFIRMED (назначение UNKNOWN)"
+  },
+  {
+   "opcode": 103,
+   "operand_format": "[len u8][len байт]",
+   "handler": "спец-парсер 16860: g.y",
+   "known_effect": "байтовые данные",
+   "confidence": "CONFIRMED (назначение UNKNOWN)"
+  },
+  {
+   "opcode": "104..109",
+   "operand_format": "-",
+   "handler": "спец-парсер: остановка",
+   "known_effect": "терминатор",
+   "confidence": "INFERRED"
+  },
+  {
+   "opcode": "110..172",
+   "operand_format": "[len u8][len x u16]",
+   "handler": "спец-парсер 16860: g.z + счётчики",
+   "known_effect": "спец-записи (скрипты/эффекты): 880 шт в миссии 0 (110x69, 151x185, 130x77, 118x83, 114x66)",
+   "confidence": "CONFIRMED (семантика REQUIRES_REAL_RUNTIME)"
+  }
+ ],
+ "counts_mission0": {
+  "records": 471,
+  "tile_cells_101": 82,
+  "objects_102": 16,
+  "data_103": 16,
+  "special_110_172": 880,
+  "switches_99": 42
+ }
+}

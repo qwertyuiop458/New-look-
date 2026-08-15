@@ -1,0 +1,142 @@
+{
+ "id": "reference-level (миссия 0)",
+ "date": "2026-08-14",
+ "files": {
+  "m8": {
+   "role": "level package (мир): seg0-2 объектные слои, seg3-5 слои-заглушки",
+   "size": 14667
+  },
+  "m9": {
+   "role": "global data + mission data (seg10-14 = миссии 0-4)",
+   "size": 221721
+  }
+ },
+ "segments": [
+  {
+   "file": "m8",
+   "segment": 0,
+   "size": 8238,
+   "sha256": null,
+   "role": "объектный слой 0",
+   "records": 340,
+   "sub_blocks": 15
+  },
+  {
+   "file": "m8",
+   "segment": 1,
+   "size": 4498,
+   "role": "объектный слой 1",
+   "records": 172,
+   "sub_blocks": 11
+  },
+  {
+   "file": "m8",
+   "segment": 2,
+   "size": 1650,
+   "role": "объектный слой 2",
+   "records": 64,
+   "sub_blocks": 7
+  },
+  {
+   "file": "m8",
+   "segment": 3,
+   "size": 84,
+   "role": "слой-заглушка (флаги 7x10Б)",
+   "sub_blocks": 7
+  },
+  {
+   "file": "m8",
+   "segment": 4,
+   "size": 84,
+   "role": "слой-заглушка",
+   "sub_blocks": 7
+  },
+  {
+   "file": "m8",
+   "segment": 5,
+   "size": 84,
+   "role": "слой-заглушка",
+   "sub_blocks": 7
+  },
+  {
+   "file": "m9",
+   "segment": 10,
+   "size": 30284,
+   "role": "МИССИЯ 0",
+   "records": 471,
+   "tile_cells": 82,
+   "special": 880,
+   "switches": 42
+  }
+ ],
+ "map": {
+  "status": "CONFIRMED (структура)",
+  "type": "гибридная: тайловые ячейки (101) + объектные слои (m8) + сущности",
+  "tile_format": "[101][tile_id u16][len][data: маркер,y,значение,проходимость]",
+  "grid": "не тайловая сетка 64x64; мировые координаты px (до 2626 px)",
+  "layer_order": "m8 seg0..2 (объекты) + mission (тайлы/сущности/спец)",
+  "MAP_NOT_IN_PACKAGE": "m3_0 (спрайт-пакет)"
+ },
+ "collision": {
+  "status": "CONFIRMED (источники)",
+  "sources": [
+   "флаг проходимости 101 (data[3]) -> g.d[]",
+   "размеры объектов type 22/23",
+   "5-точечный зонд сущностей",
+   "AABB"
+  ],
+  "grid_dimensions": "нет битовой маски уровня; g.b[10][10][8] — назначение UNKNOWN"
+ },
+ "entities": [
+  {
+   "level_type": 3,
+   "class": "enemy (L=3)",
+   "count_mission0": 127,
+   "archetype_link": "через props (f.c) — REQUIRES_RUNTIME"
+  },
+  {
+   "level_type": 9,
+   "class": "NPC (L=9)",
+   "count_mission0": 29,
+   "archetype_link": "через props (f.d) — REQUIRES_RUNTIME"
+  },
+  {
+   "level_type": 0,
+   "class": "MC",
+   "count_mission0": 31
+  },
+  {
+   "level_type": 10,
+   "class": "объект мира",
+   "count_mission0": 44,
+   "note": "220 в m8 seg0"
+  }
+ ],
+ "scripts": {
+  "status": "CONFIRMED (структура)",
+  "opcodes": "0..26 (сущности), 99 (переключение m8), 101 (тайлы), 102 (объекты), 103 (данные), 110..172 (спец)",
+  "count_mission0": "880 спец-записей; семантика REQUIRES_REAL_RUNTIME",
+  "detail": "opcode-table-v2.json"
+ },
+ "dialogue": {
+  "status": "UNKNOWN",
+  "note": "тексты CP1251 в t0; связь строк с миссией (string id -> запись) НЕ установлена"
+ },
+ "graphics": {
+  "status": "UNKNOWN",
+  "note": "тайлы/спрайты рисуются из внешних спрайт-пакетов (m3_0/m6_*/m7); связь tile_id -> лист REQUIRES_REAL_RUNTIME"
+ },
+ "transitions": {
+  "status": "CONFIRMED (механизм)",
+  "note": "5 миссий (m9 seg10..14); переход между миссиями — через таблицу seg0 (C(int)); точный flow REQUIRES_REAL_RUNTIME"
+ },
+ "unknowns": [
+  "семантика спец-записей 110..172",
+  "точная логика x-координаты тайлов",
+  "назначение записей 103",
+  "связь tile_id -> спрайт-лист",
+  "диалоги миссий (string linkage)",
+  "g.b[10][10][8] сетка",
+  "точное поле архетипа в props записей"
+ ]
+}
