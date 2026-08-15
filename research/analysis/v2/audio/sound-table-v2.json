@@ -1,0 +1,65 @@
+{
+ "meta": "Звуковые ID (найденные вызовы g.b(N))",
+ "sounds": [
+  {
+   "id": 0,
+   "usage": "системный/меню (g.b(0) 3086, 3934)",
+   "source": "g.java",
+   "confidence": "CONFIRMED (вызов)"
+  },
+  {
+   "id": 5,
+   "usage": "попадание (f.java:2082)",
+   "source": "f.java",
+   "confidence": "CONFIRMED (вызов)"
+  },
+  {
+   "id": 7,
+   "usage": "системный (g.java:18606, 23457, 24869, 30559)",
+   "source": "g.java",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 8,
+   "usage": "UI/меню (g.java:8150, 11386, 12090)",
+   "source": "g.java",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 10,
+   "usage": "системный (g.java:1418, 24364, 24508)",
+   "source": "g.java",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 11,
+   "usage": "враг-ветка (f.java:3689)",
+   "source": "f.java",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 14,
+   "usage": "урон/смерть врага (f.java:739, 3150, 3414)",
+   "source": "f.java",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 20,
+   "usage": "завершение (g.java:18911, 18918)",
+   "source": "g.java",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 21,
+   "usage": "атака врага (f.java:5456, case 8)",
+   "source": "f.java",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 24,
+   "usage": "промах стрелка (f.java:3434, prop10 0/3/5/7)",
+   "source": "f.java",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

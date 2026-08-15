@@ -1,0 +1,8 @@
+{
+ "meta": "Настройки звука",
+ "sound_flag": "e (профиль, бит 4: e|4 / e&~4) — e.b()/e.a()",
+ "mute": "глобальный флаг h (проверки !h в b(int))",
+ "settings_state": "state 5 (g.bK())",
+ "save": "e в RMS запись 1 (D[4])",
+ "confidence": "CONFIRMED"
+}

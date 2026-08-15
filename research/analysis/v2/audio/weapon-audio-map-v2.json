@@ -1,0 +1,8 @@
+{
+ "meta": "Оружие -> аудио",
+ "finding": "prop21 = звук оружия (f.java:441, 8272: g.l(weapon,21)); точные ID REQUIRES_REAL_RUNTIME",
+ "fire": "prop21",
+ "reload": "UNKNOWN",
+ "dry": "UNKNOWN",
+ "confidence": "INFERRED (prop21)"
+}

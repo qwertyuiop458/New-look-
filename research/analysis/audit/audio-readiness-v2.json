@@ -1,0 +1,26 @@
+{
+ "audit": "audio-readiness-v2",
+ "date": "2026-08-15",
+ "status": "READY_STATIC",
+ "criteria": {
+  "media_api_traced": true,
+  "resources_identified": true,
+  "sound_music_tables_traced": true,
+  "event_linkage_traced": true,
+  "playback_lifecycle_traced": true
+ },
+ "key": {
+  "media_resources": "14 MIDI + 15 WAV (m13_2)",
+  "players": "2 канала",
+  "sounds": "10 ID (0,5,7,8,10,11,14,20,21,24)",
+  "music": "MIDI format 0, div 480, 80-179 BPM",
+  "settings": "e бит 4 + h mute",
+  "lifecycle": "прелоад/кэш/переиспользование; freeMemory guard",
+  "runtime": [
+   "какой MIDI = музыка",
+   "prop21 звуки оружия",
+   "слышимость",
+   "микширование"
+  ]
+ }
+}

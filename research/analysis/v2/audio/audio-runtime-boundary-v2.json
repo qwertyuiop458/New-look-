@@ -1,0 +1,19 @@
+{
+ "STATICALLY_CONFIRMED": [
+  "media API (createPlayer/start/stop/setLoopCount/VolumeControl)",
+  "ресурсы: 16 MIDI + 14 WAV в m13_2",
+  "2 канала",
+  "звуки событий 0,5,7,8,10,11,14,20,21,24",
+  "sound flag e (бит 4)",
+  "mute h",
+  "lifecycle: прелоад/кэш/переиспользование"
+ ],
+ "REQUIRES_REAL_RUNTIME": [
+  "фактическая слышимость",
+  "какой MIDI = какая музыка",
+  "prop21 звуки оружия",
+  "громкость на устройствах",
+  "микширование",
+  "тайминги"
+ ]
+}

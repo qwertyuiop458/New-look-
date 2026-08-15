@@ -148,6 +148,12 @@
     "desc": "цены магазина и тип наград k(n,10) — не найдены статически",
     "how": "рантайм",
     "resolution": null
+   },
+   {
+    "id": "audio_linkage",
+    "desc": "какой MIDI = музыка; prop21 звуки оружия",
+    "how": "рантайм",
+    "resolution": null
    }
   ],
   "MEDIUM": [

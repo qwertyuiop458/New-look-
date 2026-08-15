@@ -1,0 +1,6 @@
+{
+ "meta": "Музыкальные ID",
+ "music": "нет таблицы music ID -> сегмент; MIDI в m13_2; выбор REQUIRES_REAL_RUNTIME",
+ "channels": "2 Player канала (b[2]) — музыка + SFX",
+ "confidence": "CONFIRMED (2 канала)"
+}

@@ -123,17 +123,11 @@
    "sprite_inventory": "17 слотов; 6 gameplay (m6_0..m6_5, m7); 9698 объектов; форматы 4444/565/8888 + RLE (CONFIRMED)"
   },
   "audio": {
-   "api": "JSR-135",
-   "supported_types": [
-    "audio/x-tone-seq",
-    "audio/x-wav",
-    "audio/midi",
-    "audio/mmf",
-    "audio/amr"
-   ],
-   "slots": 19,
-   "status": "CONFIRMED (API); файлы/звучание REQUIRES_RUNTIME",
-   "midi_found": "m13_2 seg0 = MIDI (MThd)"
+   "api": "JSR-135, 2 канала, VolumeControl 100",
+   "resources": "14 MIDI + 15 WAV (m13_2)",
+   "sounds": "10 ID",
+   "voice": "нет",
+   "status": "CONFIRMED (структура)"
   },
   "save": {
    "rms": "RecordStore 'a' — 2 записи (профиль+прогресс)",

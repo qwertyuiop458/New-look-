@@ -1,0 +1,53 @@
+{
+ "meta": "Media API вызовы",
+ "calls": [
+  {
+   "class": "g",
+   "method": "a(byte[],n,n2,n3,bl)",
+   "line": 4271,
+   "api": "Manager.createPlayer(InputStream, type); realize(); prefetch()",
+   "purpose": "регистрация/прелоад звука в слот a[n]",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "g",
+   "method": "a(int,n2) play",
+   "line": 4356,
+   "api": "createPlayer/start; VolumeControl.setLevel(100); setLoopCount(j[n])",
+   "purpose": "воспроизведение по ID (2 канала)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "g",
+   "method": "c(int) stop",
+   "line": 4495,
+   "api": "Player.stop()",
+   "purpose": "остановка канала",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "g",
+   "method": "a() stop all",
+   "line": 4504,
+   "api": "stop все + сброс i/j",
+   "purpose": "глобальный стоп",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "g",
+   "method": "ah()",
+   "line": 4517,
+   "api": "Player.stop() с условиями (l(1), тип 0x80)",
+   "purpose": "фоновый стоп",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "class": "g",
+   "method": "e(int,byte[],...)",
+   "line": "-",
+   "api": "-",
+   "purpose": "-",
+   "confidence": "-"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "formats": [
+  {
+   "format": "MIDI (type 0, div 480)",
+   "resources": "m13_2 (16 треков)",
+   "usage": "музыка"
+  },
+  {
+   "format": "WAV (RIFF)",
+   "resources": "m13_2 (14 сегментов)",
+   "usage": "SFX"
+  },
+  {
+   "format": "audio/x-tone-seq",
+   "resources": "синтез (Manager type)",
+   "usage": "простые тоны"
+  },
+  {
+   "format": "AMR/MMF",
+   "resources": "поддерживается типом b[]",
+   "usage": "не найдено в ресурсах"
+  }
+ ],
+ "confidence": "CONFIRMED (форматы в типах b[] и файле m13_2)"
+}

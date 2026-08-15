@@ -1,0 +1,365 @@
+{
+ "meta": "Аудио-ресурсы (m13_2 = медиа-контейнер)",
+ "midi": [
+  {
+   "segment": 0,
+   "size": 883,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 666665,
+   "bpm": 90
+  },
+  {
+   "segment": 1,
+   "size": 6199,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 500000,
+   "bpm": 120
+  },
+  {
+   "segment": 2,
+   "size": 1684,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 335195,
+   "bpm": 179
+  },
+  {
+   "segment": 12,
+   "size": 6077,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 444444,
+   "bpm": 135
+  },
+  {
+   "segment": 14,
+   "size": 3875,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 428571,
+   "bpm": 140
+  },
+  {
+   "segment": 15,
+   "size": 3155,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 500000,
+   "bpm": 120
+  },
+  {
+   "segment": 17,
+   "size": 5215,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 600000,
+   "bpm": 100
+  },
+  {
+   "segment": 18,
+   "size": 1352,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 666665,
+   "bpm": 90
+  },
+  {
+   "segment": 19,
+   "size": 884,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 365854,
+   "bpm": 163
+  },
+  {
+   "segment": 25,
+   "size": 1918,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 500000,
+   "bpm": 120
+  },
+  {
+   "segment": 26,
+   "size": 2305,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 461537,
+   "bpm": 130
+  },
+  {
+   "segment": 27,
+   "size": 2645,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 400000,
+   "bpm": 150
+  },
+  {
+   "segment": 28,
+   "size": 6491,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 400000,
+   "bpm": 150
+  },
+  {
+   "segment": 30,
+   "size": 730,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 750000,
+   "bpm": 80
+  }
+ ],
+ "wav": [
+  {
+   "segment": 3,
+   "size": 1340,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 4,
+   "size": 828,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 5,
+   "size": 2506,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 6,
+   "size": 3132,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 7,
+   "size": 3132,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 8,
+   "size": 662,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 9,
+   "size": 2620,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 10,
+   "size": 4156,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 11,
+   "size": 1852,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 13,
+   "size": 3900,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 20,
+   "size": 2364,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 21,
+   "size": 1340,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 22,
+   "size": 1340,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 24,
+   "size": 1852,
+   "riff_type": "WAVE"
+  },
+  {
+   "segment": 29,
+   "size": 828,
+   "riff_type": "WAVE"
+  }
+ ],
+ "segments": [
+  {
+   "n": 0,
+   "size": 883,
+   "type": "MIDI"
+  },
+  {
+   "n": 1,
+   "size": 6199,
+   "type": "MIDI"
+  },
+  {
+   "n": 2,
+   "size": 1684,
+   "type": "MIDI"
+  },
+  {
+   "n": 3,
+   "size": 1340,
+   "type": "WAV"
+  },
+  {
+   "n": 4,
+   "size": 828,
+   "type": "WAV"
+  },
+  {
+   "n": 5,
+   "size": 2506,
+   "type": "WAV"
+  },
+  {
+   "n": 6,
+   "size": 3132,
+   "type": "WAV"
+  },
+  {
+   "n": 7,
+   "size": 3132,
+   "type": "WAV"
+  },
+  {
+   "n": 8,
+   "size": 662,
+   "type": "WAV"
+  },
+  {
+   "n": 9,
+   "size": 2620,
+   "type": "WAV"
+  },
+  {
+   "n": 10,
+   "size": 4156,
+   "type": "WAV"
+  },
+  {
+   "n": 11,
+   "size": 1852,
+   "type": "WAV"
+  },
+  {
+   "n": 12,
+   "size": 6077,
+   "type": "MIDI"
+  },
+  {
+   "n": 13,
+   "size": 3900,
+   "type": "WAV"
+  },
+  {
+   "n": 14,
+   "size": 3875,
+   "type": "MIDI"
+  },
+  {
+   "n": 15,
+   "size": 3155,
+   "type": "MIDI"
+  },
+  {
+   "n": 16,
+   "size": 0,
+   "type": "OTHER"
+  },
+  {
+   "n": 17,
+   "size": 5215,
+   "type": "MIDI"
+  },
+  {
+   "n": 18,
+   "size": 1352,
+   "type": "MIDI"
+  },
+  {
+   "n": 19,
+   "size": 884,
+   "type": "MIDI"
+  },
+  {
+   "n": 20,
+   "size": 2364,
+   "type": "WAV"
+  },
+  {
+   "n": 21,
+   "size": 1340,
+   "type": "WAV"
+  },
+  {
+   "n": 22,
+   "size": 1340,
+   "type": "WAV"
+  },
+  {
+   "n": 23,
+   "size": 0,
+   "type": "OTHER"
+  },
+  {
+   "n": 24,
+   "size": 1852,
+   "type": "WAV"
+  },
+  {
+   "n": 25,
+   "size": 1918,
+   "type": "MIDI"
+  },
+  {
+   "n": 26,
+   "size": 2305,
+   "type": "MIDI"
+  },
+  {
+   "n": 27,
+   "size": 2645,
+   "type": "MIDI"
+  },
+  {
+   "n": 28,
+   "size": 6491,
+   "type": "MIDI"
+  },
+  {
+   "n": 29,
+   "size": 828,
+   "type": "WAV"
+  },
+  {
+   "n": 30,
+   "size": 730,
+   "type": "MIDI"
+  }
+ ]
+}

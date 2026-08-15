@@ -1,0 +1,77 @@
+{
+ "meta": "События -> звуки",
+ "events": [
+  {
+   "event": "враг получает урон/смерть",
+   "sound": 14,
+   "source": "f.java:739, 3414",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "попадание по врагу",
+   "sound": 5,
+   "source": "f.java:2082",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "промах стрелка (prop10 0/3/5/7)",
+   "sound": 24,
+   "source": "f.java:3434",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "атака врага (case 8, таймер 1000)",
+   "sound": 21,
+   "source": "f.java:5456",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "враг-ветка (f.java:3689)",
+   "sound": 11,
+   "source": "f.java:3689",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "завершение миссии",
+   "sound": 20,
+   "source": "g.java:18911",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "UI/меню",
+   "sound": 8,
+   "source": "g.java:8150",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "системный",
+   "sound": 7,
+   "source": "g.java:18606",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "меню-переход",
+   "sound": 0,
+   "source": "g.java:3086",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "системный 2",
+   "sound": 10,
+   "source": "g.java:1418",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "event": "стрельба игрока",
+   "sound": "prop21 оружия (g.l(weapon,21))",
+   "source": "f.java:441, 8272",
+   "confidence": "INFERRED"
+  },
+  {
+   "event": "диалог",
+   "sound": "голос НЕ найден (NO_VOICE_FOUND)",
+   "source": "-",
+   "confidence": "CONFIRMED (отсутствие)"
+  }
+ ]
+}

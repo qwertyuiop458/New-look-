@@ -1,0 +1,134 @@
+{
+ "meta": "MIDI в m13_2",
+ "count": 14,
+ "details": [
+  {
+   "segment": 0,
+   "size": 883,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 666665,
+   "bpm": 90
+  },
+  {
+   "segment": 1,
+   "size": 6199,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 500000,
+   "bpm": 120
+  },
+  {
+   "segment": 2,
+   "size": 1684,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 335195,
+   "bpm": 179
+  },
+  {
+   "segment": 12,
+   "size": 6077,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 444444,
+   "bpm": 135
+  },
+  {
+   "segment": 14,
+   "size": 3875,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 428571,
+   "bpm": 140
+  },
+  {
+   "segment": 15,
+   "size": 3155,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 500000,
+   "bpm": 120
+  },
+  {
+   "segment": 17,
+   "size": 5215,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 600000,
+   "bpm": 100
+  },
+  {
+   "segment": 18,
+   "size": 1352,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 666665,
+   "bpm": 90
+  },
+  {
+   "segment": 19,
+   "size": 884,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 365854,
+   "bpm": 163
+  },
+  {
+   "segment": 25,
+   "size": 1918,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 500000,
+   "bpm": 120
+  },
+  {
+   "segment": 26,
+   "size": 2305,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 461537,
+   "bpm": 130
+  },
+  {
+   "segment": 27,
+   "size": 2645,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 400000,
+   "bpm": 150
+  },
+  {
+   "segment": 28,
+   "size": 6491,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 400000,
+   "bpm": 150
+  },
+  {
+   "segment": 30,
+   "size": 730,
+   "format": 0,
+   "tracks": 1,
+   "division": 480,
+   "tempo_us": 750000,
+   "bpm": 80
+  }
+ ],
+ "note": "все format=0 (1 трек), division=480; BPM 80-179; loop: setLoopCount(j[n]) — не в MIDI-файле",
+ "linkage": "какой MIDI = какая музыка: REQUIRES_REAL_RUNTIME (нет таблицы music ID -> segment)"
+}

@@ -886,33 +886,31 @@
  ],
  "audio": [
   {
-   "claim": "JSR-135; типы: tone-seq, wav, midi, mmf, amr",
+   "claim": "2 канала Player; createPlayer(InputStream, type); VolumeControl 100; setLoopCount",
    "status": "CONFIRMED",
-   "evidence": "g.java:35186-35190"
+   "evidence": "g.java:4271-4520"
   },
   {
-   "claim": "19 звуковых слотов",
+   "claim": "медиа-контейнер m13_2: 14 MIDI (format 0, div 480, 80-179 BPM) + 15 WAV (RIFF)",
    "status": "CONFIRMED",
-   "evidence": "g.java:35191-35192"
+   "evidence": "m13_2 сегменты"
   },
   {
-   "claim": "VolumeControl.setLevel(100)",
+   "claim": "звуки событий: 0,5,7,8,10,11,14,20,21,24",
    "status": "CONFIRMED",
-   "evidence": "g.java:4451"
+   "evidence": "g.b(N) вызовы"
   },
   {
-   "claim": "звук оружия = prop21",
-   "status": "INFERRED",
-   "evidence": "f.java:441,8272"
+   "claim": "голоса в диалогах нет (NO_VOICE_FOUND)",
+   "status": "CONFIRMED"
   },
   {
-   "claim": "фактическое звучание",
-   "status": "REQUIRES_REAL_RUNTIME"
+   "claim": "sound flag e (бит 4), mute h; сейв в D[4]",
+   "status": "CONFIRMED"
   },
   {
-   "claim": "MIDI-файл в m13_2 seg0 (MThd)",
-   "status": "CONFIRMED",
-   "evidence": "m13_2 seg0 head 4d546864"
+   "claim": "lifecycle: прелоад a[], кэш Player, freeMemory guard, повторный createPlayer",
+   "status": "CONFIRMED"
   }
  ],
  "save": [

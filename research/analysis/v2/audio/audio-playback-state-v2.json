@@ -1,0 +1,9 @@
+{
+ "meta": "Состояние воспроизведения",
+ "players": 2,
+ "loop": "setLoopCount(j[n])",
+ "volume": "100 (фикс.)",
+ "stop": "c(n), a(), ah() (условия l(1), тип 0x80)",
+ "priority": "порядок слотов; замена при ошибке (повторный createPlayer)",
+ "memory": "прелоад a[n] = ByteArrayInputStream; переиспользование Player; freeMemory < 100000 -> пропуск (1042)"
+}

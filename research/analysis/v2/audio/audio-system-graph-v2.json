@@ -1,0 +1,5 @@
+{
+ "graph": "event -> g.b(N) -> a(n,1) -> Player (2 канала) -> VolumeControl 100 / loop j[n] -> stop",
+ "resources": "m13_2: MIDI (музыка) + WAV (SFX)",
+ "settings": "e бит 4 + h mute"
+}
