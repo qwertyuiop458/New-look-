@@ -1,0 +1,71 @@
+{
+ "opcode": 135,
+ "count": 5,
+ "samples": [
+  {
+   "mission": "mission_00",
+   "offset": 10928,
+   "len": 2,
+   "words": [
+    11,
+    1
+   ],
+   "attached": "object",
+   "tile_index": 37,
+   "object_index": 8,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 11004,
+   "len": 2,
+   "words": [
+    11,
+    1
+   ],
+   "attached": "object",
+   "tile_index": 37,
+   "object_index": 9,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_02",
+   "offset": 54006,
+   "len": 2,
+   "words": [
+    11,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 41,
+   "object_index": 2,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_02",
+   "offset": 54346,
+   "len": 2,
+   "words": [
+    11,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 44,
+   "object_index": 2,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_02",
+   "offset": 55308,
+   "len": 2,
+   "words": [
+    11,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 47,
+   "object_index": 2,
+   "context": "mission"
+  }
+ ]
+}

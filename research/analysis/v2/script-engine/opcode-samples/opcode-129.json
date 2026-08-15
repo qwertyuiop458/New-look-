@@ -1,0 +1,22 @@
+{
+ "opcode": 129,
+ "count": 1,
+ "samples": [
+  {
+   "mission": "mission_00",
+   "offset": 25930,
+   "len": 5,
+   "words": [
+    1,
+    2,
+    84,
+    0,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 81,
+   "object_index": 15,
+   "context": "mission"
+  }
+ ]
+}

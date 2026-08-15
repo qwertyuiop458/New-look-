@@ -1,0 +1,974 @@
+{
+ "note": "Точный dispatch trace: парсер 16860 записывает [op][len][len x u16] в g.z; исполнители g.H() (действия) и g.K() (условия); skip g.n(boolean).",
+ "parser": {
+  "method": "g.a(byte[],int,int[],int,int[][][],int)",
+  "line": "g.java:16860",
+  "write": "g.z[v14]=op; g.z[v14+1]=len; g.z[v14+2..]=bytes; g.H[idx]=позиция; g.A[idx]=кол-во"
+ },
+ "executor_action": {
+  "method": "g.H()",
+  "line": "g.java:17353",
+  "loop": "while (bQ > 0 && var0 < 150)",
+  "entry": "g.b(int n): bP=n; bO=H[n]; bQ=A[n]"
+ },
+ "executor_condition": {
+  "method": "g.K()",
+  "line": "g.java:17740",
+  "note": "вычисляет условие выполнения опкода (используется в диалог-цикле J())"
+ },
+ "skip": {
+  "method": "g.n(boolean)",
+  "line": "g.java:17290",
+  "note": "пропуск if-блока: 145/146 скобки, 143 else, 144 endif; q(n): 124,125,138,140,145,160,167 — ветвящиеся"
+ },
+ "terminator": {
+  "opcode": 159,
+  "note": "конец скрипта (J(): while n != 159)"
+ },
+ "opcodes": [
+  {
+   "opcode": 110,
+   "count_in_missions": 346,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "entity_command",
+   "class": "ENTITY",
+   "reads": "z[o+0..16]",
+   "writes": "сущность: g[28],g[29], позиция, направление",
+   "calls": "g.c(n,n2,n3,n4); f.a(f2,n7,n8,mask,n12,n11); f2.a.a(n5,n6)",
+   "semantics": "Команда сущности: поиск по (n,n2,n3,n4); направление n8->бит-маска (0/1/7=8256, 4/3/5=4112, 2=1028, 6=2304); действие n7; позиция (n5,n6).",
+   "evidence": "g.java:18083 a(int x8)"
+  },
+  {
+   "opcode": 111,
+   "count_in_missions": 3,
+   "missions": [
+    "mission_00"
+   ],
+   "name": "teleport_player",
+   "class": "ENTITY",
+   "reads": "z[o+0], z[o+2]",
+   "writes": "g.c.a (позиция игрока)",
+   "calls": "g.c.a.b(n4,n3); g.a(c,1,bt)",
+   "semantics": "Телепорт игрока относительно объекта d: n=0: x+=n2*16,y-=16; n=1: x+=n2*16 (+y=g[3] если d.L==11); n=2: x-=16; n=3: x+=g[2]*16.",
+   "evidence": "g.java:18136 n(int,int)"
+  },
+  {
+   "opcode": 112,
+   "count_in_missions": 68,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_04"
+   ],
+   "name": "object_action",
+   "class": "OBJECT",
+   "reads": "z[o+0],z[o+4],z[o+6],z[o+8],z[o+14]",
+   "writes": "объект-тайл g.c(2,...)",
+   "calls": "g.b(n,n2,n3,n4,var4_4)",
+   "semantics": "Действие над объектом-тайлом: bl=true -> f.h+f.c(f2,4)+f.m (деактивация); bl=false -> проверка проходимости f.s + маркировка g[n6+14].",
+   "evidence": "g.java:18823 b(int,int,int,int,boolean)"
+  },
+  {
+   "opcode": 113,
+   "count_in_missions": 17,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_04"
+   ],
+   "name": "tile_object_field_write",
+   "class": "TILE",
+   "reads": "z[o+2],z[o+4],z[o+6],z[o+12]",
+   "writes": "g.g[layer][x][y].g[prop]",
+   "calls": "g.j(n,n2,n3,n4)",
+   "semantics": "Запись поля объекта-тайла: L25->g[9], L20->g[6], L21->g[4], L22->g[6], L24->g[2].",
+   "evidence": "g.java:18203 j(int,int,int,int)"
+  },
+  {
+   "opcode": 114,
+   "count_in_missions": 277,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "tile_object_command",
+   "class": "TILE",
+   "reads": "z[o+2],z[o+4],z[o+6],z[o+8]",
+   "writes": "g.g[n][n2][n3].g[0]",
+   "calls": "g.k(n,n2,n3,n4)",
+   "semantics": "Команда объекту-тайлу: g[0]=n4; L21->f.b; L23 (дверь)->f.a(открыть/закрыть); L25->f.a.",
+   "evidence": "g.java:18239 k(int,int,int,int)"
+  },
+  {
+   "opcode": 115,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "entity_prop_write",
+   "class": "ENTITY",
+   "reads": "z[o+2],z[o+4],z[o+6],z[o+8],z[o+10]",
+   "writes": "f[layer][x][y].g[n4]",
+   "calls": "g.d(n,n2,n3,n4,n5)",
+   "semantics": "Запись свойства сущности сетки: g[n4] = n5.",
+   "evidence": "g.java:18262 d(int,int,int,int,int)"
+  },
+  {
+   "opcode": 116,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "entity_prop_add",
+   "class": "ENTITY",
+   "reads": "z[o+2],z[o+4],z[o+6],z[o+8],z[o+10]",
+   "writes": "g.f[layer][x][y].g[n4]",
+   "calls": "g.e(n,n2,n3,n4,n5)",
+   "semantics": "Инкремент свойства сущности сетки: g[n4] += n5.",
+   "evidence": "g.java:18272 e(int,int,int,int,int)"
+  },
+  {
+   "opcode": 117,
+   "count_in_missions": 20,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "wait_until",
+   "class": "CONTROL",
+   "reads": "z[o+0]",
+   "writes": "пауза исполнения",
+   "calls": "g.d(...); цикл g.Q()/g.e(...)",
+   "semantics": "Ожидание: если var4_4 (P||a==2) -> пропуск; иначе цикл Q() пока e(...)!=0 — блокирующее ожидание условия.",
+   "evidence": "g.java:17400 case 117"
+  },
+  {
+   "opcode": 118,
+   "count_in_missions": 289,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "place_entity_at_tile",
+   "class": "ENTITY",
+   "reads": "z[o+0],z[o+4],z[o+6],z[o+8],z[o+10],z[o+12]",
+   "writes": "сущность var8_8: позиция a.b(x*16+8, y*16+8); g[9..12] для L14",
+   "calls": "g.c(var0,var1,var2,var3); g.d(var8_8); g.a(var8_8,1,true); g.c(var8_8)",
+   "semantics": "Размещение сущности в тайле: поиск; удаление если L 9/10/11/16; флаг 1 для L 3/1/0; позиция = центр тайла (x*16+8, y*16+8); обработка дверей L23; L14 -> g[9..12]=AABB.",
+   "evidence": "g.java:18302 c(int x6)"
+  },
+  {
+   "opcode": 119,
+   "count_in_missions": 127,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "delayed_call",
+   "class": "CONTROL",
+   "reads": "z[o+0..18]",
+   "writes": "m (флаг), g.i(n7,n8)",
+   "calls": "g.c(n,n2,n3,n4); g.d(f2,n5) или g.p(f2); g.i(n7,n8)",
+   "semantics": "Отложенный вызов: если n5 >= delta -> g.d(f2,n5) (задержка), иначе g.p(f2) (немедленно); n6==1 -> g.i(n7,n8); m = (n9==1).",
+   "evidence": "g.java:18287 a(int x9)"
+  },
+  {
+   "opcode": 120,
+   "count_in_missions": 6,
+   "missions": [
+    "mission_00",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "prop14_write",
+   "class": "ENTITY",
+   "reads": "z[o+0],z[o+2]",
+   "writes": "f2.g[n3+14]",
+   "calls": "g.p(n,n2)",
+   "semantics": "Запись байта n2 в свойство 14 (палитра/флаг) сущности g.a(n): g[n3+14] merge 65280.",
+   "evidence": "g.java:18302 p(int,int)"
+  },
+  {
+   "opcode": 121,
+   "count_in_missions": 38,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "anim_stack_switch",
+   "class": "ANIMATION",
+   "reads": "-",
+   "writes": "f/g стеки, ch/ci/cm/cn, co, A[]",
+   "calls": "g.cp(); g.bh()",
+   "semantics": "Переключение стека анимаций/отложенных действий (cp) + сброс массива A (bh: A[1]=-1,A[0]=0,A[7]=0).",
+   "evidence": "g.java:20678 cp(), 12199 bh()"
+  },
+  {
+   "opcode": 122,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "noop",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "-",
+   "calls": "-",
+   "semantics": "Нет операции (break).",
+   "evidence": "g.java:17444 case 122"
+  },
+  {
+   "opcode": 123,
+   "count_in_missions": 46,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "subroutine_call",
+   "class": "CONTROL",
+   "reads": "z[o+4]",
+   "writes": "bP, bO, bQ (указатель скрипта)",
+   "calls": "g.bW(); bP=z[o+4]; bO=H[idx]; bQ=A[idx]",
+   "semantics": "Вызов субскрипта: переключение исполнения на скрипт-тайл с индексом z[o+4] (H/A таблицы).",
+   "evidence": "g.java:17528-17537 (var3_3 = var0==123)"
+  },
+  {
+   "opcode": 124,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "condition_prop_cmp",
+   "class": "CONTROL",
+   "reads": "z[o+0..14]",
+   "writes": "var5_5 (результат условия)",
+   "calls": "g.c(2, o+10, o+12, o+14, o+0, o+2, o+4, o+6)",
+   "semantics": "УСЛОВИЕ: сравнение свойства сущности: f2 = g.c(n,n2,n3,n4); n9=f2.g[n5]; switch(n6): 0==,1!=,2<,3>,4<=,5>=... (n7) — результат для ветвления if/else (145/146).",
+   "evidence": "g.java:18460 c(int x8)"
+  },
+  {
+   "opcode": 125,
+   "count_in_missions": 20,
+   "missions": [
+    "mission_00",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "condition_special",
+   "class": "CONTROL",
+   "reads": "z[o+0..6]",
+   "writes": "var5_5",
+   "calls": "g.c(1,0,0,0,o+0,o+2,o+4,o+6)",
+   "semantics": "УСЛОВИЕ (вариант с фикс. сущностью 1): сравнение свойств.",
+   "evidence": "g.java:18460 c(int x8)"
+  },
+  {
+   "opcode": 126,
+   "count_in_missions": 3,
+   "missions": [
+    "mission_01",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "add_score_money",
+   "class": "PROGRESSION",
+   "reads": "z[o+0]",
+   "writes": "g.L[4]",
+   "calls": "g.ah(n)",
+   "semantics": "Добавление очков/денег: L[4] += 45000*n/100, cap 45000.",
+   "evidence": "g.java:21532 ah(int)"
+  },
+  {
+   "opcode": 127,
+   "count_in_missions": 38,
+   "missions": [
+    "mission_00",
+    "mission_02",
+    "mission_04"
+   ],
+   "name": "entity_command_ptr",
+   "class": "ENTITY",
+   "reads": "z[o+0..8], z[o+22], z[o+24]",
+   "writes": "сущность; указатель на z",
+   "calls": "g.a(o+0,o+2,o+4,o+6,o+8,o+22,o+24, var1_1+10, g.z)",
+   "semantics": "Команда сущности с передачей указателя на буфер данных (var1_1+10) — расширенная команда.",
+   "evidence": "g.java:17502 case 127"
+  },
+  {
+   "opcode": 128,
+   "count_in_missions": 1,
+   "missions": [
+    "mission_02"
+   ],
+   "name": "player_prop_write",
+   "class": "ENTITY",
+   "reads": "z[o+0],z[o+2]",
+   "writes": "g.c.g[n]",
+   "calls": "g.o(n,n2)",
+   "semantics": "Установка поля игрока: g.c.g[n] = n2; n==1 -> g.e(c) (пересчёт).",
+   "evidence": "g.java:18280 o(int,int)"
+  },
+  {
+   "opcode": 129,
+   "count_in_missions": 1,
+   "missions": [
+    "mission_00"
+   ],
+   "name": "noop",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "-",
+   "calls": "-",
+   "semantics": "Нет операции.",
+   "evidence": "g.java:17462 case 129"
+  },
+  {
+   "opcode": 130,
+   "count_in_missions": 345,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "entity_move",
+   "class": "ENTITY",
+   "reads": "z[o+0..12]",
+   "writes": "сущность f2: перемещение",
+   "calls": "g.c(n,n2,n3,n4); g.b(f2,n2,n3,n5,n6,bl)",
+   "semantics": "Перемещение сущности: поиск; L21 -> пропуск; иначе g.b(f2,...,bl) (перемещение); null -> g.U(n5) или g.bh().",
+   "evidence": "g.java:18419 a(int x7,boolean)"
+  },
+  {
+   "opcode": 131,
+   "count_in_missions": 1,
+   "missions": [
+    "mission_03"
+   ],
+   "name": "set_bD",
+   "class": "STATE",
+   "reads": "z[o+0]",
+   "writes": "g.bD",
+   "calls": "g.bD = z[o+0]",
+   "semantics": "Установка глобальной переменной миссии bD (используется в header/загрузке).",
+   "evidence": "g.java:17470 case 131"
+  },
+  {
+   "opcode": 132,
+   "count_in_missions": 16,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_04"
+   ],
+   "name": "reset_dialog_hp",
+   "class": "STATE",
+   "reads": "-",
+   "writes": "g.d.g[9]",
+   "calls": "if (g.d != null) g.d.g[9] = 0",
+   "semantics": "Сброс свойства 9 диалогового объекта d (HP?) в 0.",
+   "evidence": "g.java:17474 case 132"
+  },
+  {
+   "opcode": 133,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "remove_sprites",
+   "class": "GRAPHICS",
+   "reads": "z[o+0]",
+   "writes": "b[n] (набор спрайтов)",
+   "calls": "g.s(n)",
+   "semantics": "Удаление набора спрайтов n: цикл g.r(n2+i) для b[n] элементов.",
+   "evidence": "g.java:2147 s(int)"
+  },
+  {
+   "opcode": 134,
+   "count_in_missions": 107,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "switch_character",
+   "class": "ENTITY",
+   "reads": "z[o+0],z[o+2],z[o+4]",
+   "writes": "активный персонаж (c[], bt, j)",
+   "calls": "g.a(n,n2,n3,bl)",
+   "semantics": "Переключение активного персонажа: n2==1 -> j=true; n<0 -> al(); g.a(n,n4) — выбор.",
+   "evidence": "g.java:18549 a(int,int,int,boolean)"
+  },
+  {
+   "opcode": 135,
+   "count_in_missions": 5,
+   "missions": [
+    "mission_00",
+    "mission_02"
+   ],
+   "name": "entity_action3",
+   "class": "ENTITY",
+   "reads": "z[o+0],z[o+2]",
+   "writes": "сущность",
+   "calls": "g.e(n,n2,bl)",
+   "semantics": "Действие над сущностью (3 аргумента + bool).",
+   "evidence": "g.java:17484 case 135"
+  },
+  {
+   "opcode": 136,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "entity_command_ptr2",
+   "class": "ENTITY",
+   "reads": "z[o+0..14]",
+   "writes": "g.co (указатель), сущность",
+   "calls": "g.co = var1_1+14; g.a(o+0,o+4,o+6,o+8,o+10,o+12,o+14,false)",
+   "semantics": "Команда сущности с сохранением указателя в g.co.",
+   "evidence": "g.java:17424 case 136"
+  },
+  {
+   "opcode": 137,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "effect_start",
+   "class": "GRAPHICS",
+   "reads": "z[o+0],z[o+2],z[o+4],z[o+6]",
+   "writes": "g.E[] (эффект)",
+   "calls": "g.i(n,n2,n3,n4) или g.bz()",
+   "semantics": "Запуск полноэкранного эффекта E: E[0]=3, E[2]=n+1, E[3]=n2, E[6]=n3, E[7]=n4; в P-режиме сброс E[0]=-1 (bz).",
+   "evidence": "g.java:13554 i(int x4), 13550 bz()"
+  },
+  {
+   "opcode": 138,
+   "count_in_missions": 4,
+   "missions": [
+    "mission_00",
+    "mission_01"
+   ],
+   "name": "value_compute",
+   "class": "CONTROL",
+   "reads": "z[o+0]",
+   "writes": "var5_5 (результат)",
+   "calls": "g.r(n)",
+   "semantics": "Вычисление: var5_5 = c[w][4] - (n>>1) — значение в регистр.",
+   "evidence": "g.java:3080 r(int)"
+  },
+  {
+   "opcode": 139,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "set_bi",
+   "class": "STATE",
+   "reads": "z[o+0]",
+   "writes": "g.bi",
+   "calls": "g.bi = z[o+0]",
+   "semantics": "Установка переменной bi.",
+   "evidence": "g.java:17494 case 139"
+  },
+  {
+   "opcode": 140,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "noop",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "-",
+   "calls": "-",
+   "semantics": "Нет операции.",
+   "evidence": "g.java:17496 case 140"
+  },
+  {
+   "opcode": 141,
+   "count_in_missions": 18,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_04"
+   ],
+   "name": "switch_character_full",
+   "class": "ENTITY",
+   "reads": "z[o+0]",
+   "writes": "активный персонаж c[], bt, оружие L[1], слой",
+   "calls": "g.d(n,false)",
+   "semantics": "Полная смена активного персонажа: поиск по g[4]==n; c=c[n2], bt=n2; сброс f.a=0, L[1]=-1, M[0]=-1; перезагрузка оружия g.af/g.ai; смена слоя g.m если нужно.",
+   "evidence": "g.java:14794 d(int,boolean)"
+  },
+  {
+   "opcode": 142,
+   "count_in_missions": 152,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "teleport_character",
+   "class": "ENTITY",
+   "reads": "z[o+0..14]",
+   "writes": "персонаж: g[26],g[27], позиция a.b(n5,n6)",
+   "calls": "g.a(n,n2,n3,n4,n5,n6,n7)",
+   "semantics": "Телепорт персонажа: поиск по g[4]==n; g[26]=n2, g[27]=n3 (слой); позиция (n5,n6); смена слоя g.m для игрока; f.d(c,0).",
+   "evidence": "g.java:14727 a(int x7)"
+  },
+  {
+   "opcode": 143,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "else_marker",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "-",
+   "calls": "-",
+   "semantics": "Маркер else: в g.n(boolean) проверки n2==143 — граница then/else блока.",
+   "evidence": "g.java:17303-17340 n(boolean)"
+  },
+  {
+   "opcode": 144,
+   "count_in_missions": 1,
+   "missions": [
+    "mission_04"
+   ],
+   "name": "endif_marker",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "-",
+   "calls": "-",
+   "semantics": "Маркер endif: в g.n(boolean) проверки n2==144 — конец if-блока.",
+   "evidence": "g.java:17303-17340 n(boolean)"
+  },
+  {
+   "opcode": 145,
+   "count_in_missions": 53,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "if_open",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "баланс скобок n5",
+   "calls": "g.n(bl): n4==145 -> --n5",
+   "semantics": "Открывающая скобка if: балансируется с 146; пропускается до 146 при ложном условии (K() вернула false).",
+   "evidence": "g.java:17312-17340 n(boolean)"
+  },
+  {
+   "opcode": 146,
+   "count_in_missions": 120,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "if_close",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "баланс скобок n5",
+   "calls": "g.n(bl): n4==146 -> --n5; если n5==0 -> return",
+   "semantics": "Закрывающая скобка if/else.",
+   "evidence": "g.java:17312-17340 n(boolean)"
+  },
+  {
+   "opcode": 147,
+   "count_in_missions": 1,
+   "missions": [
+    "mission_03"
+   ],
+   "name": "entity_command_result",
+   "class": "ENTITY",
+   "reads": "z[o+0..10]",
+   "writes": "сущность по результату g.c(...)",
+   "calls": "g.a(g.c(o+0,o+4,o+6,o+8), o+10, g.z, o+12)",
+   "semantics": "Команда сущности, выбранной по 4 координатам, с передачей z-буфера и указателя.",
+   "evidence": "g.java:17504 case 147"
+  },
+  {
+   "opcode": 148,
+   "count_in_missions": 27,
+   "missions": [
+    "mission_00",
+    "mission_02",
+    "mission_04"
+   ],
+   "name": "set_npc_target",
+   "class": "ENTITY",
+   "reads": "z[o+0..22]",
+   "writes": "цель NPC (f.c/f.a между f2 и f3)",
+   "calls": "g.a(10 args): f.c(f2,f3) или f.a(f2,f3,n10!=0)",
+   "semantics": "SetNPCTarget: выбор двух сущностей (MC/NPC); n9==0 -> f.c (связь), иначе f.a (цель/сопровождение).",
+   "evidence": "g.java:18393 a(int x10)"
+  },
+  {
+   "opcode": 150,
+   "count_in_missions": 86,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "entity_command_var",
+   "class": "ENTITY",
+   "reads": "z[o+0..16]",
+   "writes": "сущность; var8_8 = (o+12==1?0:-1)",
+   "calls": "g.a(o+0,o+4,o+6,o+8,o+10,var8_8,o+14,o+16)",
+   "semantics": "Команда сущности (вариант 110) с параметром var8_8, зависящим от z[o+12].",
+   "evidence": "g.java:17566 case 150"
+  },
+  {
+   "opcode": 151,
+   "count_in_missions": 861,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "spawn_entity",
+   "class": "ENTITY",
+   "reads": "z[o+0..22]",
+   "writes": "новая сущность; g.ay, g.r, g.u",
+   "calls": "g.aS(); g.g(0,var10_14,var11_15); g.a(g.b,0,var8_9,var9_12,null,a[7],var10_14)",
+   "semantics": "СПАВН сущности: var8_9=тип?; var9_12=y (если <0 -> g.d.g[3]); var10_14=x (-1->g.c.g[4], -2->g.d.g[4], -3->-1); g.ay=o+8; g.r=(o+10==1); g.u=(o+18==1); создание через g.a(g.b,0,...).",
+   "evidence": "g.java:17572-17603 case 151"
+  },
+  {
+   "opcode": 152,
+   "count_in_missions": 89,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "entity_command_ptr3",
+   "class": "ENTITY",
+   "reads": "z[o+0..10]",
+   "writes": "сущность; f.y",
+   "calls": "g.f(var7_7, o+2, o+4, o+10, var1_1)",
+   "semantics": "Команда сущности с передачей указателя var1_1 (метод g.f — перегрузка; var7_7 = o+0 или f.y).",
+   "evidence": "g.java:17604 case 152"
+  },
+  {
+   "opcode": 153,
+   "count_in_missions": 51,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "timer_reset",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "g.bV",
+   "calls": "g.cb()",
+   "semantics": "Сброс таймера bV=0 (используется a(n,bl): 'если прошло n мс').",
+   "evidence": "g.java:18754 cb()"
+  },
+  {
+   "opcode": 154,
+   "count_in_missions": 42,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "entity_action1",
+   "class": "ENTITY",
+   "reads": "z[o+0]",
+   "writes": "сущность",
+   "calls": "g.d(o+0) (+ в K(): g.Q(), g.e(...))",
+   "semantics": "Действие над сущностью (1 аргумент); в K()-режиме — проверка.",
+   "evidence": "g.java:17610 case 154"
+  },
+  {
+   "opcode": 155,
+   "count_in_missions": 105,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "delayed_call2",
+   "class": "CONTROL",
+   "reads": "z[o+0..18]",
+   "writes": "m; g.i(n7,n8)",
+   "calls": "g.a(9 args)",
+   "semantics": "Отложенный вызов (как 119).",
+   "evidence": "g.java:17612 case 155"
+  },
+  {
+   "opcode": 156,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "camera_scroll_y",
+   "class": "CAMERA",
+   "reads": "z[o+2]",
+   "writes": "g.aL (вертикальный скролл), g.g(4,...)",
+   "calls": "g.R(n)",
+   "semantics": "Вертикальный скролл камеры: aL += n (с коррекцией -30%), кламп [0,200].",
+   "evidence": "g.java:11361 R(int)"
+  },
+  {
+   "opcode": 157,
+   "count_in_missions": 31,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "dialog_state_change",
+   "class": "STATE",
+   "reads": "z[o+0..8]",
+   "writes": "g.u, g.v, g.b[0], состояние",
+   "calls": "g.b[0].a(0); g.u=false; g.a(0,o+0,o+2,o+4==1,o+6==1); g.v=o+8==1",
+   "semantics": "Смена состояния/диалога: сброс u; вызов g.a(0, ...) с параметрами; установка v.",
+   "evidence": "g.java:17617-17622 case 157"
+  },
+  {
+   "opcode": 158,
+   "count_in_missions": 68,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "set_Q_flag",
+   "class": "STATE",
+   "reads": "z[o+0],z[o+2],z[o+4]",
+   "writes": "g.Q, g.j(n,n2)",
+   "calls": "g.Q = (o+4==1); g.j(o+0, o+2)",
+   "semantics": "Установка флага Q (пауза скрипта) + вызов j.",
+   "evidence": "g.java:17624 case 158"
+  },
+  {
+   "opcode": 159,
+   "count_in_missions": 54,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "script_end",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "P (диалог-режим)",
+   "calls": "g.x() (условие конца); P=false",
+   "semantics": "ТЕРМИНАТОР скрипта: J()/I() цикл выполняется пока n != 159; в K(): g.x() проверка конца.",
+   "evidence": "g.java:17791 case 159"
+  },
+  {
+   "opcode": 160,
+   "count_in_missions": 58,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "spawn_entity2",
+   "class": "ENTITY",
+   "reads": "z[o+0..14]",
+   "writes": "новая сущность; g.ay=0",
+   "calls": "g.aS(); g.a(0,g.c); g.a(0,o+0,-3,-3,a[7]); g.a(g.b,0,o+2,o+4,null,a[7],var8_11,o+12,o+14,var1_1)",
+   "semantics": "СПАВН сущности (вариант 151): var8_11 = o+0 (-1/-2/-3 -> g.c.g[4]/g.d.g[4]/-1); позиция (o+2,o+4).",
+   "evidence": "g.java:17628-17646 case 160"
+  },
+  {
+   "opcode": 161,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "capture_dialog_state",
+   "class": "STATE",
+   "reads": "-",
+   "writes": "g.dE, g.O",
+   "calls": "g.dE = (g.d!=null && g.d.L==11 ? g.d.g[12] : -3); g.O=true",
+   "semantics": "Захват состояния диалогового объекта d (g[12]) в dE; установка флага O.",
+   "evidence": "g.java:17648-17653 case 161"
+  },
+  {
+   "opcode": 162,
+   "count_in_missions": 63,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "entity_command_bool",
+   "class": "ENTITY",
+   "reads": "z[o+0..16]",
+   "writes": "сущность; g.co=-1",
+   "calls": "g.a(o+0,o+4,o+6,o+8,o+10,o+12,o+14, o+16==1)",
+   "semantics": "Команда сущности с bool-флагом (o+16==1); сброс co=-1.",
+   "evidence": "g.java:17655-17658 case 162"
+  },
+  {
+   "opcode": 165,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "transition_to_gameplay",
+   "class": "STATE",
+   "reads": "z[o+0]",
+   "writes": "g.aX; экран e(0,38,0,38); state",
+   "calls": "g.T(n)",
+   "semantics": "Переход: aX=n; затемнение e(0,38,0,38); n==3 -> g.a(6,-1) — выход в геймплей (state 6).",
+   "evidence": "g.java:11703 T(int)"
+  },
+  {
+   "opcode": 167,
+   "count_in_missions": 38,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "object_activate",
+   "class": "OBJECT",
+   "reads": "z[o+0],z[o+2],z[o+4],z[o+6]",
+   "writes": "g.X(-1); объект",
+   "calls": "g.a(n,n2,n3,n4,bl)",
+   "semantics": "Активация объекта: сброс X(-1); если n3==0 && n2!=1 && !bl -> g.a(n,false,n4).",
+   "evidence": "g.java:18765 a(int,int,int,int,boolean)"
+  },
+  {
+   "opcode": 168,
+   "count_in_missions": 8,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "camera_target",
+   "class": "CAMERA",
+   "reads": "z[o+0..8]",
+   "writes": "g.B[1..5], g.B[0]=2, g.G",
+   "calls": "g.g(n,n2,n3,n4); g.G = (o+8==1)",
+   "semantics": "Установка цели движения камеры/сцены: B[1..4]=параметры; B[5]=(позиция+20)<<14; B[0]=2.",
+   "evidence": "g.java:12284 g(int,int,int,int)"
+  },
+  {
+   "opcode": 169,
+   "count_in_missions": 7,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": "set_bM",
+   "class": "STATE",
+   "reads": "z[o+0]",
+   "writes": "g.bM",
+   "calls": "g.bM = z[o+0]",
+   "semantics": "Установка переменной bM (управляет циклом J()).",
+   "evidence": "g.java:17663 case 169"
+  },
+  {
+   "opcode": 170,
+   "count_in_missions": 0,
+   "missions": [],
+   "name": "noop",
+   "class": "CONTROL",
+   "reads": "-",
+   "writes": "-",
+   "calls": "-",
+   "semantics": "Нет операции.",
+   "evidence": "g.java:17664 case 170"
+  },
+  {
+   "opcode": 171,
+   "count_in_missions": 14,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_04"
+   ],
+   "name": "effect_switch",
+   "class": "GRAPHICS",
+   "reads": "z[o+0]",
+   "writes": "различные эффекты",
+   "calls": "g.ab(n): 0->eI(), 1->eK(), 2->g.b(7)+g.d(750,1,1,35), 3->...",
+   "semantics": "Переключатель эффектов: 0/1/2/3+ — разные визуальные/аудио эффекты.",
+   "evidence": "g.java:18592 ab(int)"
+  },
+  {
+   "opcode": 172,
+   "count_in_missions": 3,
+   "missions": [
+    "mission_00",
+    "mission_02"
+   ],
+   "name": "object_action2",
+   "class": "OBJECT",
+   "reads": "z[o+2],z[o+4],z[o+6],z[o+8]",
+   "writes": "объект-тайл",
+   "calls": "g.b(o+2,o+4,o+6,o+8,var4_4)",
+   "semantics": "Действие над объектом-тайлом (как 112, смещённые аргументы).",
+   "evidence": "g.java:17667 case 172"
+  },
+  {
+   "opcode": 200,
+   "count_in_missions": 212,
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "name": null,
+   "semantics": "UNKNOWN (нет case в H()/K()?)",
+   "evidence": null
+  }
+ ]
+}

@@ -865,11 +865,26 @@
   "detail": "research/analysis/v2/level-inventory.json"
  },
  "scripts": {
-  "claim": "19 значений опкодов (11-44), операнды 1-8 байт; заголовки 2=переход, 3=спавн; опкод 37=палитра-ремаппинг",
+  "claim": "Script engine восстановлен статически: парсер 16860 -> g.z; исполнители g.H() (действия) и g.K() (условия); skip g.n() (145/146 скобки, 143 else, 144 endif); термinator 159; вход g.b(int) (bO=H[n], bQ=A[n]); субскрипты 123.",
   "status": "CONFIRMED",
-  "evidence": "g.java:1720-1870 (парсер), 1872-1900 (исполнитель)",
-  "opcode_semantics": "REQUIRES_REAL_RUNTIME",
-  "detail": "research/analysis/audit/opcode-audit.json"
+  "evidence": "g.java:16860, 17353 (H), 17740 (K), 17290 (n), 17268 (b), 17722 (J)",
+  "opcode_count_in_data": 46,
+  "opcode_count_with_semantics": 44,
+  "opcode_semantics_status": "44 из 46 имеют семантику (CONFIRMED/INFERRED); 2 контрольных (144/145/146 — скобки; 200 — маркер секции); 7 требуют runtime для полного эффекта",
+  "classes": [
+   "ENTITY 22",
+   "CONTROL 17",
+   "STATE 8",
+   "OBJECT 3",
+   "GRAPHICS 3",
+   "TILE 2",
+   "CAMERA 2",
+   "PROGRESSION 1",
+   "ANIMATION 1"
+  ],
+  "detail": "research/analysis/v2/script-engine/opcode-master-v2.json",
+  "control_flow": "ENTRY (g.b) -> ACTION (110-172) -> CONDITION (K(), 124/125) -> BRANCH (145/146/143/144) -> DELAY (117/153/119) -> SUBROUTINE (123) -> TERMINATOR (159)",
+  "note": "Полная семантика визуальных эффектов каждого опкода — REQUIRES_REAL_RUNTIME (структура и эффекты-сигнатуры CONFIRMED статически)"
  },
  "resources": {
   "container_format": {

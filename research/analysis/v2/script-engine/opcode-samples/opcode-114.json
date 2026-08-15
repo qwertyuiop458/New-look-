@@ -1,0 +1,806 @@
+{
+ "opcode": 114,
+ "count": 277,
+ "samples": [
+  {
+   "mission": "mission_00",
+   "offset": 1350,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    365,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 0,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 1538,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    348,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 1,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 1560,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    362,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 2,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 1798,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    1263,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 7,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 1810,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    72,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 7,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 1898,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    1263,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 8,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 1996,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    1038,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 9,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 2016,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    1038,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 10,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 2028,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    1044,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 10,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 2086,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    0,
+    1044,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 11,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 4096,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    1,
+    836,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 16,
+   "object_index": 2,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 4514,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    1,
+    157,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 17,
+   "object_index": 2,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 4542,
+   "len": 5,
+   "words": [
+    2,
+    1,
+    1,
+    875,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 17,
+   "object_index": 2,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 4676,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    1,
+    341,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 18,
+   "object_index": 2,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 4812,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    1,
+    836,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 20,
+   "object_index": 2,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 4944,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    1,
+    1417,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 23,
+   "object_index": 2,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9006,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    2,
+    160,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 24,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9030,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    2,
+    191,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 25,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9120,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    2,
+    195,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 26,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9262,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    2,
+    173,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 27,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9620,
+   "len": 5,
+   "words": [
+    1,
+    0,
+    3,
+    38,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 29,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9632,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    3,
+    369,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 29,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9670,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    3,
+    291,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 30,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9802,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    3,
+    293,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 31,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9930,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    3,
+    314,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 32,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9942,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    3,
+    1592,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 32,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 9966,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    3,
+    1438,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 33,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 10030,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    3,
+    972,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 34,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 10258,
+   "len": 5,
+   "words": [
+    2,
+    1,
+    1,
+    481,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 36,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 10602,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    3,
+    465,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 36,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 10818,
+   "len": 5,
+   "words": [
+    2,
+    1,
+    1,
+    481,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 37,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 10830,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    3,
+    465,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 37,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 10842,
+   "len": 5,
+   "words": [
+    2,
+    1,
+    1,
+    468,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 37,
+   "object_index": 7,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 13014,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    4,
+    664,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 38,
+   "object_index": 9,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 13032,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    4,
+    621,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 38,
+   "object_index": 9,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 13364,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    4,
+    669,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 41,
+   "object_index": 9,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 13376,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    4,
+    664,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 41,
+   "object_index": 9,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 13630,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    4,
+    664,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 42,
+   "object_index": 9,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 14674,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    4,
+    669,
+    0
+   ],
+   "attached": "object",
+   "tile_index": 42,
+   "object_index": 10,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 16572,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    5,
+    752,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 43,
+   "object_index": 10,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 16714,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    5,
+    842,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 46,
+   "object_index": 10,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 16804,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    5,
+    1299,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 47,
+   "object_index": 10,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 17028,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    5,
+    1231,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 48,
+   "object_index": 10,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 17040,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    5,
+    1226,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 48,
+   "object_index": 10,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 17052,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    5,
+    752,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 48,
+   "object_index": 10,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 17064,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    5,
+    793,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 48,
+   "object_index": 10,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 17924,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    5,
+    793,
+    0
+   ],
+   "attached": "object",
+   "tile_index": 48,
+   "object_index": 11,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 18562,
+   "len": 5,
+   "words": [
+    2,
+    0,
+    5,
+    793,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 49,
+   "object_index": 13,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 19402,
+   "len": 5,
+   "words": [
+    1,
+    1,
+    0,
+    38,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 50,
+   "object_index": 13,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 19862,
+   "len": 5,
+   "words": [
+    2,
+    1,
+    1,
+    875,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 53,
+   "object_index": 14,
+   "context": "mission"
+  }
+ ]
+}

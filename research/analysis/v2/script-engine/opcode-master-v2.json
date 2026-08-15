@@ -1,0 +1,2328 @@
+{
+ "meta": {
+  "date": "2026-08-15",
+  "method": "статическая реконструкция из g.H()/g.K()/g.n() и тел методов-действий",
+  "structural_confidence_legend": "CONFIRMED = case найден в исполнителе; INFERRED = метод-действие прочитан частично",
+  "semantic_confidence_legend": "CONFIRMED = эффект ясен из тела; INFERRED = частично; UNKNOWN = не установлен; REQUIRES_REAL_RUNTIME = нужен рантайм",
+  "note": "60 записей: 46 реально встречающихся в данных миссий (включая контрольные 144/145/146 и маркер 200) + контрольные/диспетчерские (143, 122/129/140/170 no-op и др.)."
+ },
+ "opcodes": [
+  {
+   "opcode": 110,
+   "name": "entity_command",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 110",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..16]",
+    "writes": "сущность: g[28],g[29], позиция, направление",
+    "calls": "g.c(n,n2,n3,n4); f.a(f2,n7,n8,mask,n12,n11); f2.a.a(n5,n6)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..16]",
+    "writes": "сущность: g[28],g[29], позиция, направление",
+    "calls": "g.c(n,n2,n3,n4); f.a(f2,n7,n8,mask,n12,n11); f2.a.a(n5,n6)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность: g[28],g[29], позиция, направление",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Команда сущности: поиск по (n,n2,n3,n4); направление n8->бит-маска (0/1/7=8256, 4/3/5=4112, 2=1028, 6=2304); действие n7; позиция (n5,n6).",
+   "evidence": "g.java:18083 a(int x8)"
+  },
+  {
+   "opcode": 111,
+   "name": "teleport_player",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 111",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0], z[o+2]",
+    "writes": "g.c.a (позиция игрока)",
+    "calls": "g.c.a.b(n4,n3); g.a(c,1,bt)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0], z[o+2]",
+    "writes": "g.c.a (позиция игрока)",
+    "calls": "g.c.a.b(n4,n3); g.a(c,1,bt)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.c.a (позиция игрока)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Телепорт игрока относительно объекта d: n=0: x+=n2*16,y-=16; n=1: x+=n2*16 (+y=g[3] если d.L==11); n=2: x-=16; n=3: x+=g[2]*16.",
+   "evidence": "g.java:18136 n(int,int)"
+  },
+  {
+   "opcode": 112,
+   "name": "object_action",
+   "class": "OBJECT",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 112",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0],z[o+4],z[o+6],z[o+8],z[o+14]",
+    "writes": "объект-тайл g.c(2,...)",
+    "calls": "g.b(n,n2,n3,n4,var4_4)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0],z[o+4],z[o+6],z[o+8],z[o+14]",
+    "writes": "объект-тайл g.c(2,...)",
+    "calls": "g.b(n,n2,n3,n4,var4_4)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "объект-тайл g.c(2,...)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Действие над объектом-тайлом: bl=true -> f.h+f.c(f2,4)+f.m (деактивация); bl=false -> проверка проходимости f.s + маркировка g[n6+14].",
+   "evidence": "g.java:18823 b(int,int,int,int,boolean)"
+  },
+  {
+   "opcode": 113,
+   "name": "tile_object_field_write",
+   "class": "TILE",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 113",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+12]",
+    "writes": "g.g[layer][x][y].g[prop]",
+    "calls": "g.j(n,n2,n3,n4)"
+   },
+   "effect_signature": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+12]",
+    "writes": "g.g[layer][x][y].g[prop]",
+    "calls": "g.j(n,n2,n3,n4)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.g[layer][x][y].g[prop]",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Запись поля объекта-тайла: L25->g[9], L20->g[6], L21->g[4], L22->g[6], L24->g[2].",
+   "evidence": "g.java:18203 j(int,int,int,int)"
+  },
+  {
+   "opcode": 114,
+   "name": "tile_object_command",
+   "class": "TILE",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 114",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+8]",
+    "writes": "g.g[n][n2][n3].g[0]",
+    "calls": "g.k(n,n2,n3,n4)"
+   },
+   "effect_signature": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+8]",
+    "writes": "g.g[n][n2][n3].g[0]",
+    "calls": "g.k(n,n2,n3,n4)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.g[n][n2][n3].g[0]",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Команда объекту-тайлу: g[0]=n4; L21->f.b; L23 (дверь)->f.a(открыть/закрыть); L25->f.a.",
+   "evidence": "g.java:18239 k(int,int,int,int)"
+  },
+  {
+   "opcode": 115,
+   "name": "entity_prop_write",
+   "class": "ENTITY",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 115",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+8],z[o+10]",
+    "writes": "f[layer][x][y].g[n4]",
+    "calls": "g.d(n,n2,n3,n4,n5)"
+   },
+   "effect_signature": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+8],z[o+10]",
+    "writes": "f[layer][x][y].g[n4]",
+    "calls": "g.d(n,n2,n3,n4,n5)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "f[layer][x][y].g[n4]",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Запись свойства сущности сетки: g[n4] = n5.",
+   "evidence": "g.java:18262 d(int,int,int,int,int)"
+  },
+  {
+   "opcode": 116,
+   "name": "entity_prop_add",
+   "class": "ENTITY",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 116",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+8],z[o+10]",
+    "writes": "g.f[layer][x][y].g[n4]",
+    "calls": "g.e(n,n2,n3,n4,n5)"
+   },
+   "effect_signature": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+8],z[o+10]",
+    "writes": "g.f[layer][x][y].g[n4]",
+    "calls": "g.e(n,n2,n3,n4,n5)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.f[layer][x][y].g[n4]",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Инкремент свойства сущности сетки: g[n4] += n5.",
+   "evidence": "g.java:18272 e(int,int,int,int,int)"
+  },
+  {
+   "opcode": 117,
+   "name": "wait_until",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 117",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "пауза исполнения",
+    "calls": "g.d(...); цикл g.Q()/g.e(...)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "пауза исполнения",
+    "calls": "g.d(...); цикл g.Q()/g.e(...)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "пауза исполнения",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Ожидание: если var4_4 (P||a==2) -> пропуск; иначе цикл Q() пока e(...)!=0 — блокирующее ожидание условия.",
+   "evidence": "g.java:17400 case 117"
+  },
+  {
+   "opcode": 118,
+   "name": "place_entity_at_tile",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 118",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0],z[o+4],z[o+6],z[o+8],z[o+10],z[o+12]",
+    "writes": "сущность var8_8: позиция a.b(x*16+8, y*16+8); g[9..12] для L14",
+    "calls": "g.c(var0,var1,var2,var3); g.d(var8_8); g.a(var8_8,1,true); g.c(var8_8)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0],z[o+4],z[o+6],z[o+8],z[o+10],z[o+12]",
+    "writes": "сущность var8_8: позиция a.b(x*16+8, y*16+8); g[9..12] для L14",
+    "calls": "g.c(var0,var1,var2,var3); g.d(var8_8); g.a(var8_8,1,true); g.c(var8_8)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность var8_8: позиция a.b(x*16+8, y*16+8); g[9..12] для L14",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": true,
+   "semantics": "Размещение сущности в тайле: поиск; удаление если L 9/10/11/16; флаг 1 для L 3/1/0; позиция = центр тайла (x*16+8, y*16+8); обработка дверей L23; L14 -> g[9..12]=AABB.",
+   "evidence": "g.java:18302 c(int x6)"
+  },
+  {
+   "opcode": 119,
+   "name": "delayed_call",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 119",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..18]",
+    "writes": "m (флаг), g.i(n7,n8)",
+    "calls": "g.c(n,n2,n3,n4); g.d(f2,n5) или g.p(f2); g.i(n7,n8)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..18]",
+    "writes": "m (флаг), g.i(n7,n8)",
+    "calls": "g.c(n,n2,n3,n4); g.d(f2,n5) или g.p(f2); g.i(n7,n8)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "m (флаг), g.i(n7,n8)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Отложенный вызов: если n5 >= delta -> g.d(f2,n5) (задержка), иначе g.p(f2) (немедленно); n6==1 -> g.i(n7,n8); m = (n9==1).",
+   "evidence": "g.java:18287 a(int x9)"
+  },
+  {
+   "opcode": 120,
+   "name": "prop14_write",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 120",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0],z[o+2]",
+    "writes": "f2.g[n3+14]",
+    "calls": "g.p(n,n2)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0],z[o+2]",
+    "writes": "f2.g[n3+14]",
+    "calls": "g.p(n,n2)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "f2.g[n3+14]",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Запись байта n2 в свойство 14 (палитра/флаг) сущности g.a(n): g[n3+14] merge 65280.",
+   "evidence": "g.java:18302 p(int,int)"
+  },
+  {
+   "opcode": 121,
+   "name": "anim_stack_switch",
+   "class": "ANIMATION",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 121",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "f/g стеки, ch/ci/cm/cn, co, A[]",
+    "calls": "g.cp(); g.bh()"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "f/g стеки, ch/ci/cm/cn, co, A[]",
+    "calls": "g.cp(); g.bh()",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "f/g стеки, ch/ci/cm/cn, co, A[]",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Переключение стека анимаций/отложенных действий (cp) + сброс массива A (bh: A[1]=-1,A[0]=0,A[7]=0).",
+   "evidence": "g.java:20678 cp(), 12199 bh()"
+  },
+  {
+   "opcode": 122,
+   "name": "noop",
+   "class": "CONTROL",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 122",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "-",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Нет операции (break).",
+   "evidence": "g.java:17444 case 122"
+  },
+  {
+   "opcode": 123,
+   "name": "subroutine_call",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 123",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+4]",
+    "writes": "bP, bO, bQ (указатель скрипта)",
+    "calls": "g.bW(); bP=z[o+4]; bO=H[idx]; bQ=A[idx]"
+   },
+   "effect_signature": {
+    "reads": "z[o+4]",
+    "writes": "bP, bO, bQ (указатель скрипта)",
+    "calls": "g.bW(); bP=z[o+4]; bO=H[idx]; bQ=A[idx]",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "bP, bO, bQ (указатель скрипта)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Вызов субскрипта: переключение исполнения на скрипт-тайл с индексом z[o+4] (H/A таблицы).",
+   "evidence": "g.java:17528-17537 (var3_3 = var0==123)"
+  },
+  {
+   "opcode": 124,
+   "name": "condition_prop_cmp",
+   "class": "CONTROL",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 124",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..14]",
+    "writes": "var5_5 (результат условия)",
+    "calls": "g.c(2, o+10, o+12, o+14, o+0, o+2, o+4, o+6)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..14]",
+    "writes": "var5_5 (результат условия)",
+    "calls": "g.c(2, o+10, o+12, o+14, o+0, o+2, o+4, o+6)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "var5_5 (результат условия)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "УСЛОВИЕ: сравнение свойства сущности: f2 = g.c(n,n2,n3,n4); n9=f2.g[n5]; switch(n6): 0==,1!=,2<,3>,4<=,5>=... (n7) — результат для ветвления if/else (145/146).",
+   "evidence": "g.java:18460 c(int x8)"
+  },
+  {
+   "opcode": 125,
+   "name": "condition_special",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 125",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..6]",
+    "writes": "var5_5",
+    "calls": "g.c(1,0,0,0,o+0,o+2,o+4,o+6)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..6]",
+    "writes": "var5_5",
+    "calls": "g.c(1,0,0,0,o+0,o+2,o+4,o+6)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "var5_5",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "УСЛОВИЕ (вариант с фикс. сущностью 1): сравнение свойств.",
+   "evidence": "g.java:18460 c(int x8)"
+  },
+  {
+   "opcode": 126,
+   "name": "add_score_money",
+   "class": "PROGRESSION",
+   "missions": [
+    "mission_01",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 126",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "g.L[4]",
+    "calls": "g.ah(n)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "g.L[4]",
+    "calls": "g.ah(n)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.L[4]",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Добавление очков/денег: L[4] += 45000*n/100, cap 45000.",
+   "evidence": "g.java:21532 ah(int)"
+  },
+  {
+   "opcode": 127,
+   "name": "entity_command_ptr",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_02",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 127",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..8], z[o+22], z[o+24]",
+    "writes": "сущность; указатель на z",
+    "calls": "g.a(o+0,o+2,o+4,o+6,o+8,o+22,o+24, var1_1+10, g.z)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..8], z[o+22], z[o+24]",
+    "writes": "сущность; указатель на z",
+    "calls": "g.a(o+0,o+2,o+4,o+6,o+8,o+22,o+24, var1_1+10, g.z)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность; указатель на z",
+    "resource_access": [],
+    "confidence": "INFERRED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "INFERRED",
+   "runtime_required": true,
+   "semantics": "Команда сущности с передачей указателя на буфер данных (var1_1+10) — расширенная команда.",
+   "evidence": "g.java:17502 case 127"
+  },
+  {
+   "opcode": 128,
+   "name": "player_prop_write",
+   "class": "ENTITY",
+   "missions": [
+    "mission_02"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 128",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0],z[o+2]",
+    "writes": "g.c.g[n]",
+    "calls": "g.o(n,n2)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0],z[o+2]",
+    "writes": "g.c.g[n]",
+    "calls": "g.o(n,n2)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.c.g[n]",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Установка поля игрока: g.c.g[n] = n2; n==1 -> g.e(c) (пересчёт).",
+   "evidence": "g.java:18280 o(int,int)"
+  },
+  {
+   "opcode": 129,
+   "name": "noop",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 129",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "-",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Нет операции.",
+   "evidence": "g.java:17462 case 129"
+  },
+  {
+   "opcode": 130,
+   "name": "entity_move",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 130",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..12]",
+    "writes": "сущность f2: перемещение",
+    "calls": "g.c(n,n2,n3,n4); g.b(f2,n2,n3,n5,n6,bl)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..12]",
+    "writes": "сущность f2: перемещение",
+    "calls": "g.c(n,n2,n3,n4); g.b(f2,n2,n3,n5,n6,bl)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность f2: перемещение",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Перемещение сущности: поиск; L21 -> пропуск; иначе g.b(f2,...,bl) (перемещение); null -> g.U(n5) или g.bh().",
+   "evidence": "g.java:18419 a(int x7,boolean)"
+  },
+  {
+   "opcode": 131,
+   "name": "set_bD",
+   "class": "STATE",
+   "missions": [
+    "mission_03"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 131",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "g.bD",
+    "calls": "g.bD = z[o+0]"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "g.bD",
+    "calls": "g.bD = z[o+0]",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.bD",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Установка глобальной переменной миссии bD (используется в header/загрузке).",
+   "evidence": "g.java:17470 case 131"
+  },
+  {
+   "opcode": 132,
+   "name": "reset_dialog_hp",
+   "class": "STATE",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 132",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "g.d.g[9]",
+    "calls": "if (g.d != null) g.d.g[9] = 0"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "g.d.g[9]",
+    "calls": "if (g.d != null) g.d.g[9] = 0",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.d.g[9]",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Сброс свойства 9 диалогового объекта d (HP?) в 0.",
+   "evidence": "g.java:17474 case 132"
+  },
+  {
+   "opcode": 133,
+   "name": "remove_sprites",
+   "class": "GRAPHICS",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 133",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "b[n] (набор спрайтов)",
+    "calls": "g.s(n)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "b[n] (набор спрайтов)",
+    "calls": "g.s(n)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "b[n] (набор спрайтов)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Удаление набора спрайтов n: цикл g.r(n2+i) для b[n] элементов.",
+   "evidence": "g.java:2147 s(int)"
+  },
+  {
+   "opcode": 134,
+   "name": "switch_character",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 134",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0],z[o+2],z[o+4]",
+    "writes": "активный персонаж (c[], bt, j)",
+    "calls": "g.a(n,n2,n3,bl)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0],z[o+2],z[o+4]",
+    "writes": "активный персонаж (c[], bt, j)",
+    "calls": "g.a(n,n2,n3,bl)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "активный персонаж (c[], bt, j)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Переключение активного персонажа: n2==1 -> j=true; n<0 -> al(); g.a(n,n4) — выбор.",
+   "evidence": "g.java:18549 a(int,int,int,boolean)"
+  },
+  {
+   "opcode": 135,
+   "name": "entity_action3",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_02"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 135",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0],z[o+2]",
+    "writes": "сущность",
+    "calls": "g.e(n,n2,bl)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0],z[o+2]",
+    "writes": "сущность",
+    "calls": "g.e(n,n2,bl)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность",
+    "resource_access": [],
+    "confidence": "INFERRED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "INFERRED",
+   "runtime_required": true,
+   "semantics": "Действие над сущностью (3 аргумента + bool).",
+   "evidence": "g.java:17484 case 135"
+  },
+  {
+   "opcode": 136,
+   "name": "entity_command_ptr2",
+   "class": "ENTITY",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 136",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..14]",
+    "writes": "g.co (указатель), сущность",
+    "calls": "g.co = var1_1+14; g.a(o+0,o+4,o+6,o+8,o+10,o+12,o+14,false)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..14]",
+    "writes": "g.co (указатель), сущность",
+    "calls": "g.co = var1_1+14; g.a(o+0,o+4,o+6,o+8,o+10,o+12,o+14,false)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.co (указатель), сущность",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Команда сущности с сохранением указателя в g.co.",
+   "evidence": "g.java:17424 case 136"
+  },
+  {
+   "opcode": 137,
+   "name": "effect_start",
+   "class": "GRAPHICS",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 137",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0],z[o+2],z[o+4],z[o+6]",
+    "writes": "g.E[] (эффект)",
+    "calls": "g.i(n,n2,n3,n4) или g.bz()"
+   },
+   "effect_signature": {
+    "reads": "z[o+0],z[o+2],z[o+4],z[o+6]",
+    "writes": "g.E[] (эффект)",
+    "calls": "g.i(n,n2,n3,n4) или g.bz()",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.E[] (эффект)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Запуск полноэкранного эффекта E: E[0]=3, E[2]=n+1, E[3]=n2, E[6]=n3, E[7]=n4; в P-режиме сброс E[0]=-1 (bz).",
+   "evidence": "g.java:13554 i(int x4), 13550 bz()"
+  },
+  {
+   "opcode": 138,
+   "name": "value_compute",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_01"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 138",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "var5_5 (результат)",
+    "calls": "g.r(n)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "var5_5 (результат)",
+    "calls": "g.r(n)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "var5_5 (результат)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Вычисление: var5_5 = c[w][4] - (n>>1) — значение в регистр.",
+   "evidence": "g.java:3080 r(int)"
+  },
+  {
+   "opcode": 139,
+   "name": "set_bi",
+   "class": "STATE",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 139",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "g.bi",
+    "calls": "g.bi = z[o+0]"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "g.bi",
+    "calls": "g.bi = z[o+0]",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.bi",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Установка переменной bi.",
+   "evidence": "g.java:17494 case 139"
+  },
+  {
+   "opcode": 140,
+   "name": "noop",
+   "class": "CONTROL",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 140",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "-",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Нет операции.",
+   "evidence": "g.java:17496 case 140"
+  },
+  {
+   "opcode": 141,
+   "name": "switch_character_full",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 141",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "активный персонаж c[], bt, оружие L[1], слой",
+    "calls": "g.d(n,false)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "активный персонаж c[], bt, оружие L[1], слой",
+    "calls": "g.d(n,false)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "активный персонаж c[], bt, оружие L[1], слой",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Полная смена активного персонажа: поиск по g[4]==n; c=c[n2], bt=n2; сброс f.a=0, L[1]=-1, M[0]=-1; перезагрузка оружия g.af/g.ai; смена слоя g.m если нужно.",
+   "evidence": "g.java:14794 d(int,boolean)"
+  },
+  {
+   "opcode": 142,
+   "name": "teleport_character",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 142",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..14]",
+    "writes": "персонаж: g[26],g[27], позиция a.b(n5,n6)",
+    "calls": "g.a(n,n2,n3,n4,n5,n6,n7)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..14]",
+    "writes": "персонаж: g[26],g[27], позиция a.b(n5,n6)",
+    "calls": "g.a(n,n2,n3,n4,n5,n6,n7)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "персонаж: g[26],g[27], позиция a.b(n5,n6)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Телепорт персонажа: поиск по g[4]==n; g[26]=n2, g[27]=n3 (слой); позиция (n5,n6); смена слоя g.m для игрока; f.d(c,0).",
+   "evidence": "g.java:14727 a(int x7)"
+  },
+  {
+   "opcode": 143,
+   "name": "else_marker",
+   "class": "CONTROL",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 143",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "-",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Маркер else: в g.n(boolean) проверки n2==143 — граница then/else блока.",
+   "evidence": "g.java:17303-17340 n(boolean)"
+  },
+  {
+   "opcode": 144,
+   "name": "endif_marker",
+   "class": "CONTROL",
+   "missions": [
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 144",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "-",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Маркер endif: в g.n(boolean) проверки n2==144 — конец if-блока.",
+   "evidence": "g.java:17303-17340 n(boolean)"
+  },
+  {
+   "opcode": 145,
+   "name": "if_open",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 145",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "баланс скобок n5",
+    "calls": "g.n(bl): n4==145 -> --n5"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "баланс скобок n5",
+    "calls": "g.n(bl): n4==145 -> --n5",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "баланс скобок n5",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Открывающая скобка if: балансируется с 146; пропускается до 146 при ложном условии (K() вернула false).",
+   "evidence": "g.java:17312-17340 n(boolean)"
+  },
+  {
+   "opcode": 146,
+   "name": "if_close",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 146",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "баланс скобок n5",
+    "calls": "g.n(bl): n4==146 -> --n5; если n5==0 -> return"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "баланс скобок n5",
+    "calls": "g.n(bl): n4==146 -> --n5; если n5==0 -> return",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "баланс скобок n5",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Закрывающая скобка if/else.",
+   "evidence": "g.java:17312-17340 n(boolean)"
+  },
+  {
+   "opcode": 147,
+   "name": "entity_command_result",
+   "class": "ENTITY",
+   "missions": [
+    "mission_03"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 147",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..10]",
+    "writes": "сущность по результату g.c(...)",
+    "calls": "g.a(g.c(o+0,o+4,o+6,o+8), o+10, g.z, o+12)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..10]",
+    "writes": "сущность по результату g.c(...)",
+    "calls": "g.a(g.c(o+0,o+4,o+6,o+8), o+10, g.z, o+12)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность по результату g.c(...)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": true,
+   "semantics": "Команда сущности, выбранной по 4 координатам, с передачей z-буфера и указателя.",
+   "evidence": "g.java:17504 case 147"
+  },
+  {
+   "opcode": 148,
+   "name": "set_npc_target",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_02",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 148",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0..22]",
+    "writes": "цель NPC (f.c/f.a между f2 и f3)",
+    "calls": "g.a(10 args): f.c(f2,f3) или f.a(f2,f3,n10!=0)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..22]",
+    "writes": "цель NPC (f.c/f.a между f2 и f3)",
+    "calls": "g.a(10 args): f.c(f2,f3) или f.a(f2,f3,n10!=0)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "цель NPC (f.c/f.a между f2 и f3)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": true,
+   "semantics": "SetNPCTarget: выбор двух сущностей (MC/NPC); n9==0 -> f.c (связь), иначе f.a (цель/сопровождение).",
+   "evidence": "g.java:18393 a(int x10)"
+  },
+  {
+   "opcode": 150,
+   "name": "entity_command_var",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 150",
+    "condition": "g.K() case 150"
+   },
+   "data_flow": {
+    "reads": "z[o+0..16]",
+    "writes": "сущность; var8_8 = (o+12==1?0:-1)",
+    "calls": "g.a(o+0,o+4,o+6,o+8,o+10,var8_8,o+14,o+16)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..16]",
+    "writes": "сущность; var8_8 = (o+12==1?0:-1)",
+    "calls": "g.a(o+0,o+4,o+6,o+8,o+10,var8_8,o+14,o+16)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность; var8_8 = (o+12==1?0:-1)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Команда сущности (вариант 110) с параметром var8_8, зависящим от z[o+12].",
+   "evidence": "g.java:17566 case 150"
+  },
+  {
+   "opcode": 151,
+   "name": "spawn_entity",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 151",
+    "condition": "g.K() case 151"
+   },
+   "data_flow": {
+    "reads": "z[o+0..22]",
+    "writes": "новая сущность; g.ay, g.r, g.u",
+    "calls": "g.aS(); g.g(0,var10_14,var11_15); g.a(g.b,0,var8_9,var9_12,null,a[7],var10_14)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..22]",
+    "writes": "новая сущность; g.ay, g.r, g.u",
+    "calls": "g.aS(); g.g(0,var10_14,var11_15); g.a(g.b,0,var8_9,var9_12,null,a[7],var10_14)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "новая сущность; g.ay, g.r, g.u",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "СПАВН сущности: var8_9=тип?; var9_12=y (если <0 -> g.d.g[3]); var10_14=x (-1->g.c.g[4], -2->g.d.g[4], -3->-1); g.ay=o+8; g.r=(o+10==1); g.u=(o+18==1); создание через g.a(g.b,0,...).",
+   "evidence": "g.java:17572-17603 case 151"
+  },
+  {
+   "opcode": 152,
+   "name": "entity_command_ptr3",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 152",
+    "condition": "g.K() case 152"
+   },
+   "data_flow": {
+    "reads": "z[o+0..10]",
+    "writes": "сущность; f.y",
+    "calls": "g.f(var7_7, o+2, o+4, o+10, var1_1)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..10]",
+    "writes": "сущность; f.y",
+    "calls": "g.f(var7_7, o+2, o+4, o+10, var1_1)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность; f.y",
+    "resource_access": [],
+    "confidence": "INFERRED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "INFERRED",
+   "runtime_required": true,
+   "semantics": "Команда сущности с передачей указателя var1_1 (метод g.f — перегрузка; var7_7 = o+0 или f.y).",
+   "evidence": "g.java:17604 case 152"
+  },
+  {
+   "opcode": 153,
+   "name": "timer_reset",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 153",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "g.bV",
+    "calls": "g.cb()"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "g.bV",
+    "calls": "g.cb()",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.bV",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Сброс таймера bV=0 (используется a(n,bl): 'если прошло n мс').",
+   "evidence": "g.java:18754 cb()"
+  },
+  {
+   "opcode": 154,
+   "name": "entity_action1",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 154",
+    "condition": "g.K() case 154"
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "сущность",
+    "calls": "g.d(o+0) (+ в K(): g.Q(), g.e(...))"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "сущность",
+    "calls": "g.d(o+0) (+ в K(): g.Q(), g.e(...))",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность",
+    "resource_access": [],
+    "confidence": "INFERRED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "INFERRED",
+   "runtime_required": false,
+   "semantics": "Действие над сущностью (1 аргумент); в K()-режиме — проверка.",
+   "evidence": "g.java:17610 case 154"
+  },
+  {
+   "opcode": 155,
+   "name": "delayed_call2",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 155",
+    "condition": "g.K() case 155"
+   },
+   "data_flow": {
+    "reads": "z[o+0..18]",
+    "writes": "m; g.i(n7,n8)",
+    "calls": "g.a(9 args)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..18]",
+    "writes": "m; g.i(n7,n8)",
+    "calls": "g.a(9 args)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "m; g.i(n7,n8)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Отложенный вызов (как 119).",
+   "evidence": "g.java:17612 case 155"
+  },
+  {
+   "opcode": 156,
+   "name": "camera_scroll_y",
+   "class": "CAMERA",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 156",
+    "condition": "g.K() case 156"
+   },
+   "data_flow": {
+    "reads": "z[o+2]",
+    "writes": "g.aL (вертикальный скролл), g.g(4,...)",
+    "calls": "g.R(n)"
+   },
+   "effect_signature": {
+    "reads": "z[o+2]",
+    "writes": "g.aL (вертикальный скролл), g.g(4,...)",
+    "calls": "g.R(n)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.aL (вертикальный скролл), g.g(4,...)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Вертикальный скролл камеры: aL += n (с коррекцией -30%), кламп [0,200].",
+   "evidence": "g.java:11361 R(int)"
+  },
+  {
+   "opcode": 157,
+   "name": "dialog_state_change",
+   "class": "STATE",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 157",
+    "condition": "g.K() case 157"
+   },
+   "data_flow": {
+    "reads": "z[o+0..8]",
+    "writes": "g.u, g.v, g.b[0], состояние",
+    "calls": "g.b[0].a(0); g.u=false; g.a(0,o+0,o+2,o+4==1,o+6==1); g.v=o+8==1"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..8]",
+    "writes": "g.u, g.v, g.b[0], состояние",
+    "calls": "g.b[0].a(0); g.u=false; g.a(0,o+0,o+2,o+4==1,o+6==1); g.v=o+8==1",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.u, g.v, g.b[0], состояние",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Смена состояния/диалога: сброс u; вызов g.a(0, ...) с параметрами; установка v.",
+   "evidence": "g.java:17617-17622 case 157"
+  },
+  {
+   "opcode": 158,
+   "name": "set_Q_flag",
+   "class": "STATE",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 158",
+    "condition": "g.K() case 158"
+   },
+   "data_flow": {
+    "reads": "z[o+0],z[o+2],z[o+4]",
+    "writes": "g.Q, g.j(n,n2)",
+    "calls": "g.Q = (o+4==1); g.j(o+0, o+2)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0],z[o+2],z[o+4]",
+    "writes": "g.Q, g.j(n,n2)",
+    "calls": "g.Q = (o+4==1); g.j(o+0, o+2)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.Q, g.j(n,n2)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Установка флага Q (пауза скрипта) + вызов j.",
+   "evidence": "g.java:17624 case 158"
+  },
+  {
+   "opcode": 159,
+   "name": "script_end",
+   "class": "CONTROL",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 159",
+    "condition": "g.K() case 159"
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "P (диалог-режим)",
+    "calls": "g.x() (условие конца); P=false"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "P (диалог-режим)",
+    "calls": "g.x() (условие конца); P=false",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "P (диалог-режим)",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "ТЕРМИНАТОР скрипта: J()/I() цикл выполняется пока n != 159; в K(): g.x() проверка конца.",
+   "evidence": "g.java:17791 case 159"
+  },
+  {
+   "opcode": 160,
+   "name": "spawn_entity2",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 160",
+    "condition": "g.K() case 160"
+   },
+   "data_flow": {
+    "reads": "z[o+0..14]",
+    "writes": "новая сущность; g.ay=0",
+    "calls": "g.aS(); g.a(0,g.c); g.a(0,o+0,-3,-3,a[7]); g.a(g.b,0,o+2,o+4,null,a[7],var8_11,o+12,o+14,var1_1)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..14]",
+    "writes": "новая сущность; g.ay=0",
+    "calls": "g.aS(); g.a(0,g.c); g.a(0,o+0,-3,-3,a[7]); g.a(g.b,0,o+2,o+4,null,a[7],var8_11,o+12,o+14,var1_1)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "новая сущность; g.ay=0",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "СПАВН сущности (вариант 151): var8_11 = o+0 (-1/-2/-3 -> g.c.g[4]/g.d.g[4]/-1); позиция (o+2,o+4).",
+   "evidence": "g.java:17628-17646 case 160"
+  },
+  {
+   "opcode": 161,
+   "name": "capture_dialog_state",
+   "class": "STATE",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 161",
+    "condition": "g.K() case 161"
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "g.dE, g.O",
+    "calls": "g.dE = (g.d!=null && g.d.L==11 ? g.d.g[12] : -3); g.O=true"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "g.dE, g.O",
+    "calls": "g.dE = (g.d!=null && g.d.L==11 ? g.d.g[12] : -3); g.O=true",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.dE, g.O",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Захват состояния диалогового объекта d (g[12]) в dE; установка флага O.",
+   "evidence": "g.java:17648-17653 case 161"
+  },
+  {
+   "opcode": 162,
+   "name": "entity_command_bool",
+   "class": "ENTITY",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 162",
+    "condition": "g.K() case 162"
+   },
+   "data_flow": {
+    "reads": "z[o+0..16]",
+    "writes": "сущность; g.co=-1",
+    "calls": "g.a(o+0,o+4,o+6,o+8,o+10,o+12,o+14, o+16==1)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..16]",
+    "writes": "сущность; g.co=-1",
+    "calls": "g.a(o+0,o+4,o+6,o+8,o+10,o+12,o+14, o+16==1)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "сущность; g.co=-1",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Команда сущности с bool-флагом (o+16==1); сброс co=-1.",
+   "evidence": "g.java:17655-17658 case 162"
+  },
+  {
+   "opcode": 165,
+   "name": "transition_to_gameplay",
+   "class": "STATE",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 165",
+    "condition": "g.K() case 165"
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "g.aX; экран e(0,38,0,38); state",
+    "calls": "g.T(n)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "g.aX; экран e(0,38,0,38); state",
+    "calls": "g.T(n)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.aX; экран e(0,38,0,38); state",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Переход: aX=n; затемнение e(0,38,0,38); n==3 -> g.a(6,-1) — выход в геймплей (state 6).",
+   "evidence": "g.java:11703 T(int)"
+  },
+  {
+   "opcode": 167,
+   "name": "object_activate",
+   "class": "OBJECT",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 167",
+    "condition": "g.K() case 167"
+   },
+   "data_flow": {
+    "reads": "z[o+0],z[o+2],z[o+4],z[o+6]",
+    "writes": "g.X(-1); объект",
+    "calls": "g.a(n,n2,n3,n4,bl)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0],z[o+2],z[o+4],z[o+6]",
+    "writes": "g.X(-1); объект",
+    "calls": "g.a(n,n2,n3,n4,bl)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.X(-1); объект",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Активация объекта: сброс X(-1); если n3==0 && n2!=1 && !bl -> g.a(n,false,n4).",
+   "evidence": "g.java:18765 a(int,int,int,int,boolean)"
+  },
+  {
+   "opcode": 168,
+   "name": "camera_target",
+   "class": "CAMERA",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 168",
+    "condition": "g.K() case 168"
+   },
+   "data_flow": {
+    "reads": "z[o+0..8]",
+    "writes": "g.B[1..5], g.B[0]=2, g.G",
+    "calls": "g.g(n,n2,n3,n4); g.G = (o+8==1)"
+   },
+   "effect_signature": {
+    "reads": "z[o+0..8]",
+    "writes": "g.B[1..5], g.B[0]=2, g.G",
+    "calls": "g.g(n,n2,n3,n4); g.G = (o+8==1)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.B[1..5], g.B[0]=2, g.G",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Установка цели движения камеры/сцены: B[1..4]=параметры; B[5]=(позиция+20)<<14; B[0]=2.",
+   "evidence": "g.java:12284 g(int,int,int,int)"
+  },
+  {
+   "opcode": 169,
+   "name": "set_bM",
+   "class": "STATE",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 169",
+    "condition": null
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "g.bM",
+    "calls": "g.bM = z[o+0]"
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "g.bM",
+    "calls": "g.bM = z[o+0]",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "g.bM",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Установка переменной bM (управляет циклом J()).",
+   "evidence": "g.java:17663 case 169"
+  },
+  {
+   "opcode": 170,
+   "name": "noop",
+   "class": "CONTROL",
+   "missions": [],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 170",
+    "condition": "g.K() case 170"
+   },
+   "data_flow": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-"
+   },
+   "effect_signature": {
+    "reads": "-",
+    "writes": "-",
+    "calls": "-",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "-",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Нет операции.",
+   "evidence": "g.java:17664 case 170"
+  },
+  {
+   "opcode": 171,
+   "name": "effect_switch",
+   "class": "GRAPHICS",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 171",
+    "condition": "g.K() case 171"
+   },
+   "data_flow": {
+    "reads": "z[o+0]",
+    "writes": "различные эффекты",
+    "calls": "g.ab(n): 0->eI(), 1->eK(), 2->g.b(7)+g.d(750,1,1,35), 3->..."
+   },
+   "effect_signature": {
+    "reads": "z[o+0]",
+    "writes": "различные эффекты",
+    "calls": "g.ab(n): 0->eI(), 1->eK(), 2->g.b(7)+g.d(750,1,1,35), 3->...",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "различные эффекты",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Переключатель эффектов: 0/1/2/3+ — разные визуальные/аудио эффекты.",
+   "evidence": "g.java:18592 ab(int)"
+  },
+  {
+   "opcode": 172,
+   "name": "object_action2",
+   "class": "OBJECT",
+   "missions": [
+    "mission_00",
+    "mission_02"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": "g.H() case 172",
+    "condition": "g.K() case 172"
+   },
+   "data_flow": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+8]",
+    "writes": "объект-тайл",
+    "calls": "g.b(o+2,o+4,o+6,o+8,var4_4)"
+   },
+   "effect_signature": {
+    "reads": "z[o+2],z[o+4],z[o+6],z[o+8]",
+    "writes": "объект-тайл",
+    "calls": "g.b(o+2,o+4,o+6,o+8,var4_4)",
+    "creates": [],
+    "destroys": [],
+    "state_changes": "объект-тайл",
+    "resource_access": [],
+    "confidence": "CONFIRMED"
+   },
+   "structural_confidence": "CONFIRMED",
+   "semantic_confidence": "CONFIRMED",
+   "runtime_required": false,
+   "semantics": "Действие над объектом-тайлом (как 112, смещённые аргументы).",
+   "evidence": "g.java:17667 case 172"
+  },
+  {
+   "opcode": 200,
+   "name": null,
+   "class": "UNKNOWN",
+   "missions": [
+    "mission_00",
+    "mission_01",
+    "mission_02",
+    "mission_03",
+    "mission_04"
+   ],
+   "operand_format": {
+    "opcode_byte": 1,
+    "len_byte": 1,
+    "operands": "len x u16 LE"
+   },
+   "dispatch": {
+    "action": null,
+    "condition": null
+   },
+   "data_flow": {},
+   "effect_signature": {
+    "confidence": "UNKNOWN"
+   },
+   "structural_confidence": "CONFIRMED (в данных)",
+   "semantic_confidence": "UNKNOWN",
+   "runtime_required": true,
+   "semantics": "UNKNOWN (case не найден в прочитанных исполнителях)",
+   "evidence": null
+  }
+ ]
+}

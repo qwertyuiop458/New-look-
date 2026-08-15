@@ -1,0 +1,42 @@
+{
+ "opcode": 126,
+ "count": 3,
+ "samples": [
+  {
+   "mission": "mission_01",
+   "offset": 24854,
+   "len": 1,
+   "words": [
+    100
+   ],
+   "attached": "object",
+   "tile_index": 43,
+   "object_index": 18,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_03",
+   "offset": 3982,
+   "len": 1,
+   "words": [
+    100
+   ],
+   "attached": "object",
+   "tile_index": null,
+   "object_index": 0,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_04",
+   "offset": 9100,
+   "len": 1,
+   "words": [
+    100
+   ],
+   "attached": "object",
+   "tile_index": 24,
+   "object_index": 2,
+   "context": "mission"
+  }
+ ]
+}

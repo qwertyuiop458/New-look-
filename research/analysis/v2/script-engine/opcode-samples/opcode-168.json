@@ -1,0 +1,134 @@
+{
+ "opcode": 168,
+ "count": 8,
+ "samples": [
+  {
+   "mission": "mission_00",
+   "offset": 1098,
+   "len": 5,
+   "words": [
+    4,
+    39,
+    4,
+    40,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 0,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 21412,
+   "len": 5,
+   "words": [
+    4,
+    332,
+    4,
+    333,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 62,
+   "object_index": 14,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 23302,
+   "len": 5,
+   "words": [
+    4,
+    35,
+    4,
+    36,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 67,
+   "object_index": 15,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_00",
+   "offset": 25904,
+   "len": 5,
+   "words": [
+    4,
+    68,
+    4,
+    69,
+    1
+   ],
+   "attached": "tile",
+   "tile_index": 80,
+   "object_index": 15,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_01",
+   "offset": 4824,
+   "len": 5,
+   "words": [
+    5,
+    90,
+    5,
+    91,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 17,
+   "object_index": 4,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_02",
+   "offset": 9026,
+   "len": 5,
+   "words": [
+    6,
+    1,
+    6,
+    2,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 0,
+   "object_index": null,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_03",
+   "offset": 4530,
+   "len": 5,
+   "words": [
+    7,
+    1,
+    7,
+    2,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 1,
+   "object_index": 1,
+   "context": "mission"
+  },
+  {
+   "mission": "mission_04",
+   "offset": 6288,
+   "len": 5,
+   "words": [
+    8,
+    1,
+    8,
+    2,
+    0
+   ],
+   "attached": "tile",
+   "tile_index": 21,
+   "object_index": 1,
+   "context": "mission"
+  }
+ ]
+}

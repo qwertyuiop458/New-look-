@@ -1,0 +1,64 @@
+{
+    "audit": "opcode-readiness-v2",
+    "date": "2026-08-15",
+    "status": "READY_STATIC",
+    "criteria": {
+        "structure_proven": true,
+        "semantics_proven_statically": true,
+        "runtime_not_required_for_structure": true
+    },
+    "metrics": {
+        "opcodes_in_mission_data": 46,
+        "opcodes_with_semantics": 44,
+        "semantic_breakdown": {
+            "CONFIRMED": 55,
+            "INFERRED": 4,
+            "UNKNOWN": 0,
+            "note": "по opcode-master-v2.json (60 записей, включая контрольные и маркер 200)"
+        },
+        "runtime_required": 7,
+        "runtime_required_opcodes": [118, 127, 135, 147, 148, 152],
+        "control_opcodes": {
+            "145": "if_open", "146": "if_close", "143": "else_marker", "144": "endif_marker",
+            "123": "subroutine_call", "159": "script_end", "200": "chunk_marker (no-op)"
+        }
+    },
+    "classes": {
+        "ENTITY": 22,
+        "CONTROL": 17,
+        "STATE": 8,
+        "OBJECT": 3,
+        "GRAPHICS": 3,
+        "TILE": 2,
+        "CAMERA": 2,
+        "PROGRESSION": 1,
+        "ANIMATION": 1
+    },
+    "state_affecting": [131, 132, 139, 157, 158, 161, 165, 169],
+    "entity_affecting": [110, 111, 115, 116, 118, 127, 128, 130, 134, 135, 141, 142, 147, 148, 150, 151, 152, 154, 160, 162],
+    "tile_object_affecting": [112, 113, 114, 167, 172],
+    "text_audio_graphics_affecting": {
+        "text": "UNKNOWN — string linkage не доказана (диалоги через состояние 11, g.d; опкоды 157/161 связаны с диалогом)",
+        "audio": "UNKNOWN — прямого вызова audio-опкода не найдено (звуки через методы g.b/g.d, см. g.java:4274 Manager.createPlayer)",
+        "graphics": [133, 137, 171]
+    },
+    "evidence": {
+        "executor_action": "g.H() g.java:17353",
+        "executor_condition": "g.K() g.java:17740",
+        "skip_branches": "g.n(boolean) g.java:17290",
+        "entry": "g.b(int) g.java:17268",
+        "dialog_loop": "g.J()/g.I() g.java:17722/17717",
+        "terminator": "159"
+    },
+    "why_READY_STATIC": [
+        "все 46 реально встречающихся опкодов имеют case в исполнителях H()/K() (кроме 200 = маркер секции)",
+        "семантика восстановлена из тел вызываемых методов (g.a/g.b/g.c/g.d/g.e/g.j/g.k/g.n/g.o/g.p/g.r/g.s/g.ah/g.ab/g.T/g.R/g.cb/g.cp/g.bh/g.bz/g.i/g.g)",
+        "control-flow модель полная: вход, условия, ветвления, задержки, субскрипты, терминатор",
+        "для 7 опкодов эффект помечен REQUIRES_REAL_RUNTIME (визуальная/игровая реализация команд сущностей)"
+    ],
+    "not_covered": [
+        "string linkage (текст/диалоги) — UNKNOWN",
+        "audio linkage — UNKNOWN",
+        "точные визуальные эффекты команд сущностей — REQUIRES_REAL_RUNTIME"
+    ]
+}
