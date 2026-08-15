@@ -185,7 +185,8 @@
    "money": "L[4]",
    "shop": "апгрейды аддитивно g.y()",
    "status": "CONFIRMED (частично)",
-   "completion": "объект-миссия L==10 (cB=200) -> cB<=0 -> state 7; награды Q[]; сохранение ad()"
+   "completion": "объект-миссия L==10 (cB=200) -> cB<=0 -> state 7; награды Q[]; сохранение ad()",
+   "mission_object": "L==10: cB=200 HP миссии, Q[] 4 награды, cy пространственный лимит, cB<=0 -> state 7 (CONFIRMED)"
   }
  },
  "not_for_sequel_reference": [

@@ -78,7 +78,7 @@
     "id": "objective_completion",
     "desc": "триггер завершения миссии и objective-механизм (нет выделенного поля)",
     "how": "рантайм",
-    "resolution": "ЧАСТИЧНО ЗАКРЫТ (15.20): объект-миссия L==10, cB=200, Q[] награды, g.e()->state 7; источники урона cB — REQUIRES_REAL_RUNTIME"
+    "resolution": "ЗАКРЫТ (15.21): L==10 объект-миссия полностью восстановлен (cB=200, Q[] награды, cy лимит, g.e()->state 7); источники урона cB — REQUIRES_REAL_RUNTIME"
    }
   ],
   "HIGH": [

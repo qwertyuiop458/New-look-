@@ -1,0 +1,71 @@
+{
+ "meta": "Поля объекта-миссии L==10",
+ "fields": [
+  {
+   "field": "L",
+   "value": 10,
+   "meaning": "класс объекта-миссии",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[0]",
+   "meaning": "архетип/тип (для слоя g[i]/h[i])",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[1]",
+   "meaning": "подтип (для слоя h[i])",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g[2]/g[3]",
+   "meaning": "размеры бокса (AABB: n3=g[2]+2, n4=g[3]+2)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g[7]",
+   "meaning": "флаг/HP (==0 -> обновляется; !=0 -> статичный)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "позиция c.a/c.b",
+   "meaning": "мировые координаты",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "i (глобальный)",
+   "meaning": "ссылка на активный объект-миссию",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "cB (глобальный)",
+   "meaning": "HP/прогресс миссии (init 200)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "cy (глобальный)",
+   "meaning": "лимит ((ab?3:16)*d.length*16)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "Q[] (глобальный)",
+   "meaning": "4 пары наград (id, значение)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "cz",
+   "meaning": "параметр миссии (n при создании)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "cS",
+   "meaning": "первый объект слоя (g[0])",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "aU/bw/bx",
+   "meaning": "флаги активности (=1)",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

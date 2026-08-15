@@ -1,0 +1,40 @@
+{
+ "meta": "Причинная цепочка завершения",
+ "chain": [
+  {
+   "step": 1,
+   "event": "cB уменьшается (f.a(8|16, n9))",
+   "status": "CONFIRMED"
+  },
+  {
+   "step": 2,
+   "event": "cZ() cw==0: cB <= 0",
+   "status": "CONFIRMED"
+  },
+  {
+   "step": 3,
+   "event": "g.e(): g.d(7,0)",
+   "status": "CONFIRMED"
+  },
+  {
+   "step": 4,
+   "event": "state 7 cd(): b 0..4 (L() 2000ms, статистика)",
+   "status": "CONFIRMED"
+  },
+  {
+   "step": 5,
+   "event": "награды Q[]: da -> db = M(da) -> k(Q[dc*2+1], 10); ap(3/4)",
+   "status": "CONFIRMED"
+  },
+  {
+   "step": 6,
+   "event": "ad(bC==1?0:2) сохранение",
+   "status": "CONFIRMED"
+  },
+  {
+   "step": 7,
+   "event": "state 13 (shop) или 2 (loading)",
+   "status": "CONFIRMED (переходы)"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "audit": "mission-object-readiness-v2",
+ "date": "2026-08-15",
+ "status": "READY_STATIC",
+ "criteria": {
+  "creation_proven": true,
+  "state_vector_proven": true,
+  "damage_source_proven": true,
+  "timer_proven": true,
+  "rewards_proven": true,
+  "completion_causal_chain_proven": true
+ },
+ "key": {
+  "structure": "L==10: g.Z() case 10 создаёт объекты-тайлы; g.a(f2,...) активирует объект-миссию (i, cB=200, Q[] 4 пары)",
+  "cb_init": 200,
+  "cb_damage": "f.a(bl?8:16, n9) (источник n9 REQUIRES_REAL_RUNTIME)",
+  "cy": "пространственный лимит X ((ab?3:16)*d.length*16), не таймер",
+  "rewards": "Q[] 4 пары (id, значение) -> k(n,10) выдача; тип REQUIRES_REAL_RUNTIME",
+  "cardinality": "1 активный объект-миссия (i) на миссию",
+  "completion": "cB<=0 -> g.e() -> state 7 -> награды -> ad() -> state 13/2",
+  "failure": "state 10 + воскрешение g[7]=200"
+ },
+ "runtime_required": [
+  "источник n9 (урон cB)",
+  "тип наград k(n,10)",
+  "триггер state 10",
+  "выбор следующей миссии",
+  "race conditions"
+ ]
+}

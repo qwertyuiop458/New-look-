@@ -1,0 +1,6 @@
+{
+ "meta": "Модель типа миссии",
+ "finding": "все 5 миссий используют одинаковую модель L==10 (один i, cB=200, Q[] 4 пары) — единый OBJECTIVE_TYPE",
+ "type": "OBJECTIVE_TYPE_A (единый)",
+ "confidence": "CONFIRMED (структура); различия REQUIRES_REAL_RUNTIME"
+}

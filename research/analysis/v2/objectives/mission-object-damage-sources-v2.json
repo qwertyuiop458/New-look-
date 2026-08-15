@@ -1,0 +1,25 @@
+{
+ "meta": "Источники урона cB",
+ "sources": [
+  {
+   "source": "f.a(bl?8:16, n9)",
+   "detail": "cB -= урон; n9 из контекста; коэффициент 8/16",
+   "status": "CONFIRMED (формула); источник n9 REQUIRES_REAL_RUNTIME"
+  },
+  {
+   "source": "AABB столкновение",
+   "detail": "f.a(f2,f3): L==10 бокс g[2]+2 x g[3]+2",
+   "status": "CONFIRMED (механизм)"
+  },
+  {
+   "source": "скрипты",
+   "detail": "опкоды 112/167/172 — действия над объектами-тайлами",
+   "status": "UNKNOWN"
+  },
+  {
+   "source": "таймер",
+   "detail": "cy: превышение -> ap(1) (награды, не fail)",
+   "status": "CONFIRMED"
+  }
+ ]
+}

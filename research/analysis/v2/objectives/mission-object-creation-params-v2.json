@@ -1,0 +1,45 @@
+{
+ "meta": "Параметры создания",
+ "parameters": [
+  {
+   "param": "cB",
+   "source": "константа 200",
+   "offset": "-",
+   "decoded": 200,
+   "consumer": "cZ() завершение",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "param": "cy",
+   "source": "(ab?3:16) * d.length * 16",
+   "offset": "-",
+   "decoded": "зависит от слоя",
+   "consumer": "cZ() время",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "param": "Q[]",
+   "source": "byArray (данные миссии), 4 пары u16",
+   "offset": "n2 + i*4",
+   "decoded": "8 байт",
+   "consumer": "награды k(n,10)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "param": "cz",
+   "source": "n (параметр вызова)",
+   "offset": "-",
+   "decoded": "неизвестно",
+   "consumer": "миссия",
+   "confidence": "CONFIRMED (передача)"
+  },
+  {
+   "param": "props записи",
+   "source": "type 10 запись миссии",
+   "offset": "поток",
+   "decoded": "8+ u16",
+   "consumer": "объект",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "meta": "Создание объектов L==10",
+ "sites": [
+  {
+   "method": "g.Z() case 10 (14256)",
+   "source_record": "type 10 запись миссии",
+   "creation": "new f(s, 10, n44, n45, nArray34) -> g.a[layer][x][y]",
+   "initialization": "props (nArray34); L=10; позиция (n44,n45)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "method": "g.a(f2, n, byArray, n2) (23300)",
+   "source_record": "объект L==10 + данные byArray",
+   "creation": "i=f2 (объект-миссия); cB=200; cz=n; Q[]=4 пары; aU/bw/bx=1",
+   "initialization": "cP() (границы), q(false), r(false)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "method": "f.java:8266",
+   "source_record": "-",
+   "creation": "L==10 && g[7]!=0 — пропуск обновления (статичный)",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

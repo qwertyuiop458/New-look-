@@ -1078,6 +1078,15 @@
    "save": "ad() при bC 1/3",
    "next_mission": "bB без инкремента — REQUIRES_REAL_RUNTIME",
    "failure": "state 10 + воскрешение g[7]=200"
+  },
+  "mission_object": {
+   "L": 10,
+   "cb_init": 200,
+   "cy": "пространственный лимит X",
+   "Q": "4 пары наград",
+   "damage": "f.a(8|16, n9)",
+   "cardinality": "1 на миссию",
+   "completion": "cB<=0 -> state 7"
   }
  }
 }

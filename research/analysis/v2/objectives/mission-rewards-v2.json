@@ -1,0 +1,7 @@
+{
+ "meta": "Награды Q[]",
+ "structure": "Q[i*2] = id (u16), Q[i*2+1] = значение (u16); 4 пары; из byArray n2+i*4",
+ "reward_flow": "cZ() cw==1: da = cU*1 + cW*-10 + cY*-5 (>0?); db = M(da); cw==2/3: n = Q[dc*2+1]; g.k(n, 10); g.ap(3); ap(4) — конец",
+ "what": "g.k(n, 10) — выдача (id из Q[]); точный тип REQUIRES_REAL_RUNTIME",
+ "confidence": "CONFIRMED (структура/поток); тип наград REQUIRES_REAL_RUNTIME"
+}

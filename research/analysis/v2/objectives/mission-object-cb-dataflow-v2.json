@@ -1,0 +1,32 @@
+{
+ "meta": "cB dataflow",
+ "dataflow": [
+  {
+   "op": "init",
+   "value": 200,
+   "site": "g.a(f2,...) 23307",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "op": "decrement",
+   "formula": "cB = cB >= (n8 += f.a(bl?8:16, n9)) ? cB - n8 : 0",
+   "site": "g.java:23434",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "op": "compare",
+   "condition": "cB <= 0 (cw==0)",
+   "site": "cZ() 23605",
+   "effect": "g.e() -> state 7",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "op": "compare",
+   "condition": "cB > 0",
+   "site": "cZ()",
+   "effect": "продолжение cY()",
+   "confidence": "CONFIRMED"
+  }
+ ],
+ "note": "cB уменьшается через f.a(8|16, n9) — урон от объекта (n9) с коэффициентом 8 или 16"
+}

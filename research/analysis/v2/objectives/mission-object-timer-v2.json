@@ -1,0 +1,10 @@
+{
+ "meta": "cy",
+ "detail": "cy = (ab ? 3 : 16) * d.length * 16 (g.java:23280)",
+ "unit": "тайлы*16 = пиксели (не мс!)",
+ "initial": "зависит от слоя d.length",
+ "compare": "g.i.a.a() > cy (позиция X объекта-миссии > лимит)",
+ "effect": "ap(1) — награды (не fail)",
+ "role": "ПРОСТРАНСТВЕННЫЙ лимит (позиция X), НЕ таймер",
+ "confidence": "CONFIRMED (формула); точная семантика REQUIRES_REAL_RUNTIME"
+}
