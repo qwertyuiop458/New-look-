@@ -225,7 +225,7 @@ def snap_entities(jdwp, gid, fmap, grid_names, fids, cids):
                             x = pv[0][1]; y = pv[1][1]
                         entities.append({
                             "grid": gname, "i": i1, "j": i2, "k": i3, "L": L, "K": K, "M": M,
-                            "props": props, "x": x, "y": y,
+                            "props": props, "x": x, "y": y, "fid": fid,
                         })
                     except Exception as e:
                         if debug: print(f'  DBG {gname}[{i1}][{i2}][{i3}]: ent ERR {type(e).__name__} {e}')
