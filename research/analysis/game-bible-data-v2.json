@@ -1071,6 +1071,13 @@
   "money": "L[4]",
   "progression": "запись 2 RMS",
   "objectives": "скрипты (нет поля)",
-  "shop": "state 13"
+  "shop": "state 13",
+  "completion": {
+   "objective": "объект-миссия L==10 (cB=200, Q[] 4 награды, cy время)",
+   "condition": "cB<=0 -> g.e() -> state 7",
+   "save": "ad() при bC 1/3",
+   "next_mission": "bB без инкремента — REQUIRES_REAL_RUNTIME",
+   "failure": "state 10 + воскрешение g[7]=200"
+  }
  }
 }

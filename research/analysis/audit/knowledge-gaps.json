@@ -55,7 +55,8 @@
    {
     "id": "mission_completion",
     "desc": "completion/fail/transition условия 5 миссий",
-    "how": "рантайм"
+    "how": "рантайм",
+    "resolution": "ЧАСТИЧНО ЗАКРЫТ (15.20): cB<=0 -> state 7 доказано; переход к следующей миссии — REQUIRES_REAL_RUNTIME"
    },
    {
     "id": "tile_semantics",
@@ -77,7 +78,7 @@
     "id": "objective_completion",
     "desc": "триггер завершения миссии и objective-механизм (нет выделенного поля)",
     "how": "рантайм",
-    "resolution": null
+    "resolution": "ЧАСТИЧНО ЗАКРЫТ (15.20): объект-миссия L==10, cB=200, Q[] награды, g.e()->state 7; источники урона cB — REQUIRES_REAL_RUNTIME"
    }
   ],
   "HIGH": [

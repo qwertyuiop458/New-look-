@@ -1,0 +1,10 @@
+{
+ "meta": "Триггеры сохранения",
+ "types": {
+  "AUTO_SAVE": "g.ad(bC==1?0:2) при завершении миссии (14504); a(2,E) (19938)",
+  "MANUAL_SAVE": "g.a(true,true) (профиль запись 1); меню",
+  "PROFILE_SAVE": "a(bl,bl2) -> g.a(1,D) (19267)",
+  "PROGRESSION_SAVE": "ad() -> запись 2"
+ },
+ "status": "CONFIRMED (вызовы); точный UI REQUIRES_REAL_RUNTIME"
+}

@@ -1,0 +1,26 @@
+{
+ "audit": "mission-completion-readiness-v2",
+ "date": "2026-08-15",
+ "status": "READY_STATIC",
+ "criteria": {
+  "objective_engine_traced": true,
+  "completion_condition_traced": true,
+  "next_mission_traced": false,
+  "result_flow_traced": true,
+  "save_trigger_traced": true
+ },
+ "key_findings": {
+  "objective_engine": "объект-миссия L==10: i=f2, cB=200, Q[]=4 пары наград, cy=время (g.java:23300)",
+  "completion": "cB<=0 -> g.e() -> state 7 (cZ() 23598, B() 1162)",
+  "next_mission": "bB инкремента НЕТ; выбор через меню/сейв — REQUIRES_REAL_RUNTIME",
+  "results": "cd() b 0..4 + Q[] награды + P[7] время",
+  "save": "ad(bC==1?0:2) при завершении (14504); a(2,E) (19938)",
+  "failure": "state 10 существует; НО найдено воскрешение g.c.g[7]=200 (14998)"
+ },
+ "why_not_READY": [
+  "следующая миссия (выбор) — REQUIRES_REAL_RUNTIME",
+  "источники урона cB — REQUIRES_REAL_RUNTIME",
+  "failure trigger — REQUIRES_REAL_RUNTIME"
+ ],
+ "note": "READY_STATIC: objective engine, completion, results, save доказаны кодом"
+}

@@ -1,0 +1,61 @@
+{
+ "meta": "Эффекты опкодов на глобальное состояние",
+ "map": [
+  {
+   "opcode": 157,
+   "handler": "g.a(0, o+0, o+2, o+4==1, o+6==1); g.u=false; g.v=o+8==1",
+   "global": "g.u, g.v, состояние",
+   "effect": "смена состояния/диалога",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 158,
+   "handler": "g.Q=(o+4==1); g.j(o+0, o+2)",
+   "global": "g.Q",
+   "effect": "пауза скрипта",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 159,
+   "handler": "g.x() (конец); P=false",
+   "global": "P",
+   "effect": "ТЕРМИНАТОР скрипта",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 161,
+   "handler": "g.dE = (d.L==11 ? d.g[12] : -3); O=true",
+   "global": "dE, O",
+   "effect": "захват диалога",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 165,
+   "handler": "g.T(n): aX=n; e(0,38,0,38); n==3 -> g.a(6,-1)",
+   "global": "state",
+   "effect": "переход в геймплей (6)",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 169,
+   "handler": "g.bM = z[o+0]",
+   "global": "bM",
+   "effect": "управление циклом J()",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 131,
+   "handler": "g.bD = z[o+0]",
+   "global": "bD",
+   "effect": "глобальная переменная",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 126,
+   "handler": "g.ah(n): L[4] += 45000*n/100 (cap)",
+   "global": "L[4]",
+   "effect": "ДЕНЬГИ/ОЧКИ",
+   "status": "CONFIRMED"
+  }
+ ]
+}

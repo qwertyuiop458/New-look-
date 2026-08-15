@@ -1,0 +1,123 @@
+{
+ "meta": "Индекс записей в глобальные поля",
+ "writes": [
+  {
+   "field": "bB",
+   "writers": [
+    "меню 'новая игра': bB=0 (3650)",
+    "меню пункт 45: bB=3 (3777)",
+    "ci(): bB=D[1]",
+    "ad(): bB=E[1]"
+   ],
+   "opcode": "-",
+   "condition": "меню/сейв",
+   "effect": "выбор миссии",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "bC",
+   "writers": [
+    "g.o(int) (1086: bC=n)",
+    "g.java:3650 регион"
+   ],
+   "effect": "режим 0-3",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "bF",
+   "writers": [
+    "ci(): bF=D[3]",
+    "меню"
+   ],
+   "effect": "сложность (урон 30%*bF)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "P[]",
+   "writers": [
+    "ad(): P[7]=время, P[4]=0, P[14]=0"
+   ],
+   "effect": "статистика",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "Q (флаг)",
+   "writers": [
+    "опкод 158: g.Q=(o+4==1)"
+   ],
+   "effect": "пауза скрипта",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "bM",
+   "writers": [
+    "опкод 169: g.bM=z[o+0]"
+   ],
+   "effect": "цикл J()",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "bD",
+   "writers": [
+    "опкод 131: g.bD=z[o+0]",
+    "header миссии"
+   ],
+   "effect": "глобальная переменная",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "bi",
+   "writers": [
+    "опкод 139: g.bi=z[o+0]"
+   ],
+   "effect": "глобальная переменная",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "dE/O",
+   "writers": [
+    "опкод 161: dE=g.d.g[12], O=true"
+   ],
+   "effect": "захват диалога",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.a (state)",
+   "writers": [
+    "g.d(n,m)",
+    "g.m(n)",
+    "g.n(n)",
+    "опкод 165 (T: n==3 -> g.a(6,-1))"
+   ],
+   "effect": "переходы состояний",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "L[]",
+   "writers": [
+    "g.ah() (L[4] деньги)",
+    "g.af() (L[1] оружие)",
+    "d(n,bl) (L[1]=-1)"
+   ],
+   "effect": "инвентарь/деньги",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "cB (миссия-HP)",
+   "writers": [
+    "g.a(f2,...): cB=200",
+    "cZ(): cB -= f.a(8|16, n9)"
+   ],
+   "effect": "завершение миссии",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "Q[] (награды)",
+   "writers": [
+    "g.a(f2,...): Q[i*2]=id, Q[i*2+1]=значение (4 пары)"
+   ],
+   "effect": "награды при завершении",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "meta": "Матрица уверенности",
+ "matrix": [
+  {
+   "stage": "mission index (bB)",
+   "STRUCTURE": "CONFIRMED",
+   "SEMANTIC": "CONFIRMED",
+   "RUNTIME": "инкремент"
+  },
+  {
+   "stage": "mission object L==10",
+   "STRUCTURE": "CONFIRMED",
+   "SEMANTIC": "CONFIRMED",
+   "RUNTIME": "-"
+  },
+  {
+   "stage": "completion condition (cB<=0)",
+   "STRUCTURE": "CONFIRMED",
+   "SEMANTIC": "CONFIRMED",
+   "RUNTIME": "что уменьшает cB (источники урона)"
+  },
+  {
+   "stage": "save call",
+   "STRUCTURE": "CONFIRMED",
+   "SEMANTIC": "CONFIRMED",
+   "RUNTIME": "-"
+  },
+  {
+   "stage": "next mission",
+   "STRUCTURE": "CONFIRMED (нет инкремента)",
+   "SEMANTIC": "UNKNOWN",
+   "RUNTIME": "REQUIRED"
+  },
+  {
+   "stage": "failure",
+   "STRUCTURE": "CONFIRMED (state 10)",
+   "SEMANTIC": "UNKNOWN",
+   "RUNTIME": "REQUIRED"
+  }
+ ]
+}

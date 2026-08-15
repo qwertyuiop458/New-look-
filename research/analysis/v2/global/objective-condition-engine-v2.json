@@ -1,0 +1,30 @@
+{
+ "meta": "Objective-движок (доказан): объект-миссия L==10 + счётчик cB + награды Q[]",
+ "engine": [
+  {
+   "component": "объект-миссия",
+   "detail": "сущность L==10: g.a(f2, n, byArray, n2) (23300): i=f2, cB=200, cz=n, Q[]=4 пары",
+   "status": "CONFIRMED"
+  },
+  {
+   "component": "HP миссии",
+   "detail": "cB: уменьшается cB -= f.a(8|16, n9) (23434) — урон по объекту-миссии",
+   "status": "CONFIRMED"
+  },
+  {
+   "component": "время",
+   "detail": "cy = (ab?3:16) * d.length * 16 — лимит времени",
+   "status": "CONFIRMED"
+  },
+  {
+   "component": "награды",
+   "detail": "Q[]: 4 пары (id, значение) из данных миссии; db = M(da) индекс",
+   "status": "CONFIRMED"
+  },
+  {
+   "component": "условия скриптов",
+   "detail": "K()/опкоды 124/125 (сравнения свойств) — дополнительные ветвления",
+   "status": "CONFIRMED (механизм), конкретные условия REQUIRES_REAL_RUNTIME"
+  }
+ ]
+}

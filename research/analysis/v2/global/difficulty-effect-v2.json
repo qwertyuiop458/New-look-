@@ -1,0 +1,9 @@
+{
+ "meta": "bF (сложность): все read sites",
+ "reads": [
+  "f.b(): урон += 30%*bF (f.java:767)",
+  "ci(): bF=D[3]"
+ ],
+ "effect": "модификатор урона",
+ "status": "CONFIRMED (влияет на урон); полный эффект REQUIRES_REAL_RUNTIME"
+}

@@ -1,0 +1,39 @@
+{
+ "meta": "Поиск условий завершения",
+ "findings": [
+  {
+   "condition": "cB <= 0 (cw==0)",
+   "result": "g.e() -> state 7",
+   "caller": "cZ() из B() (1162)",
+   "effect": "MISSION_COMPLETE",
+   "status": "CONFIRMED"
+  },
+  {
+   "condition": "g.i.a.a() > cy (время)",
+   "result": "ap(1) -> награды Q[]",
+   "caller": "cZ()",
+   "effect": "завершение по времени",
+   "status": "CONFIRMED"
+  },
+  {
+   "condition": "g.c.g[7] <= 0",
+   "result": "g.c.g[7] = 200 (воскрешение)",
+   "caller": "14998",
+   "effect": "не game over при 0 HP?",
+   "status": "CONFIRMED (восстановление)"
+  },
+  {
+   "condition": "state 10 (d(10,...))",
+   "result": "game over",
+   "caller": "25409 и др.",
+   "effect": "GAME_OVER",
+   "status": "CONFIRMED (существует), trigger REQUIRES_REAL_RUNTIME"
+  },
+  {
+   "condition": "state 7",
+   "result": "cd(): анимация b 0..4, затем 13/2",
+   "effect": "не completion сам по себе, а экран",
+   "status": "CONFIRMED"
+  }
+ ]
+}

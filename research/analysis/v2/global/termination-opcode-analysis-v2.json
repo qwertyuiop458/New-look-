@@ -1,0 +1,44 @@
+{
+ "meta": "Опкоды завершения",
+ "analysis": [
+  {
+   "opcode": 159,
+   "role": "script_end",
+   "effect": "конец исполнения; возврат",
+   "completion": "НЕТ (не завершение миссии)",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 165,
+   "role": "state_transition",
+   "effect": "T(n): n==3 -> state 6 (геймплей)",
+   "completion": "нет",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 169,
+   "role": "loop_control",
+   "effect": "bM; управляет J()",
+   "completion": "нет",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 157,
+   "role": "state_change",
+   "effect": "смена состояния/диалога",
+   "completion": "нет прямого",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 161,
+   "role": "dialog_capture",
+   "effect": "dE/O",
+   "completion": "нет",
+   "status": "CONFIRMED"
+  },
+  {
+   "note": "Завершение миссии НЕ через опкоды: cB (HP объекта-миссии L==10) -> 0 -> g.e() -> state 7",
+   "status": "CONFIRMED"
+  }
+ ]
+}

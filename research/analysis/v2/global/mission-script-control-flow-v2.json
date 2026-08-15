@@ -1,0 +1,47 @@
+{
+ "meta": "Control flow скриптов",
+ "control": [
+  {
+   "opcode": 145,
+   "role": "if_open",
+   "behavior": "пропуск до 146 при ложном K()",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 146,
+   "role": "if_close",
+   "behavior": "конец блока",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 143,
+   "role": "else",
+   "behavior": "граница then/else",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 144,
+   "role": "endif",
+   "behavior": "конец if",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 159,
+   "role": "terminator",
+   "behavior": "конец скрипта",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 123,
+   "role": "subroutine",
+   "behavior": "переключение bO/bQ на субскрипт",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 117,
+   "role": "wait",
+   "behavior": "блокирующее ожидание",
+   "status": "CONFIRMED"
+  }
+ ]
+}

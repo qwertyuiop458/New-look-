@@ -1,0 +1,5 @@
+{
+ "meta": "Переход магазина",
+ "detail": "state 7 -> 13 (shop) -> 2 (loading) — переходы подтверждены state machine; точный flow покупки/выхода REQUIRES_REAL_RUNTIME",
+ "shop_data": "g.fE(); g.l(n,prop)=an[..]+g.y(n,prop); L[4] валюта"
+}

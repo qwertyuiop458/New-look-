@@ -1,0 +1,80 @@
+{
+ "meta": "Таймлайн 5 миссий (доказанные переходы)",
+ "missions": [
+  {
+   "mission": 0,
+   "stream": "m9 seg10",
+   "timeline": {
+    "START": "загрузка g.Z(bB) (CONFIRMED)",
+    "INITIALIZE": "header + объект-миссия L==10 (CONFIRMED)",
+    "SCRIPT": "спец-опкоды 110-172 (CONFIRMED структура)",
+    "GAMEPLAY": "state 6 g.B() (CONFIRMED)",
+    "CONDITIONS": "K()/124/125 (CONFIRMED механизм)",
+    "COMPLETION": "cB<=0 -> g.e() -> state 7 (CONFIRMED)",
+    "RESULTS": "cd() + Q[] награды (CONFIRMED)",
+    "SAVE": "ad() запись 2 (CONFIRMED)",
+    "NEXT": "REQUIRES_REAL_RUNTIME"
+   }
+  },
+  {
+   "mission": 1,
+   "stream": "m9 seg11",
+   "timeline": {
+    "START": "загрузка g.Z(bB) (CONFIRMED)",
+    "INITIALIZE": "header + объект-миссия L==10 (CONFIRMED)",
+    "SCRIPT": "спец-опкоды 110-172 (CONFIRMED структура)",
+    "GAMEPLAY": "state 6 g.B() (CONFIRMED)",
+    "CONDITIONS": "K()/124/125 (CONFIRMED механизм)",
+    "COMPLETION": "cB<=0 -> g.e() -> state 7 (CONFIRMED)",
+    "RESULTS": "cd() + Q[] награды (CONFIRMED)",
+    "SAVE": "ad() запись 2 (CONFIRMED)",
+    "NEXT": "REQUIRES_REAL_RUNTIME"
+   }
+  },
+  {
+   "mission": 2,
+   "stream": "m9 seg12",
+   "timeline": {
+    "START": "загрузка g.Z(bB) (CONFIRMED)",
+    "INITIALIZE": "header + объект-миссия L==10 (CONFIRMED)",
+    "SCRIPT": "спец-опкоды 110-172 (CONFIRMED структура)",
+    "GAMEPLAY": "state 6 g.B() (CONFIRMED)",
+    "CONDITIONS": "K()/124/125 (CONFIRMED механизм)",
+    "COMPLETION": "cB<=0 -> g.e() -> state 7 (CONFIRMED)",
+    "RESULTS": "cd() + Q[] награды (CONFIRMED)",
+    "SAVE": "ad() запись 2 (CONFIRMED)",
+    "NEXT": "REQUIRES_REAL_RUNTIME"
+   }
+  },
+  {
+   "mission": 3,
+   "stream": "m9 seg13",
+   "timeline": {
+    "START": "загрузка g.Z(bB) (CONFIRMED)",
+    "INITIALIZE": "header + объект-миссия L==10 (CONFIRMED)",
+    "SCRIPT": "спец-опкоды 110-172 (CONFIRMED структура)",
+    "GAMEPLAY": "state 6 g.B() (CONFIRMED)",
+    "CONDITIONS": "K()/124/125 (CONFIRMED механизм)",
+    "COMPLETION": "cB<=0 -> g.e() -> state 7 (CONFIRMED)",
+    "RESULTS": "cd() + Q[] награды (CONFIRMED)",
+    "SAVE": "ad() запись 2 (CONFIRMED)",
+    "NEXT": "REQUIRES_REAL_RUNTIME"
+   }
+  },
+  {
+   "mission": 4,
+   "stream": "m9 seg14",
+   "timeline": {
+    "START": "загрузка g.Z(bB) (CONFIRMED)",
+    "INITIALIZE": "header + объект-миссия L==10 (CONFIRMED)",
+    "SCRIPT": "спец-опкоды 110-172 (CONFIRMED структура)",
+    "GAMEPLAY": "state 6 g.B() (CONFIRMED)",
+    "CONDITIONS": "K()/124/125 (CONFIRMED механизм)",
+    "COMPLETION": "cB<=0 -> g.e() -> state 7 (CONFIRMED)",
+    "RESULTS": "cd() + Q[] награды (CONFIRMED)",
+    "SAVE": "ad() запись 2 (CONFIRMED)",
+    "NEXT": "REQUIRES_REAL_RUNTIME"
+   }
+  }
+ ]
+}

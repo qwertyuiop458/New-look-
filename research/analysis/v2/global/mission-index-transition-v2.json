@@ -1,0 +1,12 @@
+{
+ "meta": "Переход индекса миссии",
+ "bB_writers": [
+  "меню: bB=0 (новая игра)",
+  "меню пункт 45: bB=3",
+  "ci(): bB=D[1] (сейв)",
+  "ad(): bB=E[1] (сейв)"
+ ],
+ "increment": "НЕ НАЙДЕН (нет bB++/bB+=1)",
+ "chain": "завершение (cB=0) -> state 7 -> cd() (b 0..4) -> state 13 (shop) или 2 (loading); выбор следующей миссии: REQUIRES_REAL_RUNTIME (вероятно через меню/сейв после shop)",
+ "status": "PARTIAL (CONFIRMED: нет инкремента; REQUIRES_REAL_RUNTIME: механизм выбора следующей)"
+}
