@@ -1,0 +1,12 @@
+{
+ "meta": "Схема static/runtime diff",
+ "schema": {
+  "fact_id": "str",
+  "STATIC": "str",
+  "OBSERVED": "str",
+  "MATCH": "bool",
+  "MISMATCH": "bool",
+  "INCONCLUSIVE": "bool",
+  "evidence_ref": "str"
+ }
+}

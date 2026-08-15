@@ -1,0 +1,77 @@
+{
+ "meta": "Точки инструментирования",
+ "points": [
+  {
+   "point": "STATE_CHANGE",
+   "method": "g.d(n,m)",
+   "payload": "state, substate",
+   "priority": "HIGH"
+  },
+  {
+   "point": "MISSION_START",
+   "method": "g.Z(int)",
+   "payload": "bB, header",
+   "priority": "CRITICAL"
+  },
+  {
+   "point": "ENTITY_SPAWN",
+   "method": "g.Z() case 3/9/10",
+   "payload": "type, id, props",
+   "priority": "HIGH"
+  },
+  {
+   "point": "AI_STATE",
+   "method": "f.c(f2,n)",
+   "payload": "entity, state",
+   "priority": "HIGH"
+  },
+  {
+   "point": "TIMER",
+   "method": "g[15]/f.w",
+   "payload": "timer, entity",
+   "priority": "MEDIUM"
+  },
+  {
+   "point": "MISSION_OBJECT_CREATE",
+   "method": "g.aR",
+   "payload": "cB, Q[], cy",
+   "priority": "CRITICAL"
+  },
+  {
+   "point": "MISSION_COMPLETE",
+   "method": "cZ()",
+   "payload": "cB, cw",
+   "priority": "CRITICAL"
+  },
+  {
+   "point": "REWARD",
+   "method": "k(n,10)",
+   "payload": "reward_id",
+   "priority": "HIGH"
+  },
+  {
+   "point": "SHOP",
+   "method": "fE()",
+   "payload": "item, price",
+   "priority": "HIGH"
+  },
+  {
+   "point": "SAVE/LOAD",
+   "method": "ci()/ad()",
+   "payload": "record",
+   "priority": "MEDIUM"
+  },
+  {
+   "point": "AUDIO",
+   "method": "a(n,1)",
+   "payload": "sound_id",
+   "priority": "MEDIUM"
+  },
+  {
+   "point": "RENDER",
+   "method": "c.java a.a(d,e)",
+   "payload": "anim, frame",
+   "priority": "HIGH"
+  }
+ ]
+}

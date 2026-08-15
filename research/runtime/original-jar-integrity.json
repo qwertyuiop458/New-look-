@@ -1,0 +1,7 @@
+{
+ "meta": "Целостность оригинального JAR",
+ "file": "240x320-rus-zombie-infection.jar",
+ "sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+ "size": 1042925,
+ "note": "все runtime-тесты запускать над неизменённой копией; копия в research/runtime/jar/"
+}

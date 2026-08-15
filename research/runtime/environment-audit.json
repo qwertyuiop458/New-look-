@@ -1,0 +1,51 @@
+{
+ "meta": "Аудит окружения",
+ "date": "2026-08-15",
+ "items": [
+  {
+   "tool": "java/javac/javap",
+   "status": "MISSING",
+   "note": "можно portable JDK (tar.gz) в workspace без root"
+  },
+  {
+   "tool": "python3",
+   "status": "3.11.2",
+   "note": "доступен"
+  },
+  {
+   "tool": "node/npm",
+   "status": "v22.22.3",
+   "note": "доступен"
+  },
+  {
+   "tool": "X11/DISPLAY",
+   "status": "MISSING",
+   "note": "DISPLAY пуст; Xvfb нет"
+  },
+  {
+   "tool": "Xvfb/vnc",
+   "status": "MISSING",
+   "note": "нет; для Swing-эмуляторов нужен Xvfb"
+  },
+  {
+   "tool": "apt/root",
+   "status": "NO_ROOT",
+   "note": "apt-get update: permission denied"
+  },
+  {
+   "tool": "pip",
+   "status": "23.0.1",
+   "note": "доступен; j2me пакетов нет"
+  },
+  {
+   "tool": "сеть",
+   "status": "GitHub OK; Adoptium нет",
+   "note": "скачивание с GitHub возможно"
+  },
+  {
+   "tool": "headless chrome",
+   "status": "UNKNOWN",
+   "note": "проверка: npm puppeteer"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "meta": "Дизайн экспериментов",
+ "tests": [
+  {
+   "id": "TEST-001",
+   "question": "что выбирает следующую миссию?",
+   "procedure": "старт -> пройти миссию -> наблюдать bB/загрузку",
+   "expected": "bB переход через shop/меню",
+   "evidence": "лог + скриншот",
+   "priority": "CRITICAL"
+  },
+  {
+   "id": "TEST-002",
+   "question": "источник урона cB",
+   "procedure": "атаковать объект-миссию разными способами; наблюдать cB",
+   "expected": "какие события уменьшают cB",
+   "evidence": "лог",
+   "priority": "HIGH"
+  },
+  {
+   "id": "TEST-003",
+   "question": "Q[] значения и тип наград",
+   "procedure": "завершить миссию; наблюдать k(n,10) и эффект",
+   "expected": "4 пары + тип",
+   "evidence": "лог + скриншот",
+   "priority": "HIGH"
+  },
+  {
+   "id": "TEST-004",
+   "question": "агро-дистанции в px",
+   "procedure": "подойти к врагу; зафиксировать дистанцию агро",
+   "expected": "1600/4096 в px",
+   "evidence": "лог позиций",
+   "priority": "HIGH"
+  },
+  {
+   "id": "TEST-005",
+   "question": "X->спрайт числа",
+   "procedure": "зафиксировать a.a(d,e) для одного архетипа; сопоставить с листом",
+   "expected": "числовые пары",
+   "evidence": "лог рендера",
+   "priority": "HIGH"
+  },
+  {
+   "id": "TEST-006",
+   "question": "цены магазина",
+   "procedure": "открыть shop; записать цены",
+   "expected": "цены",
+   "evidence": "скриншот",
+   "priority": "HIGH"
+  },
+  {
+   "id": "TEST-007",
+   "question": "MIDI->музыка",
+   "procedure": "переключать состояния; слушать/логировать playback",
+   "expected": "какой MIDI где",
+   "evidence": "лог аудио",
+   "priority": "MEDIUM"
+  },
+  {
+   "id": "TEST-008",
+   "question": "failure trigger",
+   "procedure": "довести HP до 0; наблюдать state 10/воскрешение",
+   "expected": "триггер",
+   "evidence": "лог",
+   "priority": "HIGH"
+  },
+  {
+   "id": "TEST-009",
+   "question": "FPS/RAM",
+   "procedure": "замерить frame times и freeMemory",
+   "expected": "числа",
+   "evidence": "лог",
+   "priority": "MEDIUM"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "meta": "Эмуляторы J2ME",
+ "options": [
+  {
+   "name": "FreeJ2ME (hex007)",
+   "url": "https://github.com/hex007/freej2me",
+   "stars": 665,
+   "gui": "Swing",
+   "x11": "да",
+   "headless": "частично (AWT)",
+   "midp": "да",
+   "jsr135": "да (MIDI)",
+   "jsr256": "нет",
+   "input": "клавиатура",
+   "capture": "скриншоты (AWT)",
+   "logging": "console",
+   "requires": "Java 8+ (нет в env)"
+  },
+  {
+   "name": "freej2me-web (zb3)",
+   "url": "https://github.com/zb3/freej2me-web",
+   "desc": "CheerpJ web port (WASM)",
+   "gui": "browser",
+   "x11": "нет",
+   "headless": "возможно (headless browser)",
+   "midp": "да",
+   "jsr135": "да",
+   "jsr256": "нет",
+   "input": "браузер",
+   "capture": "canvas",
+   "logging": "console",
+   "requires": "браузер/Node (есть node 22)"
+  },
+  {
+   "name": "J2ME-Loader (nikita36078)",
+   "url": "https://github.com/nikita36078/J2ME-Loader",
+   "stars": 2617,
+   "gui": "Android",
+   "x11": "нет",
+   "headless": "нет",
+   "midp": "да",
+   "jsr135": "да",
+   "jsr256": "частично",
+   "input": "touch",
+   "capture": "Android",
+   "logging": "logcat",
+   "requires": "Android"
+  },
+  {
+   "name": "wie (dlunch)",
+   "url": "https://github.com/dlunch/wie",
+   "stars": 186,
+   "gui": "Swing",
+   "x11": "да",
+   "headless": "частично",
+   "midp": "да",
+   "jsr135": "частично",
+   "jsr256": "нет",
+   "input": "клавиатура",
+   "capture": "AWT",
+   "logging": "console",
+   "requires": "Java (нет в env)"
+  },
+  {
+   "name": "MicroEmulator",
+   "url": "https://github.com/microemu/microemulator",
+   "desc": "классический, deprecated",
+   "gui": "Swing",
+   "x11": "да",
+   "headless": "нет",
+   "midp": "да",
+   "jsr135": "частично",
+   "jsr256": "нет",
+   "requires": "Java"
+  }
+ ]
+}

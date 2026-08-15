@@ -1,0 +1,125 @@
+{
+ "meta": "Матрица runtime-требований (из runtime-frontier-v4)",
+ "requirements": [
+  {
+   "category": "PLAYER_INPUT",
+   "question": "точная карта клавиш; сенсор-игра",
+   "why_static_insufficient": "маски ey/ez не расшифрованы в клавиши",
+   "required_observation": "нажатия -> действия",
+   "instrumentation": "keyPressed логирование",
+   "expected_output": "карта клавиш",
+   "priority": "MEDIUM",
+   "status": "PENDING"
+  },
+  {
+   "category": "AI_TIMING",
+   "question": "агро-единицы 1600/4096; тайминги атак",
+   "why_static_insufficient": "единицы неизвестны",
+   "required_observation": "дистанции агро/атаки в px",
+   "instrumentation": "позиции при агро",
+   "expected_output": "px-единицы",
+   "priority": "HIGH",
+   "status": "PENDING"
+  },
+  {
+   "category": "MISSION_TRANSITION",
+   "question": "выбор следующей миссии (bB)",
+   "why_static_insufficient": "инкремент не найден",
+   "required_observation": "bB после завершения",
+   "instrumentation": "bB логирование",
+   "expected_output": "механизм перехода",
+   "priority": "CRITICAL",
+   "status": "PENDING"
+  },
+  {
+   "category": "REWARD_EFFECT",
+   "question": "тип наград k(n,10); Q[] значения",
+   "why_static_insufficient": "call-site byte[] скрыт",
+   "required_observation": "что выдаётся",
+   "instrumentation": "k(n,10) логирование",
+   "expected_output": "типы наград",
+   "priority": "HIGH",
+   "status": "PENDING"
+  },
+  {
+   "category": "AUDIO_IDENTITY",
+   "question": "какой MIDI = музыка; prop21 звуки",
+   "why_static_insufficient": "нет таблицы",
+   "required_observation": "playback -> сегмент",
+   "instrumentation": "audio логирование",
+   "expected_output": "MIDI->музыка карта",
+   "priority": "MEDIUM",
+   "status": "PENDING"
+  },
+  {
+   "category": "X_TO_SPRITE_INSTANCE_VALUES",
+   "question": "числовые пары X->объект листа",
+   "why_static_insufficient": "нет таблицы",
+   "required_observation": "рендер кадра -> объект",
+   "instrumentation": "a.a(d,e) логирование",
+   "expected_output": "числовые пары",
+   "priority": "HIGH",
+   "status": "PENDING"
+  },
+  {
+   "category": "SHOP_PRICES",
+   "question": "цены; PLAYER/ENEMY split",
+   "why_static_insufficient": "нет таблицы цен",
+   "required_observation": "магазин -> цены",
+   "instrumentation": "shop логирование",
+   "expected_output": "цены",
+   "priority": "HIGH",
+   "status": "PENDING"
+  },
+  {
+   "category": "FAILURE_TRIGGER",
+   "question": "триггер state 10; воскрешение",
+   "why_static_insufficient": "смерть/воскрешение неясны",
+   "required_observation": "HP->0 поведение",
+   "instrumentation": "HP логирование",
+   "expected_output": "триггер",
+   "priority": "HIGH",
+   "status": "PENDING"
+  },
+  {
+   "category": "RACE_CONDITIONS",
+   "question": "cB=0/смерть/cy одновременно",
+   "why_static_insufficient": "порядок неизвестен",
+   "required_observation": "совпадения событий",
+   "instrumentation": "cB/HP/cy логирование",
+   "expected_output": "порядок",
+   "priority": "LOW",
+   "status": "PENDING"
+  },
+  {
+   "category": "FPS",
+   "question": "реальные FPS",
+   "why_static_insufficient": "sleep(40) != FPS",
+   "required_observation": "frame times",
+   "instrumentation": "timestamps",
+   "expected_output": "FPS",
+   "priority": "MEDIUM",
+   "status": "PENDING"
+  },
+  {
+   "category": "RAM",
+   "question": "реальное потребление",
+   "why_static_insufficient": "нет замеров",
+   "required_observation": "freeMemory",
+   "instrumentation": "memory sampling",
+   "expected_output": "RAM",
+   "priority": "LOW",
+   "status": "PENDING"
+  },
+  {
+   "category": "DEVICE_BEHAVIOR",
+   "question": "громкость, GC, device",
+   "why_static_insufficient": "device-specific",
+   "required_observation": "эмулятор/устройство",
+   "instrumentation": "системные логи",
+   "expected_output": "поведение",
+   "priority": "LOW",
+   "status": "PENDING"
+  }
+ ]
+}

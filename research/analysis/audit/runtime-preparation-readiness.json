@@ -1,0 +1,21 @@
+{
+ "audit": "runtime-preparation-readiness",
+ "date": "2026-08-15",
+ "status": "READY_FOR_REAL_RUNTIME",
+ "criteria": {
+  "emulator_option_chosen": true,
+  "environment_checked": true,
+  "instrumentation_plan_ready": true,
+  "event_schema_ready": true,
+  "experiments_defined": true,
+  "evidence_policy_established": true
+ },
+ "emulator_candidate": "freej2me-web (WASM, headless browser) — единственный без Java/X11; запасной: FreeJ2ME (Java, portable JDK)",
+ "blockers": [
+  "нет JRE (решаемо: portable JDK tar.gz)",
+  "нет headless Chrome (решаемо: npm puppeteer)",
+  "нет X11 (не нужен для freej2me-web)"
+ ],
+ "jar_integrity": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+ "note": "READY_FOR_REAL_RUNTIME = инфраструктура готова; сам запуск — следующий этап"
+}
