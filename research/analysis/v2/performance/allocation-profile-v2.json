@@ -1,0 +1,59 @@
+{
+ "meta": "Крупные аллокации",
+ "objects": [
+  {
+   "obj": "m3_0 seg0",
+   "size": "146 КБ",
+   "type": "спрайт-лист (sprite package)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "obj": "m9 seg12 (миссия 2)",
+   "size": "67 КБ",
+   "type": "mission stream",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "obj": "m9 seg10-14",
+   "size": "30-56 КБ каждый",
+   "type": "mission streams",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "obj": "m8 seg0",
+   "size": "8 КБ",
+   "type": "мир-объекты",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "obj": "t0 seg4",
+   "size": "21 КБ",
+   "type": "тексты",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "obj": "сущности миссии",
+   "size": "g[j.length][][] (14 массивов f)",
+   "type": "entity arrays",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "obj": "a.java буфер b",
+   "size": "16384 ints (64 КБ)",
+   "type": "pixel buffer",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "obj": "e[3]",
+   "size": "15 ints (кнопки)",
+   "type": "input",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "obj": "x",
+   "size": "2400 ints",
+   "type": "HUD-буфер",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+{
+ "graph": "BOOT -> RESOURCE LOAD (a(String)) -> PARSE (b(n)) -> CACHE (a[]/h[]/Player/Image) -> GAME LOOP (run: 40ms/166ms) -> UPDATE (g.B) -> RENDER (g.p) -> AUDIO (2 канала) -> SAVE (RMS) -> RELEASE (ac()/gc)"
+}

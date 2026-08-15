@@ -1,0 +1,26 @@
+{
+ "audit": "performance-readiness-v2",
+ "date": "2026-08-15",
+ "status": "READY_STATIC",
+ "criteria": {
+  "load_graph_traced": true,
+  "memory_guards_traced": true,
+  "major_allocations_traced": true,
+  "game_loop_traced": true,
+  "cache_lifetime_model_traced": true
+ },
+ "key": {
+  "loop": "40 мс интервал, 166 мс clamp, yield-спин",
+  "guards": "freeMemory < 100000 (звук x2)",
+  "buffers": "пиксельный 16384 ints, строки динамические +100/+10",
+  "cache": "Image/Player/resource",
+  "limits": "240x320, 2 Player, 8 кадров, 256px, 16 оружий, 45000 cap, 181 sin, 6 слоёв, 4 награды",
+  "runtime_only": [
+   "FPS",
+   "RAM",
+   "GC",
+   "аудио-латентность",
+   "device timing"
+  ]
+ }
+}

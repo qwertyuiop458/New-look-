@@ -1,0 +1,40 @@
+{
+ "meta": "Жизненный цикл ресурсов",
+ "resources": [
+  {
+   "resource": "m9",
+   "lifetime": "миссия (загружается в g.Z, ac() при завершении)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "resource": "m8",
+   "lifetime": "миссия",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "resource": "m6_*/m7",
+   "lifetime": "миссия/геймплей",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "resource": "m13_2",
+   "lifetime": "состояние (media)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "resource": "t0",
+   "lifetime": "состояние (тексты)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "resource": "RMS",
+   "lifetime": "сессия (persistent)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "resource": "m0..m5, m10..m12",
+   "lifetime": "сцены/меню (загружаются по сценарию)",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

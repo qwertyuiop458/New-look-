@@ -1,0 +1,80 @@
+{
+ "meta": "Hardcoded лимиты",
+ "limits": [
+  {
+   "limit": "240x320",
+   "value": "экран",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "2 Player канала",
+   "value": "аудио",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "8 мини-кадров на лист",
+   "value": "a[8][]",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "256 px на мини-кадр",
+   "value": "h u8 (0->256)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "16384 ints буфер",
+   "value": "пиксельный буфер",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "20 звуковых слотов a[]",
+   "value": "a = new ByteArrayInputStream[?] (n параметр)",
+   "confidence": "INFERRED (n)"
+  },
+  {
+   "limit": "6 слоёв m8",
+   "value": "j[6]",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "4 награды Q[]",
+   "value": "4 пары",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "16 оружий",
+   "value": "g.E()=16",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "45000 деньги cap",
+   "value": "L[4]",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "181 sin-таблица",
+   "value": "m12",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "100000 freeMemory guard",
+   "value": "звук",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "166 мс delta clamp",
+   "value": "game loop",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "40 мс frame interval",
+   "value": "game loop",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "limit": "макс. сущностей",
+   "value": "НЕ найдено (динамические массивы)",
+   "confidence": "CONFIRMED (нет лимита)"
+  }
+ ]
+}

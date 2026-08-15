@@ -187,6 +187,13 @@
    "rewards": "Q[] -> k(n,10)",
    "shop": "апгрейды аддитивно, скидки по рангу",
    "prices": "UNKNOWN"
+  },
+  "performance": {
+   "loop": "40/166 мс",
+   "guards": "freeMemory",
+   "cache": "Image/Player",
+   "limits": "16 оружий, 2 канала, 8 кадров",
+   "status": "CONFIRMED"
   }
  },
  "not_for_sequel_reference": [

@@ -1,0 +1,25 @@
+{
+ "meta": "Кэш-модель",
+ "caches": [
+  {
+   "name": "sprite Image cache",
+   "detail": "a[i][n] Image (a.java); lazy create; флаг d[i]",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "name": "audio Player cache",
+   "detail": "b[2] Player; прелоад a[]; повторный create при ошибке",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "name": "resource cache",
+   "detail": "h[] таблица + последовательное чтение; ac() закрытие",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "name": "level data",
+   "detail": "j[6][] границы m8; сегменты по одному",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

@@ -1094,5 +1094,13 @@
   "shop": "state 13; апгрейды g.y аддитивно; скидка по рангу b[n][15]",
   "prices": "UNKNOWN",
   "save": "L[4] u16 запись 1; оружие/патроны записи 1/2"
+ },
+ "performance": {
+  "loop": "40мс/166мс",
+  "guards": "freeMemory<100000 x2",
+  "buffers": "pixel 16384, строки +100/+10",
+  "cache": "Image/Player/resource",
+  "limits": "см. technical-limits-v2.json",
+  "status": "READY_STATIC"
  }
 }

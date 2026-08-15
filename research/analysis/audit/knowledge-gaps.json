@@ -218,6 +218,12 @@
     "desc": "invulnerability/knockback/множественные удары за тик — не найдены статически",
     "how": "рантайм",
     "resolution": null
+   },
+   {
+    "id": "runtime_performance",
+    "desc": "реальные FPS/RAM/GC/аудио-латентность",
+    "how": "рантайм/эмулятор",
+    "resolution": null
    }
   ],
   "LOW": [

@@ -1,0 +1,33 @@
+{
+ "meta": "Memory guards",
+ "guards": [
+  {
+   "location": "g.java:4366 (звук)",
+   "threshold": "freeMemory < 100000",
+   "purpose": "пропуск звука при нехватке памяти",
+   "fallback": "звук не играет",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "location": "g.java:4421 (звук)",
+   "threshold": "freeMemory < 100000 (&& интервал > 3000)",
+   "purpose": "пропуск звука",
+   "fallback": "нет",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "location": "g.java:5380/5401 (строки)",
+   "threshold": "буфер переполнен -> расширение +100/+10",
+   "purpose": "динамические буферы STR TOOLS",
+   "fallback": "System.gc() + новые массивы",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "location": "System.gc() (2862, 4074, 4105, 4668, 5390, 5419, 5991, 6221)",
+   "threshold": "-",
+   "purpose": "освобождение памяти после загрузки/копий",
+   "fallback": "-",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

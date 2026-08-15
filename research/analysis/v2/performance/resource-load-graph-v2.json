@@ -1,0 +1,54 @@
+{
+ "meta": "Граф загрузки ресурсов",
+ "loaders": [
+  {
+   "resource": "все (t0,m0..m13_2)",
+   "loader": "g.a(String) (4055): getResourceAsStream; A=read(); h[] u32 LE; последовательное чтение b(n)",
+   "destination": "a (InputStream) + h[] таблица",
+   "consumer": "g.b(n) -> byte[] сегментов",
+   "lifetime": "открывается/закрывается (ac())"
+  },
+  {
+   "resource": "m9",
+   "loader": "g.Z(int) (13805): a('/m9')",
+   "destination": "таблицы T/U/W/V/X/Y, an/ao, миссии",
+   "consumer": "все системы",
+   "lifetime": "миссия (ac() при выходе)"
+  },
+  {
+   "resource": "m8",
+   "loader": "g.Z(): a('/m8') при маркере 99",
+   "destination": "byArrayArray[6], j[][] границы",
+   "consumer": "поток миссии",
+   "lifetime": "миссия"
+  },
+  {
+   "resource": "m6_*/m7",
+   "loader": "геймплей (2501): a[16+n]",
+   "destination": "спрайт-листы a.java",
+   "consumer": "рендер",
+   "lifetime": "миссия"
+  },
+  {
+   "resource": "m13_2",
+   "loader": "a('/m13_2') (33620)",
+   "destination": "медиа-сегменты (MIDI/WAV)",
+   "consumer": "аудио",
+   "lifetime": "состояние"
+  },
+  {
+   "resource": "t0",
+   "loader": "сценарий g.g() (2414)",
+   "destination": "тексты",
+   "consumer": "диалоги/цели",
+   "lifetime": "состояние"
+  },
+  {
+   "resource": "RMS",
+   "loader": "RecordStore 'a' (4129)",
+   "destination": "записи 1/2",
+   "consumer": "профиль/прогресс",
+   "lifetime": "сессия"
+  }
+ ]
+}
