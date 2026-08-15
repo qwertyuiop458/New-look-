@@ -1,0 +1,24 @@
+{
+ "audit": "research-readiness-v4",
+ "date": "2026-08-15",
+ "status": "RUNTIME_REQUIRED",
+ "criteria": {
+  "all_critical_static_gaps_full_record": true,
+  "all_high_static_gaps_full_record": true,
+  "new_research_only_known_info": true
+ },
+ "rationale": "STATIC_FRONTIER_EXHAUSTED достигнут (15.26); в 15.27 одна гипотеза понижена (aR=5 миссий) — это не открыло новых статических направлений; дальнейший прогресс только через запуск оригинала",
+ "validators": {
+  "validate_game_bible_v2.py": "FAIL",
+  "validate_entity_animation_v2.py": "PASS",
+  "validate_ai_database_v2.py": "PASS",
+  "validate_global_state_v2.py": "PASS",
+  "validate_mission_object_v2.py": "PASS",
+  "validate_economy_v2.py": "PASS",
+  "validate_audio_database_v2.py": "PASS",
+  "validate_performance_model_v2.py": "PASS",
+  "validate_bible_v3.py": "PASS",
+  "validate_sprite_database_v2.py": "PASS"
+ },
+ "note": "RUNTIME_REQUIRED = следующий этап — эмулятор J2ME"
+}

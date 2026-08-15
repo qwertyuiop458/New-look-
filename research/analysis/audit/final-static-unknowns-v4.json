@@ -1,0 +1,59 @@
+{
+ "meta": "Финальный реестр статических неизвестных",
+ "items": [
+  {
+   "question": "m8 seg0/1/2 consumer",
+   "why_unknown": "исчерпывающий grep, нет статических читателей",
+   "last_attempt": "15.26",
+   "available": "формат, 576 записей",
+   "missing": "потребитель",
+   "runtime_required": true,
+   "priority": "HIGH"
+  },
+  {
+   "question": "prop13/16/18",
+   "why_unknown": "контексты не изолируются",
+   "last_attempt": "15.26",
+   "available": "чтения",
+   "missing": "контекст",
+   "runtime_required": true,
+   "priority": "MEDIUM"
+  },
+  {
+   "question": "Q[] значения миссий",
+   "why_unknown": "call-site byte[] конструкция не прослежена",
+   "last_attempt": "15.27",
+   "available": "кандидаты",
+   "missing": "точные",
+   "runtime_required": true,
+   "priority": "HIGH"
+  },
+  {
+   "question": "aR привязка к миссиям",
+   "why_unknown": "3 разных метода-вызывающих",
+   "last_attempt": "15.27",
+   "available": "5 call sites",
+   "missing": "доказательство миссионной привязки",
+   "runtime_required": true,
+   "priority": "HIGH"
+  },
+  {
+   "question": "prop21/31",
+   "why_unknown": "multi-use",
+   "last_attempt": "15.26",
+   "available": "чтения",
+   "missing": "роль",
+   "runtime_required": true,
+   "priority": "MEDIUM"
+  },
+  {
+   "question": "19 вторичных опкодов (1682)",
+   "why_unknown": "нет исполнителя-семантики",
+   "last_attempt": "15.26",
+   "available": "структура",
+   "missing": "семантика",
+   "runtime_required": true,
+   "priority": "MEDIUM"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "meta": {
+  "title": "Game Bible Final",
+  "date": "2026-08-15",
+  "source": "MASTER_FACTS.json"
+ },
+ "facts_by_category": {
+  "CONTAINER": [
+   "F001",
+   "F002"
+  ],
+  "MISSION": [
+   "F010",
+   "F011",
+   "F012",
+   "F013",
+   "F014"
+  ],
+  "SCRIPT": [
+   "F020",
+   "F021"
+  ],
+  "ENTITY": [
+   "F030",
+   "F031",
+   "F032"
+  ],
+  "AI": [
+   "F040",
+   "F041",
+   "F042",
+   "F043"
+  ],
+  "ANIMATION": [
+   "F050"
+  ],
+  "GRAPHICS": [
+   "F051",
+   "F052",
+   "F053"
+  ],
+  "AUDIO": [
+   "F060",
+   "F061",
+   "F062"
+  ],
+  "GLOBAL": [
+   "F070",
+   "F072"
+  ],
+  "SAVE": [
+   "F071"
+  ],
+  "OBJECTIVE": [
+   "F080",
+   "F081"
+  ],
+  "ECONOMY": [
+   "F090",
+   "F091",
+   "F092"
+  ],
+  "PERFORMANCE": [
+   "F100"
+  ]
+ }
+}

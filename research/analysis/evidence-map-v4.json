@@ -1,0 +1,140 @@
+{
+ "meta": "Карта evidence: FACT -> CLASS -> METHOD -> FIELD -> BYTECODE -> RESOURCE -> OFFSET",
+ "entries": [
+  {
+   "fact": "F001",
+   "class": "g",
+   "method": "a(String)/b(int)",
+   "field": "h[]/A",
+   "bytecode": "-",
+   "resource": "все",
+   "offset": "4055-4100"
+  },
+  {
+   "fact": "F010",
+   "class": "g",
+   "method": "Z(int)",
+   "field": "-",
+   "bytecode": "-",
+   "resource": "m9",
+   "offset": "seg0/10-14"
+  },
+  {
+   "fact": "F011",
+   "class": "g",
+   "method": "Z()/a(byte[],...)",
+   "field": "byArray4",
+   "bytecode": "-",
+   "resource": "m9",
+   "offset": "13796/16860"
+  },
+  {
+   "fact": "F013",
+   "class": "g",
+   "method": "aR (bytecode)",
+   "field": "i/cB/Q[]",
+   "bytecode": "nameandtype 2833; calls 100050/267158/401764/401904/403586",
+   "resource": "g.class",
+   "offset": "5 call sites"
+  },
+  {
+   "fact": "F020",
+   "class": "g",
+   "method": "H()/K()/n()",
+   "field": "z/bO/bQ",
+   "bytecode": "-",
+   "resource": "-",
+   "offset": "17353/17740/17290"
+  },
+  {
+   "fact": "F030",
+   "class": "g",
+   "method": "dr()",
+   "field": "T/U/W/V/X/Y",
+   "bytecode": "-",
+   "resource": "m9 seg4",
+   "offset": "24553"
+  },
+  {
+   "fact": "F040",
+   "class": "f",
+   "method": "b/i/j/o/p",
+   "field": "g[12]/g[10]/g[16]",
+   "bytecode": "-",
+   "resource": "-",
+   "offset": "2380-5535"
+  },
+  {
+   "fact": "F050",
+   "class": "c",
+   "method": "a(Graphics)",
+   "field": "d/e/g/h",
+   "bytecode": "-",
+   "resource": "-",
+   "offset": "44-130"
+  },
+  {
+   "fact": "F051",
+   "class": "a",
+   "method": "a(int)",
+   "field": "j/a[]",
+   "bytecode": "-",
+   "resource": "-",
+   "offset": "800-960"
+  },
+  {
+   "fact": "F060",
+   "class": "-",
+   "method": "-",
+   "field": "-",
+   "bytecode": "-",
+   "resource": "m13_2",
+   "offset": "14 MIDI + 15 WAV"
+  },
+  {
+   "fact": "F070",
+   "class": "g",
+   "method": "d(n,m)/ah()",
+   "field": "a/b/bB/bC/bF/L[]",
+   "bytecode": "-",
+   "resource": "-",
+   "offset": "714-793, 21534"
+  },
+  {
+   "fact": "F071",
+   "class": "g",
+   "method": "ci()/ad()",
+   "field": "D/E",
+   "bytecode": "-",
+   "resource": "RMS 'a'",
+   "offset": "19217/19300"
+  },
+  {
+   "fact": "F080",
+   "class": "g",
+   "method": "a(f2,n,byArray,n2)/cZ()",
+   "field": "i/cB/Q[]/cy",
+   "bytecode": "aR",
+   "resource": "миссии",
+   "offset": "23300/23598"
+  },
+  {
+   "fact": "F090",
+   "class": "g",
+   "method": "ah()",
+   "field": "L[4]",
+   "bytecode": "-",
+   "resource": "-",
+   "offset": "21534"
+  },
+  {
+   "fact": "F100",
+   "class": "g/a",
+   "method": "run()",
+   "field": "d",
+   "bytecode": "-",
+   "resource": "-",
+   "offset": "35148"
+  }
+ ]
+}

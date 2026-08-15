@@ -1,0 +1,49 @@
+{
+ "meta": "Анализ 5 call sites aR (bytecode)",
+ "calls": [
+  {
+   "offset": 100050,
+   "caller": "метод A (ранний, ~100К)",
+   "args_pattern": "getstatic+aload_0...",
+   "byte_source": "поле класса (getstatic b40095)",
+   "mission_origin": "UNKNOWN",
+   "classification": "GENERIC_CALL_SITE (не доказан как mission-specific)"
+  },
+  {
+   "offset": 267158,
+   "caller": "метод B (~267К)",
+   "args_pattern": "getstatic b20053 (x2), aload, getfield b4025b, ...",
+   "byte_source": "поле+индекс",
+   "mission_origin": "UNKNOWN",
+   "classification": "GENERIC_CALL_SITE"
+  },
+  {
+   "offset": 401764,
+   "caller": "метод C (~401К, поздний)",
+   "args_pattern": "bipush/iconst + вызовы 0x300 (x3) + getstatic",
+   "byte_source": "вычисляемый",
+   "mission_origin": "UNKNOWN",
+   "classification": "GENERIC_CALL_SITE"
+  },
+  {
+   "offset": 401904,
+   "caller": "метод C (второй вызов, ~401К)",
+   "args_pattern": "сложные вычисления + вызовы 0x300/0x3f7",
+   "byte_source": "вычисляемый",
+   "mission_origin": "UNKNOWN",
+   "classification": "GENERIC_CALL_SITE"
+  },
+  {
+   "offset": 403586,
+   "caller": "метод C (третий, ~403К)",
+   "args_pattern": "newarray? + getstatic b202a3 + getstatic b40095",
+   "byte_source": "массив+поле",
+   "mission_origin": "UNKNOWN",
+   "classification": "GENERIC_CALL_SITE"
+  }
+ ],
+ "conclusion": "5 invokestatic вызовов aR подтверждены; НО привязка '1 вызов = 1 миссия' НЕ доказана: вызовы в 3 разных методах (A, B, C), аргументы вычисляются по-разному; ни один не показал прямую загрузку сегмента миссии перед вызовом. aR может вызываться для разных целей (миссия, под-объекты, стартовые данные).",
+ "previous_claim": "'5 вызовов = 5 миссий' (этап 15.26)",
+ "revised_status": "ГИПОТЕЗА ПОНИЖЕНА: PROVEN_MISSION_CALL = 0, GENERIC_CALL_SITE = 5, UNKNOWN = 0",
+ "recommendation": "привязка вызовов к миссиям — REQUIRES_REAL_RUNTIME (или полная дизассемблерация с локальными переменными)"
+}

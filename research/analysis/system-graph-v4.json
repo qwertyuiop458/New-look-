@@ -1,0 +1,19 @@
+{
+ "meta": "Кросс-системный граф (проверка изолированности)",
+ "edges": [
+  "RESOURCE<->MISSION (m9/m8)",
+  "MISSION<->SCRIPT (z/H/K)",
+  "SCRIPT<->GLOBAL (bD/bM/state)",
+  "GLOBAL<->ENTITY (bB->Z->instance)",
+  "ENTITY<->AI (g[12]/prop10)",
+  "AI<->ANIMATION (g[12]->кадр)",
+  "ANIMATION<->GRAPHICS (W/X->спрайт)",
+  "GRAPHICS<->RESOURCE (m6_*/m7)",
+  "AUDIO<->GLOBAL (звук->события)",
+  "SAVE<->GLOBAL (RMS записи)",
+  "ECONOMY<->GLOBAL (L[4])",
+  "ECONOMY<->MISSION (Q[] награды)"
+ ],
+ "isolated": "нет изолированных подсистем (все связаны)",
+ "note": "единственная 'слабая' связь: m8 seg0/1/2 (не имеет потребителя)"
+}

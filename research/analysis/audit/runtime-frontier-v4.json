@@ -1,0 +1,87 @@
+{
+ "meta": "Рантайм-фронтьер",
+ "items": [
+  {
+   "category": "PLAYER_INPUT",
+   "questions": [
+    "точная карта клавиш",
+    "сенсор-игра"
+   ]
+  },
+  {
+   "category": "AI_TIMING",
+   "questions": [
+    "агро-единицы 1600/4096",
+    "тайминги атак",
+    "state-длительности"
+   ]
+  },
+  {
+   "category": "MISSION_TRANSITION",
+   "questions": [
+    "выбор следующей миссии",
+    "инкремент bB"
+   ]
+  },
+  {
+   "category": "REWARD_EFFECT",
+   "questions": [
+    "тип наград k(n,10)",
+    "Q[] значения"
+   ]
+  },
+  {
+   "category": "AUDIO_IDENTITY",
+   "questions": [
+    "какой MIDI = музыка",
+    "звуки оружия prop21"
+   ]
+  },
+  {
+   "category": "X_TO_SPRITE_INSTANCE_VALUES",
+   "questions": [
+    "числовые пары X->объект листа"
+   ]
+  },
+  {
+   "category": "SHOP_PRICES",
+   "questions": [
+    "цены",
+    "доступность weapon PLAYER/ENEMY"
+   ]
+  },
+  {
+   "category": "FAILURE_TRIGGER",
+   "questions": [
+    "триггер state 10",
+    "воскрешение g[7]=200"
+   ]
+  },
+  {
+   "category": "RACE_CONDITIONS",
+   "questions": [
+    "cB=0/смерть/cy одновременно"
+   ]
+  },
+  {
+   "category": "FPS",
+   "questions": [
+    "реальные FPS"
+   ]
+  },
+  {
+   "category": "RAM",
+   "questions": [
+    "реальное потребление"
+   ]
+  },
+  {
+   "category": "DEVICE_BEHAVIOR",
+   "questions": [
+    "громкость",
+    "памяти устройства",
+    "GC"
+   ]
+  }
+ ]
+}

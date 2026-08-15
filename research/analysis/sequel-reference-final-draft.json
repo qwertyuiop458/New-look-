@@ -1,0 +1,101 @@
+{
+ "title": "Sequel Reference FINAL — DRAFT",
+ "date": "2026-08-15",
+ "basis": "MASTER_FACTS (только CONFIRMED_PRIMARY/CONFIRMED_DERIVED + INFERRED с пометкой)",
+ "facts": {
+  "platform": {
+   "profiles": "CLDC-1.0/MIDP-2.0",
+   "display": "240x320",
+   "loop": "40/166мс",
+   "audio_api": "JSR-135 2 канала",
+   "sensors": "JSR-256",
+   "storage": "RMS"
+  },
+  "math": {
+   "fixed": "14 бит",
+   "tile": "16px",
+   "chain": ">>14 -> px; /16 -> tile"
+  },
+  "container": {
+   "count": "1B",
+   "offsets": "u32 LE rel",
+   "base": "1+4A"
+  },
+  "missions": {
+   "count": 5,
+   "streams": "m9 seg10-14",
+   "records": "формат подтверждён"
+  },
+  "script": {
+   "opcodes": 46,
+   "semantics_44": true,
+   "control": "145/146/143/144/159",
+   "note": "семантика визуальных эффектов INFERRED"
+  },
+  "entities": {
+   "archetypes": 56,
+   "props_26_confirmed": true,
+   "clusters": 17,
+   "instances": 666,
+   "instance_link": "g.m/g.w"
+  },
+  "ai": {
+   "classes": 6,
+   "states": 24,
+   "pathfinding": "нет",
+   "damage": "g[7] -= урон + 30%*bF"
+  },
+  "animation": {
+   "W": 176,
+   "V": 3,
+   "X": 36,
+   "Y": 15,
+   "directions": 4
+  },
+  "graphics": {
+   "formats": [
+    "8888",
+    "4444",
+    "565"
+   ],
+   "encodings": 8,
+   "slots": 17,
+   "decoder": "RLE+палитра",
+   "note": "X->объект числа RUNTIME"
+  },
+  "audio": {
+   "resources": "14 MIDI + 15 WAV",
+   "sounds": 10,
+   "voice": "нет",
+   "note": "MIDI-привязка RUNTIME"
+  },
+  "global": {
+   "states": 18,
+   "mission_var": "bB",
+   "money": "L[4] cap 45000",
+   "save": "RMS 2 записи",
+   "note": "инкремент миссии RUNTIME"
+  },
+  "objective": {
+   "entity": "L==10 (bytecode aR)",
+   "cb": 200,
+   "completion": "cB<=0 -> state 7",
+   "note": "урон cB RUNTIME"
+  },
+  "performance": {
+   "loop": "40/166",
+   "guard": "freeMemory 100000",
+   "buffer": "16384 ints"
+  }
+ },
+ "excluded": [
+  "цены",
+  "тип наград",
+  "MIDI-привязка",
+  "агро-единицы",
+  "X->спрайт числа",
+  "выбор миссии",
+  "prop21/31",
+  "Q[] значения"
+ ]
+}

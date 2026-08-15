@@ -902,15 +902,26 @@
   },
   {
    "claim": "голоса в диалогах нет (NO_VOICE_FOUND)",
-   "status": "CONFIRMED"
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "m13_2 (нет голосовых сегментов); диалоги = текст+портреты (state 11)"
+   }
   },
   {
    "claim": "sound flag e (бит 4), mute h; сейв в D[4]",
-   "status": "CONFIRMED"
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "19236-19250 (e-байт в D[4]); h-флаг в a(n,n2)"
+   }
   },
   {
    "claim": "lifecycle: прелоад a[], кэш Player, freeMemory guard, повторный createPlayer",
-   "status": "CONFIRMED"
+   "status": "CONFIRMED",
+   "evidence": {
+    "source_file": "research/decompiled/g.java",
+    "line": "4271-4520 (a[] прелоад, b[] Player, freeMemory guard 4366)"
+   }
   }
  ],
  "save": [
