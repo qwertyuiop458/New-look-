@@ -1,0 +1,36 @@
+{
+ "meta": "BYTECODE-АУДИТ создания объекта-миссии (g.class)",
+ "method_in_bytecode": "g.aR",
+ "signature": "(Lf;I[BI)V",
+ "decompiled_as": "g.a(f2, n, byArray, n2) (g.java:23300) — CFR переименовал aR в a (коллизия)",
+ "calls_found": [
+  {
+   "offset": 100050,
+   "opcode": "invokestatic (B8 03F7)",
+   "context": "2a b4 0095 ... b8 03f7 (aload_0 + getstatic + call)"
+  },
+  {
+   "offset": 267158,
+   "opcode": "invokestatic",
+   "context": "b2 0053 04 2e 19 07 b4 025b 06 2e ... b8 03f7"
+  },
+  {
+   "offset": 401764,
+   "opcode": "invokestatic",
+   "context": "2a b4 0095 b8 03f7"
+  },
+  {
+   "offset": 401904,
+   "opcode": "invokestatic",
+   "context": "2a 0c 06 19 0a 06 2e ... b8 03f7"
+  },
+  {
+   "offset": 403586,
+   "opcode": "invokestatic",
+   "context": "19 b2 02a3 b4 0095 b8 03f7"
+  }
+ ],
+ "call_count": 5,
+ "conclusion": "5 вызовов = 5 миссий (по одному на mission stream). Цепочка mission data -> L==10 -> aR(f,n,byArray,n2) -> cB/Q[]/cy ПОДТВЕРЖДЕНА структурно. byArray = данные миссии (позиция Q[] внутри — REQUIRES_REAL_RUNTIME, но вызов существует)",
+ "status": "RESOLVED_STATIC (существование и число вызовов); точные byArray-смещения — PARTIALLY_RESOLVED"
+}

@@ -1,0 +1,17 @@
+{
+ "meta": {
+  "title": "Game Bible Data V4 (patch)",
+  "date": "2026-08-15"
+ },
+ "additions": [
+  {
+   "fact": "aR bytecode",
+   "statement": "метод объекта-миссии = g.aR(f,int,byte[],int); 5 вызовов (по миссии)"
+  },
+  {
+   "fact": "save slots",
+   "statement": "2 физические записи RMS подтверждены"
+  }
+ ],
+ "status": "V4 = patch над V3"
+}

@@ -1,0 +1,5 @@
+{
+ "meta": "Q[] decoded",
+ "status": "UNKNOWN_STATIC (неоднозначно)",
+ "detail": "неоднозначно; точные Q[] значения REQUIRES_REAL_RUNTIME"
+}

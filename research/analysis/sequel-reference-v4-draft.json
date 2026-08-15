@@ -1,0 +1,10 @@
+{
+ "title": "Sequel Reference V4 — DRAFT",
+ "date": "2026-08-15",
+ "basis": "V3 + frontier V4 (aR bytecode, save slots 2 записи)",
+ "additions": {
+  "mission_object": "g.aR(f,int,byte[],int) — 5 вызовов (по миссии)",
+  "save": "2 физические записи RMS"
+ },
+ "facts": "см. sequel-reference-v3-draft.json (без изменений)"
+}

@@ -1,0 +1,61 @@
+{
+ "meta": "Статус фронтьера",
+ "questions": [
+  {
+   "question": "g.a(f2,n,byArray,n2) создание L==10",
+   "priority": "CRITICAL",
+   "static_evidence": "bytecode: 5 вызовов aR(f,int,byte[],int)",
+   "static_search_completed": true,
+   "resolution": "существование и 5 вызовов доказаны; смещения Q[] неоднозначны",
+   "status": "PARTIALLY_RESOLVED"
+  },
+  {
+   "question": "Q[] значения миссий",
+   "priority": "HIGH",
+   "static_evidence": "8-байтовые блоки, неоднозначно",
+   "static_search_completed": true,
+   "resolution": "кандидаты найдены, точные неоднозначны",
+   "status": "UNKNOWN_STATIC"
+  },
+  {
+   "question": "prop13/16/18",
+   "priority": "MEDIUM",
+   "static_evidence": "чтения без контекстов",
+   "static_search_completed": true,
+   "resolution": "семантика не восстанавливается",
+   "status": "UNKNOWN_STATIC"
+  },
+  {
+   "question": "save slot count",
+   "priority": "MEDIUM",
+   "static_evidence": "B(2), записи 1/2",
+   "static_search_completed": true,
+   "resolution": "2 записи подтверждены; >2 не доказано",
+   "status": "PARTIALLY_RESOLVED"
+  },
+  {
+   "question": "19 вторичных опкодов (1682)",
+   "priority": "HIGH",
+   "static_evidence": "структура, 19 значений",
+   "static_search_completed": true,
+   "resolution": "структура CONFIRMED; семантика RUNTIME",
+   "status": "PARTIALLY_RESOLVED"
+  },
+  {
+   "question": "m8 seg0/1/2 consumer",
+   "priority": "HIGH",
+   "static_evidence": "grep исчерпывающий",
+   "static_search_completed": true,
+   "resolution": "NO_STATIC_CONSUMER_FOUND",
+   "status": "UNKNOWN_STATIC"
+  },
+  {
+   "question": "prop21/31 (палитра/звук)",
+   "priority": "MEDIUM",
+   "static_evidence": "оба чтения",
+   "static_search_completed": true,
+   "resolution": "multi-use; точная роль RUNTIME",
+   "status": "UNKNOWN_STATIC"
+  }
+ ]
+}

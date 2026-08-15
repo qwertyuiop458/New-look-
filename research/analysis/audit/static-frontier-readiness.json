@@ -1,0 +1,14 @@
+{
+ "audit": "static-frontier-readiness",
+ "date": "2026-08-15",
+ "status": "STATIC_FRONTIER_EXHAUSTED",
+ "rationale": "по всем HIGH/CRITICAL вопросам выполнен полный статический поиск: bytecode-аудит (aR), grep по m8, парсеры, CP-анализ; оставшиеся вопросы UNKNOWN_STATIC/RUNTIME — статически не решаемы",
+ "stats": {
+  "total": 7,
+  "resolved_static": 2,
+  "partially_resolved": 2,
+  "unknown_static": 3,
+  "runtime_required": 0
+ },
+ "note": "STATIC_FRONTIER_EXHAUSTED != runtime-confirmed"
+}

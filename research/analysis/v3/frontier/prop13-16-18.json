@@ -1,0 +1,19 @@
+{
+ "meta": "prop13/16/18 — полный поиск",
+ "prop13": {
+  "reads": "f.java (2 чтения)",
+  "contexts": "var5_6 = g.h(var0.g[0], 12)...",
+  "status": "UNKNOWN"
+ },
+ "prop16": {
+  "reads": "f.java: var6_7 = g.h(var0.g[0], 16)",
+  "contexts": "рядом с 17/18 в f.java:2830 регионе",
+  "status": "UNKNOWN"
+ },
+ "prop18": {
+  "reads": "f.java: var8_9 = g.h(var0.g[0], 18)",
+  "contexts": "там же",
+  "status": "UNKNOWN"
+ },
+ "note": "контексты в f.java:2830-2840 (регион f.a() инициализации); семантика не восстанавливается без рантайма"
+}
