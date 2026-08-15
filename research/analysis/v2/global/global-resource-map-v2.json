@@ -1,0 +1,45 @@
+{
+ "meta": "Глобальные источники данных",
+ "sources": [
+  {
+   "resource": "m9 seg0",
+   "provides": "таблица длин миссий"
+  },
+  {
+   "resource": "m9 seg1/2",
+   "provides": "стартовые данные"
+  },
+  {
+   "resource": "m9 seg4",
+   "provides": "архетипы/анимации"
+  },
+  {
+   "resource": "m9 seg5",
+   "provides": "оружие/патроны"
+  },
+  {
+   "resource": "m9 seg10-14",
+   "provides": "5 mission streams"
+  },
+  {
+   "resource": "m8",
+   "provides": "мировые объекты/флаги"
+  },
+  {
+   "resource": "t0",
+   "provides": "тексты (диалоги, цели, названия)"
+  },
+  {
+   "resource": "RMS 'a'",
+   "provides": "профиль+прогресс"
+  },
+  {
+   "resource": "dataIGP",
+   "provides": "IGP-данные"
+  },
+  {
+   "resource": "m13_2",
+   "provides": "MIDI-музыка"
+  }
+ ]
+}

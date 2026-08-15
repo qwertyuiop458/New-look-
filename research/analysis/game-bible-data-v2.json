@@ -917,19 +917,28 @@
  ],
  "save": [
   {
-   "claim": "RMS RecordStore 'a'",
+   "claim": "RMS RecordStore 'a': запись 1 = профиль (ce,bB,i,bF,e,оружие,u[]); запись 2 = прогресс (персонажи, HP, оружие, патроны, P[], B[])",
    "status": "CONFIRMED",
-   "evidence": "g.java:4129-4131"
+   "evidence": "g.java:19217 ci(), 19300 ad(), 19938"
   },
   {
-   "claim": "IGP RecordStore 'igp19' (класс b)",
+   "claim": "авто-сохранение при завершении миссии (ad(bC==1?0:2))",
    "status": "CONFIRMED",
-   "evidence": "b.java:2270-2299"
+   "evidence": "g.java:14504"
   },
   {
-   "claim": "3 слота сохранений",
-   "status": "UNKNOWN",
-   "evidence": "B(int n) - параметр"
+   "claim": "версия/чексуммы сейвов отсутствуют",
+   "status": "CONFIRMED",
+   "evidence": "rms-format-v2.md"
+  },
+  {
+   "claim": "точное число слотов",
+   "status": "REQUIRES_REAL_RUNTIME"
+  },
+  {
+   "claim": "IGP RecordStore 'igp19'",
+   "status": "CONFIRMED",
+   "evidence": "b.java:2270"
   }
  ],
  "levels": {
@@ -1053,5 +1062,15 @@
   "damage": "g[7] -= урон + 30%*bF; смерть g[12]>=100",
   "randomness": "g.a(): %100, %500, %25",
   "note": "READY_STATIC; invulnerability/knockback — REQUIRES_REAL_RUNTIME"
+ },
+ "global": {
+  "state_machine": "18 ID",
+  "mission_var": "bB",
+  "mode": "bC",
+  "difficulty": "bF (влияет на урон 30%*bF)",
+  "money": "L[4]",
+  "progression": "запись 2 RMS",
+  "objectives": "скрипты (нет поля)",
+  "shop": "state 13"
  }
 }

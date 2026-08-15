@@ -1,0 +1,8 @@
+{
+ "meta": "Профиль",
+ "profile_state": "запись 1: ce, bB, i, bF, e, оружие, u[]",
+ "player_state": "персонажи c[] (в записи 2)",
+ "campaign": "bB + B[] флаги",
+ "RMS": "RecordStore 'a'",
+ "slots": "UNKNOWN (см. rms-format)"
+}

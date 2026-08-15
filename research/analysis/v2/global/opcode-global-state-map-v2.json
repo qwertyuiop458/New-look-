@@ -1,0 +1,55 @@
+{
+ "meta": "Опкоды, меняющие глобальное состояние",
+ "map": [
+  {
+   "opcode": 131,
+   "global": "g.bD",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 132,
+   "global": "g.d.g[9] (диалог)",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 139,
+   "global": "g.bi",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 157,
+   "global": "g.u, g.v, состояние",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 158,
+   "global": "g.Q (пауза скрипта)",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 159,
+   "global": "P (диалог-режим)",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 161,
+   "global": "g.dE, g.O",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 165,
+   "global": "aX, переход состояния",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 169,
+   "global": "g.bM",
+   "status": "CONFIRMED"
+  },
+  {
+   "opcode": 126,
+   "global": "L[4] (деньги)",
+   "status": "CONFIRMED"
+  }
+ ]
+}

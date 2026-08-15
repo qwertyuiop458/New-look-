@@ -1,0 +1,8 @@
+{
+ "meta": "Версионирование сейвов",
+ "version_byte": "НЕ НАЙДЕН",
+ "migration": "NOT_IMPLEMENTED (нет кода миграции)",
+ "corruption": "частично: c(n) возвращает null при ошибке; B(n) инициализирует пустой стор",
+ "validation": "нет чексумм",
+ "status": "UNKNOWN/NOT_IMPLEMENTED"
+}

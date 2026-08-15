@@ -1,0 +1,33 @@
+{
+ "audit": "global-system-readiness-v2",
+ "date": "2026-08-15",
+ "status": "PARTIAL",
+ "criteria": {
+  "state_machine_traced": true,
+  "mission_start_traced": true,
+  "mission_end_traced": true,
+  "objective_system_traced": false,
+  "save_load_traced": true,
+  "progression_traced": true,
+  "shop_traced": true
+ },
+ "metrics": {
+  "global_fields": 25,
+  "mission_states": "18 ID + подсостояния b/u",
+  "objective_system": "НЕТ выделенного поля — цели через скрипты (K()/124/125); completion REQUIRES_REAL_RUNTIME",
+  "progression": "запись 2 RMS: персонажи, HP, оружие, патроны, P[], B[], время",
+  "shop": "state 13; апгрейды g.y() аддитивно; цены UNKNOWN",
+  "rms_format": "RecordStore 'a': запись 1 (профиль) + запись 2 (прогресс); формат байты+u16",
+  "save_slots": "минимум 2 записи; точное число слотов UNKNOWN (старое '3' не подтверждено)",
+  "mission_transitions": "bB + ad() сохранение; инкремент REQUIRES_REAL_RUNTIME",
+  "score_results": "L[4] деньги, P[] статистика, время f.z/P[7]; kills/accuracy UNKNOWN",
+  "runtime_gaps": [
+   "completion trigger",
+   "слоты сейвов",
+   "цены магазина",
+   "инкремент миссии",
+   "kills/accuracy",
+   "difficulty (кроме bF)"
+  ]
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "meta": "RMS record schema",
+ "records": [
+  {
+   "id": 1,
+   "name": "PROFILE",
+   "fields": [
+    "ce",
+    "bB (миссия)",
+    "i (флаг)",
+    "bF (сложность)",
+    "e (настройки)",
+    "b[][] (оружие)",
+    "u[]"
+   ],
+   "size": "10 + x() + D()",
+   "version": "нет версии",
+   "checksum": "нет",
+   "purpose": "профиль+миссия",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 2,
+   "name": "PROGRESS",
+   "fields": [
+    "n9",
+    "bB",
+    "t",
+    "персонажи (позиции/HP/оружие)",
+    "патроны",
+    "b[][]",
+    "P[]",
+    "B[]",
+    "q[]/p[]"
+   ],
+   "size": "переменный",
+   "version": "нет",
+   "checksum": "нет",
+   "purpose": "состояние кампании",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": "igp19",
+   "name": "IGP",
+   "fields": [
+    "не сейв"
+   ],
+   "purpose": "онлайн-данные",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

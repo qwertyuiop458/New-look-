@@ -1,0 +1,207 @@
+{
+ "meta": "Глобальные поля g, переживающие update (первичные писатели/читатели)",
+ "fields": [
+  {
+   "field": "g.a",
+   "type": "int",
+   "meaning": "ГЛОБАЛЬНОЕ СОСТОЯНИЕ (0..99)",
+   "writers": "переходы состояний",
+   "readers": "switch(a)",
+   "lifetime": "вся игра",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.b",
+   "type": "int",
+   "meaning": "подсостояние (загрузка 0/1, геймплей 0/4)",
+   "writers": "g.d(n,m)",
+   "readers": "switch(b)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.u",
+   "type": "int",
+   "meaning": "подменю (состояние 8)",
+   "writers": "меню",
+   "readers": "switch(u)",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "bB",
+   "type": "int",
+   "meaning": "ТЕКУЩАЯ МИССИЯ (индекс; пишется в D[1], E[1])",
+   "writers": "ci(), ad(), меню",
+   "readers": "g.Z(bB), сохранение",
+   "lifetime": "профиль",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "bC",
+   "type": "int",
+   "meaning": "режим (0/1/2/3 — новые данные/продолжение)",
+   "writers": "o(int)",
+   "readers": "ad(), конец миссии",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "ce",
+   "type": "int",
+   "meaning": "профиль-флаг (D[0])",
+   "writers": "ci()",
+   "readers": "M()",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "i",
+   "type": "boolean",
+   "meaning": "флаг (D[2]==1)",
+   "writers": "ci()",
+   "readers": "-",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "bF",
+   "type": "int",
+   "meaning": "сложность/параметр (D[3]; используется в уроне 30%*bF)",
+   "writers": "ci()",
+   "readers": "f.b() урон",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "e (byte)",
+   "type": "byte",
+   "meaning": "настройки (D[4]; бит 4 = звук)",
+   "writers": "ci()/a(bl,bl2)",
+   "readers": "e.a()/e.b()",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.b (массив)",
+   "type": "int[][]",
+   "meaning": "состояние оружия (b[n][16] и др. — D-запись)",
+   "writers": "сохранение/магазин",
+   "readers": "оружие",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.u[]",
+   "type": "int[]",
+   "meaning": "массив u (сохраняется в D)",
+   "writers": "ci()",
+   "readers": "-",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.P",
+   "type": "int[]",
+   "meaning": "статистика/прогресс (P[7]=время, P[4], P[14])",
+   "writers": "ad()",
+   "readers": "результаты",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "f.z",
+   "type": "int",
+   "meaning": "глобальное время (сохраняется)",
+   "writers": "ad()",
+   "readers": "таймеры",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.t[]",
+   "type": "byte[20]",
+   "meaning": "массив t (-1 дефолт)",
+   "writers": "Z()",
+   "readers": "-",
+   "confidence": "INFERRED"
+  },
+  {
+   "field": "g.c[]",
+   "type": "f[]",
+   "meaning": "активные персонажи (c[0..n])",
+   "writers": "спавн/смена",
+   "readers": "геймплей",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.L[]",
+   "type": "int[]",
+   "meaning": "инвентарь: L[1]=оружие, L[3], L[4]=деньги/очки (45000 cap)",
+   "writers": "g.ah(), af()",
+   "readers": "магазин/стрельба",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.M[]",
+   "type": "int[]",
+   "meaning": "патроны по типам (M[0] сброс)",
+   "writers": "d(n,bl)",
+   "readers": "стрельба",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.by/g.bz",
+   "type": "int",
+   "meaning": "текущий слой/тайл (by,bz)",
+   "writers": "движение",
+   "readers": "коллизии",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.bP/bO/bQ",
+   "type": "int",
+   "meaning": "скрипт-указатель: bP=скрипт, bO=позиция, bQ=счётчик",
+   "writers": "g.b(int)",
+   "readers": "g.H()/K()",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.P (диалог)",
+   "type": "boolean",
+   "meaning": "режим паузы диалога (J())",
+   "writers": "J()",
+   "readers": "H()/K()",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.bM",
+   "type": "int",
+   "meaning": "глобальный флаг (опкод 169)",
+   "writers": "опкод 169",
+   "readers": "J()",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.bD",
+   "type": "int",
+   "meaning": "глобальная переменная (опкод 131; header миссии)",
+   "writers": "опкод 131",
+   "readers": "header",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.bi",
+   "type": "int",
+   "meaning": "глобальная переменная (опкод 139)",
+   "writers": "опкод 139",
+   "readers": "-",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.Q",
+   "type": "boolean",
+   "meaning": "флаг паузы скрипта (опкод 158)",
+   "writers": "опкод 158",
+   "readers": "I()",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "field": "g.dE/g.O",
+   "type": "int/boolean",
+   "meaning": "захват состояния диалога (опкод 161)",
+   "writers": "опкод 161",
+   "readers": "K()",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}

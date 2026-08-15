@@ -1,0 +1,12 @@
+{
+ "meta": "Кросс-системный граф",
+ "nodes": [
+  "MENU(1) -> PROFILES(16) -> LOADING(2) -> CINEMATIC(3) -> GAMEPLAY(6)",
+  "GAMEPLAY(6) -> MISSION_COMPLETE(7) -> SHOP(13) -> LOADING(2) [след. миссия]",
+  "GAMEPLAY(6) -> GAME_OVER(10) -> LOADING(2)/MENU(1)",
+  "GAMEPLAY(6) -> DIALOGUE(11) -> GAMEPLAY(6)",
+  "SCRIPTS: bP/bO/bQ (глобальный указатель) -> g.H()/K() -> состояния/поля",
+  "SAVE: ad() (завершение миссии) -> RMS 'a' запись 2; профиль -> запись 1",
+  "PROGRESSION: L[4] деньги, bB миссия, B[] флаги, b[][] оружие"
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "meta": "Индекс миссий (m9 seg0 = [1,1,1,1,1])",
+ "missions": [
+  {
+   "index": 0,
+   "stream": "m9 seg10",
+   "prereq": "-",
+   "order": "bB=0"
+  },
+  {
+   "index": 1,
+   "stream": "m9 seg11",
+   "prereq": "прохождение 0",
+   "order": "bB=1"
+  },
+  {
+   "index": 2,
+   "stream": "m9 seg12",
+   "prereq": "прохождение 1",
+   "order": "bB=2"
+  },
+  {
+   "index": 3,
+   "stream": "m9 seg13",
+   "prereq": "прохождение 2",
+   "order": "bB=3"
+  },
+  {
+   "index": 4,
+   "stream": "m9 seg14",
+   "prereq": "прохождение 3",
+   "order": "bB=4"
+  }
+ ],
+ "note": "5 mission streams (не '5 уровней' без проверки); переход между ними — bB + сохранение (ad); точный инкремент REQUIRES_REAL_RUNTIME"
+}

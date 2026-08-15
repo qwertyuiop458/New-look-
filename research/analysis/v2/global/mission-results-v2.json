@@ -1,0 +1,13 @@
+{
+ "meta": "Результаты миссии",
+ "fields": {
+  "kills": "счётчики g.e[] (агро-обработка) — точное поле UNKNOWN",
+  "accuracy": "UNKNOWN (нет статического поля)",
+  "time": "f.z / P[7] (сохраняется)",
+  "score": "L[4] (деньги/очки)",
+  "rewards": "магазин после завершения (state 13)",
+  "statistics": "P[] массив (ad() пишет/читает)"
+ },
+ "screen": "MISSION_COMPLETE (7) g.cd()",
+ "status": "PARTIAL"
+}

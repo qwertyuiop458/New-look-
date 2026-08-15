@@ -136,13 +136,11 @@
    "midi_found": "m13_2 seg0 = MIDI (MThd)"
   },
   "save": {
-   "api": "RMS RecordStore",
-   "stores": [
-    "a",
-    "igp19"
-   ],
-   "slots_count": "UNKNOWN (параметр B(int))",
-   "status": "CONFIRMED (API)"
+   "rms": "RecordStore 'a' — 2 записи (профиль+прогресс)",
+   "format": "байты+u16",
+   "slots": "UNKNOWN",
+   "autosave": "при завершении миссии",
+   "status": "CONFIRMED (структура)"
   },
   "scripts": {
    "opcode_values": "19 (11-44), операнды 1-8 байт",
@@ -180,6 +178,13 @@
    "timers": "g[15]/f.w/g[24]/g[22]/c.java-62",
    "update_order": "g.B() 5 шагов",
    "status": "CONFIRMED (статически)"
+  },
+  "global": {
+   "mission": "bB",
+   "difficulty": "bF",
+   "money": "L[4]",
+   "shop": "апгрейды аддитивно g.y()",
+   "status": "CONFIRMED (частично)"
   }
  },
  "not_for_sequel_reference": [

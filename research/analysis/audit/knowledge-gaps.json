@@ -66,6 +66,18 @@
     "id": "text_linkage",
     "desc": "связь миссия -> script -> string ID -> текст (t0)",
     "how": "трассировка диалогового состояния 11"
+   },
+   {
+    "id": "save_slots_count",
+    "desc": "точное число слотов сохранений (минимум 2 записи RMS; старое '3' не подтверждено)",
+    "how": "рантайм",
+    "resolution": null
+   },
+   {
+    "id": "objective_completion",
+    "desc": "триггер завершения миссии и objective-механизм (нет выделенного поля)",
+    "how": "рантайм",
+    "resolution": null
    }
   ],
   "HIGH": [

@@ -1,0 +1,11 @@
+{
+ "meta": "Objective-система. Прямых objective-полей НЕ найдено в статическом коде: цели задаются скриптами миссий (спец-опкоды 110-172) и проверяются K() (условия).",
+ "evidence": [
+  "g.H()/g.K() — исполнение условий",
+  "опкоды 124/125 — сравнения свойств",
+  "t0 — тексты целей (HUD)",
+  "completion — REQUIRES_REAL_RUNTIME"
+ ],
+ "objective_state": "UNKNOWN (нет выделенного поля/массива objectives)",
+ "completion": "REQUIRES_REAL_RUNTIME"
+}

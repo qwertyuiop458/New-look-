@@ -1,0 +1,148 @@
+{
+ "meta": "Глобальная state machine (18 ID, switch(a) g.java:714-793)",
+ "states": [
+  {
+   "id": 0,
+   "handler": "g.v()",
+   "label": "SPLASH",
+   "exit": "1",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 1,
+   "handler": "g.x()",
+   "label": "MENU",
+   "entry": "0,4,10,16",
+   "exit": "5/8/12/16/17/18/19",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 2,
+   "handler": "g.F()",
+   "label": "LOADING",
+   "sub": "b 0/1",
+   "entry": "1,7,10",
+   "exit": "3/6/11",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 3,
+   "handler": "g.V()",
+   "label": "CINEMATIC",
+   "entry": "2",
+   "exit": "6",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 4,
+   "handler": "g.z()",
+   "label": "PAUSE",
+   "entry": "6",
+   "exit": "6/1",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 5,
+   "handler": "g.bK()",
+   "label": "OPTIONS",
+   "entry": "1/4",
+   "exit": "1/4",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 6,
+   "handler": "g.B()",
+   "label": "GAMEPLAY",
+   "entry": "2/3/11",
+   "exit": "4/7/10/11",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 7,
+   "handler": "g.cd()",
+   "label": "MISSION_COMPLETE",
+   "entry": "6",
+   "exit": "13/2",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 8,
+   "handler": "switch(u)",
+   "label": "SUB_MENUS",
+   "entry": "5",
+   "exit": "5",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 10,
+   "handler": "g.dH()",
+   "label": "GAME_OVER",
+   "entry": "6",
+   "exit": "2/1",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 11,
+   "handler": "g.dA()",
+   "label": "DIALOGUE",
+   "entry": "2/6",
+   "exit": "6",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 12,
+   "handler": "g.eh()",
+   "label": "HELP",
+   "entry": "1",
+   "exit": "1",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 13,
+   "handler": "g.fE()",
+   "label": "SHOP",
+   "entry": "7",
+   "exit": "2",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 16,
+   "handler": "g.C()",
+   "label": "PROFILES",
+   "entry": "1",
+   "exit": "2/1",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 17,
+   "handler": "g.aO()",
+   "label": "CHARACTER_SELECT",
+   "entry": "1",
+   "exit": "2",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 18,
+   "handler": "g.E()",
+   "label": "CREDITS",
+   "entry": "1",
+   "exit": "1",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 19,
+   "handler": "g.G()",
+   "label": "QUIT_CONFIRM",
+   "entry": "1",
+   "exit": "1/99",
+   "confidence": "CONFIRMED"
+  },
+  {
+   "id": 99,
+   "handler": "exit",
+   "label": "EXIT",
+   "entry": "19",
+   "confidence": "CONFIRMED"
+  }
+ ]
+}
