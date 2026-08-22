@@ -209,6 +209,25 @@ class JDWP:
             vals.append(r.val())
         return vals
 
+    def set_static(self, tid, field_id, tag, value):
+        """ClassType.SetValues (cmdset 3, cmd 2): установить статическое поле.
+        tag: 'I','Z','B','S' и т.д. — значение БЕЗ тега (untagged value).
+        Используется RUNTIME_ASSISTED (TEST-003)."""
+        w = Writer().u8(tid).u4(1).u8(field_id)
+        if tag == 'I':
+            w.u4(value & 0xffffffff)
+        elif tag == 'Z':
+            w.u1(1 if value else 0)
+        elif tag == 'B':
+            w.u1(value & 0xff)
+        elif tag == 'S':
+            w.u2(value & 0xffff)
+        elif tag == 'J':
+            w.u8(value & 0xffffffffffffffff)
+        else:
+            raise JDWPError(f'set_static: unsupported tag {tag}')
+        self.cmd(3, 2, w.b)
+
     # ---------- ObjectReference ----------
     def obj_fields(self, oid, field_ids):
         w = Writer().u8(oid).u4(len(field_ids))

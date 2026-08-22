@@ -1,0 +1,33 @@
+{
+  "meta": "Quality gate Этапа 15.32 (TEST-003)",
+  "status": "PARTIAL",
+  "statuses": ["NOT_EXECUTED", "PARTIAL", "PASSED", "MISMATCH_FOUND", "INCONCLUSIVE"],
+  "rationale": "mission_03 РЕАЛЬНО загружена (RUNTIME_ASSISTED bB=3: state 6, bB=3, by=2, bz=1; 910 L10; скрипт 147 найден в g.z на 6028). Однако активный mission object НЕ установлен (i=0, cB=0): триггер тайла 31 не сработал в FreeJ2ME (путь блокирован стенами и диалоговой петлёй). По ТЗ PASSED требует 'mission_03 реально загружена И objective реально наблюдался' — objective не наблюдался, поэтому PARTIAL.",
+  "evidence": {
+    "mission_03_loaded": true,
+    "mission_start": "results/test-003/mission-start.json (state 6, bB=3, by=2, bz=1)",
+    "mission_object": "results/test-003/mission-object.json (i=0, cB=0, Q=[0x8]; 910 L10; 147 @ z[6028]; tile 31: tile_id 1527)",
+    "q_before": "results/test-003/q-before.json",
+    "cb_trace": "results/test-003/cb-trace.json (0 изменений)",
+    "damage_trace": "results/test-003/damage-trace.json (0 событий)",
+    "completion_trace": "results/test-003/completion-trace.json (observed=false)",
+    "reward_diff": "results/test-003/reward-diff.json (не наблюдаемо)",
+    "save_trace": "results/test-003/save-trace.json (только профиль a.1 set)",
+    "state_trace": "results/test-003/state-trace.json (лог прогона)",
+    "comparison": "results/test-003/comparison.json (MATCH 6, INCONCLUSIVE 5, PARTIAL 2, MISMATCH 0)",
+    "screenshots": ["mission-start.png", "mission-object.png"],
+    "screenshots_not_created": ["objective-active", "completion", "results", "shop"],
+    "jar_sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+    "original_jar_modified": false,
+    "assist": "RUNTIME_ASSISTED: JDWP putstatic g.bB=3 (вариант B по ТЗ)"
+  },
+  "audio_status": "AUDIO_RUNTIME_BLOCKED_BY_STUB",
+  "new_observations": [
+    "state 2 sub 1 = пауза загрузки, продвигается FIRE",
+    "bB сбрасывается в 0 в C() (state 16 case 2) перед state 4 -> Z(bB)",
+    "g.z mission 3: 147 на позиции 6028; слова совпадают со статикой",
+    "скрипт миссии выполняется (bO 1176->1444), но до 147 не доходит",
+    "диалоговая петля у NPC (75,456): игрок телепортируется обратно при повторном подходе"
+  ],
+  "verdict": "PARTIAL — mission_03 загружена (сильное подтверждение статики), но objective (i/cB) не активирован: триггер тайла 31 недостижим в FreeJ2ME; completion не достигнут; гипотезы cB=200/damage/completion НЕ подтверждены и НЕ опровергнуты"
+}

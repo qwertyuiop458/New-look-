@@ -1,0 +1,19 @@
+{
+ "assist": {
+  "method": "JDWP putstatic g.bB",
+  "value": 3,
+  "jar_modified": false,
+  "note": "RUNTIME_ASSISTED (\u043d\u0435 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0439 \u043f\u0440\u043e\u0445\u043e\u0434)",
+  "state2_forced": true,
+  "set_count": 1
+ },
+ "mission_start": {
+  "state": 6,
+  "bB": 3,
+  "by": 2,
+  "bz": 1,
+  "sub": 1,
+  "expected_mission": 3,
+  "resource": "/m9 seg13 (mission_03)"
+ }
+}

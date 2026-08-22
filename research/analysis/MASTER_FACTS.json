@@ -11,7 +11,7 @@
    "CONTRADICTED",
    "DEPRECATED"
   ],
-  "updated": "2026-08-15 TEST-002 runtime observations (F044-F048)"
+  "updated": "2026-08-16 TEST-003 runtime observations (F049-F051)"
  },
  "facts": [
   {
@@ -517,6 +517,17 @@
    "derivation": "JDWP + клавиши",
    "confidence": "MEDIUM",
    "first_discovered": "2026-08-15"
+  },
+  {
+   "id": "F049",
+   "category": "MISSION",
+   "statement": "RUNTIME (TEST-003): mission_03 загружается через RUNTIME_ASSISTED: bB сбрасывается в 0 в C() (state 16 case 2) перед state 4 -> z() -> Z(bB); установка bB=3 по JDWP сразу после сброса (5мс поллинг) даёт Z(3); state 2 sub 1 = пауза загрузки, продвигается FIRE",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-003",
+   "exact_reference": "results/test-003/",
+   "derivation": "JDWP + клавиши",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-16"
   }
  ]
 }

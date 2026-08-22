@@ -1,0 +1,14 @@
+{
+ "test": "TEST-003",
+ "generated": 1786840063.0183122,
+ "before": {
+  "L": "\u0441\u043c. reward-before.json",
+  "M": null,
+  "b": null,
+  "u": null,
+  "P": null,
+  "B": null
+ },
+ "after": null,
+ "note": "completion \u043d\u0435 \u0434\u043e\u0441\u0442\u0438\u0433\u043d\u0443\u0442 \u2014 reward effects \u043d\u0435 \u043d\u0430\u0431\u043b\u044e\u0434\u0430\u0435\u043c\u044b"
+}

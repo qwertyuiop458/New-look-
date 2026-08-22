@@ -103,5 +103,27 @@
    "completion cB->0->state 7"
   ],
   "blocker": "игрок заперт в стартовой зоне миссии 0; mission object требует mission_03 (bB=3), недостижимой меню (баг курсора TEST-001 S09)"
+ },
+ "test003": {
+  "date": "2026-08-16",
+  "status": "PARTIAL",
+  "confirmed": [
+   "mission_03 загружена (RUNTIME_ASSISTED bB=3, bz=1)",
+   "910 L10 (g0=5)",
+   "448 врагов",
+   "31 NPC",
+   "g.z: 147 на 6028, слова совпадают со статикой",
+   "скрипт выполняется (bO->1444)"
+  ],
+  "not_observed": [
+   "i/cB активация (триггер тайла 31 не сработал)",
+   "cB=200",
+   "damage to cB",
+   "completion state 7",
+   "Q[] ненулевой",
+   "reward",
+   "save after completion"
+  ],
+  "blocker": "FreeJ2ME: триггер тайла 31 недостижим (стены + диалоговая петля NPC); объект не активируется"
  }
 }

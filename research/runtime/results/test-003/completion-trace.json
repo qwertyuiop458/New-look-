@@ -1,0 +1,27 @@
+{
+ "test": "TEST-003",
+ "completion": {
+  "observed": false
+ },
+ "cb_trace": [],
+ "state_after": {
+  "state": 6,
+  "sub": 0,
+  "bB": 3,
+  "bC": 0,
+  "bF": 0,
+  "by": 2,
+  "bz": 1,
+  "ey": 0,
+  "ez": 0,
+  "u": 9,
+  "v": 2,
+  "aF": 0,
+  "x": 1,
+  "w": 1,
+  "dm": 4,
+  "dn": 5197,
+  "T": 0,
+  "U": 5619392
+ }
+}

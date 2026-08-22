@@ -1,0 +1,100 @@
+{
+ "test": "TEST-003",
+ "generated": 1786840076.6175966,
+ "method": "реальные наблюдения mission_03 (RUNTIME_ASSISTED bB=3) против GAME_BIBLE_FINAL/MASTER_FACTS/mission-object-model-v2/mission-completion-pipeline-v2/economy-v2",
+ "items": [
+  {
+   "id": "C01",
+   "area": "Mission 03 загрузка",
+   "static": "mission_03 = m9 seg13; header bz=1",
+   "observed": "RUNTIME_ASSISTED (JDWP putstatic g.bB=3 в момент state 4 до Z()): state 6, bB=3, by=2, bz=1 — миссия 3 РЕАЛЬНО загружена; 910 L10, 448 врагов, 31 NPC",
+   "result": "MATCH"
+  },
+  {
+   "id": "C02",
+   "area": "Загрузка миссии (механика)",
+   "static": "state 2 -> F() -> g.g() (карты); Z(bB) из z() (state 4); bB сбрасывается в C() (state 16)",
+   "observed": "state 16 sub 1->2->3 -> state 4 (bB=0 сброшен в C() case 2) -> Z(bB); state 2 sub 0: загрузка карт (q), sub 1 = ПАУЗА, продвигается FIRE (новое наблюдение); q глобальный до 67 (a.length=67 для всех миссий)",
+   "result": "MATCH",
+   "note": "sub 1 = пауза загрузки (F() case 1: ez!=0 -> d(2,0)) — NEW_OBSERVATION"
+  },
+  {
+   "id": "C03",
+   "area": "L==10 существование",
+   "static": "L==10 = mission object класс; в mission_03 type 10: 478 записей",
+   "observed": "910 экземпляров L==10 (все g[0]=5), координаты x:[-112,2626] y:[1,1524] px — существуют",
+   "result": "MATCH"
+  },
+  {
+   "id": "C04",
+   "area": "Opcode 147",
+   "static": "147 (установка i, cB=200, Q[]) в mission_03: 1 запись, words [6,2,2,6,1489,1519,35,1,65,18,98,59,99,55], tile 31",
+   "observed": "g.z (6078 байт): 147 на позиции 6028; слова вокруг совпадают (6,2,2,6,...); привязан к тайл-ячейке 31 (tile_id 1527, x=4, y=0)",
+   "result": "MATCH"
+  },
+  {
+   "id": "C05",
+   "area": "Активация mission object",
+   "static": "147 выполняется скриптом -> i=f2, cB=200",
+   "observed": "i=0, cB=0, cz=-1, Q=[0x8] на протяжении всего наблюдения; скрипт выполняется (bO 1176->1444) но 147 (6028) не достигнут; триггер тайла 31 не сработал (путь к тайлу блокирован в FreeJ2ME: стены + диалоговая петля у NPC)",
+   "result": "INCONCLUSIVE",
+   "note": "нельзя утверждать, что статическая модель неверна — триггер недостижим в эмуляторе"
+  },
+  {
+   "id": "C06",
+   "area": "cB initial value",
+   "static": "cB = 200 (g.a(f2,...) 23307)",
+   "observed": "cB не наблюдался (объект не установлен)",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "C07",
+   "area": "cB damage formula",
+   "static": "cB -= f.a(8|16, n9)",
+   "observed": "не наблюдаемо",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "C08",
+   "area": "Q[] структура",
+   "static": "Q = 4 пары u16 (id, значение); 8 int",
+   "observed": "Q[] прочитан: 8 элементов [0x8] (структура подтверждена), значения 0 (объект не установлен)",
+   "result": "PARTIAL"
+  },
+  {
+   "id": "C09",
+   "area": "Completion cB->0->state 7",
+   "static": "cZ(): cB<=0 -> g.e() -> state 7",
+   "observed": "не наблюдаемо (cB=0 весь тест)",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "C10",
+   "area": "Reward / economy",
+   "static": "Q[] -> k(n,10) награды; L[4] деньги",
+   "observed": "не наблюдаемо",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "C11",
+   "area": "Save",
+   "static": "ad() -> RMS запись 2 (прогресс)",
+   "observed": "RecordStore a.1 set при старте новой игры (профиль); save после completion не наблюдался",
+   "result": "PARTIAL"
+  },
+  {
+   "id": "C12",
+   "area": "Скриптовый движок",
+   "static": "H()/K()/g.b(): bO/bQ; 145/146 скобки; 159 терминатор",
+   "observed": "bO/bQ реально меняются (bO 1176->1444, bQ 20->0) — скрипт mission 3 выполняется; 146 в g.z: 22 позиции",
+   "result": "MATCH"
+  },
+  {
+   "id": "C13",
+   "area": "Карта mission 3",
+   "static": "header bz=1",
+   "observed": "большая карта (L10 x до 2626 px, y до 1524 px); игрок стартует (109,509); двери (L10 g1=4): 19 шт; NPC: 31",
+   "result": "MATCH"
+  }
+ ]
+}

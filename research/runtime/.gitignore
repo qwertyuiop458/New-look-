@@ -18,3 +18,6 @@ results/test-001/runtime-stdout*.log
 results/test-001/sdl_interface.log
 # TEST-002: логи экспериментов
 results/test-002/runtime-stdout*.log
+# TEST-003: логи экспериментов
+results/test-003/runtime-stdout*.log
+results/test-003/*.log

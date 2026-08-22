@@ -1,0 +1,42 @@
+[
+ {
+  "t": 0.52,
+  "msg": "reaching state 16 (new game confirm)..."
+ },
+ {
+  "t": 20.27,
+  "msg": "after YES: state=16 sub=1 bB=0"
+ },
+ {
+  "t": 20.27,
+  "msg": "RUNTIME_ASSISTED: bB set to 3 (state=16)"
+ },
+ {
+  "t": 41.48,
+  "msg": "mission load: state=6 bB=3 by=2 bz=1 (t=21.2s, sets=1)"
+ },
+ {
+  "t": 41.48,
+  "msg": "mission load result: state=6 bB=3 by=2 bz=1 sub=1"
+ },
+ {
+  "t": 99.24,
+  "msg": "sub=0 (0 = \u0441\u0432\u043e\u0431\u043e\u0434\u043d\u043e\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435)"
+ },
+ {
+  "t": 99.95,
+  "msg": "MO: i=0 cB=0 cy=0 cz=-1 Q=[0, 0, 0, 0, 0, 0, 0, 0] cU=0 cW=0 cY=0 cb=0 cw=0"
+ },
+ {
+  "t": 99.95,
+  "msg": "L==10 instances: 910"
+ },
+ {
+  "t": 249.97,
+  "msg": "after attack phase: state=6 sub=0 cB=0"
+ },
+ {
+  "t": 249.97,
+  "msg": "completion NOT observed (state=6, cB=0)"
+ }
+]
