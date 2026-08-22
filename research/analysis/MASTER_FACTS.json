@@ -11,7 +11,7 @@
    "CONTRADICTED",
    "DEPRECATED"
   ],
-  "updated": "2026-08-22 TEST-004 runtime observations (F052-F055)"
+  "updated": "2026-08-22 TEST-005 runtime observations (F056-F058)"
  },
  "facts": [
   {
@@ -547,6 +547,39 @@
    "status": "RUNTIME_CONFIRMED",
    "primary_source": "TEST-004",
    "exact_reference": "results/test-004/ai-trace.json",
+   "derivation": "JDWP-наблюдение",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-22"
+  },
+  {
+   "id": "F056",
+   "category": "GLOBAL",
+   "statement": "RUNTIME (TEST-005): death state = state 7 (НЕ 10): после HP<=0 игрока g_state=7, g_sub 0->2->3->4; state 10 НЕ наблюдён — GAME_OVER не объявлен; state 7 = общий переходный экран (смерть и completion)",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-005",
+   "exact_reference": "results/test-005/death-trace.json",
+   "derivation": "JDWP-наблюдение",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-22"
+  },
+  {
+   "id": "F057",
+   "category": "GLOBAL",
+   "statement": "RUNTIME (TEST-005): resurrection g[7]=200 ПОДТВЕРЖДЁН (observed=YES): после смерти (HP=-10) -> state 7 -> state 2 (reload) -> HP=200 на старте mission 0 (2858,843); bB сброшен 3->0 при смерти; reload = загрузка сейва (bB=0)",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-005",
+   "exact_reference": "results/test-005/retry-trace.json",
+   "derivation": "JDWP-наблюдение",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-22"
+  },
+  {
+   "id": "F058",
+   "category": "GLOBAL",
+   "statement": "RUNTIME (TEST-005): смерть игрока: 7 попаданий по 30 (bF=0), период 1.6-3.1с, враг state=1 dist 322-345px; player_state=8 на всём протяжении; save: Record a.1 set при смерти",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-005",
+   "exact_reference": "results/test-005/damage-trace.json",
    "derivation": "JDWP-наблюдение",
    "confidence": "HIGH",
    "first_discovered": "2026-08-22"

@@ -1,0 +1,27 @@
+{
+  "meta": "Quality gate Этапа 15.34 (TEST-005)",
+  "status": "PASSED",
+  "statuses": ["NOT_EXECUTED", "PARTIAL", "PASSED", "MISMATCH_FOUND"],
+  "rationale": "Полный death flow прослежен в реальном runtime: damage (7x30) -> HP<=0 -> death state 7 -> reload (state 2) -> HP=200 (resurrection). State 10 НЕ наблюдён (GAME_OVER не объявлен — по ТЗ). Статическая ветка g[7]<=0->g[7]=200 подтверждена (observed=YES). MISMATCH со статикой отсутствует.",
+  "evidence": {
+    "death_trace": "results/test-005/death-trace.json (7 damage events, post-death 9+ сэмплов)",
+    "state_trace": "results/test-005/state-trace.json",
+    "damage_trace": "results/test-005/damage-trace.json",
+    "retry_trace": "results/test-005/retry-trace.json (retry_observed=true)",
+    "save_trace": "results/test-005/save-trace.json (Record a.1 set)",
+    "comparison": "results/test-005/comparison.json (MATCH 5, NEW 3, PARTIAL 1, INCONCLUSIVE 1, MISMATCH 0)",
+    "screenshots": ["before-death.png", "death.png", "post-death.png", "retry.png"],
+    "screenshots_not_created": ["game-over.png (state 10 не показывался)"],
+    "jar_sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+    "original_jar_modified": false
+  },
+  "audio_status": "AUDIO_RUNTIME_BLOCKED_BY_STUB",
+  "key_findings": [
+    "death state = state 7 (не 10); sub 0->2->3->4",
+    "state 10 НЕ наблюдён — GAME_OVER не объявлен",
+    "resurrection g[7]=200 observed=YES (t=74.2, reload)",
+    "bB сброс 3->0 при смерти",
+    "reload: state 2 -> HP=200, старт mission 0 (2858,843)"
+  ],
+  "verdict": "PASSED — death flow подтверждён реальным runtime; state 10 не наблюдён (семантика не меняется)"
+}

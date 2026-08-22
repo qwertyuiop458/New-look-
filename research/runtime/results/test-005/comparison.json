@@ -1,0 +1,79 @@
+{
+ "test": "TEST-005",
+ "generated": 1787403905.2986007,
+ "method": "реальные наблюдения смерти игрока (mission 03, ranged enemy) против GAME_BIBLE_FINAL / MASTER_FACTS / global-state-v2",
+ "items": [
+  {
+   "id": "E01",
+   "area": "Damage",
+   "static": "урон = prop14/снаряд, формула g[7]-=урон+30%*bF",
+   "observed": "7 попаданий по 30 (bF=0), HP 200->-10, период 1.6-3.1с, враг state=1 dist~322-345px",
+   "result": "MATCH"
+  },
+  {
+   "id": "E02",
+   "area": "Death trigger",
+   "static": "смерть при HP<=0",
+   "observed": "HP<=0: 20->-10 at t=63.1, player_state=8 — смерть наступила",
+   "result": "MATCH"
+  },
+  {
+   "id": "E03",
+   "area": "Death state",
+   "static": "state 10 не описан как death; state 7 = completion (cZ)",
+   "observed": "после смерти g_state=7 (НЕ 10!), g_sub 0->2->3->4; state10 НЕ наблюдён",
+   "result": "NEW_OBSERVATION",
+   "note": "state 7 = общий переходный экран (смерть ИЛИ completion); state 10 не подтверждён как GAME_OVER"
+  },
+  {
+   "id": "E04",
+   "area": "Resurrection g[7]=200",
+   "static": "g[7]<=0 -> g[7]=200 (g.java:14998, B())",
+   "observed": "HP RESET to 200 при g_state=2 g_sub=0 — observed=YES, context=перезагрузка после смерти, t=74.2",
+   "result": "MATCH"
+  },
+  {
+   "id": "E05",
+   "area": "Retry/reload",
+   "static": "после смерти перезагрузка (state 2)",
+   "observed": "death -> state 7 -> state 2 (загрузка) -> HP=200, позиция (2858,843) = старт mission 0; bB сброшен 3->0",
+   "result": "MATCH",
+   "note": "bB=0 после смерти: reload из сейва (bB=0), не retry той же миссии"
+  },
+  {
+   "id": "E06",
+   "area": "bB change",
+   "static": "bB пишется в меню; при смерти?",
+   "observed": "bB: 3 (миссия) -> 0 (после смерти) — сброс до перезагрузки",
+   "result": "NEW_OBSERVATION"
+  },
+  {
+   "id": "E07",
+   "area": "Save interaction",
+   "static": "ad() -> RMS запись 2",
+   "observed": "Record a.1 set после смерти (профиль); запись 2 не подтверждена в этом прогоне",
+   "result": "PARTIAL"
+  },
+  {
+   "id": "E08",
+   "area": "Game Over (state 10)",
+   "static": "state 10 существует в списке состояний",
+   "observed": "state 10 НЕ наблюдён после смерти (state 7 вместо него); не объявляем GAME_OVER",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "E09",
+   "area": "Player state при смерти",
+   "static": "игрок state 8 = боевое",
+   "observed": "player_state=8 во время получения урона и после смерти (php=-10, pstate=8)",
+   "result": "MATCH"
+  },
+  {
+   "id": "E10",
+   "area": "Death position",
+   "static": "нет данных",
+   "observed": "смерть при pos=(108,198) (игрок отступал); после reload старт (2858,843)",
+   "result": "NEW_OBSERVATION"
+  }
+ ]
+}

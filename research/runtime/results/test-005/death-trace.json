@@ -1,0 +1,254 @@
+{
+ "death_at": 63.1,
+ "death_hp": -10,
+ "first_damage": {
+  "t": 50.07,
+  "hp_before": 200,
+  "dmg": 30,
+  "hp_after": 170,
+  "player_state": 8,
+  "enemy_state": 1,
+  "dist_px": 322.4
+ },
+ "damage_events": [
+  {
+   "t": 50.07,
+   "hp_before": 200,
+   "dmg": 30,
+   "hp_after": 170,
+   "player_state": 8,
+   "enemy_state": 1,
+   "dist_px": 322.4
+  },
+  {
+   "t": 51.72,
+   "hp_before": 170,
+   "dmg": 30,
+   "hp_after": 140,
+   "player_state": 8,
+   "enemy_state": 1,
+   "dist_px": 325.0
+  },
+  {
+   "t": 54.16,
+   "hp_before": 140,
+   "dmg": 30,
+   "hp_after": 110,
+   "player_state": 8,
+   "enemy_state": 1,
+   "dist_px": 329.3
+  },
+  {
+   "t": 56.7,
+   "hp_before": 110,
+   "dmg": 30,
+   "hp_after": 80,
+   "player_state": 8,
+   "enemy_state": 1,
+   "dist_px": 334.7
+  },
+  {
+   "t": 59.82,
+   "hp_before": 80,
+   "dmg": 30,
+   "hp_after": 50,
+   "player_state": 8,
+   "enemy_state": 1,
+   "dist_px": 340.3
+  },
+  {
+   "t": 60.67,
+   "hp_before": 50,
+   "dmg": 30,
+   "hp_after": 20,
+   "player_state": 8,
+   "enemy_state": 1,
+   "dist_px": 345.1
+  },
+  {
+   "t": 63.1,
+   "hp_before": 20,
+   "dmg": 30,
+   "hp_after": -10,
+   "player_state": 8,
+   "enemy_state": 1,
+   "dist_px": 944.7
+  }
+ ],
+ "post_death": [
+  {
+   "t": 63.1,
+   "php": -10,
+   "pstate": 8,
+   "psub": 0,
+   "ptimer": -1,
+   "px": 1769712,
+   "py": 3244032,
+   "g_state": 7,
+   "g_sub": 0,
+   "bB": 0,
+   "bC": 0,
+   "u": 9,
+   "by": 2,
+   "bz": 1
+  },
+  {
+   "t": 63.69,
+   "php": -10,
+   "pstate": 8,
+   "psub": 0,
+   "ptimer": -1,
+   "px": 1769712,
+   "py": 3244032,
+   "g_state": 7,
+   "g_sub": 0,
+   "bB": 0,
+   "bC": 0,
+   "u": 9,
+   "by": 2,
+   "bz": 1
+  },
+  {
+   "t": 64.54,
+   "php": -10,
+   "pstate": 8,
+   "psub": 0,
+   "ptimer": -1,
+   "px": 1769712,
+   "py": 3244032,
+   "g_state": 7,
+   "g_sub": 0,
+   "bB": 0,
+   "bC": 0,
+   "u": 9,
+   "by": 2,
+   "bz": 1
+  },
+  {
+   "t": 65.4,
+   "php": -10,
+   "pstate": 8,
+   "psub": 0,
+   "ptimer": -1,
+   "px": 1769712,
+   "py": 3244032,
+   "g_state": 7,
+   "g_sub": 0,
+   "bB": 0,
+   "bC": 0,
+   "u": 9,
+   "by": 2,
+   "bz": 1
+  },
+  {
+   "t": 65.41,
+   "php": -10,
+   "pstate": 8,
+   "psub": 0,
+   "px": 1769712,
+   "py": 3244032,
+   "g_state": 7,
+   "g_sub": 0,
+   "bB": 0,
+   "bC": 0,
+   "u": 9,
+   "by": 2,
+   "bz": 1
+  },
+  {
+   "t": 67.61,
+   "php": null,
+   "pstate": null,
+   "psub": null,
+   "px": null,
+   "py": null,
+   "g_state": 7,
+   "g_sub": 2,
+   "bB": 0,
+   "bC": 0,
+   "u": 9,
+   "by": 2,
+   "bz": 1
+  },
+  {
+   "t": 69.81,
+   "php": null,
+   "pstate": null,
+   "psub": null,
+   "px": null,
+   "py": null,
+   "g_state": 7,
+   "g_sub": 3,
+   "bB": 0,
+   "bC": 0,
+   "u": 9,
+   "by": 2,
+   "bz": 1
+  },
+  {
+   "t": 72.01,
+   "php": null,
+   "pstate": null,
+   "psub": null,
+   "px": null,
+   "py": null,
+   "g_state": 7,
+   "g_sub": 4,
+   "bB": 0,
+   "bC": 0,
+   "u": 9,
+   "by": 2,
+   "bz": 1
+  },
+  {
+   "t": 74.21,
+   "php": 200,
+   "pstate": 8,
+   "psub": 0,
+   "px": 46825472,
+   "py": 13811712,
+   "g_state": 2,
+   "g_sub": 0,
+   "bB": 0,
+   "bC": 0,
+   "u": 9,
+   "by": 2,
+   "bz": 0
+  }
+ ],
+ "post_death_analysis": {
+  "g_states_seen": [
+   2,
+   7
+  ],
+  "g_subs_seen": [
+   0,
+   2,
+   3,
+   4
+  ],
+  "hp_reset": 200,
+  "bB_values": [
+   0
+  ],
+  "bC_values": [
+   0
+  ],
+  "state10_seen": false,
+  "resurrection_seen": true
+ },
+ "save_events": [
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed",
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:Record a.1 set",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed",
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed",
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed",
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:Record a.1 set",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed"
+ ]
+}

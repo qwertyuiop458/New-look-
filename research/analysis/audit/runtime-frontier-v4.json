@@ -144,5 +144,20 @@
    "точная агро-граница 1600 (единицы)"
   ],
   "note": "механика атаки ranged подтверждена; melee (7/8/12) не воспроизведена — доступные враги ranged"
+ },
+ "test005": {
+  "date": "2026-08-22",
+  "status": "PASSED",
+  "confirmed": [
+   "death state = 7 (не 10)",
+   "resurrection g[7]=200 (observed YES)",
+   "bB сброс 3->0",
+   "reload -> mission 0 (bB=0)",
+   "damage 7x30, период 1.6-3.1с"
+  ],
+  "not_observed": [
+   "state 10 (GAME_OVER) — не показан",
+   "RMS запись 2 (прогресс)"
+  ]
  }
 }

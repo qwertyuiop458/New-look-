@@ -1,0 +1,66 @@
+[
+ {
+  "t": 0.52,
+  "msg": "reaching state 16..."
+ },
+ {
+  "t": 20.27,
+  "msg": "RUNTIME_ASSISTED: bB=3"
+ },
+ {
+  "t": 41.49,
+  "msg": "mission 3: state=6 bB=3 bz=1"
+ },
+ {
+  "t": 71.75,
+  "msg": "sub=0"
+ },
+ {
+  "t": 72.43,
+  "msg": "live enemies: 50 player=(109,509)"
+ },
+ {
+  "t": 72.43,
+  "msg": "target: (991,561) state=1 hp=2 g0=34"
+ },
+ {
+  "t": 122.5,
+  "msg": "FIRST DAMAGE: 200->170 (dmg 30) at t=50.07"
+ },
+ {
+  "t": 135.53,
+  "msg": "*** HP<=0: 20->-10 at t=63.1 player_state=8"
+ },
+ {
+  "t": 135.54,
+  "msg": "post-death[1]: php=-10 pstate=8 psub=0 g_state=7 g_sub=0 bB=0 bC=0 u=9 pos=(108,198)"
+ },
+ {
+  "t": 136.13,
+  "msg": "post-death[2]: php=-10 pstate=8 psub=0 g_state=7 g_sub=0 bB=0 bC=0 u=9 pos=(108,198)"
+ },
+ {
+  "t": 136.98,
+  "msg": "post-death[3]: php=-10 pstate=8 psub=0 g_state=7 g_sub=0 bB=0 bC=0 u=9 pos=(108,198)"
+ },
+ {
+  "t": 137.84,
+  "msg": "*** STATE CHANGE after death: g_state=7 g_sub=0 at t=65.4"
+ },
+ {
+  "t": 137.84,
+  "msg": "post[5]: php=-10 pstate=8 g_state=7 g_sub=0 bB=0 bC=0 u=9 pos=108,198"
+ },
+ {
+  "t": 140.04,
+  "msg": "post[6]: php=None pstate=None g_state=7 g_sub=2 bB=0 bC=0 u=9 pos=?,?"
+ },
+ {
+  "t": 146.65,
+  "msg": "*** HP RESET to 200 (g_state=2 g_sub=0)"
+ },
+ {
+  "t": 146.65,
+  "msg": "analysis: states=[2, 7] subs=[0, 2, 3, 4] state10=False resurrect=True"
+ }
+]

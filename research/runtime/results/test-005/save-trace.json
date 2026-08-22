@@ -1,0 +1,19 @@
+{
+ "test": "TEST-005",
+ "generated": 1787403870.25363,
+ "save_events": [
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed",
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:Record a.1 set",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed",
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed",
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed",
+  "RecordStore:RecordStore a opened",
+  "javax.microedition.rms.impl.RecordStoreImpl:Record a.1 set",
+  "javax.microedition.rms.impl.RecordStoreImpl:RecordStore a closed"
+ ],
+ "note": "RMS \u0441\u043e\u0431\u044b\u0442\u0438\u044f \u0438\u0437 \u043b\u043e\u0433\u0430 \u044d\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u0430"
+}
