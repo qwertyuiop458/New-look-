@@ -1,0 +1,28 @@
+{
+  "meta": "Quality gate Этапа 15.37 (TEST-008)",
+  "status": "PARTIAL",
+  "statuses": ["NOT_EXECUTED", "PARTIAL", "PASSED", "MISMATCH_FOUND"],
+  "rationale": "Полный каталог L14 (62 объекта) задокументирован, 31 объект протестирован реальными input events (подход+FIRE) без JDWP-перевода state; natural shop entry НЕ воспроизведён (триггер fA требует точной AABB-коллизии, недостижимой в FreeJ2ME). Товары/цены/покупка — INCONCLUSIVE. MISMATCH со статикой отсутствует.",
+  "evidence": {
+    "natural_shop_entry": "results/test-008/natural-shop-entry.json (observed=false, tested=31)",
+    "l14_catalog": "62 объекта в summary.json (l14_all)",
+    "shop_items": "results/test-008/shop-items.json (не отображались)",
+    "price_table": "results/test-008/price-table-runtime.json (недоступны)",
+    "purchase_trace": "results/test-008/purchase-trace.json (0 покупок)",
+    "currency_diff": "results/test-008/currency-diff.json (нет изменений)",
+    "rms_trace": "results/test-008/rms-trace.json (нет изменений)",
+    "comparison": "results/test-008/comparison.json (MATCH 3, INCONCLUSIVE 4, NEW 1, MISMATCH 0)",
+    "screenshots": ["approach.png"],
+    "screenshots_not_created": ["shop-entry", "items", "purchase-before", "purchase-after", "shop-exit"],
+    "jar_sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+    "original_jar_modified": false
+  },
+  "audio_status": "AUDIO_RUNTIME_BLOCKED_BY_STUB",
+  "key_findings": [
+    "62 L14 в mission 3; g0-распределение: 0(14), 2(12), 42(7), 1(7), 27(6), 41(5), 12(3), 14(3), 39(1)...",
+    "31 объект протестирован подходом+FIRE — state 13 не достигнут",
+    "взаимодействие (sub!=0) не начиналось ни у одного объекта",
+    "natural shop trigger не воспроизводим в FreeJ2ME (AABB fA)"
+  ],
+  "verdict": "PARTIAL — каталог L14 и попытки natural entry документированы; shop/цены/покупка INCONCLUSIVE (блокер: FreeJ2ME навигация)"
+}

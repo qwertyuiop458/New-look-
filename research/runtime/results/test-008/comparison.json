@@ -1,0 +1,66 @@
+{
+ "test": "TEST-008",
+ "generated": 1787409855.5763752,
+ "method": "реальные попытки natural shop entry (mission 03, 31 L14 объект) против economy-v2 / GAME_BIBLE_FINAL / MASTER_FACTS",
+ "items": [
+  {
+   "id": "N01",
+   "area": "L14 объекты",
+   "static": "L14 = интерактивные объекты (fA trigger)",
+   "observed": "62 L14 в mission 3, полный каталог: координаты, g0/g1/g16, dist; g0-распределение: 0(14),1(7),2(12),27(6),41(5),42(7),12(3),14(3),39(1),59(1),36(1),20(1),10(1),9(1),7(1),4(1),13(1)",
+   "result": "MATCH"
+  },
+  {
+   "id": "N02",
+   "area": "Shop trigger через L14",
+   "static": "fA() -> case 3 -> fB/fC -> m(13) (shop)",
+   "observed": "31 объект протестирован (25 ближайших + 6 кандидатов g0=39/41/42/12): подход + FIRE с разных сторон; state 13 НЕ достигнут; взаимодействие (sub!=0) не начиналось",
+   "result": "INCONCLUSIVE",
+   "note": "по ТЗ п.8 JDWP для перевода в 13 НЕ использовался; natural trigger не воспроизведён в FreeJ2ME"
+  },
+  {
+   "id": "N03",
+   "area": "L14 g0=39 (ближний, 38px)",
+   "static": "—",
+   "observed": "объект (147,514) g0=39 в 38px от игрока: FIRE не открыл shop",
+   "result": "NEW_OBSERVATION",
+   "note": "g0=39 — вероятно, интерактивный (NPC-подобный), не магазин"
+  },
+  {
+   "id": "N04",
+   "area": "L14 g0=42/41 (повторы)",
+   "static": "—",
+   "observed": "7+5 объектов g0=42/41 (двери?): подход+FIRE не сработал",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "N05",
+   "area": "Items/цены",
+   "static": "цены UNKNOWN",
+   "observed": "магазин не открыт — товары/цены не отображались (INCONCLUSIVE)",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "N06",
+   "area": "Покупка",
+   "static": "k(-1,21) покупка",
+   "observed": "не воспроизведена (нет входа в shop)",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "N07",
+   "area": "L[4] currency (из TEST-007)",
+   "static": "L[4]=45000",
+   "observed": "подтверждено TEST-007 (L[4]=45000 при assisted входе)",
+   "result": "MATCH",
+   "note": "переносится из TEST-007"
+  },
+  {
+   "id": "N08",
+   "area": "JDWP state 13",
+   "static": "—",
+   "observed": "JDWP для state 13 НЕ использовался (по ТЗ п.8); только наблюдение",
+   "result": "MATCH"
+  }
+ ]
+}

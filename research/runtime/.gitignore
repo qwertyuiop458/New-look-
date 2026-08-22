@@ -33,3 +33,6 @@ results/test-006/*.log
 # TEST-007: логи
 results/test-007/runtime-stdout*.log
 results/test-007/*.log
+# TEST-008: логи
+results/test-008/runtime-stdout*.log
+results/test-008/*.log
