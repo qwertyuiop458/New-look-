@@ -11,7 +11,7 @@
    "CONTRADICTED",
    "DEPRECATED"
   ],
-  "updated": "2026-08-22 TEST-005 runtime observations (F056-F058)"
+  "updated": "2026-08-22 TEST-006 runtime observations (F059-F061)"
  },
  "facts": [
   {
@@ -581,6 +581,17 @@
    "primary_source": "TEST-005",
    "exact_reference": "results/test-005/damage-trace.json",
    "derivation": "JDWP-наблюдение",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-22"
+  },
+  {
+   "id": "F059",
+   "category": "SAVE",
+   "statement": "RUNTIME (TEST-006): RMS WRITE подтверждён: RecordStore 'a' = 2 физические записи (a.1.rsr 44B = профиль D[], a.2.rsr 13B = прогресс); при смерти (state 7) a.1.rsr переписан (байт 27: D[15] 05->06), a.2.rsr НЕ менялся; a.rsh header обновлён (счётчик 0x14->0x15)",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-006",
+   "exact_reference": "results/test-006/rms-writes.json",
+   "derivation": "чтение физических RMS-файлов FreeJ2ME",
    "confidence": "HIGH",
    "first_discovered": "2026-08-22"
   }

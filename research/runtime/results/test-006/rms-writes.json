@@ -1,0 +1,19 @@
+{
+ "test": "TEST-006",
+ "generated": 1787404626.9084284,
+ "writes": {
+  "a.1.rsr": {
+   "before_size": 44,
+   "after_size": 44,
+   "changed_bytes": true,
+   "delta": "D[15] 05->06 (профиль D[])"
+  },
+  "a.rsh": {
+   "before_size": 37,
+   "after_size": 37,
+   "changed_bytes": true,
+   "delta": "header обновлён"
+  }
+ },
+ "note": "a.1.rsr = профиль (D[]): реальный write при смерти/reload; a.2.rsr (прогресс) не переписывался в этом сценарии"
+}

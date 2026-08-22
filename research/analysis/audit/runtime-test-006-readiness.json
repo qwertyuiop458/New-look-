@@ -1,0 +1,27 @@
+{
+  "meta": "Quality gate Этапа 15.35 (TEST-006)",
+  "status": "PASSED",
+  "statuses": ["NOT_EXECUTED", "PARTIAL", "PASSED", "MISMATCH_FOUND"],
+  "rationale": "Реальный RMS WRITE подтверждён (a.1.rsr изменён при смерти: D[15] 05->06; содержимое = профиль D[]); reload подтверждён (HP=200, mission 0); persisted-поля определены (bC/bF/P/M/u — стабильны; bB/HP/B[] — не persisted). MISMATCH со статикой отсутствует.",
+  "evidence": {
+    "rms_before": "results/test-006/rms-before.json",
+    "rms_writes": "results/test-006/rms-writes.json (a.1.rsr changed, a.2.rsr not)",
+    "rms_after": "results/test-006/rms-after.json",
+    "state_before": "results/test-006/state-before.json",
+    "state_after": "results/test-006/state-after.json",
+    "save_load_diff": "results/test-006/save-load-diff.json",
+    "comparison": "results/test-006/comparison.json (MATCH 5, PARTIAL 3, NEW 2, INCONCLUSIVE 2, MISMATCH 0)",
+    "screenshots": ["before.png", "save-event.png", "death.png", "reload.png"],
+    "jar_sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+    "original_jar_modified": false
+  },
+  "audio_status": "AUDIO_RUNTIME_BLOCKED_BY_STUB",
+  "key_findings": [
+    "RMS: 2 физические записи (a.1.rsr=44B профиль, a.2.rsr=13B прогресс)",
+    "RMS WRITE при смерти: a.1.rsr байт 27 05->06 (D[15] счётчик)",
+    "D[] структура: D[0]=ce, D[1]=bB, D[4]=e=7, D[15]=счётчик сейвов",
+    "L[]=null в runtime (L[1]/L[4] не активны в mission 0/3)",
+    "reload -> mission 0 (bB=0), HP=200, P[]/M[]/u[] стабильны"
+  ],
+  "verdict": "PASSED — RMS save/load подтверждён реальным runtime (профиль write при смерти, reload, persisted-поля); MISMATCH 0"
+}

@@ -1,0 +1,97 @@
+{
+ "test": "TEST-006",
+ "generated": 1787404641.0590885,
+ "method": "реальные наблюдения RMS/save/load (mission 03 -> death -> reload mission 0) против GAME_BIBLE_FINAL / MASTER_FACTS / save-v2 / global-v2",
+ "items": [
+  {
+   "id": "S01",
+   "area": "RMS records",
+   "static": "RecordStore 'a': 2 записи (1=профиль, 2=прогресс)",
+   "observed": "физически 2 записи: a.1.rsr (44 байта), a.2.rsr (13 байт); header a.rsh (37 байт, MIDRMS, 2 records)",
+   "result": "MATCH"
+  },
+  {
+   "id": "S02",
+   "area": "RMS WRITE (профиль)",
+   "static": "a(boolean,boolean) -> g.a(1, D) — запись профиля",
+   "observed": "a.1.rsr ИЗМЕНИЛСЯ при смерти/reload: D[15] 05->06 (байт 27); содержимое a.1.rsr = D[] + заголовок; a.rsh обновлён (счётчик 0x14->0x15)",
+   "result": "MATCH"
+  },
+  {
+   "id": "S03",
+   "area": "Запись 2 (прогресс)",
+   "static": "запись 2 = прогресс (E = g.c(2))",
+   "observed": "a.2.rsr НЕ менялся за весь сценарий (смерть/reload); E=null в runtime — запись 2 не переписывалась",
+   "result": "PARTIAL",
+   "note": "запись 2 существует (13 байт), но write не наблюдался в этом сценарии"
+  },
+  {
+   "id": "S04",
+   "area": "bB persist",
+   "static": "bB в профиле D[1]",
+   "observed": "bB: 3 (mission 3) -> 0 после reload (persisted=False) — сейв содержит bB=0 (из старта новой игры); D[1]=0",
+   "result": "PARTIAL",
+   "note": "bB persisted как 0, не как текущая миссия 3 (reload из сейва, не checkpoint)"
+  },
+  {
+   "id": "S05",
+   "area": "HP persist",
+   "static": "HP в g[7]; resurrection 200",
+   "observed": "HP 200->170 (damage) -> -10 (death) -> 200 (reload): HP НЕ persisted (воскрешение 200, не сохранённое 170)",
+   "result": "MATCH"
+  },
+  {
+   "id": "S06",
+   "area": "P[] persist",
+   "static": "P[] = прогресс/статистика",
+   "observed": "P=[1,0,0,0,0,100,0,0,0,0,0,0,0,0,0,100,0,0,0,0] ОДИНАКОВ pre/post (persisted=True или статичен)",
+   "result": "MATCH",
+   "note": "P[5]=100, P[15]=100; persist через RMS не доказан (значение могло не меняться)"
+  },
+  {
+   "id": "S07",
+   "area": "B[] (оружие/инвентарь)",
+   "static": "оружие в L[1]? B[]?",
+   "observed": "B[0]=21 в mission 3 (оружие?), после reload B=[255,...] (пусто, mission 0); L[]=null в рантайме (и mission 3, и mission 0) — L НЕ активен",
+   "result": "NEW_OBSERVATION",
+   "note": "L[] = null: статическая модель 'L[1]=weapon, L[4]=money' не наблюдается в runtime (L инициализируется позже/в другом контексте)"
+  },
+  {
+   "id": "S08",
+   "area": "D[] профиль структура",
+   "static": "D = [ce][bB][i][bF][e][b][u[]]",
+   "observed": "D=[0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,N,0,...]: D[0]=ce=0, D[1]=bB=0, D[4]=e=7, D[15]=счётчик (инкремент 4->5->6 при каждом write)",
+   "result": "PARTIAL",
+   "note": "D[15] инкрементируется при каждом профиль-write (счётчик сейвов?) — NEW_OBSERVATION"
+  },
+  {
+   "id": "S09",
+   "area": "M[] persist",
+   "static": "M[] = ?",
+   "observed": "M=[-1,0,0,0,0,0,0,0,0,35000] одинаков pre/post; M[9]=35000",
+   "result": "INCONCLUSIVE",
+   "note": "M[9]=35000 — возможно max ресурса; persist не доказан"
+  },
+  {
+   "id": "S10",
+   "area": "u[] persist",
+   "static": "u[] = слоты/персонажи?",
+   "observed": "u=[1658,1659,...] одинаков pre/post (persisted=True или статичен)",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "S11",
+   "area": "Reload location",
+   "static": "reload после смерти -> ?",
+   "observed": "death -> reload -> mission 0 (bB=0), старт (2858,843), HP=200, state 6 sub 1 — загрузка сохранённого профиля (bB=0), не checkpoint mission 3",
+   "result": "NEW_OBSERVATION"
+  },
+  {
+   "id": "S12",
+   "area": "RMS не через JDWP",
+   "static": "—",
+   "observed": "RMS модифицировался ТОЛЬКО игрой (JDWP только читал); write произошёл при смерти (state 7)",
+   "result": "MATCH"
+  }
+ ]
+}
