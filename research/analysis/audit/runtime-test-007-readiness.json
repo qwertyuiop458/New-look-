@@ -1,0 +1,30 @@
+{
+  "meta": "Quality gate Этапа 15.36 (TEST-007)",
+  "status": "PARTIAL",
+  "statuses": ["NOT_EXECUTED", "PARTIAL", "PASSED", "MISMATCH_FOUND"],
+  "rationale": "State 13 SHOP открыт (RUNTIME_ASSISTED), L[4]=45000 (валюта) подтверждена runtime, L[0]=активное оружие (NEW_OBSERVATION), экран shop отображается. Покупка/цены НЕ воспроизведены: реальный вход через L14 не сработал (5/62 объектов), assisted-вход не инициализирует UI-цепочку товаров (g.D()/C[]). MISMATCH со статикой отсутствует.",
+  "evidence": {
+    "shop_entry": "results/test-007/shop-entry.json (state 13, L=[-26,0,0,0,45000])",
+    "currency": "results/test-007/currency-before.json (L[4]=45000)",
+    "weapon": "results/test-007/weapon-before.json (L[0]=-26, y=8 строк)",
+    "purchase_trace": "results/test-007/purchase-trace.json (0 покупок)",
+    "purchase_after": "results/test-007/purchase-after.json (L[] не изменился)",
+    "shop_exit": "results/test-007/shop-exit.json (exit не наблюдался)",
+    "rms_trace": "results/test-007/rms-trace.json (RMS не менялся)",
+    "comparison": "results/test-007/comparison.json (MATCH 2, PARTIAL 3, NEW 1, INCONCLUSIVE 7, MISMATCH 0)",
+    "screenshots": ["shop.png"],
+    "screenshots_not_created": ["weapon-list", "purchase-before", "purchase-after", "shop-exit"],
+    "jar_sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+    "original_jar_modified": false,
+    "assist": "RUNTIME_ASSISTED: d(13,0) + au[0]=1 (UI-стейт); экономические поля НЕ изменялись"
+  },
+  "audio_status": "AUDIO_RUNTIME_BLOCKED_BY_STUB",
+  "key_findings": [
+    "L[4]=45000 — валюта подтверждена (init/cap)",
+    "L[0] = активное оружие (меняется между прогонами: -24 -> -26)",
+    "y ([[I) = 8 строк апгрейдов, bt=2",
+    "b[][] = таблица меню (НЕ ранги оружия)",
+    "покупка не воспроизведена (UI товаров не инициализирован)"
+  ],
+  "verdict": "PARTIAL — shop открыт, валюта L[4]=45000 подтверждена; цены/покупка остаются INCONCLUSIVE (требуют реального входа через объект-магазин)"
+}

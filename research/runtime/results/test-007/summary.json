@@ -1,0 +1,14 @@
+{
+ "assist": {
+  "method": "JDWP putstatic g.a=13, g.b=0 (RUNTIME_ASSISTED)",
+  "jar_modified": false,
+  "economic_fields_modified": false
+ },
+ "purchases": [],
+ "rms_changes": {},
+ "exit_state": {
+  "state": 13,
+  "sub": 0
+ },
+ "status": "done"
+}

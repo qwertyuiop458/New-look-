@@ -11,7 +11,7 @@
    "CONTRADICTED",
    "DEPRECATED"
   ],
-  "updated": "2026-08-22 TEST-006 runtime observations (F059-F061)"
+  "updated": "2026-08-22 TEST-007 runtime observations (F062-F063, F061 update)"
  },
  "facts": [
   {
@@ -311,10 +311,10 @@
   {
    "id": "F061",
    "category": "AUDIO",
-   "statement": "2 Player канала; VolumeControl 100; 10 звуковых ID",
+   "statement": "RUNTIME (TEST-006/007): L[] в runtime: L=[-26,0,0,0,45000] в shop (L[0]=активное оружие, L[4]=45000 валюта); в геймплее mission 0/3 L=null (инициализируется при входе в shop/другой контекст); P[]=[1,0,0,0,0,100,...] стабилен; reload после смерти -> mission 0 (bB=0), HP=200",
    "status": "CONFIRMED_PRIMARY",
    "primary_source": "g.java:4250-4520",
-   "exact_reference": "4271-4520",
+   "exact_reference": "results/test-006/state-after.json + results/test-007/shop-entry.json",
    "derivation": "прямое чтение",
    "confidence": "HIGH",
    "first_discovered": "15.23",
@@ -593,6 +593,17 @@
    "exact_reference": "results/test-006/rms-writes.json",
    "derivation": "чтение физических RMS-файлов FreeJ2ME",
    "confidence": "HIGH",
+   "first_discovered": "2026-08-22"
+  },
+  {
+   "id": "F063",
+   "category": "ECONOMY",
+   "statement": "RUNTIME (TEST-007): y ([[I) апгрейд-таблица = 8 строк x 5 колонок [[-1,-1,0,0,0],[-1,-1,0,0,2],[-1,-1,0,2,7],[35,104,0,9,1],[101,123,1,10,1],...], bt=2; b[][] = таблица меню (b[0]={1,-1,3,13,45,...}), НЕ ранги оружия; цены/покупка НЕ воспроизведены (INCONCLUSIVE)",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-007",
+   "exact_reference": "results/test-007/shop-entry.json",
+   "derivation": "JDWP-наблюдение",
+   "confidence": "MEDIUM",
    "first_discovered": "2026-08-22"
   }
  ]

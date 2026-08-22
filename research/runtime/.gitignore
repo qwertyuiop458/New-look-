@@ -30,3 +30,6 @@ results/test-005/*.log
 # TEST-006: логи
 results/test-006/runtime-stdout*.log
 results/test-006/*.log
+# TEST-007: логи
+results/test-007/runtime-stdout*.log
+results/test-007/*.log

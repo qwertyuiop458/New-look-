@@ -271,6 +271,17 @@ class JDWP:
                     raise JDWPError(f'unknown array component type {typ}')
         return typ, vals
 
+    def array_set(self, aid, index, tag, value):
+        """ArrayReference.SetValues (cmdset 13, cmd 3): установить элемент массива."""
+        w = Writer().u8(aid).u4(1).u4(index)
+        if tag == 'I':
+            w.u4(value & 0xffffffff)
+        elif tag == 'Z':
+            w.u1(1 if value else 0)
+        else:
+            raise JDWPError(f'array_set: unsupported tag {tag}')
+        self.cmd(13, 3, w.b)
+
     # ---------- Events ----------
     def set_breakpoint(self, tid, mid, code_index=0, suspend=0, request_id=None):
         """kind=2 BREAKPOINT; mod=LocationOnly(7): typeTag(1)=2 class, tid, mid, codeIndex(u8)."""

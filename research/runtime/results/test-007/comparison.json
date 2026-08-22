@@ -1,0 +1,104 @@
+{
+ "test": "TEST-007",
+ "generated": 1787406832.43758,
+ "method": "реальные наблюдения SHOP (state 13, mission 03, RUNTIME_ASSISTED вход) против economy-v2 / game-bible-final / MASTER_FACTS",
+ "items": [
+  {
+   "id": "E01",
+   "area": "State 13 = SHOP",
+   "static": "state 13 = fE() (магазин); вход через fA()->fB/fC->m(13) (объект L14)",
+   "observed": "state 13 достигнут (RUNTIME_ASSISTED d(13,0)); экран отображается (shop.png с текстурами меню); реальный вход через L14 (62 объекта) не воспроизведён — 5 ближайших объектов не открыли shop",
+   "result": "PARTIAL",
+   "note": "вход помечен RUNTIME_ASSISTED (по ТЗ п.1)"
+  },
+  {
+   "id": "E02",
+   "area": "L[4] = currency",
+   "static": "L[4] = деньги/энергия, cap 45000, init 45000",
+   "observed": "L=[-26,0,0,0,45000]: L[4]=45000 (cap/init подтверждены), L[0]=-26 (активное оружие)",
+   "result": "MATCH",
+   "note": "L[4]=45000 ПОДТВЕРЖДЕНО runtime"
+  },
+  {
+   "id": "E03",
+   "area": "L[0] = weapon",
+   "static": "L[1]=weapon (старая модель)",
+   "observed": "L[0] меняется между прогонами (-24 -> -26): L[0] = активное оружие; L[1]=0",
+   "result": "NEW_OBSERVATION",
+   "note": "L[0] (не L[1]) = текущее оружие в runtime"
+  },
+  {
+   "id": "E04",
+   "area": "Cap 45000",
+   "static": "cap 45000 (g.ah)",
+   "observed": "L[4]=45000 ровно (cap достигнут/init)",
+   "result": "MATCH"
+  },
+  {
+   "id": "E05",
+   "area": "L[2] cap 2800",
+   "static": "L[2] cap 2800 (вторая шкала)",
+   "observed": "L[2]=0 в runtime (не проверен cap — ресурс пуст)",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "E06",
+   "area": "16 weapon slots",
+   "static": "16 weapon records (m9 seg5)",
+   "observed": "L[0]=-26 (ID оружия); 16 слотов НЕ наблюдалось (нет списка оружия в UI); y-таблица = 8 строк",
+   "result": "INCONCLUSIVE",
+   "note": "число слотов не утверждается без runtime evidence (по ТЗ)"
+  },
+  {
+   "id": "E07",
+   "area": "y апгрейды",
+   "static": "g.y(n,prop)=c[bt][n][prop]; аддитивные",
+   "observed": "y ([[I): [[-1,-1,0,0,0],[-1,-1,0,0,2],[-1,-1,0,2,7],[35,104,0,9,1],[101,123,1,10,1],...] — 8 строк x 5; bt=2",
+   "result": "PARTIAL",
+   "note": "структура 2D подтверждена; семантика колонок не определена"
+  },
+  {
+   "id": "E08",
+   "area": "b[][] rank",
+   "static": "b[n][15] = ранг (скидка >=3)",
+   "observed": "b[][] прочитан: b[0]={1,-1,3,13,45,8,-2,4,5,6,7,1,-1} — это ТАБЛИЦА МЕНЮ (совпадает со статикой), не ранги оружия; ранг в b[n][15] не подтверждён",
+   "result": "PARTIAL",
+   "note": "ранги оружия не в g.b (это меню); поле ранга — в другом месте"
+  },
+  {
+   "id": "E09",
+   "area": "Prices",
+   "static": "цены UNKNOWN (REQUIRES_REAL_RUNTIME)",
+   "observed": "цены НЕ отображаются (UI не показывает список товаров при assisted входе); реальная покупка не воспроизведена",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "E10",
+   "area": "Purchase",
+   "static": "покупка g.k(-1,21) + m(as[1],13,0/1)",
+   "observed": "FIRE/DOWN/UP в shop не изменили L[] (60с); покупка не воспроизведена (UI-цепочка требует реального входа)",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "E11",
+   "area": "Shop exit",
+   "static": "state 13 -> ?",
+   "observed": "выход не наблюдался (state оставался 13 за время теста; прогон остановлен)",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "E12",
+   "area": "RMS после shop",
+   "static": "save после покупки",
+   "observed": "RMS не менялся (покупки не было)",
+   "result": "INCONCLUSIVE"
+  },
+  {
+   "id": "E13",
+   "area": "Rank discount",
+   "static": "ранг>=3: скидка (ранг-3+1)*10%",
+   "observed": "не проверяемо (нет покупки/ранга)",
+   "result": "INCONCLUSIVE"
+  }
+ ]
+}
