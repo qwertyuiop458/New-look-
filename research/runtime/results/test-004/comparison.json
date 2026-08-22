@@ -1,0 +1,90 @@
+{
+ "test": "TEST-004",
+ "generated": 1787402868.2584965,
+ "method": "реальные наблюдения (mission 03, враг g0=34 state=1) против ai-state-machine-v2 / ai-formulas-v2 / ai-attacks-v2 / ai-movement-v2 / ai-targeting-v2",
+ "items": [
+  {
+   "id": "D01",
+   "area": "Aggro",
+   "static": "f.b(): дистанция < 1600 (единицы UNKNOWN) -> агро",
+   "observed": "враг (1115,617) state=1 начал атаку при dist=468px (первый урон t=43.9); на dist=1012 не атаковал; агро-граница между 468 и 1012 px",
+   "result": "PARTIAL",
+   "note": "агро подтверждено; точная граница (1600 в неизвестных единицах) не измерена"
+  },
+  {
+   "id": "D02",
+   "area": "Ranged attack (prop10)",
+   "static": "RANGED: prop10 ∈ {0,3,5,7}: наведение g.a(), снаряд",
+   "observed": "враг g[10]=0, атаковал с дистанции 437-468px (не вплотную) — дистанционный тип подтверждён",
+   "result": "MATCH"
+  },
+  {
+   "id": "D03",
+   "area": "Damage",
+   "static": "g[7] -= урон + 30%*bF; урон = prop14/prop22",
+   "observed": "урон 30 за попадание (bF=0 -> 30 = базовый); 7 попаданий, HP игрока 200->0; источник 30 НЕ из prop14 (-16123) — вероятно, урон снаряда",
+   "result": "PARTIAL",
+   "note": "формула согласуется; источник значения 30 требует уточнения (снаряд L=18?)"
+  },
+  {
+   "id": "D04",
+   "area": "Attack timing",
+   "static": "g[15] >= 1000 мс (case 8); f.w >= 800 мс",
+   "observed": "период атак: 3.1, 1.5, 2.3, 2.2, 2.4 с (среднее ~2.3с); g[15]=6265 НЕ менялся за всё наблюдение",
+   "result": "PARTIAL",
+   "note": "период ~2.3с не совпадает с g[15]-механизмом (case 8); вероятно, другой таймер (анимация/снаряд)"
+  },
+  {
+   "id": "D05",
+   "area": "State 1",
+   "static": "state 1: f.a() кадр dir+prop3 (описание без атаки)",
+   "observed": "state 1 = ДИСТАНЦИОННЫЙ АТАКУЮЩИЙ (враг атаковал весь период в state 1)",
+   "result": "NEW_OBSERVATION",
+   "note": "семантика state 1 уточнена: ranged attack"
+  },
+  {
+   "id": "D06",
+   "area": "State 0 = chase",
+   "static": "state 0: idle-подобное (g[13]=0)",
+   "observed": "враг g0=34 state=0 (прошлый прогон) преследовал игрока: v13=11773, v14=-11393, dist 395->0.6px, не атакуя",
+   "result": "NEW_OBSERVATION",
+   "note": "state 0 включает преследование (velocity к цели) без атаки"
+  },
+  {
+   "id": "D07",
+   "area": "Velocity to target",
+   "static": "n15 = |dx|*1000/819200; velocity к цели (не pathfinding)",
+   "observed": "v13=11773/v14=-11393 — постоянный вектор к игроку; преследование по прямой",
+   "result": "MATCH"
+  },
+  {
+   "id": "D08",
+   "area": "Flags g[16]",
+   "static": "0x100/0x400/0x800 описаны",
+   "observed": "g[16]=4096 (0x1000) у атакующего врага — не описано в статике",
+   "result": "NEW_OBSERVATION"
+  },
+  {
+   "id": "D09",
+   "area": "Player death",
+   "static": "смерть при g[7]<=0 (воскрешение 200)",
+   "observed": "HP игрока 200->-10 (7 ударов по 30); игрок погиб; экран после смерти не наблюдался (прогон остановлен)",
+   "result": "PARTIAL"
+  },
+  {
+   "id": "D10",
+   "area": "Enemy HP g[7]",
+   "static": "HP в g[7]",
+   "observed": "живые враги mission 3: 50 шт, все HP=2; g[7]=2 подтверждён в props",
+   "result": "MATCH"
+  },
+  {
+   "id": "D11",
+   "area": "Enemy state dist",
+   "static": "state -1 не описан",
+   "observed": "миссия 3: 448 врагов (state -1: 305, 0: 84, 1: 59); state 1 = активные атакующие",
+   "result": "MATCH",
+   "note": "state -1 = не-заспавненные (305 шт)"
+  }
+ ]
+}

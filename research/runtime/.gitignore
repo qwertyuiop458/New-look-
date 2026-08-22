@@ -21,3 +21,6 @@ results/test-002/runtime-stdout*.log
 # TEST-003: логи экспериментов
 results/test-003/runtime-stdout*.log
 results/test-003/*.log
+# TEST-004: логи
+results/test-004/runtime-stdout*.log
+results/test-004/*.log

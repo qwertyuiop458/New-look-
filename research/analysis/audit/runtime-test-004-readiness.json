@@ -1,0 +1,27 @@
+{
+  "meta": "Quality gate Этапа 15.33 (TEST-004)",
+  "status": "PASSED",
+  "statuses": ["NOT_EXECUTED", "PARTIAL", "PASSED", "MISMATCH_FOUND", "INCONCLUSIVE"],
+  "rationale": "Реальный AI проверен на доступном враге mission 03: агро (первый урон на 468px), преследование (state 0, velocity к цели), attack cycle (7 попаданий, урон 30, период ~2.3с), damage (HP игрока 200->0, смерть). Все ключевые механики подтверждены реальными наблюдениями; MISMATCH со статикой отсутствует.",
+  "evidence": {
+    "ai_trace": "results/test-004/ai-trace.json (67+315 сэмплов, 2 прогона)",
+    "distance_trace": "results/test-004/distance-trace.json",
+    "attack_trace": "results/test-004/attack-trace.json (7 событий, урон 30, dist 437-468px)",
+    "damage_trace": "results/test-004/damage-trace.json (HP 200->0, смерть)",
+    "comparison": "results/test-004/comparison.json (MATCH 4, PARTIAL 4, NEW 3, MISMATCH 0)",
+    "screenshots": ["enemy-before.png", "enemy-approach.png", "damage.png"],
+    "jar_sha256": "1111f12bd94e5693bbdd9acab4726e5b543730b9137504af1e8a8ecb09f00d4e",
+    "original_jar_modified": false,
+    "mission": "mission 03 (RUNTIME_ASSISTED bB=3 — только выбор миссии; JDWP для AI не использовался)"
+  },
+  "audio_status": "AUDIO_RUNTIME_BLOCKED_BY_STUB",
+  "confirmed": [
+    "агро: враг атакует с 468px (граница 468-1012px)",
+    "state 0 = преследование (velocity к цели) без атаки",
+    "state 1 = дистанционный атакующий (RANGED, g[10]=0)",
+    "урон 30 за попадание, период ~2.3с",
+    "смерть игрока при HP<=0",
+    "живые враги mission 3: 50 шт, HP=2"
+  ],
+  "verdict": "PASSED — агро/преследование/атака/урон подтверждены реальным runtime на враге g0=34 state=1; MISMATCH 0"
+}

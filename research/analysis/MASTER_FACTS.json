@@ -11,7 +11,7 @@
    "CONTRADICTED",
    "DEPRECATED"
   ],
-  "updated": "2026-08-16 TEST-003 runtime observations (F049-F051)"
+  "updated": "2026-08-22 TEST-004 runtime observations (F052-F055)"
  },
  "facts": [
   {
@@ -528,6 +528,28 @@
    "derivation": "JDWP + клавиши",
    "confidence": "HIGH",
    "first_discovered": "2026-08-16"
+  },
+  {
+   "id": "F054",
+   "category": "AI",
+   "statement": "RUNTIME (TEST-004): damage подтверждён: урон 30 за попадание (bF=0), период ~2.3с (3.1/1.5/2.3/2.2/2.4с), HP игрока 200->0 (7 попаданий, смерть); g[15]=6265 не менялся — таймер атаки НЕ через g[15] для ranged-типа",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-004",
+   "exact_reference": "results/test-004/damage-trace.json",
+   "derivation": "JDWP-наблюдение",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-22"
+  },
+  {
+   "id": "F055",
+   "category": "AI",
+   "statement": "RUNTIME (TEST-004): props атакующего врага g0=34: [34,1,0,-100,-100,200,200,2,2,-1,0,0,1,-2902,-16123,6265,4096,0,63,0,0,-1,-1,0] — g[7]=2 (HP), g[10]=0 (RANGED), g[12]=1 (state), g[16]=4096 (0x1000, не описан в статике); живых врагов в mission 3: 50 (HP=2), 448 всего (state -1:305, 0:84, 1:59)",
+   "status": "RUNTIME_CONFIRMED",
+   "primary_source": "TEST-004",
+   "exact_reference": "results/test-004/ai-trace.json",
+   "derivation": "JDWP-наблюдение",
+   "confidence": "HIGH",
+   "first_discovered": "2026-08-22"
   }
  ]
 }

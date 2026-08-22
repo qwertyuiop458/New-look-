@@ -1,0 +1,14 @@
+{
+ "assist": {
+  "method": "JDWP putstatic g.bB=3 (RUNTIME_ASSISTED, выбор миссии)",
+  "jar_modified": false
+ },
+ "aggro_at": 43.91,
+ "attacks": 7,
+ "damages": 7,
+ "status": "done",
+ "first_damage_dist_px": 468.1,
+ "aggro_observed": true,
+ "attack_cycle_observed": true,
+ "player_died": true
+}
